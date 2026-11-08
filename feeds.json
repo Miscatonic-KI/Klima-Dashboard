@@ -1,50 +1,116 @@
 [
   {
-    "category": "Kipppunkte & Wissenschaft",
-    "title": "AMOC / Golfstrom-Kollaps",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/6223761365340843991",
-    "desc": "Warnungen und Studien zur Atlantischen Umwälzzirkulation."
+    "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+    "title": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/5158364587407240509",
+    "desc": "Starkregen, Sturzfluten, Hochwasser, Erdrutsche, flash floods, severe storms und landslides."
   },
   {
-    "category": "Kipppunkte & Wissenschaft",
-    "title": "Jetstream & Polarwirbel",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/9631779049143637019",
-    "desc": "Veränderte Jetstream-Muster und atmosphärische Anomalien."
+    "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+    "title": "1.2 Hitze, Dürre & Brände (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/11120279095908939998",
+    "desc": "Hitzewellen, Dürren, Waldbrände, heatwaves, droughts, wildfires und bushfires."
   },
   {
-    "category": "Extreme Wetterereignisse",
-    "title": "Ernteausfälle & Dürren",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/13730099695928292000",
-    "desc": "Auswirkungen von Hitze und Dürre auf globale Agrarerträge."
+    "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+    "title": "1.3 Stürme, Wirbelstürme & Tropenstürme (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/17325346438393947173",
+    "desc": "Tornados, Orkane, Hurricanes, Typhoons, Tropenstürme und Cyclones."
   },
   {
-    "category": "Gesellschaft & Anpassung",
-    "title": "Militärische Katastrophenhilfe",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/16813069292748342565",
-    "desc": "Einsätze der Bundeswehr und von Armeen bei Naturkatastrophen."
+    "category": "2. Opfer, Schäden & Humanitäre Folgen",
+    "title": "2.1 Menschliche & Soziale Folgen (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/15385855228938865445",
+    "desc": "Klimaflüchtlinge, Klimaangst, climate refugees, climate displacement und climate anxiety."
   },
   {
-    "category": "Ökosysteme & Biodiversität",
-    "title": "Marine Hitzewellen",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/10897506644573429956",
-    "desc": "Meerestemperaturen und marine Ökosystemkrisen."
+    "category": "2. Opfer, Schäden & Humanitäre Folgen",
+    "title": "2.2 Verluste, Opfer & Evakuierungen (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/8763070419705075706",
+    "desc": "Todesopfer, Verletzte, Evakuierungen, death toll, casualties und displaced persons."
   },
   {
-    "category": "Ökosysteme & Biodiversität",
-    "title": "Infektionskrankheiten & Tigermücke",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/10580721722444456079",
-    "desc": "Ausbreitung von Dengue, West-Nil und Vektoren durch Erwärmung."
+    "category": "2. Opfer, Schäden & Humanitäre Folgen",
+    "title": "2.3 Financial Damage & Loss (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/18184086426968613935",
+    "desc": "Schadensbilanzen, Klimaschäden, loss and damage sowie wirtschaftliche Schäden in Millionen/Milliarden."
   },
   {
-    "category": "Kritische Rohstoffe & Wirtschaft",
-    "title": "Seltene Erden & Exportkontrollen",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/4015411613377063764",
-    "desc": "Geopolitische Restriktionen bei Schlüsselmineralien."
+    "category": "3. Klimawissenschaft & Messwerte",
+    "title": "3.1 Klimaforschung & Studien (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/14230269022298243017",
+    "desc": "Neue wissenschaftliche Publikationen und Studien (Nature, Science, Research Papers)."
   },
   {
-    "category": "Gesellschaft & Anpassung",
-    "title": "Hitzeaktionspläne & Schwammstadt",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/15085123558408753068",
-    "desc": "Kommunale Vorsorge, Küstenschutz und Entsiegelung."
+    "category": "3. Klimawissenschaft & Messwerte",
+    "title": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/9448171563311520940",
+    "desc": "Tipping points, Overshoot, El Niño/La Niña, Albedo, Treibhausgase, Methane emissions und Radiative forcing."
+  },
+  {
+    "category": "4. Wasser, Ozeane & Kryosphäre",
+    "title": "4.1 Meere, Eis & Ozeane (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/5774804501474052512",
+    "desc": "Marine Hitzewellen, Arktisches/Antarktisches Meereis, Gletscherschmelze und Ozeanversauerung."
+  },
+  {
+    "category": "4. Wasser, Ozeane & Kryosphäre",
+    "title": "4.2 Wasserressourcen & Konflikte (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/17683995206416641364",
+    "desc": "Trinkwasserknappheit, Grundwasserspiegel, water scarcity, water security und Aquifer depletion."
+  },
+  {
+    "category": "5. Ökosysteme & Biodiversität",
+    "title": "5.1 Biodiversität & Artensterben (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/2813110259383019851",
+    "desc": "Artensterben, Insektensterben, Massensterben, Waldsterben, biodiversity loss und extinction events."
+  },
+  {
+    "category": "5. Ökosysteme & Biodiversität",
+    "title": "5.2 Ökosysteme, Böden & Küsten (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/7679004975508465418",
+    "desc": "Regenwälder, Moore, Bodenversalzung, Küstenerosion, Amazon rainforest, peatland und land degradation."
+  },
+  {
+    "category": "6. Infrastruktur, Energie & Rohstoffe",
+    "title": "6.1 Netze, Energie & Infrastruktur (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/16014836882914929549",
+    "desc": "Kühlwasserengpässe, Netzstabilität, Dunkelflaute, Niedrigwasser, Stadthitze, grid stability und power outages."
+  },
+  {
+    "category": "6. Infrastruktur, Energie & Rohstoffe",
+    "title": "6.2 Rohstoffe, Tiefseebergbau & KI-Bedarf (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/10690920530275589964",
+    "desc": "Deep sea mining, Lithium/Kobalt/Seltene Erden, KI-Energiebedarf und data center energy demand."
+  },
+  {
+    "category": "7. Wirtschaft, Landwirtschaft & Ernährung",
+    "title": "7.1 Landwirtschaft & Ernteausfälle (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/1911026478231827291",
+    "desc": "Ernteausfälle, Lebensmittelpreise, crop failure, yield loss, food price inflation und food security."
+  },
+  {
+    "category": "7. Wirtschaft, Landwirtschaft & Ernährung",
+    "title": "7.2 Finanzmarkt & Risiken (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/14237263890745937070",
+    "desc": "Klimarisiken für Finanzmärkte, Elementarschadenversicherungen, uninsurable risks und climate liabilities."
+  },
+  {
+    "category": "8. Politik, Recht & Anpassung",
+    "title": "8.1 Recht, Politik & Lobbyismus (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/15324808021650325150",
+    "desc": "Klimaklagen, climate litigation, COP31, fossile Subventionen, climate disinformation und greenwashing."
+  },
+  {
+    "category": "8. Politik, Recht & Anpassung",
+    "title": "8.2 Anpassung & Geoengineering (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/2447668029530125263",
+    "desc": "Klimaanpassung, climate adaptation, Geoengineering, Solar Radiation Management (SRM) und CDR."
+  },
+  {
+    "category": "8. Politik, Recht & Anpassung",
+    "title": "8.3 Militär & Sicherheitspolitik (DE/EN)",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/3263068424867222461",
+    "desc": "Sicherheitspolitik, NATO/Pentagon-Berichte, military readiness, defense department und climate security."
   }
 ]
