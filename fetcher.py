@@ -24,20 +24,20 @@ def fetch_all():
                 ns = {'atom': 'http://www.w3.org/2005/Atom'}
                 
                 entries = root.findall('atom:entry', ns)
-                for entry in entries[:5]:  # Die 5 aktuellsten Meldungen
+                for entry in entries[:5]:
                     entry_title = entry.find('atom:title', ns)
                     entry_link = entry.find('atom:link', ns)
                     
-                    t_text = entry_title.text if entry_title is not None else "Kein Titel"
-                    # Bereinige HTML-Tags in Titeln falls vorhanden
-                    t_text = ET.canonicalize(ET.tostring(entry_title, encoding='utf-8').decode('utf-8')) if False else t_text
-                    
-                    l_href = entry_link.attrib.get('href', '#') if entry_link is not None else '#'
-                    
-                    feed_result["items"].append({
-                        "title": t_text,
-                        "link": l_href
-                    })
+                    if entry_title is not None and entry_title.text:
+                        t_text = entry_title.text.strip()
+                        # Verhindert, dass HTML-Reste oder Müll angezeigt werden
+                        if t_text and t_text.lower() != "null":
+                            l_href = entry_link.attrib.get('href', '#') if entry_link is not None else '#'
+                            
+                            feed_result["items"].append({
+                                "title": t_text,
+                                "link": l_href
+                            })
         except Exception as e:
             print(f"Fehler bei {feed['title']}: {e}")
 
