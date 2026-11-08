@@ -6,15 +6,15 @@
     <title>Klima-Krisen-Dashboard</title>
     <style>
         :root {
-            --bg-color: #f3f4f6;          /* Dezentes helles Grau als Hintergrund */
-            --section-bg: #ffffff;        /* Reine weiße Sektionen für saubere Kacheln */
-            --card-bg: #f9fafb;           /* Sehr helles Grau für die Feed-Karten */
-            --card-hover: #f3f4f6;        /* Sanfter Hover-Effekt */
-            --text-main: #111827;         /* Tiefes Schwarz/Dunkelgrau für glasklare Lesbarkeit */
-            --text-muted: #4b5563;        /* Dezentes Grau für Nebentexte */
-            --accent: #8b0000;            /* Edles Bordeauxrot als Hauptakzent */
-            --border: #e5e7eb;            /* Feine, dezente Rahmenlinien */
-            --link-color: #990000;        /* Bordeauxrot auch für Links */
+            --bg-color: #f3f4f6;
+            --section-bg: #ffffff;
+            --card-bg: #f9fafb;
+            --card-hover: #f3f4f6;
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --accent: #8b0000;
+            --border: #e5e7eb;
+            --link-color: #990000;
         }
 
         body {
@@ -245,9 +245,11 @@
         async function loadDashboard() {
             try {
                 const response = await fetch('data.json?t=' + Date.now());
+                if (!response.ok) throw new Error('Netzwerk-Antwort war nicht ok');
                 const data = await response.json();
                 renderDashboard(data);
             } catch (error) {
+                console.error(error);
                 document.getElementById('dashboard-container').innerHTML = `<p style="color: #990000; text-align: center;">Fehler beim Laden der data.json.</p>`;
             }
         }
@@ -282,7 +284,7 @@
                     const rawItemsText = feed.items ? feed.items.map(i => i.title).join(' ').toLowerCase() : '';
 
                     gridHtml += `
-                        <div class="card" data-title="${feed.title.toLowerCase()}" data-content="${rawItemsTest}">
+                        <div class="card" data-title="${feed.title.toLowerCase()}" data-content="${rawItemsText}">
                             <div>
                                 <div class="card-top">
                                     <h3>${feed.title}</h3>
@@ -319,7 +321,7 @@
             const input = document.getElementById('searchInput').value.toLowerCase();
             const cards = document.querySelectorAll('.card');
 
-            cards.evaluate || cards.forEach(card => {
+            cards.forEach(card => {
                 const title = card.getAttribute('data-title');
                 const content = card.getAttribute('data-content');
                 if (title.includes(input) || content.includes(input)) {
