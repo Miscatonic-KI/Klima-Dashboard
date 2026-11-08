@@ -28,7 +28,7 @@
 
         header {
             text-align: center;
-            margin: 20px 0 30px 0;
+            margin: 20px 0 25px 0;
         }
 
         header h1 {
@@ -58,7 +58,23 @@
         header p {
             color: var(--text-muted);
             font-size: 0.95rem;
-            margin: 0;
+            margin: 0 0 8px 0;
+        }
+
+        .update-badge {
+            display: inline-block;
+            background-color: var(--section-bg);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+        }
+
+        .update-badge span {
+            font-weight: 600;
+            color: var(--text-main);
         }
 
         .search-container {
@@ -246,6 +262,9 @@
             <button class="main-info-btn" onclick="openMainModal()" title="Über den Crisis-Tracker">ℹ️</button>
         </h1>
         <p>Automated real-time monitoring of global climate signals and impacts</p>
+        <div class="update-badge" id="update-badge">
+            Datenstand: Laden... | Nächste Aktualisierung: Laden...
+        </div>
     </header>
 
     <div class="search-container">
@@ -268,11 +287,23 @@
     <script>
         async function loadDashboard() {
             try {
-                const response =- await fetch('data.json?t=' + Date.now());
-                const responseOk = await fetch('data.json?t=' + Date.now());
-                if (!responseOk.ok) throw new Error('Netzwerk-Antwort war nicht ok');
-                const data = await responseOk.json();
-                renderDashboard(data);
+                const response = await fetch('data.json?t=' + Date.now());
+                if (!response.ok) throw new Error('Netzwerk-Antwort war nicht ok');
+                const jsonContent = await response.json();
+                
+                // Rückwärtskompatibilität: Falls data.json direkt ein Array ist oder das neue Objektformat mit meta
+                let feeds = [];
+                if (Array.isArray(jsonContent)) {
+                    feeds = jsonContent;
+                } else {
+                    feeds = jsonContent.feeds || [];
+                    if (jsonContent.meta) {
+                        document.getElementById('update-badge').innerHTML = 
+                            `Datenstand: <span>${jsonContent.meta.last_updated}</span> &nbsp;|&nbsp; Nächste Aktualisierung: <span>${jsonContent.meta.next_update}</span>`;
+                    }
+                }
+
+                renderDashboard(feeds);
             } catch (error) {
                 console.error(error);
                 document.getElementById('dashboard-container').innerHTML = `<p style="color: #990000; text-align: center;">Fehler beim Laden der data.json.</p>`;
@@ -340,13 +371,11 @@
                 <p><strong>Wie funktioniert das System?</strong></p>
                 <ul>
                     <li><strong>Google Alerts & RSS:</strong> Im Hintergrund überwachen präzise, zweisprachige (DE/EN) Suchabfragen mit ausgeklügelten Negativfiltern das weltweite Geschehen.</li>
-                    <li><strong>GitHub Automation:</strong> Ein im Stundentakt (alle 4 Stunden automatisch) laufender Python-Skript-Robot zieht die neuesten Meldungen ab und aktualisiert das Dashboard vollautomatisch, ohne manuelle Eingriffe.</li>
-                    <li><strong>Design & Struktur:</strong> Aufgeteilt in 8 Kernbereiche (von Extremwetter über Kipppunkte bis hin zu Wirtschaft und Sicherheit) liefert das Tool einen kompakten, rauschfreien Überblick.</li>
+                    <li><strong>GitHub Automation:</strong> Ein im 4-Stunden-Takt automatisch laufender Python-Skript-Robot zieht die neuesten Meldungen ab und aktualisiert das Dashboard vollautomatisch.</li>
+                    <li><strong>Design & Struktur:</strong> Aufgeteilt in 8 Kernbereiche liefert das Tool einen kompakten, rauschfreien Überblick über Signale und Metriken.</li>
                 </ul>
                 <p><strong>Hintergrund & Entstehung:</strong></p>
-                <p>Der Entwickler dieses Dashboards ist kein professioneller Software-Entwickler, sondern hat dieses mächtige Tool von Grund auf in enger und kreativer Zusammenarbeit mit der KI <strong>Gemini</strong> konzipiert, gebaut und optimiert.</p>
-                <p><strong>Ausblick:</strong></p>
-                <p>Das System ist modular aufgebaut und wird kontinuierlich weiter ausgebaut, um neue Datenquellen, intelligentere Filter und noch tiefgreifendere Analysen zu integrieren.</p>
+                <p>Das Tool wurde von Grund auf in enger und kreativer Zusammenarbeit mit der KI <strong>Gemini</strong> konzipiert, gebaut und kontinuierlich weiterentwickelt.</p>
             `;
             document.getElementById('modal').style.display = 'flex';
         }
