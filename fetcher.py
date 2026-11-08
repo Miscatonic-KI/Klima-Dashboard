@@ -24,7 +24,7 @@ def fetch_all():
                 ns = {'atom': 'http://www.w3.org/2005/Atom'}
                 
                 entries = root.findall('atom:entry', ns)
-                for entry in entries[:5]:
+                for entry in entries[:15]:
                     entry_title = entry.find('atom:title', ns)
                     entry_link = entry.find('atom:link', ns)
                     
