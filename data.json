@@ -1,189 +1,355 @@
 [
   {
-    "category": "Kipppunkte & Wissenschaft",
-    "title": "AMOC / Golfstrom-Kollaps",
-    "desc": "Warnungen und Studien zur Atlantischen Umwälzzirkulation.",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/6223761365340843991",
+    "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+    "title": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+    "desc": "Starkregen, Sturzfluten, Hochwasser, Erdrutsche, flash floods, severe storms und landslides.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/5158364587407240509",
+    "items": [
+      {
+        "title": "r/DisasterUpdate - Reddit",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.reddit.com/r/DisasterUpdate/%3Fafter%3DdDNfMXhtZWl1Yg%253D%253D%26sort%3Dbest%26t%3DDAY&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw05mOKFzcys1skO-AXVfR4o"
+      },
+      {
+        "title": "Nepal Floods Kill 1400 With $4.7B Recovery Needs Ahead of COP31 - Facebook",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/UN.News.Centre/videos/devastating-floods-in-nepal-have-killed-more-than-1400-people-left-thousands-mis/917560974656104/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2u_2TMMxnoT9hfrow2i4sN"
+      },
+      {
+        "title": "r/water - Reddit",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.reddit.com/r/water/rising/%3Fafter%3DdDNfMXhocjMxYQ%253D%253D%26sort%3Dbest%26t%3DDAY&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw1-psU6d4Nw9_MQC8u5v9KV"
+      },
+      {
+        "title": "Typhoons and <b>flooding</b> - Disaster Preparedness Guide",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://jigoo.org/en/guides/flood/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3xW55hA9w_j8nX0c1Ioy0L"
+      },
+      {
+        "title": "Centre of Excellence in <b>Climate Change</b> and <b>Disaster</b> Risk Management",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://fnres.busitema.ac.ug/facilities/centre-excellence-climate-change-and-disaster-risk-management&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0NKt5JvukpwMIM-DU5E7SB"
+      }
+    ]
+  },
+  {
+    "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+    "title": "1.2 Hitze, Dürre & Brände (DE/EN)",
+    "desc": "Hitzewellen, Dürren, Waldbrände, heatwaves, droughts, wildfires und bushfires.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/11120279095908939998",
     "items": []
   },
   {
-    "category": "Kipppunkte & Wissenschaft",
-    "title": "Jetstream & Polarwirbel",
-    "desc": "Veränderte Jetstream-Muster und atmosphärische Anomalien.",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/9631779049143637019",
+    "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+    "title": "1.3 Stürme, Wirbelstürme & Tropenstürme (DE/EN)",
+    "desc": "Tornados, Orkane, Hurricanes, Typhoons, Tropenstürme und Cyclones.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/17325346438393947173",
+    "items": []
+  },
+  {
+    "category": "2. Opfer, Schäden & Humanitäre Folgen",
+    "title": "2.1 Menschliche & Soziale Folgen (DE/EN)",
+    "desc": "Klimaflüchtlinge, Klimaangst, climate refugees, climate displacement und climate anxiety.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/15385855228938865445",
     "items": [
       {
-        "title": "Trotz roter Karte: <b>Polarwirbel</b> könnte das Winter-Wetter in Deutschland noch kippen lassen",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.fr.de/panorama/wetter-prognose-fuer-den-winter-wackelt-polarwirbel-kippt-frueher-zr-94579155.html&ct=ga&cd=CAIyGzUxM2Q5ZjU5NTM1NTBkNDg6ZGU6ZGU6REU6TA&usg=AOvVaw3s2cbz3fyabOC6qIvhgLJD"
+        "title": "Vater der Klimaaktivistin Hannah Lübbert in Sorge: „Vielleicht erwischt es mich auch noch“",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.freitag.de/autoren/nick-reimer/daniel-luebbert-ueber-klimaangst-seiner-tocher-vielleicht-erwischt-es-mich-auch&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw1oDte9K6K8OtfnJpk8hZ2o"
       },
       {
-        "title": "Blockadehoch oder Westwetterlage: Schwacher <b>Polarwirbel</b> verändert die Wetterprognose",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.wetterprognose-wettervorhersage.de/wetter-jahreszeiten/winter/wetter-winter-2026-2027/13938-blockadehoch-oder-westwetterlage-schwacher-polarwirbel-veraendert-die-wetterprognose.html&ct=ga&cd=CAIyGzUxM2Q5ZjU5NTM1NTBkNDg6ZGU6ZGU6REU6TA&usg=AOvVaw2b_7IjV2-BY9PXeQ6EUXGl"
+        "title": "planet e.: Generation <b>Klimaangst</b> im TV - Sendung - TV SPIELFILM",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.tvspielfilm.de/tv-programm/sendung/planet-e-generation-klimaangst,6adf8a756b6f3b46dcce251c.html&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw0_KXrZ6oKdvAKSAA6I698u"
       }
     ]
   },
   {
-    "category": "Extreme Wetterereignisse",
-    "title": "Ernteausfälle & Dürren",
-    "desc": "Auswirkungen von Hitze und Dürre auf globale Agrarerträge.",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/13730099695928292000",
+    "category": "2. Opfer, Schäden & Humanitäre Folgen",
+    "title": "2.2 Verluste, Opfer & Evakuierungen (DE/EN)",
+    "desc": "Todesopfer, Verletzte, Evakuierungen, death toll, casualties und displaced persons.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/8763070419705075706",
+    "items": []
+  },
+  {
+    "category": "2. Opfer, Schäden & Humanitäre Folgen",
+    "title": "2.3 Financial Damage & Loss (DE/EN)",
+    "desc": "Schadensbilanzen, Klimaschäden, loss and damage sowie wirtschaftliche Schäden in Millionen/Milliarden.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/18184086426968613935",
+    "items": []
+  },
+  {
+    "category": "3. Klimawissenschaft & Messwerte",
+    "title": "3.1 Klimaforschung & Studien (DE/EN)",
+    "desc": "Neue wissenschaftliche Publikationen und Studien (Nature, Science, Research Papers).",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/14230269022298243017",
     "items": [
       {
-        "title": "Southern African farmers prepare for powerful El Nino with agroecology - RFI",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.rfi.fr/en/africa/20261108-southern-african-farmers-prepare-their-fields-for-a-powerful-el-nino&ct=ga&cd=CAIyGzliYWI0YTE5ODFjMjE4M2U6ZGU6ZGU6REU6TA&usg=AOvVaw1rD1Xim4OpI3GPrH6_X0pO"
+        "title": "From global solution space to local strategies: integrating adaptation pathways and global ... - <b>Nature</b>",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.nature.com/articles/s44168-026-00439-2&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw3PTwsXi2d76EMkfN0rdTNH"
       },
       {
-        "title": "Warfare technology finds new use on Britain&#39;s farms to boost <b>crop yields</b> | World News",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.business-standard.com/world-news/warfare-technology-finds-new-use-on-britain-s-farms-to-boost-crop-yields-126110800323_1.html&ct=ga&cd=CAIyGzliYWI0YTE5ODFjMjE4M2U6ZGU6ZGU6REU6TA&usg=AOvVaw24YdBlzSW166bklnneG6VQ"
+        "title": "Freshwater species are at risk. A new global threat map could help save some from brink of extinction",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.cbc.ca/news/science/freshwater-biodiversity-threat-map-9.7405985&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1Y8TpSdh7rXMTW3zCLU1f0"
       },
       {
-        "title": "धक्कादायक! दिवाळीच्या दिवशी शेतकऱ्यानं उचललं टोकाचं पाऊल | Hingoli News - YouTube",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DSNpjscGLm0U&ct=ga&cd=CAIyGzliYWI0YTE5ODFjMjE4M2U6ZGU6ZGU6REU6TA&usg=AOvVaw0SlecQMhBIaIs0T1UuAFCO"
+        "title": "The Watch: Coal-Fired Power Plants Often Located in Disadvantaged Communities",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://publichealthwatch.org/newsletter/the-watch-coal-fired-power-plants-often-located-in-disadvantaged-communities/&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw3I52I5W4gWh3qtii8cwixn"
       },
       {
-        "title": "Rising food prices may be only beginning - Iran Daily",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://newspaper.irandaily.ir/8259/1/27908&ct=ga&cd=CAIyGzliYWI0YTE5ODFjMjE4M2U6ZGU6ZGU6REU6TA&usg=AOvVaw0aOJBdqhTWivVMSsIE-nVR"
+        "title": "What is COP31 and why does it matter? - RTE",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.rte.ie/news/analysis-and-comment/2026/1108/1598386-cop-turkey/&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw0-5wMJ4EJqa3GmRx9qwgd1"
       },
       {
-        "title": "26 budget breakdown, China tariff relief &amp; cattle price <b>losses</b> | RealAg on the Weekend Nov 7 &amp; 8/26",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.realagriculture.com/2026/11/26-budget-breakdown-china-tariff-relief-cattle-price-losses-realag-on-the-weekend-nov-7-8-26/&ct=ga&cd=CAIyGzliYWI0YTE5ODFjMjE4M2U6ZGU6ZGU6REU6TA&usg=AOvVaw3QQiHd4sX5-3YqcD4QaQoS"
+        "title": "Fewer snakes in Dutch <b>nature</b>: &#39;Very sad&#39; - YouTube",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DiFMIRMbmnws&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1BIcW5qdjmdhskvsLMLdwn"
       }
     ]
   },
   {
-    "category": "Gesellschaft & Anpassung",
-    "title": "Militärische Katastrophenhilfe",
-    "desc": "Einsätze der Bundeswehr und von Armeen bei Naturkatastrophen.",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/16813069292748342565",
+    "category": "3. Klimawissenschaft & Messwerte",
+    "title": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+    "desc": "Tipping points, Overshoot, El Niño/La Niña, Albedo, Treibhausgase, Methane emissions und Radiative forcing.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/9448171563311520940",
     "items": [
       {
-        "title": "Bill White: Election less a &#39;blue wave&#39; than an &#39;orange crush&#39; as voters repudiate Trump",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.mcall.com/2026/11/07/bill-white-voters-served-up-a-big-cup-of-orange-crush/&ct=ga&cd=CAIyG2M2OTcxNjgxMTM1MGYyNTE6ZGU6ZGU6REU6TA&usg=AOvVaw1OTf8HBSnlLsSeDSWdU6lJ"
+        "title": "The Worst Outcome of <b>El Niño</b> I More Heat and Less Rain I Food Crisis I Catastrophic Crops Failure",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3Dsw7Cy45R-KE&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0q2g0H4FZuR8zz3nCfqN_k"
       },
       {
-        "title": "India-Australia defence ties gain strategic depth amid China&#39;s assertiveness",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://defence.in/threads/india-australia-defence-ties-gain-strategic-depth-amid-chinas-assertiveness.19043/&ct=ga&cd=CAIyG2M2OTcxNjgxMTM1MGYyNTE6ZGU6ZGU6REU6TA&usg=AOvVaw3OBpydcthfOqVL6o47QZ32"
+        "title": "Selwin Hart: Why the World Is Better Equipped to Tackle <b>Climate</b> Change Ahead of COP31",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/UNGeneva/videos/is-it-too-late-to-tackle-climate-change-overshoot-is-not-surrender-says-un-speci/1445643441019543/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3QRmfKc-rqiiOwtu2Snkf1"
       },
       {
-        "title": "IAF Gajraj makes world-record landing at 13,629ft in Ladakh - The Times of India",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://timesofindia.indiatimes.com/defence/news/iaf-gajraj-makes-world-record-landing-at-13629ft-in-ladakh/articleshow/135644558.cms&ct=ga&cd=CAIyG2M2OTcxNjgxMTM1MGYyNTE6ZGU6ZGU6REU6TA&usg=AOvVaw2PUtaxXauJViP-u_G1-pTo"
+        "title": "Vor Peru und Ecuador war das Meer Anfang Oktober fast vier Grad wärmer als normal. Die US",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/unserplanet/videos/vor-peru-und-ecuador-war-das-meer-anfang-oktober-fast-vier-grad-w%25C3%25A4rmer-als-norma/923261787541142/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0of0leDOYtzRcvsuxON9BA"
       },
       {
-        "title": "Plane Crash, Flooding Still Issues For Palm Beach County Responders - BocaNewsNow.com",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://bocanewsnow.com/2026/11/07/plane-crash-flooding-still-issues-for-palm-beach-county-responders/&ct=ga&cd=CAIyG2M2OTcxNjgxMTM1MGYyNTE6ZGU6ZGU6REU6TA&usg=AOvVaw2mhUW227JQNVKfv22D66A0"
-      },
-      {
-        "title": "IAF IL-76MD makes highest-altitude landing at 13,629 feet in Ladakh - The News Mill",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://thenewsmill.com/2026/11/iaf-il-76md-makes-highest-altitude-landing-at-13629-feet-in-ladakh/&ct=ga&cd=CAIyG2M2OTcxNjgxMTM1MGYyNTE6ZGU6ZGU6REU6TA&usg=AOvVaw25Vgmj6s4AAiXFzSlb6U24"
+        "title": "Earth just had its hottest October ever recorded as a strengthening <b>El Niño</b> adds heat to the ...",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/CBSNews/videos/earth-just-had-its-hottest-october-ever-recorded-as-a-strengthening-el-ni%25C3%25B1o-adds/1492333146091501/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1QKHOiBjFYxIpSQBeQTmUv"
       }
     ]
   },
   {
-    "category": "Ökosysteme & Biodiversität",
-    "title": "Marine Hitzewellen",
-    "desc": "Meerestemperaturen und marine Ökosystemkrisen.",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/10897506644573429956",
+    "category": "4. Wasser, Ozeane & Kryosphäre",
+    "title": "4.1 Meere, Eis & Ozeane (DE/EN)",
+    "desc": "Marine Hitzewellen, Arktisches/Antarktisches Meereis, Gletscherschmelze und Ozeanversauerung.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/5774804501474052512",
     "items": [
       {
-        "title": "Advierten que 2026 será el segundo año más caluroso de la historia y superará el umbral ...",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://radiorafaela.com.ar/interes-general/advierten-que-2026-sera-el-segundo-ano-mas-caluroso-de-la-historia-y-superara-el-umbral-de-15-grados&ct=ga&cd=CAIyGzQ2MTkzMjc4NGVhOTAyN2E6ZGU6ZGU6REU6TA&usg=AOvVaw0HbQfn3ETz4H3AF8df7BI1"
+        "title": "UN chief warns of accelerating Arctic ice loss ahead of COP31 - The Nation",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.nation.com.pk/08-Nov-2026/un-chief-warns-accelerating-arctic-ice-loss-ahead-cop31&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw2SCqtMspo4em3It8I8-_d5"
       },
       {
-        "title": "October was 3rd consecutive month to exceed Paris Agreement threshold: Report",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://twaslnews1.twaslnews.com/7264132/&ct=ga&cd=CAIyGzQ2MTkzMjc4NGVhOTAyN2E6ZGU6ZGU6REU6TA&usg=AOvVaw0g-Xp9MTVRk6jXvT1XbIxt"
+        "title": "<b>Antarctica&#39;s Ice Sheet</b> Near a Tipping Point? Why Melting May Be Irreversible | Planet Pulse",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DMB-tiJEORHs&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw1yQF2gOXVMiyvv90F0X8hK"
       },
       {
-        "title": "This winter could see the strongest El Niño on <b>record</b>, bringing warmth and heavy rain",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://mbiz.heraldcorp.com/article/10929154&ct=ga&cd=CAIyGzQ2MTkzMjc4NGVhOTAyN2E6ZGU6ZGU6REU6TA&usg=AOvVaw0gnEnMH_J3Qy1hzkmGmy6b"
+        "title": "October 2026 Arctic &amp; Alaska <b>Climate</b> Summary",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://alaskaclimate.substack.com/p/october-2026-arctic-and-alaska-climate&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw3ldLArPZ-aWoAAJDTrl3OS"
       },
       {
-        "title": "This winter&#39;s El Niño could be the strongest on <b>record</b> — expect warmth and rain - HERALD",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://mbiz.heraldcorp.com/article/10929266&ct=ga&cd=CAIyGzQ2MTkzMjc4NGVhOTAyN2E6ZGU6ZGU6REU6TA&usg=AOvVaw2ZVi3zyoF9SAkt_v0iQqth"
+        "title": "Inside NEP26A: The 2026 Gulf of Alaska <b>Marine Heatwave</b>",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.thetraveler.org/inside-nep26a-the-2026-gulf-of-alaska-marine-heatwave/&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw3KHeNsBSOb2RCGc1UFIJIA"
       },
       {
-        "title": "Advierten que 2026 será el segundo año más caluroso de la historia - El Litoral",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.ellitoral.com/informacion-general/copernicus-calentamientoglobal-acuerdodeparis-cop31-samanthaburgess-ecmwf-elnino-cambioclimatico-unioneuropea-temperaturamediamundial_0_oQWEcjUEdV.html&ct=ga&cd=CAIyGzQ2MTkzMjc4NGVhOTAyN2E6ZGU6ZGU6REU6TA&usg=AOvVaw3TjlNqir9Cqf-Fr6_QuVvR"
+        "title": "UN admits planet will definitively overshoot 1.5°C warming limit | DD News",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://ddnews.gov.in/en/un-admits-planet-will-definitively-overshoot-1-5c-warming-limit/&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw2CyO7X6_wxpMTQBqLSxBQN"
       }
     ]
   },
   {
-    "category": "Ökosysteme & Biodiversität",
-    "title": "Infektionskrankheiten & Tigermücke",
-    "desc": "Ausbreitung von Dengue, West-Nil und Vektoren durch Erwärmung.",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/10580721722444456079",
+    "category": "4. Wasser, Ozeane & Kryosphäre",
+    "title": "4.2 Wasserressourcen & Konflikte (DE/EN)",
+    "desc": "Trinkwasserknappheit, Grundwasserspiegel, water scarcity, water security und Aquifer depletion.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/17683995206416641364",
     "items": [
       {
-        "title": "<b>Dengue</b> death toll rises to 461 as 3 more die | The Business Standard",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.tbsnews.net/bangladesh/health/dengue-death-toll-rises-461-3-more-die-1596676&ct=ga&cd=CAIyGzYwNzVmZjlkMDMyNmU4NzM6ZGU6ZGU6REU6TA&usg=AOvVaw3_0ptid2ptwf7qRgwZwBNS"
+        "title": "From global solution space to local strategies: integrating adaptation pathways and global ... - Nature",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.nature.com/articles/s44168-026-00439-2&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw3PTwsXi2d76EMkfN0rdTNH"
       },
       {
-        "title": "Margao still in the clutches of <b>dengue</b>. With the BJP MLA turning a blind eye to this health ...",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.instagram.com/reel/Dfej11HDi7L/&ct=ga&cd=CAIyGzYwNzVmZjlkMDMyNmU4NzM6ZGU6ZGU6REU6TA&usg=AOvVaw09LOKacpxAufR0uWZL_Pms"
+        "title": "Iran&#39;s traditional water wisdom could help address modern challenges: heritage official",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.tehrantimes.com/news/531944/Iran-s-traditional-water-wisdom-could-help-address-modern-challenges&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw1cmC-sqdmsUhdf8hKFVrFV"
       },
       {
-        "title": "<b>Dengue</b> cases in Sorsogon rise to over 3000 - Daily Tribune",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://tribune.net.ph/2026/11/08/dengue-cases-in-sorsogon-rise-to-over-3000&ct=ga&cd=CAIyGzYwNzVmZjlkMDMyNmU4NzM6ZGU6ZGU6REU6TA&usg=AOvVaw2Xj48ekjkkpCd-vgl20nW3"
+        "title": "Africa&#39;s agenda at COP31 - YouTube",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/shorts/3vD1VpVvuWM&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw2EONqCSS6wiDavuH7gRusu"
       },
       {
-        "title": "Special <b>dengue</b> prevention week to begin tomorrow across 74 high-risk areas - Ada Derana",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://adaderana.lk/news/251258&ct=ga&cd=CAIyGzYwNzVmZjlkMDMyNmU4NzM6ZGU6ZGU6REU6TA&usg=AOvVaw1a0nm8wLXYZM76yWMn-rEA"
+        "title": "UN Support to help Tunisia address <b>Climate Change</b>, <b>water scarcity</b> and food security",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.tap.info.tn/en/Portal-Headlines/20779618-un-support-to-help&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw04J-WuAocxWTcb2RutSG2o"
       },
       {
-        "title": "Students to lead social movement against <b>dengue</b> under new initiative",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.tbsnews.net/bangladesh/health/students-lead-social-movement-against-dengue-under-new-initiative-1596301&ct=ga&cd=CAIyGzYwNzVmZjlkMDMyNmU4NzM6ZGU6ZGU6REU6TA&usg=AOvVaw2g28GeRX1ankMDK3QdzJsx"
+        "title": "<b>Climate change</b> brings historically hot autumn - DW News",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.dw.com/en/climate-change-brings-historically-hot-autumn/g-79855456&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw0P5jd7k6_1d4R-w7KHRhOo"
       }
     ]
   },
   {
-    "category": "Kritische Rohstoffe & Wirtschaft",
-    "title": "Seltene Erden & Exportkontrollen",
-    "desc": "Geopolitische Restriktionen bei Schlüsselmineralien.",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/4015411613377063764",
+    "category": "5. Ökosysteme & Biodiversität",
+    "title": "5.1 Biodiversität & Artensterben (DE/EN)",
+    "desc": "Artensterben, Insektensterben, Massensterben, Waldsterben, biodiversity loss und extinction events.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/2813110259383019851",
     "items": [
       {
-        "title": "Алльгойские Альпы в Австрии остались без последнего ледника",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://vfokuse.mail.ru/articles/69650775-allgojskie-alpyi-v-avstrii-ostalis-bez-poslednego-lednika/&ct=ga&cd=CAIyGzM5YjRhYmE2NDQyODczYzA6ZGU6ZGU6REU6TA&usg=AOvVaw1axq509LINiuDf8UuodCdG"
+        "title": "East Lothian MSP welcomes Lula&#39;s re-election in Holyrood",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.eastlothiancourier.com/news/26698478.east-lothian-msp-welcomes-lulas-re-election-holyrood/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw3fiq5mhnFZCAFXNA40-5MO"
       },
       {
-        "title": "Октябрь 2026 года стал самым теплым за всю историю метеонаблюдений - Gismeteo",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.gismeteo.by/news/klimat/oktjabr-2026-goda-stal-samym-teplym-za-vsju-istoriju-meteonabljudenij/&ct=ga&cd=CAIyGzM5YjRhYmE2NDQyODczYzA6ZGU6ZGU6REU6TA&usg=AOvVaw2XdfEokIdj2qlzTvK0GWCF"
+        "title": "Die deutsche Politik bleibt „grün und dumm“ - Achgut.com",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.achgut.com/artikel/deutsche_politik_bleibt_gruen_und_dumm&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw1eDhEf8HXa5PILBhQvZF_j"
       },
       {
-        "title": "GISMETEO: «<b>Наводнение</b> тысячелетия» обрушилось на США: города ушли под воду ...",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.gismeteo.ru/news/nature/navodnenie-tysjacheletija-obrushilos-na-ssha-goroda-ushli-pod-vodu-est-pogibshie/&ct=ga&cd=CAIyGzM5YjRhYmE2NDQyODczYzA6ZGU6ZGU6REU6TA&usg=AOvVaw06paVBFDQ-PesBDL1z8k9p"
+        "title": "<b>Klimawandel</b> wirkte wie Evolutionsmotor - Oberösterreichische Nachrichten",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.nachrichten.at/panorama/weltspiegel/klimawandel-wirkte-wie-evolutionsmotor%3Bart17,4228741&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw3lZ2M9sqWknBxcTBVC4ksE"
       },
       {
-        "title": "Леса, высаженные для борьбы с изменением климата, могут повышать риск пожаров",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.gismeteo.ru/news/nature/lesa-vysazhennye-dlja-borby-s-izmeneniem-klimata-mogut-povyshat-risk-pozharov/&ct=ga&cd=CAIyGzM5YjRhYmE2NDQyODczYzA6ZGU6ZGU6REU6TA&usg=AOvVaw1Q4PWqJRGmZ6lDpql5Z6Lh"
+        "title": "City welcomes Maritime Conference resolutions | Berea Mail - The Citizen",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.citizen.co.za/berea-mail/uncategorized/2026/11/08/city-welcomes-maritime-conference-resolutions/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw1WW3rSnzz18GIWRklf9Jy5"
+      },
+      {
+        "title": "CSOs receive 5.2 bn/- for conservation projects - Daily News Tanzania",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://dailynews.co.tz/csos-receive-5-2bn-for-conservation-projects/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw3LcP1K4djw42foyAxUHkuD"
       }
     ]
   },
   {
-    "category": "Gesellschaft & Anpassung",
-    "title": "Hitzeaktionspläne & Schwammstadt",
-    "desc": "Kommunale Vorsorge, Küstenschutz und Entsiegelung.",
-    "url": "https://www.google.de/alerts/feeds/00194388291535362354/15085123558408753068",
+    "category": "5. Ökosysteme & Biodiversität",
+    "title": "5.2 Ökosysteme, Böden & Küsten (DE/EN)",
+    "desc": "Regenwälder, Moore, Bodenversalzung, Küstenerosion, Amazon rainforest, peatland und land degradation.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/7679004975508465418",
     "items": [
       {
-        "title": "NATO is increasingly focused on reinforcing its northern flank amid a rise in Russian <b>military</b> ...",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/InsiderNews/posts/nato-is-increasingly-focused-on-reinforcing-its-northern-flank-amid-a-rise-in-ru/1486767839981262/&ct=ga&cd=CAIyGzZhYmYyMTRmMzA5MTg0NjI6ZGU6ZGU6REU6TA&usg=AOvVaw0DDpj3z91TMbXqbW1HnLjf"
+        "title": "Meet the people saving England&#39;s peatlands - Financial Times",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.ft.com/content/bfc196c9-042d-4ad3-b53c-9248185b7159%3Fsyn-25a6b1a6%3D1&ct=ga&cd=CAIyGzU4NzgwOWI1MDY0ZWM1MWQ6ZGU6ZGU6REU6TA&usg=AOvVaw15mZI8lsY11SmdKJQ8zUbn"
       },
       {
-        "title": "Denmark &amp; NATO Strengthen Arctic Security | <b>Greenland Military</b> Documentary - YouTube",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/shorts/wLuG8QPeKCs&ct=ga&cd=CAIyGzZhYmYyMTRmMzA5MTg0NjI6ZGU6ZGU6REU6TA&usg=AOvVaw2xvoCmK95FagwBcRA_H2Jr"
+        "title": "DOI Minister: <b>Coastal erosion</b> is &#39;key priority&#39; - Manx Radio",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.manxradio.com/news/isle-of-man-news/doi-minister-coastal-erosion-is-key-priority/&ct=ga&cd=CAIyGzU4NzgwOWI1MDY0ZWM1MWQ6ZGU6ZGU6REU6TA&usg=AOvVaw0rFYXXHTvDByHAsEXCKBSN"
       },
       {
-        "title": "Colorado Air Force veteran visits <b>Greenland</b> rescue mission site - YouTube",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DGB6_IG2z65g&ct=ga&cd=CAIyGzZhYmYyMTRmMzA5MTg0NjI6ZGU6ZGU6REU6TA&usg=AOvVaw1XbY-6UxDGYuEf9VJHG6F1"
+        "title": "What to Know About COP31 <b>Climate</b> Talks in Turkey - The New York Times",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.nytimes.com/2026/11/08/climate/what-is-cop31-climate.html&ct=ga&cd=CAIyGzU4NzgwOWI1MDY0ZWM1MWQ6ZGU6ZGU6REU6TA&usg=AOvVaw1zBfRk8xwhhZE4DO7S2tVT"
       },
       {
-        "title": "Russian diplomats and <b>military</b> officials to join talks with US and Ukraine, Kremlin says",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://en.bonikbarta.com/international/YwzI8HGDM9lFlg19&ct=ga&cd=CAIyGzZhYmYyMTRmMzA5MTg0NjI6ZGU6ZGU6REU6TA&usg=AOvVaw2rUGBMR2RYDU2QivAao41z"
+        "title": "COP31 and Bangladesh - New Age",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.newagebd.net/post/opinion/321530/cop31-and-bangladesh&ct=ga&cd=CAIyGzU4NzgwOWI1MDY0ZWM1MWQ6ZGU6ZGU6REU6TA&usg=AOvVaw3lqrK06KEPasYzOS7Tvs7n"
       },
       {
-        "title": "Ukraine war latest: &#39;If I stop training, my body starts falling apart&#39; - Ukrainian veterans taking ...",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://news.sky.com/story/ukraine-war-latest-zelenskyy-starlink-russia-trump-patriot-12541713%3Fpostid%3D6538474&ct=ga&cd=CAIyGzZhYmYyMTRmMzA5MTg0NjI6ZGU6ZGU6REU6TA&usg=AOvVaw2M-QZZItx12ezmCsAh5cBm"
+        "title": "North Pennines National Landscape prepares for <b>climate</b> change - BBC",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.bbc.com/news/articles/c3ewe99dzdlpo&ct=ga&cd=CAIyGzU4NzgwOWI1MDY0ZWM1MWQ6ZGU6ZGU6REU6TA&usg=AOvVaw3fEAZs7xErrFCZTcrM8sOq"
       }
     ]
+  },
+  {
+    "category": "6. Infrastruktur, Energie & Rohstoffe",
+    "title": "6.1 Netze, Energie & Infrastruktur (DE/EN)",
+    "desc": "Kühlwasserengpässe, Netzstabilität, Dunkelflaute, Niedrigwasser, Stadthitze, grid stability und power outages.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/16014836882914929549",
+    "items": []
+  },
+  {
+    "category": "6. Infrastruktur, Energie & Rohstoffe",
+    "title": "6.2 Rohstoffe, Tiefseebergbau & KI-Bedarf (DE/EN)",
+    "desc": "Deep sea mining, Lithium/Kobalt/Seltene Erden, KI-Energiebedarf und data center energy demand.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/10690920530275589964",
+    "items": [
+      {
+        "title": "FluoRok Raises $30 Million In Series A Funding To Scale Hydrogen Fluoride-Free Chemical ...",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://pulse2.com/fluorok-raises-30-million-in-series-a-funding-to-scale-hydrogen-fluoride-free-chemical-manufacturing/&ct=ga&cd=CAIyG2ViYjdiNmMwYWFkNTVkYzk6ZGU6ZGU6REU6TA&usg=AOvVaw1H2a0ptllem0Ful7NNI1_-"
+      },
+      {
+        "title": "Beyond the beaches: The Dominican Republic and the global debate over <b>deep-sea mining</b>",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://globalvoices.org/2026/11/08/beyond-the-beaches-the-dominican-republic-and-the-global-debate-over-deep-sea-mining/&ct=ga&cd=CAIyG2ViYjdiNmMwYWFkNTVkYzk6ZGU6ZGU6REU6TA&usg=AOvVaw2fwQlLiKvevZogFekQ4fin"
+      },
+      {
+        "title": "<b>Lithium&#39;s</b> tale of two markets: What&#39;s driving volatility - Mining.com.au",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://mining.com.au/lithiums-tale-of-two-markets-whats-driving-volatility/&ct=ga&cd=CAIyG2ViYjdiNmMwYWFkNTVkYzk6ZGU6ZGU6REU6TA&usg=AOvVaw1Fsb4B2pQ2J7315l1H6t5a"
+      },
+      {
+        "title": "Europe Rare Earth Supply Security KIT Study 2026",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://rareearthexchanges.com/news/europe-rare-earth-supply-kit-study/&ct=ga&cd=CAIyG2ViYjdiNmMwYWFkNTVkYzk6ZGU6ZGU6REU6TA&usg=AOvVaw0SXLYc-7A1H06wvPFqmere"
+      },
+      {
+        "title": "Old magnets, new tricks: Europe&#39;s push to cut reliance on <b>rare earths</b> | Cyprus Mail",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://cyprus-mail.com/2026/11/08/old-magnets-new-tricks-europes-push-to-cut-reliance-on-rare-earths&ct=ga&cd=CAIyG2ViYjdiNmMwYWFkNTVkYzk6ZGU6ZGU6REU6TA&usg=AOvVaw1VYIixXFpRd3Nt9xk1C2th"
+      }
+    ]
+  },
+  {
+    "category": "7. Wirtschaft, Landwirtschaft & Ernährung",
+    "title": "7.1 Landwirtschaft & Ernteausfälle (DE/EN)",
+    "desc": "Ernteausfälle, Lebensmittelpreise, crop failure, yield loss, food price inflation und food security.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/1911026478231827291",
+    "items": [
+      {
+        "title": "How Droughts, Floods and Unpredictable Rainfall Are Threatening Agriculture and Food Supplies",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://fatumasvoice.org/418516/&ct=ga&cd=CAIyG2MxNDBlOGI4ZmY5NTE1M2Q6ZGU6ZGU6REU6TA&usg=AOvVaw2ApixcTkRXtBPP0cIdJnHG"
+      }
+    ]
+  },
+  {
+    "category": "7. Wirtschaft, Landwirtschaft & Ernährung",
+    "title": "7.2 Finanzmarkt & Risiken (DE/EN)",
+    "desc": "Klimarisiken für Finanzmärkte, Elementarschadenversicherungen, uninsurable risks und climate liabilities.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/14237263890745937070",
+    "items": [
+      {
+        "title": "Viele Gebäude weiterhin ohne <b>Elementarschadenversicherung</b> | tagesschau.de",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.tagesschau.de/wirtschaft/verbraucher/klimaschaeden-versicherungen-100.html&ct=ga&cd=CAIyG2VlMDJhNzk4ZTMwNDFiYWQ6ZGU6ZGU6REU6TA&usg=AOvVaw0IczkEGVh-voFRxmC-TiOF"
+      },
+      {
+        "title": "From commitments to action: Taiwan and the world creating <b>climate</b> solutions together",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://ammannet.net/%25D8%25A3%25D8%25AD%25D8%25AF%25D8%25A7%25D8%25AB/commitments-action-taiwan-and-world-creating-climate-solutions-together&ct=ga&cd=CAIyG2VlMDJhNzk4ZTMwNDFiYWQ6ZGU6ZGU6REU6TA&usg=AOvVaw3vCj7ko_NhrCVwUdhfXf_x"
+      },
+      {
+        "title": "Philippinen planen nationale Strategie gegen dauerhafte Klimaschäden - Klajoo",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://klajoo.com/2026/11/08/philippinen-planen-nationale-strategie-gegen-dauerhafte-klimaschaeden/&ct=ga&cd=CAIyG2VlMDJhNzk4ZTMwNDFiYWQ6ZGU6ZGU6REU6TA&usg=AOvVaw0X9FztpdxVnibt8iBnPhfD"
+      },
+      {
+        "title": "<b>Climate</b> Finance and Justice Take Center Stage at COP31 <b>Climate</b> Summit in Antalya /Report",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://qna.org.qa/en/News-Area/News/2026-11/8/climate-finance-and-justice-take-center-stage-at-cop31-climate-summit-in-antalya-report&ct=ga&cd=CAIyG2VlMDJhNzk4ZTMwNDFiYWQ6ZGU6ZGU6REU6TA&usg=AOvVaw20G5F55r-SJp1ZZhGjLQ4v"
+      },
+      {
+        "title": "Week Ahead: U.S., China, India Inflation Reports; China&#39;s Singles&#39; Day; COP31; ASEAN Summit",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.christophe-barraud.com/week-ahead-u-s-china-india-inflation-reports-chinas-singles-day-cop31-asean-summit-boj-soo-and-boc-minutes-u-k-gdp/&ct=ga&cd=CAIyG2VlMDJhNzk4ZTMwNDFiYWQ6ZGU6ZGU6REU6TA&usg=AOvVaw09dAkB0iDG0o7ZiaYoyokD"
+      }
+    ]
+  },
+  {
+    "category": "8. Politik, Recht & Anpassung",
+    "title": "8.1 Recht, Politik & Lobbyismus (DE/EN)",
+    "desc": "Klimaklagen, climate litigation, COP31, fossile Subventionen, climate disinformation und greenwashing.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/15324808021650325150",
+    "items": [
+      {
+        "title": "<b>COP31</b> Antalya 2026 UN <b>Climate</b> Summit - Arçelik",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.arcelikglobal.com/en/cop31/overview/&ct=ga&cd=CAIyG2Q3ZGVlYmY0ZWYzYmQ5YWU6ZGU6ZGU6REU6TA&usg=AOvVaw2ZWiKhHcmF-P4QfoTTMd-T"
+      },
+      {
+        "title": "Fossil Fuels and <b>Climate</b> Finance Top <b>COP31</b> Agenda - European Relations",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://europeanrelations.com/quick-brief/fossil-fuels-and-climate-finance-top-cop31-agenda/&ct=ga&cd=CAIyG2Q3ZGVlYmY0ZWYzYmQ5YWU6ZGU6ZGU6REU6TA&usg=AOvVaw1TAKq3pBbDuSyYby40ySd_"
+      },
+      {
+        "title": "Turkey is hosting this year&#39;s UN <b>climate</b> summit – <b>COP31</b>. But the country is also facing ... - Facebook",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/deutschewellenews/posts/turkey-is-hosting-this-years-un-climate-summit-cop31-but-the-country-is-also-fac/1598146659007309/&ct=ga&cd=CAIyG2Q3ZGVlYmY0ZWYzYmQ5YWU6ZGU6ZGU6REU6TA&usg=AOvVaw3QrTjGwpW6GW1Eik5QSvsB"
+      },
+      {
+        "title": "#<b>COP31</b> The 31st United Nations <b>Climate</b> Change Conference (<b>COP31</b>) takes place in ... - Facebook",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/ForumSec/posts/cop31the-31st-united-nations-climate-change-conference-cop31-takes-place-in-anta/1567981268699004/&ct=ga&cd=CAIyG2Q3ZGVlYmY0ZWYzYmQ5YWU6ZGU6ZGU6REU6TA&usg=AOvVaw0hYsp3i1UeOCLKJHItuOrp"
+      },
+      {
+        "title": "#<b>COP31</b> The 31st United Nations <b>Climate</b> Change Conference (<b>COP31</b>) takes place in ... - Facebook",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/ForumSec/videos/cop31the-31st-united-nations-climate-change-conference-cop31-takes-place-in-anta/1499056158751968/&ct=ga&cd=CAIyG2Q3ZGVlYmY0ZWYzYmQ5YWU6ZGU6ZGU6REU6TA&usg=AOvVaw2hr5indZ5_QqTD4FahySy7"
+      }
+    ]
+  },
+  {
+    "category": "8. Politik, Recht & Anpassung",
+    "title": "8.2 Anpassung & Geoengineering (DE/EN)",
+    "desc": "Klimaanpassung, climate adaptation, Geoengineering, Solar Radiation Management (SRM) und CDR.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/2447668029530125263",
+    "items": []
+  },
+  {
+    "category": "8. Politik, Recht & Anpassung",
+    "title": "8.3 Militär & Sicherheitspolitik (DE/EN)",
+    "desc": "Sicherheitspolitik, NATO/Pentagon-Berichte, military readiness, defense department und climate security.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/3263068424867222461",
+    "items": []
   }
 ]
