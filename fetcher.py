@@ -1,6 +1,7 @@
 import json
 import urllib.request
 import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
 
 def fetch_all():
     with open('feeds.json', 'r', encoding='utf-8') as f:
@@ -24,13 +25,12 @@ def fetch_all():
                 ns = {'atom': 'http://www.w3.org/2005/Atom'}
                 
                 entries = root.findall('atom:entry', ns)
-                for entry in entries[:15]:
+                for entry in entries[:20]:
                     entry_title = entry.find('atom:title', ns)
                     entry_link = entry.find('atom:link', ns)
                     
                     if entry_title is not None and entry_title.text:
                         t_text = entry_title.text.strip()
-                        # Verhindert, dass HTML-Reste oder Müll angezeigt werden
                         if t_text and t_text.lower() != "null":
                             l_href = entry_link.attrib.get('href', '#') if entry_link is not None else '#'
                             
@@ -43,8 +43,22 @@ def fetch_all():
 
         output_data.append(feed_result)
 
+    # Zeitstempel für den aktuellen Stand und das nächste Update (+4 Stunden)
+    now = datetime.now(timezone(timedelta(hours=1))) # MEZ/MESZ (Beispiel Berlin, oder UTC nutzen)
+    next_run = now + timedelta(hours=4)
+    
+    meta_info = {
+        "last_updated": now.strftime("%d.%m.%Y, %H:%M Uhr"),
+        "next_update": next_run.strftime("%d.%m.%Y, %H:%M Uhr")
+    }
+
+    final_output = {
+        "meta": meta_info,
+        "feeds": output_data
+    }
+
     with open('data.json', 'w', encoding='utf-8') as f:
-        json.dump(output_data, f, ensure_ascii=False, indent=2)
+        json.dump(final_output, f, ensure_ascii=False, indent=2)
 
 if __name__ == '__main__':
     fetch_all()
