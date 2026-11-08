@@ -63,7 +63,7 @@
     ]
   },
   {
-    "category": "Extreme Wetterereignisse",
+    "category": "Gesellschaft & Anpassung",
     "title": "Militärische Katastrophenhilfe",
     "desc": "Einsätze der Bundeswehr und von Armeen bei Naturkatastrophen.",
     "url": "https://www.google.de/alerts/feeds/00194388291535362354/16813069292748342565",
@@ -120,10 +120,14 @@
   },
   {
     "category": "Ökosysteme & Biodiversität",
-    "title": "Infeptionskrankheiten & Tigermücke",
+    "title": "Infektionskrankheiten & Tigermücke",
     "desc": "Ausbreitung von Dengue, West-Nil und Vektoren durch Erwärmung.",
     "url": "https://www.google.de/alerts/feeds/00194388291535362354/10580721722444456079",
     "items": [
+      {
+        "title": "Margao still in the clutches of <b>dengue</b>. With the BJP MLA turning a blind eye to this health ...",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.instagram.com/reel/Dfej11HDi7L/&ct=ga&cd=CAIyGzYwNzVmZjlkMDMyNmU4NzM6ZGU6ZGU6REU6TA&usg=AOvVaw09LOKacpxAufR0uWZL_Pms"
+      },
       {
         "title": "<b>Dengue</b> cases in Sorsogon rise to over 3000 - Daily Tribune",
         "link": "https://www.google.com/url?rct=j&sa=t&url=https://tribune.net.ph/2026/11/08/dengue-cases-in-sorsogon-rise-to-over-3000&ct=ga&cd=CAIyGzYwNzVmZjlkMDMyNmU4NzM6ZGU6ZGU6REU6TA&usg=AOvVaw2Xj48ekjkkpCd-vgl20nW3"
@@ -139,10 +143,6 @@
       {
         "title": "<b>Dengue</b> cases in Sorsogon rise to over 3000 - Daily Tribune",
         "link": "https://www.google.com/url?rct=j&sa=t&url=https://tribune.net.ph/story/f6c6f20a-4e04-4b16-b8ec-15884f1f5398/element/6083ebf4-812b-4d4c-85b7-7b43138dd79f&ct=ga&cd=CAIyGzYwNzVmZjlkMDMyNmU4NzM6ZGU6ZGU6REU6TA&usg=AOvVaw0iED7tAPT3xpQ-iPOkOEC8"
-      },
-      {
-        "title": "<b>Dengue</b> cases top 170,000 as experts warn of unpredictable <b>spread</b> | DTiNews",
-        "link": "https://www.google.com/url?rct=j&sa=t&url=https://dtinews.dantri.com.vn/vietnam-today/dengue-cases-top-170000-as-experts-warn-of-unpredictable-spread-20261108155039543.htm&ct=ga&cd=CAIyGzYwNzVmZjlkMDMyNmU4NzM6ZGU6ZGU6REU6TA&usg=AOvVaw0L7APzgj9WAlb9T9sDn2a0"
       }
     ]
   },
