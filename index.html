@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klima-Krisen-Dashboard</title>
+    <title>Crisis-Tracker</title>
     <style>
         :root {
             --bg-color: #f3f4f6;
@@ -36,6 +36,23 @@
             margin-bottom: 6px;
             color: var(--text-main);
             font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .main-info-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.4rem;
+            padding: 0;
+            vertical-align: middle;
+            transition: transform 0.2s;
+        }
+
+        .main-info-btn:hover {
+            transform: scale(1.1);
         }
 
         header p {
@@ -197,14 +214,18 @@
         .modal-content {
             background: var(--section-bg);
             border: 1px solid var(--border);
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 400px;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 550px;
             width: 100%;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            max-height: 85vh;
+            overflow-y: auto;
         }
-        .modal-content h3 { margin-top: 0; color: var(--accent); font-size: 1.1rem; }
-        .modal-content p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 20px; }
+        .modal-content h3 { margin-top: 0; color: var(--accent); font-size: 1.2rem; }
+        .modal-content p, .modal-content ul { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 15px; }
+        .modal-content ul { padding-left: 20px; }
+        .modal-content li { margin-bottom: 6px; }
         .close-modal {
             background: var(--accent);
             color: #ffffff;
@@ -220,8 +241,11 @@
 <body>
 
     <header>
-        <h1>🌍 Crisis-Tracker</h1>
-        <p>Automated real-time monitoring of global climate signals and impacts.</p>
+        <h1>
+            🌍 Crisis-Tracker 
+            <button class="main-info-btn" onclick="openMainModal()" title="Über den Crisis-Tracker">ℹ️</button>
+        </h1>
+        <p>Automated real-time monitoring of global climate signals and impacts</p>
     </header>
 
     <div class="search-container">
@@ -244,9 +268,10 @@
     <script>
         async function loadDashboard() {
             try {
-                const response = await fetch('data.json?t=' + Date.now());
-                if (!response.ok) throw new Error('Netzwerk-Antwort war nicht ok');
-                const data = await response.json();
+                const response =- await fetch('data.json?t=' + Date.now());
+                const responseOk = await fetch('data.json?t=' + Date.now());
+                if (!responseOk.ok) throw new Error('Netzwerk-Antwort war nicht ok');
+                const data = await responseOk.json();
                 renderDashboard(data);
             } catch (error) {
                 console.error(error);
@@ -307,9 +332,28 @@
             }
         }
 
+        window.openMainModal = function() {
+            document.getElementById('modal-title').textContent = "Über den Crisis-Tracker";
+            document.getElementById('modal-desc').innerHTML = `
+                <p><strong>Automated real-time monitoring of global climate signals and impacts.</strong></p>
+                <p>Der Crisis-Tracker ist ein hochspezialisiertes, automatisiertes Monitoring-System, das globale Medienberichte, wissenschaftliche Studien und Krisenmeldungen rund um die Klimakrise bündelt und übersichtlich darstellt.</p>
+                <p><strong>Wie funktioniert das System?</strong></p>
+                <ul>
+                    <li><strong>Google Alerts & RSS:</strong> Im Hintergrund überwachen präzise, zweisprachige (DE/EN) Suchabfragen mit ausgeklügelten Negativfiltern das weltweite Geschehen.</li>
+                    <li><strong>GitHub Automation:</strong> Ein im Stundentakt (alle 4 Stunden automatisch) laufender Python-Skript-Robot zieht die neuesten Meldungen ab und aktualisiert das Dashboard vollautomatisch, ohne manuelle Eingriffe.</li>
+                    <li><strong>Design & Struktur:</strong> Aufgeteilt in 8 Kernbereiche (von Extremwetter über Kipppunkte bis hin zu Wirtschaft und Sicherheit) liefert das Tool einen kompakten, rauschfreien Überblick.</li>
+                </ul>
+                <p><strong>Hintergrund & Entstehung:</strong></p>
+                <p>Der Entwickler dieses Dashboards ist kein professioneller Software-Entwickler, sondern hat dieses mächtige Tool von Grund auf in enger und kreativer Zusammenarbeit mit der KI <strong>Gemini</strong> konzipiert, gebaut und optimiert.</p>
+                <p><strong>Ausblick:</strong></p>
+                <p>Das System ist modular aufgebaut und wird kontinuierlich weiter ausgebaut, um neue Datenquellen, intelligentere Filter und noch tiefgreifendere Analysen zu integrieren.</p>
+            `;
+            document.getElementById('modal').style.display = 'flex';
+        }
+
         window.openModal = function(title, desc) {
             document.getElementById('modal-title').textContent = title;
-            document.getElementById('modal-desc').textContent = desc || "Keine Beschreibung hinterlegt.";
+            document.getElementById('modal-desc').innerHTML = `<p>${desc || "Keine Beschreibung hinterlegt."}</p>`;
             document.getElementById('modal').style.display = 'flex';
         }
 
