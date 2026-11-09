@@ -43,8 +43,8 @@ def fetch_all():
 
         output_data.append(feed_result)
 
-    # Zeitstempel für den aktuellen Stand und das nächste Update (+4 Stunden)
-    now = datetime.now(timezone(timedelta(hours=1))) # MEZ/MESZ (Beispiel Berlin, oder UTC nutzen)
+    # Zeitstempel (MEZ/MESZ)
+    now = datetime.now(timezone(timedelta(hours=1)))
     next_run = now + timedelta(hours=4)
     
     meta_info = {
@@ -52,6 +52,7 @@ def fetch_all():
         "next_update": next_run.strftime("%d.%m.%Y, %H:%M Uhr")
     }
 
+    # 1. JSON speichern
     final_output = {
         "meta": meta_info,
         "feeds": output_data
@@ -59,6 +60,67 @@ def fetch_all():
 
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(final_output, f, ensure_ascii=False, indent=2)
+
+    # 2. Statische Text-Unterseite (summary.html) generieren
+    generate_summary_html(meta_info, output_data)
+
+def generate_summary_html(meta, feeds):
+    categories = {}
+    for feed in feeds:
+        cat = feed.get("category", "Allgemein")
+        if cat not in categories:
+            categories[cat] = []
+        categories[cat].append(feed)
+
+    html_content = f"""<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis-Tracker | KI-Digest & Klartext-Übersicht</title>
+    <style>
+        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f3f4f6; color: #111827; margin: 0; padding: 20px; line-height: 1.5; }}
+        .container {{ max-width: 800px; margin: 0 auto; background: #ffffff; padding: 25px; border-radius: 10px; border: 1px solid #e5e7eb; }}
+        h1 {{ color: #8b0000; font-size: 1.6rem; margin-top: 0; }}
+        .meta {{ color: #4b5563; font-size: 0.85rem; border-bottom: 2px solid #8b0000; padding-bottom: 10px; margin-bottom: 20px; }}
+        h2 {{ color: #8b0000; font-size: 1.2rem; margin-top: 25px; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; }}
+        h3 {{ font-size: 1rem; margin-top: 15px; margin-bottom: 8px; color: #111827; }}
+        ul {{ padding-left: 20px; margin: 0 0 15px 0; font-size: 0.9rem; }}
+        li {{ margin-bottom: 4px; }}
+        a {{ color: #990000; text-decoration: none; }}
+        a:hover {{ text-decoration: underline; }}
+        .back-link {{ display: inline-block; margin-bottom: 15px; font-weight: bold; color: #8b0000; text-decoration: none; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Zurück zum Haupt-Dashboard</a>
+        <h1>🌍 Crisis-Tracker: Feed-Digest & Text-Archiv</h1>
+        <div class="meta">
+            Datenstand: <strong>{meta['last_updated']}</strong> | Nächste Aktualisierung: <strong>{meta['next_update']}</strong>
+        </div>
+        <p><em>Diese Seite enthält alle aktuellen Meldungen als strukturierten Klartext – optimal geeignet zum Überfliegen oder Kopieren für KI-Analysen.</em></p>
+    """
+
+    for cat_name, cat_feeds in categories.items():
+        html_content += f"\n<h2>📌 {cat_name}</h2>"
+        for feed in cat_feeds:
+            html_content += f"\n<h3>{feed['title']}</h3>"
+            if feed['items']:
+                html_content += "\n<ul>"
+                for item in feed['items']:
+                    html_content += f"\n  <li><a href=\"{item['link']}\" target=\"_blank\">{item['title']}</a></li>"
+                html_content += "\n</ul>"
+            else:
+                html_content += "\n<p><em>Keine aktuellen Meldungen.</em></p>"
+
+    html_content += """
+    </div>
+</body>
+</html>"""
+
+    with open('summary.html', 'w', encoding='utf-8') as f:
+        f.write(html_content)
 
 if __name__ == '__main__':
     fetch_all()
