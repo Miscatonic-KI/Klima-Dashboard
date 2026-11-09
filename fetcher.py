@@ -1,5 +1,6 @@
 import json
 import os
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -65,7 +66,7 @@ def fetch_all():
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(final_output, f, ensure_ascii=False, indent=2)
 
-    # 2. KI-Zusammenfassung via Gemini (gemini-3.8-flash) generieren
+    # 2. KI-Zusammenfassung via Gemini (inkl. automatischem Retry bei Überlastung)
     ai_summary_html = generate_ai_summary(all_titles_for_ai)
 
     # 3. summary.html speichern
@@ -77,10 +78,9 @@ def generate_ai_summary(titles_list):
         print("Kein GEMINI_API_KEY gefunden. KI-Zusammenfassung wird übersprungen.")
         return "<p><em>KI-Zusammenfassung derzeit nicht verfügbar (API-Key fehlt).</em></p>"
 
-    try:
-        client = genai.Client(api_key=api_key)
-        
-        prompt = f"""
+    client = genai.Client(api_key=api_key)
+    
+    prompt = f"""
 Du bist ein professioneller Klima-Analyst. Analysiere die folgenden aktuellen Schlagzeilen und erstelle einen kompakten Krisen-Lagebericht in genau 3 Absätzen (Formatierung in sauberem HTML mit <p> und inline <a> Links zu den passenden Quellen aus den Daten):
 
 1. Absatz: Die kritischsten Extremwetter-Ereignisse
@@ -95,14 +95,23 @@ WICHTIG:
 Hier sind die aktuellen Schlagzeilen:
 """ + "\n".join(titles_list[:60])
 
-        response = client.models.generate_content(
-            model='gemini-3.8-flash',
-            contents=prompt,
-        )
-        return response.text
-    except Exception as e:
-        print(f"Fehler bei der Gemini-API-Generierung: {e}")
-        return f"<p><em>Fehler bei der KI-Generierung: {e}</em></p>"
+    # Versuche es bis zu 3 Mal bei Server-Überlastung (503)
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            response = client.models.generate_content(
+                model='gemini-3.8-flash',
+                contents=prompt,
+            )
+            return response.text
+        except Exception as e:
+            print(f"Versuch {attempt + 1} fehlgeschlagen: {e}")
+            if attempt < max_retries - 1:
+                wait_time = (attempt + 1) * 5  # Wartet beim ersten Mal 5s, dann 10s
+                print(f"Warte {wait_time} Sekunden und versuche es erneut...")
+                time.sleep(wait_time)
+            else:
+                return f"<p><em>KI-Zusammenfassung temporär nicht verfügbar (Server überlastet): {e}</em></p>"
 
 def save_summary_html(meta_info, output_data, ai_summary_html):
     html_content = f"""<!DOCTYPE html>
