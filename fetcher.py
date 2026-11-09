@@ -65,7 +65,7 @@ def fetch_all():
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(final_output, f, ensure_ascii=False, indent=2)
 
-    # 2. KI-Zusammenfassung via Gemini generieren
+    # 2. KI-Zusammenfassung via Gemini (gemini-3.8-flash) generieren
     ai_summary_html = generate_ai_summary(all_titles_for_ai)
 
     # 3. summary.html speichern
@@ -81,7 +81,7 @@ def generate_ai_summary(titles_list):
         client = genai.Client(api_key=api_key)
         
         prompt = f"""
-Du bist ein professioneller Klima-Analyst. Analysiere die folgenden aktuellen Schlagzeilen und erstelle einen kompakten Krisen-Lagebericht in genau 3 Absätzen (Formatierung in sauberm HTML mit <p> und inline <a> Links zu den passenden Quellen aus den Daten):
+Du bist ein professioneller Klima-Analyst. Analysiere die folgenden aktuellen Schlagzeilen und erstelle einen kompakten Krisen-Lagebericht in genau 3 Absätzen (Formatierung in sauberem HTML mit <p> und inline <a> Links zu den passenden Quellen aus den Daten):
 
 1. Absatz: Die kritischsten Extremwetter-Ereignisse
 2. Absatz: Fortschritte oder Rückschläge in der Klimaforschung
