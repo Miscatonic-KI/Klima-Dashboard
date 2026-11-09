@@ -78,8 +78,11 @@ def generate_ai_summary(titles_list):
         print("Kein GEMINI_API_KEY gefunden. KI-Zusammenfassung wird übersprungen.")
         return "<p><em>KI-Zusammenfassung derzeit nicht verfügbar (API-Key fehlt).</em></p>"
 
-    client = genai.Client(api_key=api_key)
-    
+        # HIER IST DIE ÄNDERUNG: Wir zwingen ihn auf 'v1beta'
+    client = genai.Client(
+        api_key=api_key, 
+        http_options={'api_version': 'v1beta'}
+    )
     prompt = f"""
 Du bist ein professioneller Klima-Analyst. Analysiere die folgenden aktuellen Schlagzeilen und erstelle einen kompakten Krisen-Lagebericht in genau 3 Absätzen (Formatierung in sauberem HTML mit <p> und inline <a> Links zu den passenden Quellen aus den Daten):
 
