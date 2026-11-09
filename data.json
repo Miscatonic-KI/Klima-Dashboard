@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "09.11.2026, 01:41 Uhr",
-    "next_update": "09.11.2026, 05:41 Uhr"
+    "last_updated": "09.11.2026, 04:28 Uhr",
+    "next_update": "09.11.2026, 08:28 Uhr"
   },
   "feeds": [
     {
@@ -717,6 +717,10 @@
       "desc": "Kühlwasserengpässe, Netzstabilität, Dunkelflaute, Niedrigwasser, Stadthitze, grid stability und power outages.",
       "url": "https://www.google.de/alerts/feeds/09273100019627181923/16014836882914929549",
       "items": [
+        {
+          "title": "Zaporizhzhia Nuclear <b>Power Plant</b> restores external power after blackout",
+          "link": "https://www.google.com/url?rct=j&sa=t&url=https://mezha.net/eng/news/mezha-c647adb58046a3c5522ebc56_zaporizhzhia_nuclear_power/&ct=ga&cd=CAIyG2QzNGZlYjUwMjJlN2M2ODg6ZGU6ZGU6REU6TA&usg=AOvVaw3DIjFd2X7fKx56PpZkng-J"
+        },
         {
           "title": "Hydro One plans <b>power outage</b> west of London impacting 2,600 customers Sunday morning",
           "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.cbc.ca/news/canada/london/hydro-one-planned-outage-9.7409672&ct=ga&cd=CAIyG2QzNGZlYjUwMjJlN2M2ODg6ZGU6ZGU6REU6TA&usg=AOvVaw3bbkRTBx5qbuVIyAI05fL1"
