@@ -2,14 +2,14 @@ name: Update Feeds
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Garantiert die Schreibrechte direkt im Job
+      contents: write
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v3
@@ -19,7 +19,13 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Feeds abrufen
+      - name: Abhängigkeiten installieren
+        run: |
+          pip install google-genai
+
+      - name: Feeds & KI-Lagebericht abrufen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python fetcher.py
 
       - name: Änderungen speichern & hochladen
@@ -28,5 +34,5 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git pull origin main --rebase || true
           git add data.json summary.html
-          git commit -m "Automatisches Feed-Update & Summary-Generierung" || exit 0
+          git commit -m "Automatisches Update: data.json & summary.html mit KI-Bericht" || exit 0
           git push
