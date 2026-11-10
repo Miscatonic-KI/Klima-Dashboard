@@ -2,99 +2,147 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Klima-Dashboard - Lagebericht & Feed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis-Tracker | KI-Digest & Klartext-Übersicht</title>
     <style>
-        body { font-family: system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.6; background: #0f172a; color: #e2e8f0; }
-        h1, h2, h3 { color: #f8fafc; }
-        a { color: #38bdf8; text-decoration: none; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f3f4f6; color: #111827; margin: 0; padding: 20px; line-height: 1.5; }
+        .container { max-width: 800px; margin: 0 auto; background: #ffffff; padding: 25px; border-radius: 10px; border: 1px solid #e5e7eb; }
+        h1 { color: #8b0000; font-size: 1.6rem; margin-top: 0; }
+        .meta { color: #4b5563; font-size: 0.85rem; border-bottom: 2px solid #8b0000; padding-bottom: 10px; margin-bottom: 20px; }
+        h2 { color: #8b0000; font-size: 1.2rem; margin-top: 25px; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; }
+        h3 { font-size: 1rem; margin-top: 15px; margin-bottom: 8px; color: #111827; }
+        ul { padding-left: 20px; margin: 0 0 15px 0; font-size: 0.9rem; }
+        li { margin-bottom: 4px; }
+        a { color: #990000; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .meta { color: #94a3b8; font-size: 0.9em; margin-bottom: 25px; border-bottom: 1px solid #334155; padding-bottom: 15px; }
-        .ai-report { background: #1e293b; padding: 25px; border-radius: 8px; border-left: 4px solid #38bdf8; margin-bottom: 40px; }
-        ul { margin-bottom: 30px; }
-        li { margin-bottom: 8px; }
+        .back-link { display: inline-block; margin-bottom: 15px; font-weight: bold; color: #8b0000; text-decoration: none; }
     </style>
 </head>
 <body>
-    <a href="index.html">← Zurück zum Dashboard</a>
-    <h1>🌍 Klima Crisis-Tracker: Automatisch generierter Lagebericht</h1>
-    <div class="meta">Datenstand: <strong>10.11.2026, 01:28 Uhr</strong></div>
-
-    <h2>🤖 KI-Krisen-Lagebericht (by Google Gemini)</h2>
-    <div class="ai-report">
-        <p><em>KI-Zusammenfassung temporär nicht verfügbar (Server überlastet): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).', 'status': 'NOT_FOUND'}}</em></p>
-    </div>
-
-    <h2>📌 Rohdaten-Feeds</h2>
+    <div class="container">
+        <a href="index.html" class="back-link">← Zurück zum Haupt-Dashboard</a>
+        <h1>🌍 Crisis-Tracker: Feed-Digest & Text-Archiv</h1>
+        <div class="meta">
+            Datenstand: <strong>10.11.2026, 03:15 Uhr</strong> | Nächste Aktualisierung: <strong>10.11.2026, 07:15 Uhr</strong>
+        </div>
+        <p><em>Diese Seite enthält alle gesammelten Meldungen (bis zu 60 pro Kategorie) als Klartext.</em></p>
+    
+<h2>📌 1. Extreme Wetterereignisse & Naturkatastrophen</h2>
 <h3>1.1 Extremwetter & Überschwemmungen (DE/EN)</h3>
 <ul>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://science.orf.at/stories/3238112/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3g6GA2IMomGhHduH_vDJZX" target="_blank">Weltwetterorganisation: 2027 könnte wärmstes Jahr werden - science.ORF.at</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.idos-research.de/die-aktuelle-kolumne/article/die-sturzflut-in-nepal-ein-weckruf-fuer-globale-klimasolidaritaet/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0CGPVgwYekWuu9LBL4RCgV" target="_blank">Die Sturzflut in Nepal: Ein Weckruf für globale Klimasolidarität?</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.idos-research.de/die-aktuelle-kolumne/article/die-sturzflut-in-nepal-ein-weckruf-fuer-globale-klimasolidaritaet/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0CGPVgwYekWuu9LBL4RCgV" target="_blank">Die <b>Sturzflut</b> in Nepal: Ein Weckruf für globale Klimasolidarität?</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.unep-wcmc.org/en/news/working-with-nature-5-ways-countries-are-overcoming-barriers-to-climate-adaptation&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw1D_dOLCvl5e37QxE60CTst" target="_blank">Working with nature: 5 ways countries are overcoming barriers to climate adaptation</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.lessentiel.lu/de/story/wmo-warnt-klimakrise-und-el-nino-2027-drohen-neue-hitzerekorde-103664539&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0HXvpXLoI_pLDp0pSWUfXR" target="_blank">Hitzerekorde 2027: Warum El Niño die Klimakrise weiter verschärft - L'essentiel</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.atlantanewsfirst.com/2026/11/08/mccaysville-cleans-up-flood-ravaged-community-leans-prayer-after-deadly-disaster/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2wfTzarWzFnFGUobwykVIk" target="_blank">Flood-ravaged McCaysville leans on prayer after deadly disaster - Atlanta News First</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.lessentiel.lu/de/story/wmo-warnt-klimakrise-und-el-nino-2027-drohen-neue-hitzerekorde-103664539&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0HXvpXLoI_pLDp0pSWUfXR" target="_blank">Hitzerekorde 2027: Warum El Niño die <b>Klimakrise</b> weiter verschärft - L&#39;essentiel</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.atlantanewsfirst.com/2026/11/08/mccaysville-cleans-up-flood-ravaged-community-leans-prayer-after-deadly-disaster/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2wfTzarWzFnFGUobwykVIk" target="_blank">Flood-ravaged McCaysville leans on prayer after deadly <b>disaster</b> - Atlanta News First</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.radiokw.de/artikel/wetterorganisation-2027-koennte-globalen-waermerekord-brechen-2801369&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw1Vc9BIZoYnxfkDm2PuIdbS" target="_blank">Wetterorganisation: 2027 könnte globalen Wärmerekord brechen - Radio K.W.</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://ein.az.gov/disaster-assistance-center-opens-flood-impacted-residents&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0Rcg9_fFPcY3lQ6AtBz4Eo" target="_blank">Disaster Assistance Center opens for flood-impacted residents</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://ein.az.gov/disaster-assistance-center-opens-flood-impacted-residents&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0Rcg9_fFPcY3lQ6AtBz4Eo" target="_blank"><b>Disaster</b> Assistance Center opens for flood-impacted residents</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.wiwo.de/politik/ausland/un-klimakonferenz-wetterorganisation-2027-koennte-globalen-waermerekord-brechen/100268356.html&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0-MufXhtSYYwUNE7wCvle3" target="_blank">UN-Klimakonferenz: Wetterorganisation: 2027 könnte globalen Wärmerekord brechen</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://english.www.gov.cn/news/202611/09/content_WS6af16efac6d00ca5f9a0e2f7.html&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3pe1lpD-RWEG6gdSnrr9ym" target="_blank">How Xi steers China's green transformation and global climate action</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://english.www.gov.cn/news/202611/09/content_WS6af16efac6d00ca5f9a0e2f7.html&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3pe1lpD-RWEG6gdSnrr9ym" target="_blank">How Xi steers China&#39;s green transformation and global climate action</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.mt.de/weltnews/nachrichten/nachrichten-aktuell/Wetterorganisation-2027-koennte-globalen-Waermerekord-brechen-24458725.html&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3zf9JTT66t2zBx85G69A38" target="_blank">Wetterorganisation: 2027 könnte globalen Wärmerekord brechen | Nachrichten Aktuell</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://msf.org.au/article/stories-patients-staff/us-climate-change-not-something-future-it-already-here&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw109q7_hqBcmmeE0vlpWVrc" target="_blank">For us, climate change is not something in the future. It is already here. - MSF</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DX8xSCcfdeoA&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw00AsMh2Hi4WEJ5e2q9a1Op" target="_blank">Historic flooding hits Colorado's Pagosa Springs. Again - YouTube</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3Dfn0KAd1SCQ8&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw28Np1eaj3GKABqsGLyVJR_" target="_blank">Flooding impact on drought, and how climate change factors in - YouTube</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.eurekalert.org/news-releases/1150081&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2GQWOgvXYcVoDsm9P1DPB6" target="_blank">Despite sacrificing people after catastrophic El Niño flooding, ancient societies were ... - EurekAlert!</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.wtkr.com/news/environment/flooding-impact-on-drought-and-how-climate-change-factors-in&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0aQotYyI44J0W9jJm9qKzf" target="_blank">Flooding impact on drought, and how climate change factors in - WTKR</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://msf.org.au/article/stories-patients-staff/us-climate-change-not-something-future-it-already-here&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw109q7_hqBcmmeE0vlpWVrc" target="_blank">For us, <b>climate change</b> is not something in the future. It is already here. - MSF</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DX8xSCcfdeoA&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw00AsMh2Hi4WEJ5e2q9a1Op" target="_blank">Historic <b>flooding</b> hits Colorado&#39;s Pagosa Springs. Again - YouTube</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3Dfn0KAd1SCQ8&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw28Np1eaj3GKABqsGLyVJR_" target="_blank"><b>Flooding</b> impact on drought, and how <b>climate change</b> factors in - YouTube</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.eurekalert.org/news-releases/1150081&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2GQWOgvXYcVoDsm9P1DPB6" target="_blank">Despite sacrificing people after catastrophic El Niño <b>flooding</b>, ancient societies were ... - EurekAlert!</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.wtkr.com/news/environment/flooding-impact-on-drought-and-how-climate-change-factors-in&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0aQotYyI44J0W9jJm9qKzf" target="_blank"><b>Flooding</b> impact on drought, and how <b>climate change</b> factors in - WTKR</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.merkur.de/lokales/starnberg/tutzing-ort29607/tutzing-plant-klimaanpassungskonzept-aber-120-000-euro-ohne-foerderung-94579754.html&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3iEitMk8yXuL8LCiwm9Yhb" target="_blank">Tutzing plant Klimaanpassungskonzept und Risikomanagement</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.wn.de/muensterland/kreis-steinfurt/ladbergen/burkhard-spinnen-spricht-ueber-unbequeme-wahrheiten-3712829&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2cxd1LtuGpkLLHCMCcaP1a" target="_blank">Burkhard Spinnen spricht über unbequeme Wahrheiten - Westfälische Nachrichten</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.qra.qld.gov.au/news-case-studies/case-studies/unbreakable-farmer-sharing-weight-wet&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0Kx-LmHmSPXTCRYQvnj3-Q" target="_blank">Unbreakable Farmer sharing the weight of the wet | Queensland Reconstruction Authority</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.japantimes.co.jp/news/2026/11/09/world/refugees-turkey-climate-change/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2Sfjwkj12X9gPSZJ4JUFQC" target="_blank">War drove refugees into Turkey. <b>Climate change</b> is making it harder to leave.</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.nadadventist.org/news/adventist-community-services-helps-coordinate-response-to-flooding-in-the-southwest/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3WZmj8VHmBBOp4Jl-KiQxD" target="_blank">Adventist Community Services Helps Coordinate Response to <b>Flooding</b> in the Southwest U.S.</a></li>
 </ul>
 <h3>1.2 Hitze, Dürre & Brände (DE/EN)</h3>
 <ul>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.fr.de/politik/kampagne-gegen-sexismus-in-der-klimakrise-cop31-frauen-care-94581492.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0THDY0rYjRG8YYDvoqMC6t" target="_blank">Kampagne gegen Sexismus in der Klimakrise</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.fr.de/politik/kampagne-gegen-sexismus-in-der-klimakrise-cop31-frauen-care-94581492.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0THDY0rYjRG8YYDvoqMC6t" target="_blank">Kampagne gegen Sexismus in der <b>Klimakrise</b></a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/die-eu-bereitet-sich-auf-drei-grad-erderwaermung-vor-201642712.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0S36m76tP1BA6Y_lvULjya" target="_blank">Klimaanpassung: Die EU bereitet sich auf drei Grad Erderwärmung vor - FAZ</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.latimes.com/california/story/2026-11-09/cruise-ship-employee-rescued-after-spending-nine-hours-in-ocean-off-catalina&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1Y8IUAagg4_8oT27gsUiLD" target="_blank">Cruise ship employee rescued after spending nine hours in the ocean off Catalina</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.handelsblatt.com/politik/international/klimagipfel-cop31-in-antalya-hat-begonnen-die-klimakonferenz-in-bildern/100268432.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1vkX4Szy0AHY109jrv0bKj" target="_blank">Klimagipfel: COP31 in Antalya hat begonnen – Die Klimakonferenz in Bildern - Handelsblatt</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.nhpr.org/nh-news/2026-11-09/abnormally-dry-conditions-warm-temps-intensified-wild-river-fire-in-nhs-white-mountains&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3_wLGTQlegjiaERcJVgigN" target="_blank">Abnormally dry conditions, warm temps intensified Wild River Fire in NH's White Mountains</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.derstandard.de/story/3000000348267/agrana-chef-erwartet-wegen-d252rre-preissteigerungen-bei-zucker&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3M29ICV_7n-SGaxWWbIEgf" target="_blank">Wegen Dürre: Agrana-Chef erwartet im kommenden Jahr höhere Preise für Zucker</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.nhpr.org/nh-news/2026-11-09/abnormally-dry-conditions-warm-temps-intensified-wild-river-fire-in-nhs-white-mountains&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3_wLGTQlegjiaERcJVgigN" target="_blank">Abnormally dry conditions, warm temps intensified Wild River Fire in NH&#39;s White Mountains</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.derstandard.de/story/3000000348267/agrana-chef-erwartet-wegen-d252rre-preissteigerungen-bei-zucker&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3M29ICV_7n-SGaxWWbIEgf" target="_blank">Wegen <b>Dürre</b>: Agrana-Chef erwartet im kommenden Jahr höhere Preise für Zucker</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.heise.de/news/Klimaerwaermung-kann-Menschheit-die-Moeglichkeit-zum-Handeln-nehmen-11516923.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0WI8kWqOqeZZuuQXARRjdY" target="_blank">Klimaerwärmung kann Menschheit die Möglichkeit zum Handeln nehmen | heise online</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.nd-aktuell.de/artikel/1203760.cop-klimawandel-jenseits-aller-massstaebe.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3AUTojgfFtHqZvWrbcqn0c" target="_blank">COP 31 – Klimawandel »jenseits aller Maßstäbe« | nd-aktuell.de</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://plan-international.org/news/2026/11/09/cop31-drought-climate-disaster-doing-most-harm-girls/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw2h38C1Fd3GZGmkgI3JvQC1" target="_blank">COP31: Drought is climate disaster doing most harm to girls | Plan International</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.migazin.de/2026/11/09/cop31-antalya-klimakrise-millionen-gefluechtete-hilfen/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw2LiZzZBNxnnz2SppQw2tU_" target="_blank">COP31: Fast 90 Millionen Vertriebene durch Klimakrise bedroht - MiGAZIN</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.nd-aktuell.de/artikel/1203760.cop-klimawandel-jenseits-aller-massstaebe.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3AUTojgfFtHqZvWrbcqn0c" target="_blank">COP 31 – <b>Klimawandel</b> »jenseits aller Maßstäbe« | nd-aktuell.de</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://plan-international.org/news/2026/11/09/cop31-drought-climate-disaster-doing-most-harm-girls/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw2h38C1Fd3GZGmkgI3JvQC1" target="_blank">COP31: <b>Drought</b> is climate disaster doing most harm to girls | Plan International</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.migazin.de/2026/11/09/cop31-antalya-klimakrise-millionen-gefluechtete-hilfen/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw2LiZzZBNxnnz2SppQw2tU_" target="_blank">COP31: Fast 90 Millionen Vertriebene durch <b>Klimakrise</b> bedroht - MiGAZIN</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.morgenpost.de/ratgeber-wissen/article413632463/klimawandel-warum-2027-noch-heisser-werden-koennte-als-2026.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw2IW8jHSTt57eoW673YgEc0" target="_blank">Klima: 2026 zählt zu den heißesten Jahren – Wird 2027 noch extremer? - Berliner Morgenpost</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.handelsblatt.com/politik/international/cop31-klimagipfel-startet-vor-dem-heissesten-jahr-jemals/100268308.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw23jhy4wSbbKSDKPABMg0BH" target="_blank">COP31: Klimagipfel startet – vor dem heißesten Jahr jemals? - Handelsblatt</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.euronews.com/2026/11/09/climate-crisis-now-a-health-emergency-of-pandemic-scale-un-climate-chief-warns&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3BU4LoUPZTqoiGRmhBQoz_" target="_blank">Climate crisis now a health emergency of 'pandemic scale', UN warns - Euronews.com</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.independent.co.uk/climate-change/climate-uk-drought-heatwave-cop31-b3080502.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0L2QkTb69v4wNzZs8hMEni" target="_blank">'Climate change is no longer a warning about the future. It is here in Britain now' | The Independent</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://de.euronews.com/2026/11/09/un-klimachef-klimakrise-wird-zur-gesundheitsnotlage-in-pandemie-dimension&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3eT8FAs2kZ4N7SOOZuB-ut" target="_blank">UN-Klimachef: Klimakrise wird zur Gesundheitsnotlage in Pandemie-Dimension | Euronews</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.euronews.com/2026/11/09/climate-crisis-now-a-health-emergency-of-pandemic-scale-un-climate-chief-warns&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3BU4LoUPZTqoiGRmhBQoz_" target="_blank">Climate crisis now a health emergency of &#39;pandemic scale&#39;, UN warns - Euronews.com</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.independent.co.uk/climate-change/climate-uk-drought-heatwave-cop31-b3080502.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0L2QkTb69v4wNzZs8hMEni" target="_blank">&#39;<b>Climate change</b> is no longer a warning about the future. It is here in Britain now&#39; | The Independent</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://de.euronews.com/2026/11/09/un-klimachef-klimakrise-wird-zur-gesundheitsnotlage-in-pandemie-dimension&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3eT8FAs2kZ4N7SOOZuB-ut" target="_blank">UN-Klimachef: <b>Klimakrise</b> wird zur Gesundheitsnotlage in Pandemie-Dimension | Euronews</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://time.com/collection/time100-climate/2026/juliet-rothenberg/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3hGZRpMOJOM_Lc5JGu3xzC" target="_blank">Juliet Rothenberg: The 100 Most Influential Climate Leaders of 2026 - TIME</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.lessentiel.lu/de/story/wmo-warnt-klimakrise-und-el-nino-2027-drohen-neue-hitzerekorde-103664539&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0HXvpXLoI_pLDp0pSWUfXR" target="_blank">Hitzerekorde 2027: Warum El Niño die <b>Klimakrise</b> weiter verschärft - L&#39;essentiel</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.welthungerhilfe.de/informieren/themen/klimawandel/cop31-hunger-waechst-mittel-schrumpfen&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3c9U9E5BwlkF0ic3yZ-9ZT" target="_blank">Welthungerhilfe zur COP31: Hunger wächst, Mittel schrumpfen</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.logo.de/weltklimakonferenz-cop-31-100.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1KB9Xuhy0ouwQhs3qTMPsD" target="_blank">COP: Was ihr über die Weltklimakonferenz wissen solltet - logo!</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://amp.dw.com/en/turkey-hosts-cop31-can-it-turn-climate-promises-into-action/video-79903316&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw2q6TO0a6Y5Dk8x-3oqn3ZK" target="_blank">Turkey on the climate frontline - DW</a></li>
 </ul>
+<h3>1.3 Stürme, Wirbelstürme & Tropenstürme (DE/EN)</h3>
+<p><em>Keine aktuellen Meldungen.</em></p>
+<h2>📌 2. Opfer, Schäden & Humanitäre Folgen</h2>
+<h3>2.1 Menschliche & Soziale Folgen (DE/EN)</h3>
+<p><em>Keine aktuellen Meldungen.</em></p>
 <h3>2.2 Verluste, Opfer & Evakuierungen (DE/EN)</h3>
 <ul>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://eastleighvoice.co.ke/africa/421203/magnitude-51-earthquake-strikes-northwestern-namibia%3Famp%3D1&ct=ga&cd=CAIyG2RlMjcwZGI0ZjBlMmEyNzM6ZGU6ZGU6REU6TA&usg=AOvVaw1jSRGNWShe3hmrmhyUZDCw" target="_blank">Magnitude-5.1 earthquake strikes northwestern Namibia | The Eastleigh Voice</a></li>
 </ul>
+<h3>2.3 Financial Damage & Loss (DE/EN)</h3>
+<ul>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.migazin.de/2026/11/09/cop31-antalya-klimakrise-millionen-gefluechtete-hilfen/&ct=ga&cd=CAIyGzZhOTMyNTBkYzkzNTNhY2Q6ZGU6ZGU6REU6TA&usg=AOvVaw2LiZzZBNxnnz2SppQw2tU_" target="_blank">COP31: Fast 90 <b>Millionen</b> Vertriebene durch <b>Klimakrise</b> bedroht - MiGAZIN</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.eu-schwerbehinderung.eu/index.php/33-aktuelles/36623-cop31-welthungerhilfe-warnt-vor-wachsendem-hunger-durch-klimakrise-und-konflikte&ct=ga&cd=CAIyGzZhOTMyNTBkYzkzNTNhY2Q6ZGU6ZGU6REU6TA&usg=AOvVaw0tnOCUCo2arGJGbyPtObJ2" target="_blank">COP31: Welthungerhilfe warnt vor wachsendem Hunger durch <b>Klimakrise</b> und Konflikte</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.fnp.de/na-pressemitteilungen/cop31-klimawandel-ist-eine-kinderrechtskrise-terre-des-hommes-fordert-verbindliche-beteiligung-und-besseren-schutz-von-kindern-zr-94580589.html&ct=ga&cd=CAIyGzZhOTMyNTBkYzkzNTNhY2Q6ZGU6ZGU6REU6TA&usg=AOvVaw3sBWfr_8faRyo23SN_YqQT" target="_blank">COP31: Klimawandel ist eine Kinderrechtskrise / Terre des Hommes fordert verbindliche ...</a></li>
+</ul>
+<h2>📌 3. Klimawissenschaft & Messwerte</h2>
+<h3>3.1 Klimaforschung & Studien (DE/EN)</h3>
+<p><em>Keine aktuellen Meldungen.</em></p>
 <h3>3.2 Kipppunkte & Physikalische Metriken (DE/EN)</h3>
 <ul>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/nbtworld/posts/thailand-enters-milder-2026-winter-season-under-el-ni%25C3%25B1o-influencethe-thai-meteor/1556096836554441/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2vXMm045CXiMgqU1RAXOiK" target="_blank">Thailand Enters Milder 2026 Winter Season Under El Niño Influence The Thai ...</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://southernagtoday.org/2026/11/09/what-does-a-strong-el-nino-winter-mean-for-next-years-crop-yields/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0_5fgYfDwbdgEMORoC0QZ-" target="_blank">What Does a Strong El Niño Winter Mean for Next Year's Crop Yields? - Southern Ag Today</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://x.com/jumuiya/status/2119720188279239099&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1MMdLTxajQYFmqSy-ZlAIH" target="_blank">East African Community on X: &quot;As climate experts warn of a potentially very strong El Niño ...</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/ArabNews/posts/the-un-secretary-general-antonio-guterres-addressed-the-cop31-climate-conference/1572260924938916/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3Te2gk0M4FXO_AvTb0xhnj" target="_blank">The UN Secretary-General Antonio Guterres addressed the COP31 climate conference ... - Facebook</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.nussbaum.de/entdecken/news/klima-kipppunkte-3736354&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3RR69DI5roCaT26gH7Z3es" target="_blank">Klima-Kipppunkte | Naturfreunde Sillenbuch/Ostfildern, 70619 Stuttgart | NUSSBAUM.de</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.reddit.com/r/climatechange/comments/1xr932z/simply_staggering_rapidly_developing_super_el/%3Ftl%3Dde&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw26nxvqn0G8KO5dv0BMCBm8" target="_blank">Sich rasant entwickelnder „Super-El-Niño“ auf dem Weg zur Spitze im Dezember. Der ... - Reddit</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/nbtworld/posts/thailand-enters-milder-2026-winter-season-under-el-ni%25C3%25B1o-influencethe-thai-meteor/1556096836554441/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2vXMm045CXiMgqU1RAXOiK" target="_blank">Thailand Enters Milder 2026 Winter Season Under <b>El Niño</b> Influence The Thai ...</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://southernagtoday.org/2026/11/09/what-does-a-strong-el-nino-winter-mean-for-next-years-crop-yields/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0_5fgYfDwbdgEMORoC0QZ-" target="_blank">What Does a Strong <b>El Niño</b> Winter Mean for Next Year&#39;s Crop Yields? - Southern Ag Today</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://x.com/jumuiya/status/2119720188279239099&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1MMdLTxajQYFmqSy-ZlAIH" target="_blank">East African Community on X: &quot;As <b>climate</b> experts warn of a potentially very strong <b>El Niño</b> ...</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/ArabNews/posts/the-un-secretary-general-antonio-guterres-addressed-the-cop31-climate-conference/1572260924938916/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3Te2gk0M4FXO_AvTb0xhnj" target="_blank">The UN Secretary-General Antonio Guterres addressed the COP31 <b>climate</b> conference ... - Facebook</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.nussbaum.de/entdecken/news/klima-kipppunkte-3736354&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3RR69DI5roCaT26gH7Z3es" target="_blank"><b>Klima</b>-<b>Kipppunkte</b> | Naturfreunde Sillenbuch/Ostfildern, 70619 Stuttgart | NUSSBAUM.de</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.reddit.com/r/climatechange/comments/1xr932z/simply_staggering_rapidly_developing_super_el/%3Ftl%3Dde&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw26nxvqn0G8KO5dv0BMCBm8" target="_blank">Sich rasant entwickelnder „Super-<b>El-Niño</b>“ auf dem Weg zur Spitze im Dezember. Der ... - Reddit</a></li>
 </ul>
+<h2>📌 4. Wasser, Ozeane & Kryosphäre</h2>
 <h3>4.1 Meere, Eis & Ozeane (DE/EN)</h3>
 <ul>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://news.uq.edu.au/2026-11-what-you-need-know-about-cop31&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw1x_9N-11WBXl3QzQx9JFnk" target="_blank">What you need to know about COP31 - News - The University of Queensland</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://esdnews.com.au/chris-bowen-to-walk-diplomatic-tightrope-at-cop31/&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw3s87teFr7IpgT5wKJYmry0" target="_blank">Chris Bowen to walk diplomatic tightrope at COP31 - Energy Source &amp; Distribution</a></li>
 </ul>
+<h3>4.2 Wasserressourcen & Konflikte (DE/EN)</h3>
+<p><em>Keine aktuellen Meldungen.</em></p>
+<h2>📌 5. Ökosysteme & Biodiversität</h2>
 <h3>5.1 Biodiversität & Artensterben (DE/EN)</h3>
 <ul>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://chinookobserver.com/2026/11/08/guest-column-washington-needs-its-own-endangered-species-act/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw2mna7ku3Y9mtcRPClCsmaY" target="_blank">Guest Column: Washington needs its own Endangered Species Act | Chinook Observer</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.australiangeographic.com.au/science-environment/2026/11/talking-climate-change/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw0ZY1k-nDYzaRvq5gx0ZUJg" target="_blank">Talking climate change - Australian Geographic</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.australiangeographic.com.au/science-environment/2026/11/talking-climate-change/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw0ZY1k-nDYzaRvq5gx0ZUJg" target="_blank">Talking <b>climate change</b> - Australian Geographic</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://samerbergernachrichten.de/priener-herbststimmungen/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw1n0f1jcDj8e02aSgCI3zlv" target="_blank">Priener Herbststimmungen - Samerberger Nachrichten</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.thenationalnews.com/opinion/comment/2026/11/09/cop31-turkey-un-climate-conference-water/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw29lU4TCCyFBLkHjwGTVjTK" target="_blank">Cop31 in Turkey must bring water to the centre of climate action | The National</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://news.cgtn.com/news/2026-11-09/Investing-in-climate-adaptation-is-no-longer-optional-1RU0t4vuVTa/share_amp.html&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw3ztLW_bPSgjZJjOcxZbwMj" target="_blank">Investing in climate adaptation is no longer optional - CGTN</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://news.uq.edu.au/2026-11-what-you-need-know-about-cop31&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw1x_9N-11WBXl3QzQx9JFnk" target="_blank">What you need to know about COP31 - News - The University of Queensland</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.linkedin.com/posts/hometreecharity_climate-change-and-biodiversity-loss-are-activity-7525150315839590400-zuTC&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw204IUxan9AOV9pQSAlzqkx" target="_blank">Climate change and biodiversity loss are some of the greatest challenges of our time ... - LinkedIn</a></li>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://gov.krd/english/news-and-announcements/posts/2026/november/kurdistan-region-s-participation-in-cop31-pavilions/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw2u5-hk_rVPzwOzhQguksnp" target="_blank">Kurdistan Region's participation in COP31 pavilions - GOV.KRD</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.linkedin.com/posts/hometreecharity_climate-change-and-biodiversity-loss-are-activity-7525150315839590400-zuTC&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw204IUxan9AOV9pQSAlzqkx" target="_blank"><b>Climate change</b> and <b>biodiversity loss</b> are some of the greatest challenges of our time ... - LinkedIn</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://gov.krd/english/news-and-announcements/posts/2026/november/kurdistan-region-s-participation-in-cop31-pavilions/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw2u5-hk_rVPzwOzhQguksnp" target="_blank">Kurdistan Region&#39;s participation in COP31 pavilions - GOV.KRD</a></li>
   <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://matangitonga.to/2026/11/09/germany-pledges-five-million-euros-pacific-resilience-facility-tonga&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw2MnjEF1NOtpUTip8ZUrluS" target="_blank">Germany pledges five million Euros for Pacific Resilience Facility in Tonga</a></li>
 </ul>
+<h3>5.2 Ökosysteme, Böden & Küsten (DE/EN)</h3>
+<p><em>Keine aktuellen Meldungen.</em></p>
+<h2>📌 6. Infrastruktur, Energie & Rohstoffe</h2>
 <h3>6.1 Netze, Energie & Infrastruktur (DE/EN)</h3>
 <ul>
-  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://mezha.net/eng/news/mezha-c647adb58046a3c5522ebc56_zaporizhzhia_nuclear_power/&ct=ga&cd=CAIyG2QzNGZlYjUwMjJlN2M2ODg6ZGU6ZGU6REU6TA&usg=AOvVaw3DIjFd2X7fKx56PpZkng-J" target="_blank">Zaporizhzhia Nuclear Power Plant restores external power after blackout</a></li>
+  <li><a href="https://www.google.com/url?rct=j&sa=t&url=https://mezha.net/eng/news/mezha-c647adb58046a3c5522ebc56_zaporizhzhia_nuclear_power/&ct=ga&cd=CAIyG2QzNGZlYjUwMjJlN2M2ODg6ZGU6ZGU6REU6TA&usg=AOvVaw3DIjFd2X7fKx56PpZkng-J" target="_blank">Zaporizhzhia Nuclear <b>Power Plant</b> restores external power after blackout</a></li>
 </ul>
-
+<h3>6.2 Rohstoffe, Tiefseebergbau & KI-Bedarf (DE/EN)</h3>
+<p><em>Keine aktuellen Meldungen.</em></p>
+<h2>📌 7. Wirtschaft, Landwirtschaft & Ernährung</h2>
+<h3>7.1 Landwirtschaft & Ernteausfälle (DE/EN)</h3>
+<p><em>Keine aktuellen Meldungen.</em></p>
+<h3>7.2 Finanzmarkt & Risiken (DE/EN)</h3>
+<p><em>Keine aktuellen Meldungen.</em></p>
+<h2>📌 8. Politik, Recht & Anpassung</h2>
+<h3>8.1 Recht, Politik & Lobbyismus (DE/EN)</h3>
+<p><em>Keine aktuellen Meldungen.</em></p>
+<h3>8.2 Anpassung & Geoengineering (DE/EN)</h3>
+<p><em>Keine aktuellen Meldungen.</em></p>
+<h3>8.3 Militär & Sicherheitspolitik (DE/EN)</h3>
+<p><em>Keine aktuellen Meldungen.</em></p>
+    </div>
 </body>
 </html>
