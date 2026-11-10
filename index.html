@@ -208,6 +208,28 @@
             text-decoration: underline;
         }
 
+        .older-items {
+            display: none;
+            margin-top: 6px;
+        }
+
+        .toggle-older-btn {
+            background: none;
+            border: none;
+            color: var(--accent);
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 8px 0 0 0;
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .toggle-older-btn:hover {
+            text-decoration: underline;
+        }
+
         .no-data {
             color: var(--text-muted);
             font-style: italic;
@@ -265,10 +287,9 @@
         <div class="update-badge" id="update-badge">
             Datenstand: Laden... | Nächste Aktualisierung: Laden...
         </div>
-                <div style="margin-top: 10px;">
+        <div style="margin-top: 10px;">
             <a href="summary.html" style="font-size: 0.85rem; color: var(--accent); text-decoration: none; font-weight: 600; background: var(--section-bg); padding: 5px 12px; border-radius: 6px; border: 1px solid var(--border);">📄 Text-Digest & KI-Übersicht öffnen →</a>
         </div>
-
     </header>
 
     <div class="search-container">
@@ -295,7 +316,6 @@
                 if (!response.ok) throw new Error('Netzwerk-Antwort war nicht ok');
                 const jsonContent = await response.json();
                 
-                // Rückwärtskompatibilität: Falls data.json direkt ein Array ist oder das neue Objektformat mit meta
                 let feeds = [];
                 if (Array.isArray(jsonContent)) {
                     feeds = jsonContent;
@@ -325,6 +345,7 @@
                 categories[cat].push(feed);
             });
 
+            let cardIndex = 0;
             for (const [catName, feeds] of Object.entries(categories)) {
                 const section = document.createElement('div');
                 section.className = 'category-section';
@@ -332,16 +353,36 @@
                 let gridHtml = '<div class="grid">';
                 
                 feeds.forEach(feed => {
+                    cardIndex++;
+                    const items = feed.items || [];
+                    const topItems = items.slice(0, 15);
+                    const olderItems = items.slice(15);
+
                     let itemsHtml = '';
-                    if (feed.items && feed.items.length > 0) {
-                        feed.items.forEach(item => {
+                    if (topItems.length > 0) {
+                        topItems.forEach(item => {
                             itemsHtml += `<li><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></li>`;
                         });
                     } else {
                         itemsHtml = `<p class="no-data">Aktuell keine neuen Treffer</p>`;
                     }
 
-                    const rawItemsText = feed.items ? feed.items.map(i => i.title).join(' ').toLowerCase() : '';
+                    let olderHtml = '';
+                    if (olderItems.length > 0) {
+                        let olderList = '';
+                        olderItems.forEach(item => {
+                            olderList += `<li><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></li>`;
+                        });
+
+                        olderHtml = `
+                            <button class="toggle-older-btn" onclick="toggleOlder('older-${cardIndex}', this)">
+                                🔻 Ältere Meldungen anzeigen (${olderItems.length})
+                            </button>
+                            <ul class="feed-items older-items" id="older-${cardIndex}">${olderList}</ul>
+                        `;
+                    }
+
+                    const rawItemsText = items.map(i => i.title).join(' ').toLowerCase();
 
                     gridHtml += `
                         <div class="card" data-title="${feed.title.toLowerCase()}" data-content="${rawItemsText}">
@@ -351,6 +392,7 @@
                                     <button class="info-btn" onclick='openModal(${JSON.stringify(feed.title)}, ${JSON.stringify(feed.desc)})' title="Feed-Details">ℹ️</button>
                                 </div>
                                 <ul class="feed-items">${itemsHtml}</ul>
+                                ${olderHtml}
                             </div>
                         </div>
                     `;
@@ -364,6 +406,17 @@
                     ${gridHtml}
                 `;
                 container.appendChild(section);
+            }
+        }
+
+        function toggleOlder(elementId, btn) {
+            const container = document.getElementById(elementId);
+            if (container.style.display === 'block') {
+                container.style.display = 'none';
+                btn.innerHTML = btn.innerHTML.replace('🔺 Ältere Meldungen verbergen', '🔻 Ältere Meldungen anzeigen');
+            } else {
+                container.style.display = 'block';
+                btn.innerHTML = btn.innerHTML.replace('🔻 Ältere Meldungen anzeigen', '🔺 Ältere Meldungen verbergen');
             }
         }
 
