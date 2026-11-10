@@ -23,31 +23,19 @@ jobs:
         run: |
           pip install google-genai
 
-      - name: Feeds & KI-Lagebericht abrufen
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Feeds abrufen
         run: python fetcher.py
-
-      - name: Änderungen speichern & hochladen
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git pull origin main --rebase || true
-          git add data.json summary.html
-          git commit -m "Automatisches Update: data.json & summary.html mit KI-Bericht" || exit 0
-          git push
 
       - name: KI-Briefing generieren
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python generate_briefing.py
 
-      - name: Änderungen speichern & hochladen
+      - name: Alle Änderungen speichern & hochladen
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git pull origin main --rebase || true
           git add data.json summary.html generated/briefing.html
-          git commit -m "Update feeds, summary & KI briefing" || exit 0
+          git commit -m "Automatisches Update: Feeds, Summary & KI-Briefing" || exit 0
           git push
-
