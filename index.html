@@ -296,6 +296,9 @@
         <input type="text" id="searchInput" placeholder="Dashboard nach Begriffen durchsuchen..." onkeyup="filterFeeds()">
     </div>
 
+    <!-- Platzhalter für das automatische KI-Briefing -->
+    <div id="ai-briefing-container"></div>
+
     <div id="dashboard-container">
         <p style="text-align: center; color: var(--text-muted);">Lade Dashboard-Daten...</p>
     </div>
@@ -311,6 +314,18 @@
 
     <script>
         async function loadDashboard() {
+            // 1. KI-Briefing laden (falls vorhanden)
+            try {
+                const briefingResp = await fetch('generated/briefing.html?t=' + Date.now());
+                if (briefingResp.ok) {
+                    const briefingHtml = await briefingResp.text();
+                    document.getElementById('ai-briefing-container').innerHTML = briefingHtml;
+                }
+            } catch (e) {
+                console.log("Kein KI-Briefing gefunden oder Fehler beim Laden.");
+            }
+
+            // 2. Normale Dashboard-Daten laden
             try {
                 const response = await fetch('data.json?t=' + Date.now());
                 if (!response.ok) throw new Error('Netzwerk-Antwort war nicht ok');
@@ -420,7 +435,7 @@
             }
         }
 
-                window.openMainModal = function() {
+        window.openMainModal = function() {
             document.getElementById('modal-title').textContent = "Über den Crisis-Tracker";
             document.getElementById('modal-desc').innerHTML = `
                 <p><strong>Automated real-time monitoring of global climate signals and impacts.</strong></p>
