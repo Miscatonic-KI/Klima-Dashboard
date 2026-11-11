@@ -80,7 +80,7 @@ HALTE DICH STRIKT AN FOLGENDE STRUKTUR (keine umschließenden ```html Codeblocks
     try:
         client = genai.Client(api_key=api_key)
         response = client.models.generate_content(
-            model='gemini-2.5-flash-lite',
+            model='gemini-2.5-flash',
             contents=prompt,
         )
         
@@ -99,9 +99,9 @@ HALTE DICH STRIKT AN FOLGENDE STRUKTUR (keine umschließenden ```html Codeblocks
             f.write(briefing_html)
         print("KI-Briefing erfolgreich generiert!")
 
-        except Exception as e:
+    except Exception as e:
         print(f"KRITISCHER FEHLER BEI DER API-GENERIERUNG: {repr(e)}")
-        raise e # <--- Das zwingt GitHub dazu, den echten Fehler im Log rot anzuzeigen!
+        raise e
 
 def write_fallback(message):
     os.makedirs('generated', exist_ok=True)
