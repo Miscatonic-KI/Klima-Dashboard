@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis-Tracker | Themen-Entwicklung</title>
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --section-bg: #ffffff;
+            --card-bg: #f9fafb;
+            --card-hover: #f3f4f6;
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --accent: #8b0000;
+            --border: #e5e7eb;
+            --link-color: #990000;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: var(--accent);
+            text-decoration: none;
+            background: var(--section-bg);
+            padding: 5px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .evolution-card {
+            background: var(--section-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .evolution-card h3 {
+            margin-top: 0;
+            color: var(--text-main);
+            font-size: 1.1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cat-tag {
+            font-size: 0.75rem;
+            background: #f3f4f6;
+            color: var(--text-muted);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: normal;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin: 12px 0 6px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .latest-item {
+            font-size: 0.9rem;
+            background: var(--card-bg);
+            padding: 10px 12px;
+            border-radius: 6px;
+            border-left: 3px solid var(--accent);
+            margin-bottom: 12px;
+        }
+
+        .latest-item a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .latest-item a:hover {
+            text-decoration: underline;
+        }
+
+        .latest-time {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        /* Mini-Balkendiagramm CSS */
+        .chart-container {
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+            height: 50px;
+            background: var(--card-bg);
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            margin-top: 8px;
+        }
+
+        .chart-bar-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            justify-content: flex-end;
+        }
+
+        .chart-bar {
+            width: 100%;
+            background-color: var(--accent);
+            border-radius: 2px 2px 0 0;
+            min-height: 3px;
+            transition: height 0.3s;
+        }
+
+        .chart-label {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Zurück zum Haupt-Dashboard</a>
+        <header>
+            <h1>📈 Themen-Entwicklung & Verlauf</h1>
+            <p style="color: var(--text-muted); margin: 0;">Historische Aktivität und zeitliche Analyse der beobachteten Krisen-Signale</p>
+        </header>
+        <div class="meta">
+            Datenstand: <strong>11.11.2026, 20:44 Uhr</strong>
+        </div>
+    
+        <div class="evolution-card">
+            <h3>
+              <span>1.1 Extremwetter & Überschwemmungen (DE/EN)</span>
+              <span class="cat-tag">1. Extreme Wetterereignisse & Naturkatastrophen</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.sueddeutsche.de/politik/cop31-antalya-2026-klimakatastrophe-nepal-fruehwarnsysteme-li.3577882&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3eZjTJYOSGcMwPvZNDTuMC" target="_blank" rel="noopener">COP31 in Antalya: Frühwarnsysteme gegen Klimakatastrophen – Nepal zeigt die Grenzen</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="60 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">60</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.sueddeutsche.de/politik/cop31-antalya-2026-klimakatastrophe-nepal-fruehwarnsysteme-li.3577882&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3eZjTJYOSGcMwPvZNDTuMC' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>COP31 in Antalya: Frühwarnsysteme gegen Klimakatastrophen – Nepal zeigt die Grenzen</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.ardmediathek.de/tv-programm/6ad661b6b4648d9e26f67547&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw32LUC22GQ8BdgNrMxTQUB4' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Vorschau: phoenix plus • Klimastress - wie unsere Städte Hitze und <b>Hochwasser</b> meistern</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.morgenpost.de/interaktiv/article413430494/klima-atlas-deutschland-das-heisst-der-klimawandel-fuer-ihre-gegend.html&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0irhqygz6VAfD-t2Ciy0J6' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Klima-Atlas Deutschland: Das heißt der <b>Klimawandel</b> für Ihre Gegend - Berliner Morgenpost</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.bundesbank.de/de/presse/reden/haeuser-hitze-hochwasser-wie-geht-die-finanzaufsicht-mit-klimarisiken-um--964964&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw1u_XgSsw1r9Yu-0sAk3icw' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Häuser, Hitze, <b>Hochwasser</b>: Wie geht die Finanzaufsicht mit Klimarisiken um?</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.scinexx.de/news/geowissen/der-klimawandel-verstaerkt-trotz-weniger-regen-extreme-staedtische-ueberschwemmungen/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0Y8YXRTlDf7sqleqFamPLj' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Der <b>Klimawandel</b> verstärkt trotz weniger Regen extreme städtische Überschwemmungen</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>1.2 Hitze, Dürre & Brände (DE/EN)</span>
+              <span class="cat-tag">1. Extreme Wetterereignisse & Naturkatastrophen</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://eu-space.europa.eu/components/earth-observation-copernicus/image-of-the-day/impact-drought-colliford-lake-england-uk&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1jmhjDMEoEIiJXaqEWQm3K" target="_blank" rel="noopener">The impact of <b>drought</b> on Colliford Lake, England, UK | EU Space Support Office</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="40 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">40</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://eu-space.europa.eu/components/earth-observation-copernicus/image-of-the-day/impact-drought-colliford-lake-england-uk&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1jmhjDMEoEIiJXaqEWQm3K' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>The impact of <b>drought</b> on Colliford Lake, England, UK | EU Space Support Office</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.nr-kurier.de/artikel/178147-rheinland-pfalz-ruestet-sich-fuer-zukuenftige-hitzesommer&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3no0HZ04panJ9QnRbZ21cv' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Rheinland-Pfalz rüstet sich für zukünftige Hitzesommer | NR-Kurier.de</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.bbc.com/news/articles/c60rleej7dqgo&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw2DOqQixoBe4NLYLvFy_CxD' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>The swan sanctuary wetland fighting <b>climate change</b> - BBC</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.nytimes.com/2026/11/10/arts/design/milan-architecture-design-climate-change.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw2GsrSaT4xb6uS7n83Dg6CC' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>How an Italian Capital of Design Is Coping with <b>Climate Change</b> - The New York Times</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://iumi.com/upcoming-webinar/wildfires-and-their-implications-for-marine-insurers/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw30u8lwjfOYDvk_RY3QGiqV' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Wildfires and their implications for marine insurers | IUMI</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>1.3 Stürme, Wirbelstürme & Tropenstürme (DE/EN)</span>
+              <span class="cat-tag">1. Extreme Wetterereignisse & Naturkatastrophen</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.straitstimes.com/world/united-states/ai-sharpens-hurricane-forecasts-but-humans-still-call-the-shots&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw2ZBTo4DYXg0O0zOF7sdTcF" target="_blank" rel="noopener">AI sharpens <b>hurricane</b> forecasts, but humans still call the shots - The Straits Times</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="40 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">40</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.straitstimes.com/world/united-states/ai-sharpens-hurricane-forecasts-but-humans-still-call-the-shots&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw2ZBTo4DYXg0O0zOF7sdTcF' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>AI sharpens <b>hurricane</b> forecasts, but humans still call the shots - The Straits Times</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://stanforddaily.com/2026/11/11/filipino-scientist-climate-disasters/&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw2Q0_uOJtnJ0lFJ2TxUrNE7' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>&#39;A culture of resilience&#39;: Filipino scientist champions disaster preparedness amid <b>climate change</b></a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.france24.com/en/live-news/20261111-ai-sharpens-hurricane-forecasts-but-humans-still-call-the-shots&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw1eJaGNmwVP5plr-xmJQ06T' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>AI sharpens <b>hurricane</b> forecasts, but humans still call the shots - France 24</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.jdsupra.com/legalnews/where-could-super-el-nino-losses-5356090/&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw0vpPrtZkD_N0Kz0HcyWSz6' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Where could Super El Niño losses concentrate in North America? | Kennedys - JDSupra</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.princegeorgecitizen.com/local-news/tornado-force-winds-hit-prince-george-in-storm-12999233&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw0842VOPsihFvQVfVsdF7qd' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>Tornado</b>-force winds hit Prince George in storm</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>2.1 Menschliche & Soziale Folgen (DE/EN)</span>
+              <span class="cat-tag">2. Opfer, Schäden & Humanitäre Folgen</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://blogs.lse.ac.uk/highereducation/2026/11/10/teaching-climate-change-changes-how-i-teach/&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw0VVvCjM4I4-JEN31ovrlRb" target="_blank" rel="noopener">Teaching <b>climate change</b> changes how I teach - LSE Higher Education - LSE Blogs</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="11 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">11</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://blogs.lse.ac.uk/highereducation/2026/11/10/teaching-climate-change-changes-how-i-teach/&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw0VVvCjM4I4-JEN31ovrlRb' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Teaching <b>climate change</b> changes how I teach - LSE Higher Education - LSE Blogs</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.pdx.edu/news/why-climate-anxiety-makes-some-youth-take-action-while-others-freeze&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw2OBl4PczP6GVkG4ExuxwtU' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Why <b>climate anxiety</b> makes some youth take action, while others freeze</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.who.int/europe/news/item/10-11-2026-new-report-highlights-action-across-european-region-to-tackle-mental-health-consequences-of-climate-change&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw0fuctLTH_8B2i0vI9d5v8D' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>New report highlights action across European Region to tackle mental health consequences ...</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://newswav.com/article/why-ignorance-may-be-the-real-existential-threat-ahmad-ibrahim-A2611_mS88D4&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw1lHeyE5pA5xb8xCfYmjYEW' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Why ignorance may be the real existential threat — Ahmad Ibrahim - Newswav</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://uwaterloo.ca/sustainability/news/turning-climate-anxiety-active-hope-grassroots-kw&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw32P0NCPV5FLcAWWXV7c8v6' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Turning <b>Climate Anxiety</b> into Active Hope with Grassroots KW - University of Waterloo</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>2.2 Verluste, Opfer & Evakuierungen (DE/EN)</span>
+              <span class="cat-tag">2. Opfer, Schäden & Humanitäre Folgen</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://saudigazette.com.sa/article/666136/world/climate-crisis-now-a-health-emergency-of-pandemic-scale-un-climate-chief-says&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw0Iq92nirtC_zmNcmlJJzgi" target="_blank" rel="noopener"><b>Climate crisis</b> now a health emergency of pandemic scale, UN climate chief says</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="9 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">9</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://saudigazette.com.sa/article/666136/world/climate-crisis-now-a-health-emergency-of-pandemic-scale-un-climate-chief-says&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw0Iq92nirtC_zmNcmlJJzgi' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>Climate crisis</b> now a health emergency of pandemic scale, UN climate chief says</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.asiae.co.kr/en/article/social-general/2026111108130744239&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw0VdWWQI38UXLdYfQsbFRb0' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>All-Out Response to Heavy Snow and Cold Waves... Government Enters &quot;Winter <b>Natural</b> ...</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://news.un.org/en/story/2026/11/1168770&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw0wliiu75yK2PQp8v5wOTj_' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>Climate crisis</b> could push 141 million more women into extreme poverty | UN News</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.msf.org/broader-use-ervebo-vaccine-could-help-protect-people-bundibugyo-ebola-outbreak-today&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw2wyI-SsS4k0L1U2z-XlZa_' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Broader use of ERVEBO vaccine could help protect people from Bundibugyo Ebola <b>outbreak</b> today</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.regensburger-stadtzeitung.de/index.php/klimastreik-am-freitag-fridays-for-future-demonstriert-am-alten-rathaus/&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw2BAvYbhMkGnYFlWY0fIW2R' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Klimastreik am Freitag: Fridays for Future demonstriert am Alten Rathaus</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>2.3 Financial Damage & Loss (DE/EN)</span>
+              <span class="cat-tag">2. Opfer, Schäden & Humanitäre Folgen</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 14:20 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.migazin.de/2026/11/09/cop31-antalya-klimakrise-millionen-gefluechtete-hilfen/&ct=ga&cd=CAIyGzZhOTMyNTBkYzkzNTNhY2Q6ZGU6ZGU6REU6TA&usg=AOvVaw2LiZzZBNxnnz2SppQw2tU_" target="_blank" rel="noopener">COP31: Fast 90 <b>Millionen</b> Vertriebene durch <b>Klimakrise</b> bedroht - MiGAZIN</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="3 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">3</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.migazin.de/2026/11/09/cop31-antalya-klimakrise-millionen-gefluechtete-hilfen/&ct=ga&cd=CAIyGzZhOTMyNTBkYzkzNTNhY2Q6ZGU6ZGU6REU6TA&usg=AOvVaw2LiZzZBNxnnz2SppQw2tU_' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>COP31: Fast 90 <b>Millionen</b> Vertriebene durch <b>Klimakrise</b> bedroht - MiGAZIN</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.eu-schwerbehinderung.eu/index.php/33-aktuelles/36623-cop31-welthungerhilfe-warnt-vor-wachsendem-hunger-durch-klimakrise-und-konflikte&ct=ga&cd=CAIyGzZhOTMyNTBkYzkzNTNhY2Q6ZGU6ZGU6REU6TA&usg=AOvVaw0tnOCUCo2arGJGbyPtObJ2' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>COP31: Welthungerhilfe warnt vor wachsendem Hunger durch <b>Klimakrise</b> und Konflikte</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.fnp.de/na-pressemitteilungen/cop31-klimawandel-ist-eine-kinderrechtskrise-terre-des-hommes-fordert-verbindliche-beteiligung-und-besseren-schutz-von-kindern-zr-94580589.html&ct=ga&cd=CAIyGzZhOTMyNTBkYzkzNTNhY2Q6ZGU6ZGU6REU6TA&usg=AOvVaw3sBWfr_8faRyo23SN_YqQT' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>COP31: Klimawandel ist eine Kinderrechtskrise / Terre des Hommes fordert verbindliche ...</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>3.1 Klimaforschung & Studien (DE/EN)</span>
+              <span class="cat-tag">3. Klimawissenschaft & Messwerte</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.tagesschau.de/wissen/klima/emissionen-klimawandel-global-carbon-budget-100.html&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1WwWbyskQyPikD-NLBz3fd" target="_blank" rel="noopener">Forschungsbericht: Fossile CO2-Emissionen gehen leicht zurück | tagesschau.de</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="40 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">40</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.tagesschau.de/wissen/klima/emissionen-klimawandel-global-carbon-budget-100.html&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1WwWbyskQyPikD-NLBz3fd' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Forschungsbericht: Fossile CO2-Emissionen gehen leicht zurück | tagesschau.de</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://thecommonwealth.org/news-story/cop31-turning-nature-commitments-climate-action&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw2rhASVWp7m7qGwQxKTh2nj' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>COP31 - Turning <b>nature</b> commitments into climate action - Commonwealth Secretariat</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.info.gov.hk/gia/general/202611/11/P2026111100043.htm&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw0M5rcv2vsJPYcIzqGTcMru' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>SEE attends COP31 China Pavilion side event in Türkiye (with photos)</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.natureasia.com/en/info/press-releases/detail/9478&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw0JRpQ4JI_FshembHh5uMQL' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Global CO2 emissions projected to temporarily fall in 2026 (<b>Nature Climate Change</b>)</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.nature.com/articles/s41558-026-02789-5&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1eisuwOnBG9T8QwwEqOrOj' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Higher warming leads to a larger zero-emissions commitment | <b>Nature Climate Change</b></a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>3.2 Kipppunkte & Physikalische Metriken (DE/EN)</span>
+              <span class="cat-tag">3. Klimawissenschaft & Messwerte</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.reutersconnect.com/item/turkey-antalya-global-high-level-dialogue-methane-emissions/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUhOU0xDUzAwMDJKTUdXQw&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3GA-BX6WiVvCrbIZrHQGq1" target="_blank" rel="noopener">TURKEY-ANTALYA-GLOBAL HIGH LEVEL DIALOGUE-<b>METHANE EMISSIONS</b></a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="46 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">46</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.reutersconnect.com/item/turkey-antalya-global-high-level-dialogue-methane-emissions/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUhOU0xDUzAwMDJKTUdXQw&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3GA-BX6WiVvCrbIZrHQGq1' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>TURKEY-ANTALYA-GLOBAL HIGH LEVEL DIALOGUE-<b>METHANE EMISSIONS</b></a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.fr.de/panorama/erst-fruehling-an-weihnachten-dann-schneewalze-und-glatteis-super-el-nin-macht-winter-2026-27-zum-extrem-winter-zr-94584619.html&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0DZchhCHoZAduCFNti7uYR' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Hat es seit Jahrzehnten nicht gegeben: <b>El Niño</b> bringt den Winter aus dem Takt</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.washingtonpost.com/weather/2026/11/11/see-where-el-nino-may-help-deliver-lots-snow-this-winter/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2GazpZq1jQqK2Hr3Vs5X1G' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>See where <b>El Niño</b> may help deliver lots of snow this winter - The Washington Post</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.scientificamerican.com/article/el-nino-will-push-temperatures-above-1-5-degrees-c-will-we-ever-come-back-down/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3Smz2mcNmCqHTm00leEguo' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>El Niño</b> will push temperatures above 1.5 degrees C. Will we ever come back down?</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.bloomberg.com/graphics/2026-cop31-climate-change-defies-efforts-to-predict-impact/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3p1vi_HIFj4VcG2hdnOXQW' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>COP31 <b>Climate</b> Talks: Global Warming Defies Efforts to Predict Its Effects - Bloomberg.com</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>4.1 Meere, Eis & Ozeane (DE/EN)</span>
+              <span class="cat-tag">4. Wasser, Ozeane & Kryosphäre</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.discoverwildlife.com/animal-facts/mammals/fpolar-bear-guide&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw11T1xFrzMPnTyoiZ-T15OB" target="_blank" rel="noopener">&quot;It views us as prey, able to make short work of our puny bodies.&quot; Meet the largest, most ...</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="21 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">21</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.discoverwildlife.com/animal-facts/mammals/fpolar-bear-guide&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw11T1xFrzMPnTyoiZ-T15OB' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>&quot;It views us as prey, able to make short work of our puny bodies.&quot; Meet the largest, most ...</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.bloomberg.com/graphics/2026-cop31-climate-change-defies-efforts-to-predict-impact/%3Fsrnd%3Dhomepage-americas&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw1yq3wvE6SaPLzRZcBU-vjM' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>COP31 <b>Climate</b> Talks: Global Warming Defies Efforts to Predict Its Effects - Bloomberg.com</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://news.ssbcrack.com/research-warns-of-potential-collapse-of-ocean-current-with-catastrophic-climate-impacts/&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw0Z1saGJNel7u4EfCVGHHj_' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Research Warns of Potential Collapse of Ocean Current with Catastrophic <b>Climate</b> Impacts</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://uniteddaily.my/en/46cd0a1b-7f2b-4d97-ba2f-f3e4ac8c8d02/%25E8%25B6%2585%25E5%25BC%25BA%25E5%258E%2584%25E5%25B0%2594%25E5%25B0%25BC%25E8%25AF%25BA%25E6%2588%2596%25E4%25BD%25BF%25E5%2585%25A8%25E7%2590%2583%25E9%25AB%2598%25E6%25B8%25A9%25E5%2592%258C%25E6%259E%2581%25E7%25AB%25AF%25E5%25A4%25A9%25E6%25B0%2594%25E8%25BF%259B%25E4%25B8%2580%25E6%25AD%25A5%25E5%258A%25A0%25E5%2589%25A7&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw077K4ADjpxwp0nRWlgN-sz' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Severe El Niño May Further Intensify Global High Temperatures and Extreme Weather</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.urdupoint.com/en/pakistan/pakistan-calls-for-global-research-cooperatio-2286927.html&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw2OTbe820yOEtHzFjLrf0XL' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Pakistan Calls for Global Research Cooperation as <b>Glacier Melt</b> Threatens Communities</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>4.2 Wasserressourcen & Konflikte (DE/EN)</span>
+              <span class="cat-tag">4. Wasser, Ozeane & Kryosphäre</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://mg.co.za/the-green-guardian/2026-11-10-cape-town-braces-for-heat-fires-and-water-stress-as-very-strong-el-nino-develops/&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw1vf_1C3tB2NivEpwMskc3g" target="_blank" rel="noopener">Cape Town braces for heat, fires and water stress as very strong El Niño develops | Mail &amp; Guardian</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="43 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">43</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://mg.co.za/the-green-guardian/2026-11-10-cape-town-braces-for-heat-fires-and-water-stress-as-very-strong-el-nino-develops/&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw1vf_1C3tB2NivEpwMskc3g' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Cape Town braces for heat, fires and water stress as very strong El Niño develops | Mail &amp; Guardian</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.app.com.pk/national/tugai-forests-of-uzbekistan-face-growing-threat-from-climate-change-water-scarcity/&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw3HyGkurrlRdeKnW6NbnHF6' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Tugai forests of Uzbekistan face growing threat from <b>climate change</b>, <b>water scarcity</b></a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.allgemeine-zeitung.de/lokales/mainz/stadt-mainz/oekoweinbau-im-klimawandel-6783533&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw3-427tElNQWSUO2fElaigE' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Ökoweinbau im <b>Klimawandel</b> - Mainz - Allgemeine Zeitung</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.swr.de/swraktuell/baden-wuerttemberg/freiburg/warum-gemeinden-im-suedschwarzwald-im-herbst-immer-noch-mit-wassermangel-kaempfen-100.html&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw1FjJW3oq5phXy2OKjXw0J1' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>Wassermangel</b> im Südschwarzwald: Trinkwasser bleibt knapp - SWR Aktuell</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://ucanr.edu/blog/green-blog/article/climate-assessment&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw0vu5_ID1dGAeZBW1U1uYhF' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>UC ANR experts highlight solutions, interconnected stressors in milestone climate report | Green Blog</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>5.1 Biodiversität & Artensterben (DE/EN)</span>
+              <span class="cat-tag">5. Ökosysteme & Biodiversität</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://thecommonwealth.org/news-story/cop31-turning-nature-commitments-climate-action&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw2rhASVWp7m7qGwQxKTh2nj" target="_blank" rel="noopener">COP31 - Turning nature commitments into climate action - Commonwealth Secretariat</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="49 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">49</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://thecommonwealth.org/news-story/cop31-turning-nature-commitments-climate-action&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw2rhASVWp7m7qGwQxKTh2nj' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>COP31 - Turning nature commitments into climate action - Commonwealth Secretariat</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.nature.com/articles/d41586-026-03589-9&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw34l7rBl5V0muRijBGWoY-e' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Mongolia&#39;s iconic grasslands are in crisis — invisible fungi could help save them | Nature</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.postcourier.com.pg/samoa-calls-for-stronger-pacific-voice-on-climate-survival-at-cop31/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw0xUxcVqWHIH9H1VGw6RcRn' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Samoa calls for stronger Pacific voice on climate survival at COP31 - Post Courier</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.towntopics.com/2026/11/11/lewis-center-collaborates-with-environmental-institute/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw0rCl-SHzgAo8nDmIrr9n0B' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Lewis Center Collaborates With Environmental Institute - Town Topics</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.ft.com/content/17632fc2-c42e-49e3-954d-d279d0ad4fca&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw2rmZs39f9h0nM0W1igIjnA' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Letter: Let&#39;s focus research more on what already works - Financial Times</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>5.2 Ökosysteme, Böden & Küsten (DE/EN)</span>
+              <span class="cat-tag">5. Ökosysteme & Biodiversität</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.cbc.ca/books/zak-jones-robert-moor-among-2026-writers-trust-literary-prize-winners-9.7411192&ct=ga&cd=CAIyGzU4NzgwOWI1MDY0ZWM1MWQ6ZGU6ZGU6REU6TA&usg=AOvVaw1ZwvY3yG-hfDufXWpACFun" target="_blank" rel="noopener">Zak Jones, Robert <b>Moor</b> among 2026 Writers&#39; Trust literary prize winners | CBC Books</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="40 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">40</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.cbc.ca/books/zak-jones-robert-moor-among-2026-writers-trust-literary-prize-winners-9.7411192&ct=ga&cd=CAIyGzU4NzgwOWI1MDY0ZWM1MWQ6ZGU6ZGU6REU6TA&usg=AOvVaw1ZwvY3yG-hfDufXWpACFun' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Zak Jones, Robert <b>Moor</b> among 2026 Writers&#39; Trust literary prize winners | CBC Books</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://nachrichten.idw-online.de/2026/11/11/zmt-auf-der-cop31-wissenschaft-und-politik-vernetzen-um-widerstandsfaehigkeit-von-kuestenregionen-zu-staerken%3Fgroupcolor%3D4&ct=ga&cd=CAIyGzU4NzgwOWI1MDY0ZWM1MWQ6ZGU6ZGU6REU6TA&usg=AOvVaw24QE3e24YAd6Q3fl0Ncv5i' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>ZMT auf der COP31: Wissenschaft und Politik vernetzen, um Widerstandsfähigkeit von ...</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://idw-online.de/de/news880686&ct=ga&cd=CAIyGzU4NzgwOWI1MDY0ZWM1MWQ6ZGU6ZGU6REU6TA&usg=AOvVaw3ZVTSMTrrPs815N-nf9kc_' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>ZMT at COP31: Connecting science and policy to strengthen coastal resilience</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://climateanalytics.org/press-releases/way-back-from-climate-overshoot-is-clear-feasible-and-necessary&ct=ga&cd=CAIyGzU4NzgwOWI1MDY0ZWM1MWQ6ZGU6ZGU6REU6TA&usg=AOvVaw3Q5LduaX-U8hhCEcVU7joW' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Way back from <b>climate</b> overshoot is clear, feasible and necessary</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.ardmediathek.de/tv-programm/6ad2b37ff5ca9199d00f8dfd&ct=ga&cd=CAIyGzU4NzgwOWI1MDY0ZWM1MWQ6ZGU6ZGU6REU6TA&usg=AOvVaw0Jl6ZnyKkWJQ8GOfehPQ5f' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Abenteuer Wildnis • Apotheke <b>Regenwald</b> - Die magischen Pflanzen des Amazonas</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>6.1 Netze, Energie & Infrastruktur (DE/EN)</span>
+              <span class="cat-tag">6. Infrastruktur, Energie & Rohstoffe</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.berliner-zeitung.de/article/dunkelflaute-treibt-strompreis-ueber-650-euro-batterien-haetten-ihn-auf-388-euro-gedrueckt-10582325&ct=ga&cd=CAIyG2QzNGZlYjUwMjJlN2M2ODg6ZGU6ZGU6REU6TA&usg=AOvVaw0oEVaLAbKEPIS20ILDnR7_" target="_blank" rel="noopener"><b>Dunkelflaute</b> treibt Strompreis über 650 Euro: Batterien hätten ihn auf 388 Euro gedrückt</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="34 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">34</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.berliner-zeitung.de/article/dunkelflaute-treibt-strompreis-ueber-650-euro-batterien-haetten-ihn-auf-388-euro-gedrueckt-10582325&ct=ga&cd=CAIyG2QzNGZlYjUwMjJlN2M2ODg6ZGU6ZGU6REU6TA&usg=AOvVaw0oEVaLAbKEPIS20ILDnR7_' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>Dunkelflaute</b> treibt Strompreis über 650 Euro: Batterien hätten ihn auf 388 Euro gedrückt</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.freep.com/story/news/environment/2026/11/10/detroit-freezing-temperatures-fall-climate-change/92692437007/&ct=ga&cd=CAIyG2QzNGZlYjUwMjJlN2M2ODg6ZGU6ZGU6REU6TA&usg=AOvVaw0RFko_HQx2wwhx0kMKyFKX' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Freeze-free: Detroit seeing later first freeze dates in recent years</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://x.com/solarpapst/status/2120282027127873809&ct=ga&cd=CAIyG2QzNGZlYjUwMjJlN2M2ODg6ZGU6ZGU6REU6TA&usg=AOvVaw1WO-_biuY-cqXPuBg3AT_1' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Stefan Krauter on X: &quot;<b>Dunkelflaute</b> treibt Strompreis über 650 Euro: Batterien hätten ihn auf ...</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.achgut.com/artikel/copy_woher_kommt_der_strom_44_analysewoche_2026_veritable_dunkelflaute&ct=ga&cd=CAIyG2QzNGZlYjUwMjJlN2M2ODg6ZGU6ZGU6REU6TA&usg=AOvVaw2-aMqRkImcCzp4D3ZqZj49' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Woher kommt der Strom? 44. Analysewoche 2026 – veritable <b>Dunkelflaute</b> - Achgut.com</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://aa.com.tr/en/turkiye/interview-nuclear-expansion-to-gather-pace-as-countries-seek-energy-security-industry-chief-says/4118451&ct=ga&cd=CAIyG2QzNGZlYjUwMjJlN2M2ODg6ZGU6ZGU6REU6TA&usg=AOvVaw0SoaWoMcOCSH69fOlH1nHR' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>INTERVIEW - Nuclear expansion to gather pace as countries seek energy security, industry ...</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>6.2 Rohstoffe, Tiefseebergbau & KI-Bedarf (DE/EN)</span>
+              <span class="cat-tag">6. Infrastruktur, Energie & Rohstoffe</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.swr.de/swraktuell/baden-wuerttemberg/karlsruhe/batteriespeicher-mit-technologie-aus-den-usa-in-bruchsal-und-gaggenau-100.html&ct=ga&cd=CAIyG2ViYjdiNmMwYWFkNTVkYzk6ZGU6ZGU6REU6TA&usg=AOvVaw1CoK9MPNvJFQOuj-_QinsD" target="_blank" rel="noopener">Bruchsal und Gaggenau sind Vorreiter bei Großbatteriespeicher - SWR Aktuell</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="42 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">42</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.swr.de/swraktuell/baden-wuerttemberg/karlsruhe/batteriespeicher-mit-technologie-aus-den-usa-in-bruchsal-und-gaggenau-100.html&ct=ga&cd=CAIyG2ViYjdiNmMwYWFkNTVkYzk6ZGU6ZGU6REU6TA&usg=AOvVaw1CoK9MPNvJFQOuj-_QinsD' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Bruchsal und Gaggenau sind Vorreiter bei Großbatteriespeicher - SWR Aktuell</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.mining.com/web/rare-earth-price-gap-flags-supply-strains-ahead-of-trump-xi-meet/&ct=ga&cd=CAIyG2ViYjdiNmMwYWFkNTVkYzk6ZGU6ZGU6REU6TA&usg=AOvVaw3WDgqHe3TNjytRF57B4eJg' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Rare earth price gap flags supply strains ahead of Trump-Xi meet - MINING.COM</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.oaklandinstitute.org/press-release/global-race-minerals-indonesias-nickel-curse&ct=ga&cd=CAIyG2ViYjdiNmMwYWFkNTVkYzk6ZGU6ZGU6REU6TA&usg=AOvVaw2Pb1F7iPKqA9q6ZglxrOwH' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>The Global Race for Minerals: Indonesia&#39;s Nickel Curse | The Oakland Institute</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://investornews.com/critical-minerals-rare-earths/washingtons-rare-earth-fantasy-is-running-out-of-reality/&ct=ga&cd=CAIyG2ViYjdiNmMwYWFkNTVkYzk6ZGU6ZGU6REU6TA&usg=AOvVaw0LfI-uHF8nf5Pvlk6jm8X0' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Washington&#39;s Rare Earth Fantasy Is Running Out of Reality - InvestorNews</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.finanznachrichten.de/nachrichten-2026-11/70093129-avalon-advanced-materials-inc-avalon-advanced-materials-inc-to-participate-in-citi-chemicals-and-basic-materials-conference-296.htm&ct=ga&cd=CAIyG2ViYjdiNmMwYWFkNTVkYzk6ZGU6ZGU6REU6TA&usg=AOvVaw379kK_iQk6hHxvJZqxrHsT' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Avalon Advanced Materials Inc. to Participate in Citi Chemicals and Basic Materials Conference</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>7.1 Landwirtschaft & Ernteausfälle (DE/EN)</span>
+              <span class="cat-tag">7. Wirtschaft, Landwirtschaft & Ernährung</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://x.com/uniofleicester/status/2120141980764196992&ct=ga&cd=CAIyG2MxNDBlOGI4ZmY5NTE1M2Q6ZGU6ZGU6REU6TA&usg=AOvVaw3XEF9udyCXGtkBHociYmKp" target="_blank" rel="noopener">University of Leicester on X: &quot;<b>Climate change</b> is global. Its impact is local. Our researchers ...</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="26 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">26</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://x.com/uniofleicester/status/2120141980764196992&ct=ga&cd=CAIyG2MxNDBlOGI4ZmY5NTE1M2Q6ZGU6ZGU6REU6TA&usg=AOvVaw3XEF9udyCXGtkBHociYmKp' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>University of Leicester on X: &quot;<b>Climate change</b> is global. Its impact is local. Our researchers ...</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://iofs.org/news/iofs-director-general-warns-climate-change-is-undermining-food-security-and-agricultural-productivity-at-cop31&ct=ga&cd=CAIyG2MxNDBlOGI4ZmY5NTE1M2Q6ZGU6ZGU6REU6TA&usg=AOvVaw0_A2WaODmdRqYYydf3VVMl' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>IOFS Director General Warns <b>Climate Change</b> Is Undermining <b>Food Security</b> and ...</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.potatopro.com/news/2026/fao-announces-2027-international-day-potato-theme-highlighting-climate-resilience-and&ct=ga&cd=CAIyG2MxNDBlOGI4ZmY5NTE1M2Q6ZGU6ZGU6REU6TA&usg=AOvVaw0J89L19yTy5c_FpzswijdM' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>FAO Announces 2027 International Day of Potato Theme, Highlighting Climate Resilience ...</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://iol.co.za/news/south-africa/2026-11-10-earth-is-accumulating-heat-faster-what-it-means-for-health-food-and-water/&ct=ga&cd=CAIyG2MxNDBlOGI4ZmY5NTE1M2Q6ZGU6ZGU6REU6TA&usg=AOvVaw1gFuVxsLK1rV_hd5R1-WlQ' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Earth is accumulating heat faster: What it means for health, food and water - IOL</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.straitstimes.com/singapore/spore-launches-initiative-to-fund-agri-food-adaptation-projects-in-se-asia-at-cop31&ct=ga&cd=CAIyG2MxNDBlOGI4ZmY5NTE1M2Q6ZGU6ZGU6REU6TA&usg=AOvVaw2RJDTqZDvY_kN1v8RodfOW' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>S&#39;pore launches initiative to fund agri-food adaptation projects in S-E Asia at COP31</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>7.2 Finanzmarkt & Risiken (DE/EN)</span>
+              <span class="cat-tag">7. Wirtschaft, Landwirtschaft & Ernährung</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.oenb.at/daten-und-forschung/publikationen/publikationsreihen/oenb-report/financial-stability-report/2026/financial-stability-report-52.html&ct=ga&cd=CAIyG2VlMDJhNzk4ZTMwNDFiYWQ6ZGU6ZGU6REU6TA&usg=AOvVaw17hAsytSzIK-ASgHHuDxue" target="_blank" rel="noopener"><b>Financial Stability</b> Report 52 - Oesterreichische Nationalbank</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="40 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">40</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.oenb.at/daten-und-forschung/publikationen/publikationsreihen/oenb-report/financial-stability-report/2026/financial-stability-report-52.html&ct=ga&cd=CAIyG2VlMDJhNzk4ZTMwNDFiYWQ6ZGU6ZGU6REU6TA&usg=AOvVaw17hAsytSzIK-ASgHHuDxue' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>Financial Stability</b> Report 52 - Oesterreichische Nationalbank</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.theactuary.com/2026/11/09/rates-change-how-climate-change-affects-interest-rates&ct=ga&cd=CAIyG2VlMDJhNzk4ZTMwNDFiYWQ6ZGU6ZGU6REU6TA&usg=AOvVaw1zcHvU27pxUczeDNy970jH' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Rates of change: how <b>climate</b> change affects interest rates - The Actuary - Magazine</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.durham.ac.uk/news-events/latest-news/2026/11/cstio-join-climate-risk-commons/&ct=ga&cd=CAIyG2VlMDJhNzk4ZTMwNDFiYWQ6ZGU6ZGU6REU6TA&usg=AOvVaw1SgpThMAFUtPKrTMP7QoHu' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>CSTIO join <b>Climate Risk</b> Commons - Durham University</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.forestsnews.org/165212/cop-31-flood-risk-landscape-adaptation&ct=ga&cd=CAIyG2VlMDJhNzk4ZTMwNDFiYWQ6ZGU6ZGU6REU6TA&usg=AOvVaw1UrCgFImsxNGWaWKsg-DBW' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Flood risk and the landscape lens: Adaptive capacity for a changing <b>climate</b> - Forests News</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.edie.net/oil-and-gas-majors-double-down-on-expansion-despite-transition-pledges/&ct=ga&cd=CAIyG2VlMDJhNzk4ZTMwNDFiYWQ6ZGU6ZGU6REU6TA&usg=AOvVaw0nu7lIcYs9Ub-pOgV99Eel' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Oil and gas majors double down on expansion despite transition pledges - Edie.net</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>8.1 Recht, Politik & Lobbyismus (DE/EN)</span>
+              <span class="cat-tag">8. Politik, Recht & Anpassung</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.theguardian.com/environment/live/2026/nov/10/cop31-live-fossil-fuel-carbon-emissions-climate-crisis-latest-news-updates&ct=ga&cd=CAIyG2Q3ZGVlYmY0ZWYzYmQ5YWU6ZGU6ZGU6REU6TA&usg=AOvVaw1xwF26ZyzKucVgKj1QA60A" target="_blank" rel="noopener"><b>Cop31</b> as it happened: &#39;Everything and everyone we love is at stake,&#39; Greta Thunberg warns</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="57 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">57</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.theguardian.com/environment/live/2026/nov/10/cop31-live-fossil-fuel-carbon-emissions-climate-crisis-latest-news-updates&ct=ga&cd=CAIyG2Q3ZGVlYmY0ZWYzYmQ5YWU6ZGU6ZGU6REU6TA&usg=AOvVaw1xwF26ZyzKucVgKj1QA60A' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>Cop31</b> as it happened: &#39;Everything and everyone we love is at stake,&#39; Greta Thunberg warns</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.carbonbrief.org/analysis-which-countries-have-sent-the-most-delegates-to-cop31&ct=ga&cd=CAIyG2Q3ZGVlYmY0ZWYzYmQ5YWU6ZGU6ZGU6REU6TA&usg=AOvVaw2M-WFDuFB-RnrhEIs_kgB3' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Analysis: Which countries have sent the most delegates to <b>COP31</b>? - Carbon Brief</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://time.com/article/2026/11/10/cop31-time100-impact-dinner/&ct=ga&cd=CAIyG2Q3ZGVlYmY0ZWYzYmQ5YWU6ZGU6ZGU6REU6TA&usg=AOvVaw3jHdsWOI2-_yF0XC-Pd2kB' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>Climate</b> Leaders Toast to a Hopeful Future at TIME100 Impact Dinner at <b>COP31</b></a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://globalaffairs.org/commentary/analysis/can-cop31-deliver-climate-finance&ct=ga&cd=CAIyG2Q3ZGVlYmY0ZWYzYmQ5YWU6ZGU6ZGU6REU6TA&usg=AOvVaw2OqpqdvRAT-KR3qLjhXu8q' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Can <b>COP31</b> Deliver on <b>Climate</b> Finance? | Chicago Council on Global Affairs</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.bloomberg.com/news/newsletters/2026-11-10/at-cop31-electrification-is-the-buzzword&ct=ga&cd=CAIyG2Q3ZGVlYmY0ZWYzYmQ5YWU6ZGU6ZGU6REU6TA&usg=AOvVaw0cjy_g9p80OgyEiAX2jnkU' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Why Everything Should Be Electric, Even If the Power Comes From Coal - Bloomberg.com</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>8.2 Anpassung & Geoengineering (DE/EN)</span>
+              <span class="cat-tag">8. Politik, Recht & Anpassung</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.antenne-mainz.de/aktuell/nachrichten-aus-der-region/mainz/rheinland-pfalz-baut-klimaanpassung-aus/&ct=ga&cd=CAIyGzdmZWYxZjM4MzliZTcwNzc6ZGU6ZGU6REU6TA&usg=AOvVaw1Ecxh5oM0PkPvIozMm1HbH" target="_blank" rel="noopener">Rheinland-Pfalz baut <b>Klimaanpassung</b> aus - Antenne Mainz</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="48 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">48</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.antenne-mainz.de/aktuell/nachrichten-aus-der-region/mainz/rheinland-pfalz-baut-klimaanpassung-aus/&ct=ga&cd=CAIyGzdmZWYxZjM4MzliZTcwNzc6ZGU6ZGU6REU6TA&usg=AOvVaw1Ecxh5oM0PkPvIozMm1HbH' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Rheinland-Pfalz baut <b>Klimaanpassung</b> aus - Antenne Mainz</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.ffh.de/video/mediathek/484293-ebling-stellt-massnahmen-zur-klimaanpassung-vor.html&ct=ga&cd=CAIyGzdmZWYxZjM4MzliZTcwNzc6ZGU6ZGU6REU6TA&usg=AOvVaw3tmcY251xAKsdZs2WsQMLg' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Ebling stellt <b>Maßnahmen</b> zur <b>Klimaanpassung</b> vor - Hit Radio FFH</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.watermagazine.co.uk/2026/11/11/mps-to-examine-flood-resilience-and-emergency-response/&ct=ga&cd=CAIyGzdmZWYxZjM4MzliZTcwNzc6ZGU6ZGU6REU6TA&usg=AOvVaw0N9aGXPcIWS_w2YCz0z-2s' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>MPs to examine flood resilience and emergency response - Water Magazine</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.1730live.de/2026/11/10/ebling-stellt-massnahmen-zur-klimaanpassung-vor/&ct=ga&cd=CAIyGzdmZWYxZjM4MzliZTcwNzc6ZGU6ZGU6REU6TA&usg=AOvVaw33OwIwobttT0AY8-0JWVAC' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Ebling stellt <b>Maßnahmen</b> zur <b>Klimaanpassung</b> vor - 17:30 Live Rheinland Pfalz/Hessen</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://carbon-pulse.com/569570/&ct=ga&cd=CAIyGzdmZWYxZjM4MzliZTcwNzc6ZGU6ZGU6REU6TA&usg=AOvVaw3hyF6SXq3rpQXyTk24uHaU' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>CDR</b> initiative urges EU to expand eligible pathways for ETS-funded purchases</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="evolution-card">
+            <h3>
+              <span>8.3 Militär & Sicherheitspolitik (DE/EN)</span>
+              <span class="cat-tag">8. Politik, Recht & Anpassung</span>
+            </h3>
+            
+            <div class="section-title">⚡ Letzte neue Meldung</div>
+            <div class="latest-item">
+                
+                <span class="latest-time">⏱️ 11.11.2026, 19:44 Uhr</span>
+                <a href="https://www.google.com/url?rct=j&sa=t&url=https://www.theguardian.com/environment/commentisfree/2026/nov/10/chris-bowen-faces-a-titanic-task-at-cop31-what-will-it-take-for-the-world-to-make-the-climate-crisis-its-top-priority&ct=ga&cd=CAIyG2QxYmUxM2M3NmZjMjdjYmI6ZGU6ZGU6REU6TA&usg=AOvVaw1FX_yTqxVNJuf_4as2tj4j" target="_blank" rel="noopener">Chris Bowen faces a titanic task at Cop31. What will it take for the world to make the <b>climate</b> ...</a>
+            
+            </div>
+
+            
+            <div class="section-title">📊 Aktivität (Meldungen pro Tag)</div>
+            <div class="chart-container">
+                
+                <div class="chart-bar-wrapper" title="0 Meldungen am 05.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">05.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 06.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">06.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 07.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">07.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 08.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">08.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 09.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">09.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="0 Meldungen am 10.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;"></span>
+                    <div class="chart-bar" style="height: 0px;"></div>
+                    <span class="chart-label">10.11.</span>
+                </div>
+            
+                <div class="chart-bar-wrapper" title="30 Meldungen am 11.11.">
+                    <span style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px;">30</span>
+                    <div class="chart-bar" style="height: 35px;"></div>
+                    <span class="chart-label">11.11.</span>
+                </div>
+            
+            </div>
+        
+            
+            <div class="section-title">📜 Verlauf (Auszug neuester Meldungen)</div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 0.85rem; color: var(--text-muted);">
+                <li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.theguardian.com/environment/commentisfree/2026/nov/10/chris-bowen-faces-a-titanic-task-at-cop31-what-will-it-take-for-the-world-to-make-the-climate-crisis-its-top-priority&ct=ga&cd=CAIyG2QxYmUxM2M3NmZjMjdjYmI6ZGU6ZGU6REU6TA&usg=AOvVaw1FX_yTqxVNJuf_4as2tj4j' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Chris Bowen faces a titanic task at Cop31. What will it take for the world to make the <b>climate</b> ...</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.theguardian.com/us-news/live/2026/nov/10/donald-trump-pete-hegseth-thomas-massie-republicans-iran-war-impeachment-midterms-latest-news-updates%3Fpage%3Dwith%253Ablock-6af3458c8f08d4dc2349e56d&ct=ga&cd=CAIyG2QxYmUxM2M3NmZjMjdjYmI6ZGU6ZGU6REU6TA&usg=AOvVaw1_elZOyfMBAnnV5J6Kkg-a' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>Pentagon</b> declares &#39;total victory&#39; after House Republicans block effort to impeach Pete Hegseth</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.aljazeera.com/news/2026/11/10/pentagon-chief-hegseth-calls-us-house-impeachment-effort-a-farce&ct=ga&cd=CAIyG2QxYmUxM2M3NmZjMjdjYmI6ZGU6ZGU6REU6TA&usg=AOvVaw3UzU3UV1zpwGP_2bELL4r2' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'><b>Pentagon</b> chief Pete Hegseth calls US House impeachment effort a &#39;farce&#39; - Al Jazeera</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://www.wz.de/politik/ausland/guterres-aus-fuer-kohle-oel-und-gas-darf-kein-tabu-mehr-sein_aid-158127167&ct=ga&cd=CAIyG2QxYmUxM2M3NmZjMjdjYmI6ZGU6ZGU6REU6TA&usg=AOvVaw1UbiIo8ECf6VQL1SJootKG' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>Guterres: Aus für Kohle, Öl und Gas darf kein Tabu mehr sein - Westdeutsche Zeitung</a></li><li style='margin-bottom: 4px;'><a href='https://www.google.com/url?rct=j&sa=t&url=https://thebulletin.org/premium/2026-11/how-water-energy-and-climate-are-reshaping-international-security/&ct=ga&cd=CAIyG2QxYmUxM2M3NmZjMjdjYmI6ZGU6ZGU6REU6TA&usg=AOvVaw2EMr0uFxEaK00WH7oLXkr0' target='_blank' rel='noopener' style='color: var(--link-color); text-decoration: none;'>How water, energy, and climate are reshaping international security</a></li>
+            </ul>
+        
+        </div>
+        
+    </div>
+</body>
+</html>
