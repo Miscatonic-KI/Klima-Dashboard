@@ -31,11 +31,14 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python generate_briefing.py
 
+      - name: Themen-Entwicklung generieren
+        run: python generate_evolution.py
+
       - name: Alle Änderungen speichern & hochladen
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git pull origin main --rebase || true
-          git add data.json summary.html generated/briefing.html
-          git commit -m "Automatisches Update: Feeds, Summary & KI-Briefing" || exit 0
+          git add data.json summary.html evolution.html generated/briefing.html
+          git commit -m "Automatisches Update: Feeds, Summary, Evolution & KI-Briefing" || exit 0
           git push
