@@ -388,9 +388,9 @@
                     const topItems = items.slice(0, 15);
                     const olderItems = items.slice(15);
 
-                    // Trend-Daten direkt lesbar aufbereiten (auch fürs Smartphone ohne Hover)
+                    // Trend-Daten komplett selbsterklärend aufbereitet
                     const trend = feed.meta_trend || { symbol: "▶", last_24h: 0, prev_24h: 0 };
-                    const trendHtml = `<span class="trend-badge">${trend.symbol} ${trend.last_24h} <span style="font-size: 0.68rem; opacity: 0.7; font-weight: normal;">(Vortag: ${trend.prev_24h})</span></span>`;
+                    const trendHtml = `<span class="trend-badge" style="display: block; font-size: 0.75rem; font-weight: normal; color: var(--text-muted); margin-top: 4px;">Trend: ${trend.symbol} ${trend.last_24h} <span style="font-size: 0.7rem;">(Vortag: ${trend.prev_24h})</span></span>`;
 
 
                     let itemsHtml = '';
