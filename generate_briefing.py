@@ -100,8 +100,9 @@ HALTE DICH STRIKT AN FOLGENDE STRUKTUR (keine umschließenden ```html Codeblocks
         print("KI-Briefing erfolgreich generiert!")
 
     except Exception as e:
-        print(f"Fehler bei der Kommunikation mit der Gemini API: {e}")
+        print(f"DETAILLIERTER FEHLER BEI DER API: {repr(e)}") # <--- Das zeigt uns den wahren Grund im Log!
         write_fallback("Das KI-Briefing ist aufgrund hoher Serverlast aktuell nicht verfügbar. Updates folgen beim nächsten Lauf.")
+
 
 def write_fallback(message):
     os.makedirs('generated', exist_ok=True)
