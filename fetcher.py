@@ -22,6 +22,7 @@ def fetch_all():
         feeds_config = json.load(f)
     
     output_data = []
+    now_utc = datetime.now(timezone.utc)
 
     for feed in feeds_config:
         feed_title = feed.get("title")
@@ -39,21 +40,52 @@ def fetch_all():
             with urllib.request.urlopen(req, timeout=10) as response:
                 xml_data = response.read()
                 root = ET.fromstring(xml_data)
-                ns = {'atom': 'http://www.w3.org/2005/Atom'}
                 
+                # Atom oder RSS Parser Unterstützung
+                # Wir versuchen Atom (<entry>) und Standard-RSS (<item>) abzudecken
+                ns = {'atom': 'http://www.w3.org/2005/Atom'}
                 entries = root.findall('atom:entry', ns)
-                for entry in entries:
-                    entry_title = entry.find('atom:title', ns)
-                    entry_link = entry.find('atom:link', ns)
-                    
-                    if entry_title is not None and entry_title.text:
-                        t_text = entry_title.text.strip()
-                        if t_text and t_text.lower() != "null":
-                            l_href = entry_link.attrib.get('href', '#') if entry_link is not None else '#'
-                            new_items.append({
-                                "title": t_text,
-                                "link": l_href
-                            })
+                
+                if entries:
+                    for entry in entries:
+                        entry_title = entry.find('atom:title', ns)
+                        entry_link = entry.find('atom:link', ns)
+                        entry_summary = entry.find('atom:summary', ns)
+                        if entry_summary is None:
+                            entry_summary = entry.find('atom:content', ns)
+                        
+                        if entry_title is not None and entry_title.text:
+                            t_text = entry_title.text.strip()
+                            if t_text and t_text.lower() != "null":
+                                l_href = entry_link.attrib.get('href', '#') if entry_link is not None else '#'
+                                desc_text = entry_summary.text.strip() if entry_summary is not None and entry_summary.text else ''
+                                
+                                new_items.append({
+                                    "title": t_text,
+                                    "link": l_href,
+                                    "desc": desc_text[:300], # Teaser begrenzen
+                                    "added_at": now_utc.isoformat() # Exakter Zeitstempel für Trend-Berechnung
+                                })
+                else:
+                    # Fallback für klassischen RSS-Feed (<item>)
+                    items = root.findall('.//item')
+                    for item in items:
+                        item_title = item.find('title')
+                        item_link = item.find('link')
+                        item_desc = item.find('description')
+                        
+                        if item_title is not None and item_title.text:
+                            t_text = item_title.text.strip()
+                            if t_text and t_text.lower() != "null":
+                                l_href = item_link.text.strip() if item_link is not None and item_link.text else '#'
+                                desc_text = item_desc.text.strip() if item_desc is not None and item_desc.text else ''
+                                
+                                new_items.append({
+                                    "title": t_text,
+                                    "link": l_href,
+                                    "desc": desc_text[:300],
+                                    "added_at": now_utc.isoformat()
+                                })
         except Exception as e:
             print(f"Fehler bei {feed_title}: {e}")
 
@@ -66,7 +98,10 @@ def fetch_all():
         for item in combined_items:
             link = item.get("link")
             title = item.get("title")
-            # Prüfen auf doppelte Links oder identische Titel
+            # Wenn ältere Items keinen 'added_at'-Stempel haben, einen Dummy vergeben
+            if "added_at" not in item:
+                item["added_at"] = now_utc.isoformat()
+
             if link not in seen_links and title not in seen_titles:
                 seen_links.add(link)
                 seen_titles.add(title)
@@ -74,6 +109,43 @@ def fetch_all():
 
         # Maximal 60 Meldungen pro Feed speichern
         feed_result["items"] = unique_items[:60]
+
+        # 4. Gleitendes 24-Stunden-Fenster für Trend-Prognose berechnen
+        # Letzte 24h vs. vorangegangene 24h
+        count_last_24h = 0
+        count_prev_24h = 0
+        
+        cutoff_24h = now_utc - timedelta(hours=24)
+        cutoff_48h = now_utc - timedelta(hours=48)
+
+        for item in unique_items:
+            try:
+                item_time = datetime.fromisoformat(item.get("added_at"))
+                if item_time >= cutoff_24h:
+                    count_last_24h += 1
+                elif cutoff_48h <= item_time < cutoff_24h:
+                    count_prev_24h += 1
+            except Exception:
+                pass
+
+        # Trend-Richtung bestimmen
+        if count_last_24h > count_prev_24h:
+            direction = "up"
+            symbol = "▲"
+        elif count_last_24h < count_prev_24h:
+            direction = "down"
+            symbol = "▼"
+        else:
+            direction = "same"
+            symbol = "▶"
+
+        feed_result["meta_trend"] = {
+            "last_24h": count_last_24h,
+            "prev_24h": count_prev_24h,
+            "direction": direction,
+            "symbol": symbol
+        }
+
         output_data.append(feed_result)
 
     # Zeitstempel (MEZ/MESZ)
@@ -117,6 +189,7 @@ def generate_summary_html(meta, feeds):
         h1 {{ color: #8b0000; font-size: 1.6rem; margin-top: 0; }}
         .meta {{ color: #4b5563; font-size: 0.85rem; border-bottom: 2px solid #8b0000; padding-bottom: 10px; margin-bottom: 20px; }}
         h2 {{ color: #8b0000; font-size: 1.2rem; margin-top: 25px; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; }}
+        .trend-badge {{ font-size: 0.8rem; background: #f3f4f6; padding: 2px 8px; border-radius: 4px; margin-left: 10px; font-weight: normal; color: #4b5563; }}
         h3 {{ font-size: 1rem; margin-top: 15px; margin-bottom: 8px; color: #111827; }}
         ul {{ padding-left: 20px; margin: 0 0 15px 0; font-size: 0.9rem; }}
         li {{ margin-bottom: 4px; }}
@@ -138,7 +211,10 @@ def generate_summary_html(meta, feeds):
     for cat_name, cat_feeds in categories.items():
         html_content += f"\n<h2>📌 {cat_name}</h2>"
         for feed in cat_feeds:
-            html_content += f"\n<h3>{feed['title']}</h3>"
+            trend = feed.get("meta_trend", {"symbol": "▶", "last_24h": 0, "prev_24h": 0})
+            trend_str = f"{trend['symbol']} {trend['last_24h']} neue Meldungen (24h) | Vortag: {trend['prev_24h']}"
+            
+            html_content += f"\n<h3>{feed['title']} <span class=\"trend-badge\">{trend_str}</span></h3>"
             if feed['items']:
                 html_content += "\n<ul>"
                 for item in feed['items']:
