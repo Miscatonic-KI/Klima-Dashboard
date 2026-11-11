@@ -99,10 +99,9 @@ HALTE DICH STRIKT AN FOLGENDE STRUKTUR (keine umschließenden ```html Codeblocks
             f.write(briefing_html)
         print("KI-Briefing erfolgreich generiert!")
 
-    except Exception as e:
-        print(f"DETAILLIERTER FEHLER BEI DER API: {repr(e)}") # <--- Das zeigt uns den wahren Grund im Log!
-        write_fallback("Das KI-Briefing ist aufgrund hoher Serverlast aktuell nicht verfügbar. Updates folgen beim nächsten Lauf.")
-
+        except Exception as e:
+        print(f"KRITISCHER FEHLER BEI DER API-GENERIERUNG: {repr(e)}")
+        raise e # <--- Das zwingt GitHub dazu, den echten Fehler im Log rot anzuzeigen!
 
 def write_fallback(message):
     os.makedirs('generated', exist_ok=True)
