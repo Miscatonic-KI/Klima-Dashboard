@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime
+from datetime import datetime, date, timedelta
 
 def generate_evolution_page():
     # 1. data.json einlesen
@@ -158,7 +158,7 @@ def generate_evolution_page():
             display: flex;
             align-items: flex-end;
             gap: 6px;
-            height: 50px;
+            height: 60px;
             background: var(--card-bg);
             padding: 8px 12px;
             border-radius: 6px;
@@ -180,7 +180,8 @@ def generate_evolution_page():
             background-color: var(--accent);
             border-radius: 2px 2px 0 0;
             min-height: 3px;
-            transition: height 0.3s;
+            flex-shrink: 0;
+            flex-grow: 0;
         }}
 
         .chart-label {{
@@ -212,7 +213,6 @@ def generate_evolution_page():
         latest_html = "<em>Keine Meldungen vorhanden.</em>"
         if items:
             first_item = items[0]
-            # Versuche das Datum lesbar zu machen falls added_at existiert
             raw_time = first_item.get("added_at", "")
             time_str = "Neu eingegangen"
             if raw_time:
@@ -227,7 +227,7 @@ def generate_evolution_page():
                 <a href="{first_item.get('link', '#')}" target="_blank" rel="noopener">{first_item.get('title', '')}</a>
             """
 
-        # 2. Aktivität nach Tagen gruppieren (für das Mini-Balkendiagramm der letzten 7 Tage)
+        # 2. Aktivität nach Tagen gruppieren (letzte 7 Tage)
         day_counts = {}
         for item in items:
             raw_time = item.get("added_at", "")
@@ -239,12 +239,8 @@ def generate_evolution_page():
                 except Exception:
                     pass
 
-        # Letzte 7 Tage generieren (sortiert)
-        from datetime import date, timedelta
         today = date.today()
-        chart_html = ""
         max_count = 1
-
         last_7_days = [(today - timedelta(days=i)) for i in range(6, -1, -1)]
         counts_list = []
         for d in last_7_days:
@@ -256,7 +252,7 @@ def generate_evolution_page():
 
         bars_markup = ""
         for label, count in counts_list:
-            # Prozentuale Höhe berechnen (max 38px damit es in die 50px Box passt)
+            # Maximale Balkenhöhe auf 35px skaliert
             height_px = int((count / max_count) * 35) if max_count > 0 else 3
             bars_markup += f"""
                 <div class="chart-bar-wrapper" title="{count} Meldungen am {label}">
@@ -274,7 +270,7 @@ def generate_evolution_page():
         """
 
         # 3. Verlauf (Liste der letzten Meldungen)
-        verlauf_items = items[:5] # Die letzten 5 als kompakter Verlauf
+        verlauf_items = items[:5]
         verlauf_list = ""
         if verlauf_items:
             for vi in verlauf_items:
@@ -289,7 +285,6 @@ def generate_evolution_page():
             </ul>
         """
 
-        # Karte zusammenbauen
         html_content += f"""
         <div class="evolution-card">
             <h3>
