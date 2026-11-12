@@ -496,6 +496,18 @@
         }
 
         window.onload = loadDashboard;
+
+        // Globale Funktion für klickbare Schlüsselwörter im KI-Briefing
+        window.applyFilter = function(keyword) {
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.value = keyword;
+                filterFeeds();
+                // Sanft zum Dashboard herunterscrollen, damit man die gefilterten Ergebnisse sieht
+                document.getElementById('dashboard-container').scrollIntoView({ behavior: 'smooth' });
+            }
+        };
+
     </script>
 </body>
 </html>
