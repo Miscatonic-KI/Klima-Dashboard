@@ -69,8 +69,11 @@ HALTE DICH STRIKT AN FOLGENDE STRUKTUR (keine umschließenden ```html Codeblocks
 
   <strong style="color: var(--text-main); font-size: 0.9rem; display: block; margin-bottom: 8px;">📊 Synthese & Lagebild:</strong>
   <ul style="margin: 0; padding-left: 18px; color: var(--text-muted); font-size: 0.88rem; line-height: 1.6;">
-    <!-- Erstelle genau 3 prägnante, analysierende Stichpunkte zur Gesamtlage auf Basis der Artikel. Bilde wichtige Keywords fett (**Beispiel** -> <strong>Beispiel</strong>). -->
-    <li><strong>Thema:</strong> Analyse...</li>
+    <!-- Erstelle genau 3 prägnante, analysierende Stichpunkte zur Gesamtlage auf Basis der Artikel. 
+         WICHTIG für Schlüsselwörter: Mache wichtige Begriffe klickbar, indem du sie exakt so formatierst: 
+         <span onclick="applyFilter('Suchbegriff')" style="cursor: pointer; color: var(--accent); font-weight: bold; text-decoration: underline;" title="Klicken, um Dashboard danach zu filtern">Suchbegriff</span>. 
+         Nutze im Suchbegriff nur einfache Wörter, die auch in den Artikeln vorkommen (z.B. 'Dürre', 'COP31', 'Klimawandel'). -->
+    <li><span onclick="applyFilter('Klimawandel')" style="cursor: pointer; color: var(--accent); font-weight: bold; text-decoration: underline;" title="Klicken, um Dashboard danach zu filtern">Klimawandel</span>: Analyse...</li>
   </ul>
   
   <p style="text-align: right; margin: 12px 0 0 0; font-size: 0.72rem; color: #9ca3af;">Synthetisiert via Google Gemini Flash-Lite & Text-Teaser-Analyse</p>
