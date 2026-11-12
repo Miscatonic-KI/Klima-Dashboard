@@ -76,7 +76,6 @@ HALTE DICH STRIKT AN FOLGENDE STRUKTUR (keine umschließenden ```html Codeblocks
          Beispiel: <span onclick="applyFilter('Mental health')" style="cursor: pointer; color: var(--accent); font-weight: bold; text-decoration: underline;" title="Klicken, um passende Meldungen zu filtern">Psychische Belastung</span> -->
     <li><span onclick="applyFilter('Mental health')" style="cursor: pointer; color: var(--accent); font-weight: bold; text-decoration: underline;" title="Klicken, um passende Meldungen zu filtern">Psychische Belastung</span>: Analyse...</li>
   </ul>
-
   
   <p style="text-align: right; margin: 12px 0 0 0; font-size: 0.72rem; color: #9ca3af;">Synthetisiert via Google Gemini Flash-Lite & Text-Teaser-Analyse</p>
 </div>
