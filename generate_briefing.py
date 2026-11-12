@@ -70,11 +70,11 @@ HALTE DICH STRIKT AN FOLGENDE STRUKTUR (keine umschließenden ```html Codeblocks
   <strong style="color: var(--text-main); font-size: 0.9rem; display: block; margin-bottom: 8px;">📊 Synthese & Lagebild:</strong>
   <ul style="margin: 0; padding-left: 18px; color: var(--text-muted); font-size: 0.88rem; line-height: 1.6;">
     <!-- Erstelle genau 3 prägnante, analysierende Stichpunkte zur Gesamtlage auf Basis der Artikel. 
-         WICHTIG für klickbare Schlüsselwörter (Filter-Trigger): 
-         - Wähle KEINE zu allgemeinen Begriffe wie "Klimawandel" oder "Krise".
-         - Wähle stattdessen präzise, inhaltsspezifische Fachbegriffe oder Phrasen, die auch wirklich in den Artikeln vorkommen (z.B. "psychologische Belastung", "Finanzierungs-Gap", "Extremwetter", "COP31", "Dürre").
-         - Formatiere sie exakt so: <span onclick="applyFilter('Suchbegriff')" style="cursor: pointer; color: var(--accent); font-weight: bold; text-decoration: underline;" title="Klicken, um Dashboard danach zu filtern">Suchbegriff</span>. -->
-    <li><span onclick="applyFilter('psychologische Belastung')" style="cursor: pointer; color: var(--accent); font-weight: bold; text-decoration: underline;" title="Klicken, um Dashboard danach zu filtern">psychologische Belastung</span>: Analyse...</li>
+         WICHTIG für klickbare Schlüsselwörter (Filter-Trigger):
+         1. Wähle einen aussagekräftigen deutschen Fachbegriff für den sichtbaren Fließtext (z.B. "psychologische Belastung", "Versicherungskrise", "Finanzierungs-Gap").
+         2. Übergebe an applyFilter('...') im JavaScript-Parameter IMMER 2 bis 3 kurze, exakte Stammwörter (auf Deutsch UND Englisch, getrennt durch das Pipe-Zeichen |), die auch wirklich in den Original-Artikeln vorkommen!
+         Beispiel: <span onclick="applyFilter('mental health|psychisch|anxiety')" style="cursor: pointer; color: var(--accent); font-weight: bold; text-decoration: underline;" title="Klicken, um passende Meldungen zu filtern">psychologische Belastung</span> -->
+    <li><span onclick="applyFilter('mental health|psychisch|anxiety')" style="cursor: pointer; color: var(--accent); font-weight: bold; text-decoration: underline;" title="Klicken, um passende Meldungen zu filtern">psychologische Belastung</span>: Analyse...</li>
   </ul>
   
   <p style="text-align: right; margin: 12px 0 0 0; font-size: 0.72rem; color: #9ca3af;">Synthetisiert via Google Gemini Flash-Lite & Text-Teaser-Analyse</p>
