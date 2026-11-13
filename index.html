@@ -327,6 +327,38 @@
     display: none;
     flex-direction: column;
 }
+.floating-nav-item {
+    padding: 10px 16px;
+    color: var(--text-main, #111827);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.floating-nav-item:hover {
+    background-color: var(--bg-color, #f3f4f6);
+    color: var(--accent, #8b0000);
+}
+
+.floating-nav-sub {
+    padding: 7px 16px 7px 34px;
+    font-size: 0.82rem;
+    color: var(--text-muted, #4b5563);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.floating-nav-divider {
+    height: 1px;
+    background-color: var(--border, #e5e7eb);
+    margin: 6px 0;
+}
 
 
     </style>
