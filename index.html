@@ -588,6 +588,87 @@
 
         window.onload = loadDashboard;
     </script>
+    <!-- Floating Hamburger Navigation -->
+<button class="floating-nav-btn" id="navToggleBtn" onclick="toggleFloatingNav()" aria-label="Menü öffnen">☰</button>
+
+<nav class="floating-nav-menu" id="floatingNavMenu">
+    <div class="floating-nav-item" onclick="scrollToTop()">⬆️ Nach oben springen</div>
+    
+    <!-- Hier werden Teil 1 bis 8 automatisch eingefügt -->
+    <div id="dynamic-sections-nav"></div>
+    
+    <div class="floating-nav-divider"></div>
+    
+    <a href="index.html" class="floating-nav-item">📊 Dashboard & Briefing</a>
+    <a href="regions.html" class="floating-nav-item">🌍 Regionen-Radar</a>
+    <a href="scenarios.html" class="floating-nav-item">🔮 Szenarien-Labor</a>
+    <a href="summary.html" class="floating-nav-item">📁 Text-Archiv & Evolution</a>
+</nav>
+
+<script>
+    function toggleFloatingNav() {
+        const menu = document.getElementById('floatingNavMenu');
+        const btn = document.getElementById('navToggleBtn');
+        menu.classList.toggle('open');
+        btn.textContent = menu.classList.contains('open') ? '✕' : '☰';
+    }
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        toggleFloatingNav();
+    }
+
+    // Automatische Erkennung der Abschnitte (Teil 1 bis Teil 8)
+    function buildDynamicSectionLinks() {
+        const container = document.getElementById('dynamic-sections-nav');
+        // Sucht nach Sektions-Überschriften (h2) auf der aktuellen Seite
+        const headings = document.querySelectorAll('.category-section h2, section h2, main h2');
+        const emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣'];
+        
+        if (headings.length === 0) return;
+
+        let html = '';
+        headings.forEach((h2, index) => {
+            if (index >= 8) return; // Maximal 8 Teile anzeigen
+            
+            // Eindeutige ID vergeben, falls noch keine vorhanden
+            if (!h2.id) {
+                h2.id = 'section-jump-' + (index + 1);
+            }
+            
+            // Bereinigt den Titel etwas, falls schon Zahlen davor stehen
+            const cleanTitle = h2.innerText.replace(/^\d+\.\s*/, '').trim();
+            
+            html += `<div class="floating-nav-item floating-nav-sub" onclick="jumpToSection('${h2.id}')" title="${cleanTitle}">
+                        ${emojis[index]} ${cleanTitle}
+                     </div>`;
+        });
+        
+        container.innerHTML = html;
+    }
+
+    function jumpToSection(id) {
+        const target = document.getElementById(id);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        toggleFloatingNav();
+    }
+
+    // Schließt das Menü automatisch, wenn man daneben klickt
+    document.addEventListener('click', function(event) {
+        const menu = document.getElementById('floatingNavMenu');
+        const btn = document.getElementById('navToggleBtn');
+        if (menu.classList.contains('open') && !menu.contains(event.target) && !btn.contains(event.target)) {
+            toggleFloatingNav();
+        }
+    });
+
+    // Führt die Abschnittserkennung aus (mit kleiner Verzögerung für dynamisch geladene Feeds)
+    window.addEventListener('DOMContentLoaded', () => {
+        setTimeout(buildDynamicSectionLinks, 800);
+    });
+</script>
 </body>
 </html>
  
