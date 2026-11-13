@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis-Tracker - Regionen-Radar</title>
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --section-bg: #ffffff;
+            --card-bg: #f9fafb;
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --accent: #8b0000;
+            --border: #e5e7eb;
+            --link-color: #990000;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            text-align: center;
+            margin: 20px 0 25px 0;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 6px;
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0 0 12px 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            font-size: 0.85rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            background: var(--section-bg);
+            padding: 6px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+        }
+
+        .back-link:hover {
+            background: var(--bg-color);
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+            padding: 0 5px;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 12px 18px;
+            background-color: var(--section-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            outline: none;
+            box-sizing: border-box;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .search-container input:focus {
+            border-color: var(--accent);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌍 Regionen-Radar</h1>
+        <p>Geografische Aufbereitung globaler Krisen- und Klimasignale</p>
+        <a href="index.html" class="back-link">← Zurück zum Haupt-Dashboard</a>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Regionen-Ansicht nach Ländern oder Begriffen durchsuchen..." onkeyup="filterRegions()">
+    </div>
+
+    <div class="container" id="regions-container">
+        <p style="text-align: center; color: var(--text-muted);">Lade regionale Krisendaten...</p>
+    </div>
+
+    <script>
+        async function loadRegions() {
+            try {
+                const response = await fetch('generated/regions_content.html?t=' + Date.now());
+                if (!response.ok) throw new Error('Netzwerk-Antwort war nicht ok');
+                const htmlContent = await response.text();
+                document.getElementById('regions-container').innerHTML = htmlContent;
+            } catch (error) {
+                console.error(error);
+                document.getElementById('regions-container').innerHTML = `
+                    <p style="color: #990000; text-align: center;">Regionen-Inhalt konnte noch nicht geladen werden. Bitte Skript-Lauf abwarten.</p>
+                `;
+            }
+        }
+
+        function filterRegions() {
+            const input = document.getElementById('searchInput').value.toLowerCase().trim();
+            const sections = document.querySelectorAll('.category-section');
+
+            sections.forEach(section => {
+                const text = section.innerText.toLowerCase();
+                if (input === '' || text.includes(input)) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        window.onload = loadRegions;
+    </script>
+</body>
+</html>
