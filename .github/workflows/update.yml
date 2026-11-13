@@ -34,6 +34,9 @@ jobs:
       - name: Themen-Entwicklung generieren
         run: python generate_evolution.py
 
+      - name: Generate Regions Analysis
+        run: python generate_regions.py
+ 
       - name: Alle Änderungen speichern & hochladen
         run: |
           git config --global user.name 'github-actions[bot]'
