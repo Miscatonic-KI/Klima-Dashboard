@@ -44,6 +44,6 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git pull origin main --rebase || true
-          git add data.json summary.html evolution.html generated/briefing.html
-          git commit -m "Automatisches Update: Feeds, Summary, Evolution & KI-Briefing" || exit 0
+          git add data.json summary.html evolution.html regions.html generated/briefing.html generated/regions_content.html
+          git commit -m "Automatisches Update: Feeds, Summary, Evolution, Briefing & Regionen-Radar" || exit 0
           git push
