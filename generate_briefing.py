@@ -60,7 +60,7 @@ HALTE DICH STRIKT AN FOLGENDE STRUKTUR (keine umschließenden ```html Codeblocks
   </h3>
   
   <div style="margin-bottom: 15px; padding-bottom: 12px; border-bottom: 1px dashed var(--border);">
-    <strong style="color: var(--text-main); font-size: 0.9rem; display: block; margin-bottom: 8px;">🔗 Die wichtigsten Quell-Meldungen im Fokus:</strong>
+    <strong style="color: var(--text-main); font-size: 0.9rem; display: block; margin-bottom: 8px;">🔗 Die wichtigsten Meldungen im Fokus:</strong>
     <ul style="margin: 0; padding-left: 18px; color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">
       <!-- Wähle 3 bis 5 der prägendsten Meldungen aus den Daten. Verlinke sie direkt mit ihrem Titel auf die Originalquelle (target="_blank" rel="noopener") und füge in 1-2 kurzen Sätzen hinzu, warum diese Meldung relevant ist. -->
       <li><a href="LINK" target="_blank" rel="noopener" style="color: var(--link-color); font-weight: 600; text-decoration: none;">ARTIKEL_TITEL</a> — Kurz-Einordnung / Teaser.</li>
