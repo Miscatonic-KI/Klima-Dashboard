@@ -113,4 +113,29 @@
     "url": "https://www.google.de/alerts/feeds/09273100019627181923/3263068424867222461",
     "desc": "Sicherheitspolitik, NATO/Pentagon-Berichte, military readiness, defense department und climate security."
   }
+   {
+    "category": "9. Wissenschaft & Studien",
+    "title": "9.1 Fachzeitschriften & Studien (Journals)",
+    "desc": "Peer-reviewed Studien aus Nature, Science, PLOS, PNAS und Fachjournalen.",
+"url": "https://www.google.de/alerts/feeds/09273100019627181923/17309957025437567309"
+  },
+  {
+    "category": "9. Wissenschaft & Studien",
+    "title": "9.2 Weltweite Forschungsinstitutionen",
+    "desc": "Berichte und Datensätze von IPCC, WMO, Copernicus, NOAA, NASA, PIK u. a.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/17196097758447668078"
+  },
+  {
+    "category": "9. Wissenschaft & Studien",
+    "title": "9.3.1 Klimaforscher weltweit",
+    "desc": "Einordnungen, Studien und Warnungen internationaler Klimawissenschaftler.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/15510386873008428892"
+  }
+{
+    "category": "9. Wissenschaft & Studien",
+    "title": "9.3.2 Klimaforscher weltweit",
+    "desc": "Einordnungen, Studien und Warnungen internationaler Klimawissenschaftler.",
+    "url": "https://www.google.de/alerts/feeds/09273100019627181923/17903619799563954902"
+  }
+
 ]
