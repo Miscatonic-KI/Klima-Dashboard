@@ -16,12 +16,12 @@ def load_data(path="data.json"):
     return meta, feeds
 
 
-def build_compact_digest(feeds, max_feeds=40, items_per_feed=5):
+def build_compact_digest(feeds, max_feeds=45, items_per_feed=5):
     """Verdichtet Meldungen kompakt, damit der Prompt schnell und zuverlässig bleibt."""
     lines = []
     for feed in feeds[:max_feeds]:
-        cat = feed.get("category", "Allgemein")
-        title = feed.get("title", "Feed")
+        cat = (feed.get("category") or "Allgemein").strip()
+        title = (feed.get("title") or "Feed").strip()
         items = feed.get("items", [])[:items_per_feed]
         if not items:
             continue
@@ -29,22 +29,20 @@ def build_compact_digest(feeds, max_feeds=40, items_per_feed=5):
         for it in items:
             t = (it.get("title") or "").replace("\n", " ").strip()
             d = (it.get("desc") or "").replace("\n", " ").strip()
-            link = it.get("link") or "#"
+            link = (it.get("link") or "#").strip()
             lines.append(f"- {t} | {d} | URL: {link}")
     return "\n".join(lines)
 
 
 def fallback_html(meta_info):
     return f"""
-    <div class="category-section">
-        <div class="category-header">
-            <h2>🎭 Akteure &amp; Hebel (Hinweis)</h2>
-        </div>
+    <section class="category-section">
+        <h2>🎭 Akteure &amp; Hebel (Hinweis)</h2>
         <p class="no-data">
             Aktuell konnte keine KI-Auswertung generiert werden (Stand: {meta_info.get("last_updated", "unbekannt")}).
             Beim nächsten Lauf wird die Analyse automatisch aktualisiert.
         </p>
-    </div>
+    </section>
     """
 
 
@@ -77,13 +75,13 @@ Nutze EXAKT diese 5 Gruppen in dieser Reihenfolge als Abschnitte:
 
 Für JEDE der 5 Gruppen liefere:
 - **Hebel & Dynamik**: 1–2 prägnante Sätze, wo in dieser Gruppe gerade der wichtigste Hebel oder Handlungsdruck liegt (nur auf Basis der Meldungen).
-- **Konkrete Signale**: 2 bis 4 Stichpunkte mit passendem Meldungstitel, kurzem Einordnungssatz und – wo sinnvoll – verlinktem Titel (`<a href="..." target="_blank" rel="noopener">Titel</a>`).
+- **Konkrete Signale & Quellen**: 2 bis 4 Stichpunkte (`<ul><li>...</li></ul>`), jeweils mit verlinktem Meldungstitel (`<a href="..." target="_blank" rel="noopener">Titel</a>`) aus den Meldungen unten und einem kurzen Einordnungssatz.
 
 Wichtige Regeln:
 - Antworte auf Deutsch, sachlich, klar und ohne Floskeln.
-- Erfinde keine Fakten oder Links hinzu; nutze nur Informationen aus den Meldungen unten.
-- Gib NUR reines HTML zurück (ohne ```html ... ``` Codeblöcke), bestehend aus <section class="category-section"> Blöcken,
-  in denen die Gruppenüberschrift in einem <h2> steht (wichtig für die automatische Menü-Erkennung).
+- Erfinde keine Fakten, Titel oder Links hinzu; nutze nur Informationen aus den Meldungen unten.
+- Gib NUR reines HTML zurück (ohne ```html ... ``` Codeblöcke), bestehend aus 5 `<section class="category-section">` Blöcken,
+  in denen die Gruppenüberschrift in einem `<h2>` steht (wichtig für die automatische Menü-Erkennung).
 
 MELDUNGEN:
 {digest_text}
