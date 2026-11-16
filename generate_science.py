@@ -20,17 +20,16 @@ def load_data(path="data.json"):
 
 def filter_science_feeds(feeds):
     """Filtert gezielt die Wissenschafts-Feeds aus data.json."""
-    science_feeds = [
+    return [
         f for f in feeds
         if SCIENCE_CATEGORY.lower() in (f.get("category") or "").lower()
     ]
-    return science_feeds
 
 
 def build_science_digest(science_feeds, items_per_feed=10):
     lines = []
     for feed in science_feeds:
-        title = feed.get("title", "Wissenschafts-Feed")
+        title = (feed.get("title") or "Wissenschafts-Feed").strip()
         items = feed.get("items", [])[:items_per_feed]
         if not items:
             continue
@@ -38,7 +37,7 @@ def build_science_digest(science_feeds, items_per_feed=10):
         for it in items:
             t = (it.get("title") or "").replace("\n", " ").strip()
             d = (it.get("desc") or "").replace("\n", " ").strip()
-            link = it.get("link") or "#"
+            link = (it.get("link") or "#").strip()
             lines.append(f"- {t} | {d} | URL: {link}")
     return "\n".join(lines)
 
@@ -47,7 +46,7 @@ def build_sources_html(science_feeds):
     """Erzeugt unterhalb der KI-Synthese die verifizierbare Quellenliste."""
     blocks = []
     for feed in science_feeds:
-        title = feed.get("title", "Quelle")
+        title = (feed.get("title") or "Quelle").strip()
         items = feed.get("items", [])[:12]
         if items:
             lis = "\n".join(
@@ -98,7 +97,7 @@ def generate_science():
             <h2>🔬 Was sagt die Wissenschaft?</h2>
             <p class="no-data">
                 Noch keine Wissenschafts-Feeds in der <code>feeds.json</code> unter der Kategorie
-                <strong>"Wissenschaft &amp; Studien"</strong> hinterlegt.
+                <strong>"9. Wissenschaft &amp; Studien"</strong> hinterlegt.
             </p>
         </section>
         """
@@ -158,7 +157,7 @@ WISSENSCHAFTS-MELDUNGEN:
             f.write(html_out)
         print("generated/science_content.html erfolgreich erstellt.")
     except Exception as e:
-        print(f"Fehler bei generate_science.py: {e}")
+        print(f"Fehler bei generate_science.py: {repr(e)}")
         with open("generated/science_content.html", "w", encoding="utf-8") as f:
             f.write(fallback_html(last_updated, sources_html))
 
