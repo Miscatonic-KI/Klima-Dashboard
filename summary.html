@@ -1261,6 +1261,7 @@
 
     function saveItems(items) {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+        syncCheckboxes();
         updateBar();
     }
 
@@ -1275,22 +1276,48 @@
         saveItems(items);
     }
 
+    function clearSelection() {
+        localStorage.removeItem(STORAGE_KEY);
+        syncCheckboxes();
+        updateBar();
+    }
+
+    function syncCheckboxes() {
+        const saved = getItems();
+        document.querySelectorAll('li[data-wb-link]').forEach(li => {
+            const cb = li.querySelector('input[type="checkbox"].wb-checkbox');
+            if (!cb) return;
+            const link = li.getAttribute('data-wb-link') || '';
+            const title = li.getAttribute('data-wb-title') || '';
+            cb.checked = saved.some(x => x.link === link && x.title === title);
+        });
+    }
+
     function updateBar() {
         const count = getItems().length;
         const badge = document.getElementById('wb-count-badge');
+        const clearBtn = document.getElementById('wb-clear-btn');
         if (badge) {
             badge.textContent = String(count);
         }
+        if (clearBtn) {
+            clearBtn.style.display = count > 0 ? 'inline-block' : 'none';
+        }
     }
 
-    // Kompakte Test-Leiste oben einfügen
+    // Kompakte Leiste oben einfügen
     const bar = document.createElement('div');
-    bar.style.cssText = 'position: sticky; top: 10px; z-index: 900; max-width: 860px; margin: 0 auto 16px auto; background: #ffffff; border: 1px solid #e5e7eb; border-left: 4px solid #8b0000; border-radius: 10px; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; gap: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); font-size: 0.88rem;';
+    bar.style.cssText = 'position: sticky; top: 10px; z-index: 900; max-width: 860px; margin: 0 auto 16px auto; background: #ffffff; border: 1px solid #e5e7eb; border-left: 4px solid #8b0000; border-radius: 10px; padding: 10px 14px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); font-size: 0.88rem;';
     bar.innerHTML = `
-        <div>🧰 <strong>Werkbank-Auswahl (Test):</strong> <span id="wb-count-badge">0</span> Meldung(en) markiert</div>
-        <a href="workbench.html" style="background: #8b0000; color: #ffffff; text-decoration: none; font-weight: 600; padding: 6px 12px; border-radius: 6px; font-size: 0.82rem;">Zur Werkbank →</a>
+        <div>🧰 <strong>Werkbank-Auswahl:</strong> <span id="wb-count-badge">0</span> Meldung(en) markiert</div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <button type="button" id="wb-clear-btn" style="display: none; background: #ffffff; color: #4b5563; border: 1px solid #d1d5db; border-radius: 6px; padding: 6px 10px; font-size: 0.82rem; font-weight: 600; cursor: pointer;">🗑️ Auswahl löschen</button>
+            <a href="workbench.html" style="background: #8b0000; color: #ffffff; text-decoration: none; font-weight: 600; padding: 6px 12px; border-radius: 6px; font-size: 0.82rem;">Zur Werkbank →</a>
+        </div>
     `;
     document.body.insertBefore(bar, document.body.firstChild);
+
+    document.getElementById('wb-clear-btn').addEventListener('click', clearSelection);
 
     // Checkboxen an alle Archiv-Listenpunkte anhängen
     const saved = getItems();
@@ -1303,8 +1330,12 @@
         const link = linkEl.getAttribute('href') || '';
         const h2 = li.closest('section, div')?.querySelector('h2')?.textContent?.trim() || 'Text-Archiv';
 
+        li.setAttribute('data-wb-title', title);
+        li.setAttribute('data-wb-link', link);
+
         const cb = document.createElement('input');
         cb.type = 'checkbox';
+        cb.className = 'wb-checkbox';
         cb.title = 'Für die Recherche-Werkbank markieren';
         cb.style.cssText = 'margin-right: 8px; cursor: pointer; transform: scale(1.08); vertical-align: middle;';
         cb.checked = saved.some(x => x.link === link && x.title === title);
@@ -1319,5 +1350,6 @@
     updateBar();
 })();
 </script>
+
 </body>
 </html>
