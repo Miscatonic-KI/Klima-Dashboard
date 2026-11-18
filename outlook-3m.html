@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis-Tracker | 3-Monats-Ausblick (Finanzen &amp; Planung)</title>
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --section-bg: #ffffff;
+            --card-bg: #f9fafb;
+            --card-hover: #f3f4f6;
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --accent: #8b0000;
+            --border: #e5e7eb;
+            --link-color: #990000;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 15px;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            text-align: center;
+            margin: 20px 0 25px 0;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 6px;
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0 0 10px 0;
+        }
+
+        .update-badge {
+            display: inline-block;
+            background-color: var(--section-bg);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+        }
+
+        .update-badge span {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .nav-pills {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .nav-pill {
+            font-size: 0.85rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            background: var(--section-bg);
+            padding: 5px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            transition: background-color 0.15s ease;
+        }
+
+        .nav-pill:hover,
+        .nav-pill.active {
+            background-color: var(--card-bg);
+            border-color: #d1d5db;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            padding: 0 5px;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 12px 18px;
+            background-color: var(--section-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            outline: none;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .search-container input:focus {
+            border-color: var(--accent);
+        }
+
+        .content-wrapper {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .intro-note {
+            background: var(--section-bg);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin-bottom: 22px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+        }
+
+        .intro-note strong {
+            color: var(--text-main);
+        }
+
+        .category-section {
+            margin-bottom: 24px;
+            background: var(--section-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .category-section h2 {
+            margin: 0 0 12px 0;
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 600;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 8px;
+        }
+
+        .category-section p {
+            font-size: 0.92rem;
+            line-height: 1.55;
+            color: var(--text-main);
+            margin: 0 0 10px 0;
+        }
+
+        .category-section ul {
+            padding-left: 20px;
+            margin: 8px 0 0 0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .category-section li {
+            margin-bottom: 8px;
+        }
+
+        .category-section a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .category-section a:hover {
+            text-decoration: underline;
+        }
+
+        .no-data {
+            color: var(--text-muted);
+            font-style: italic;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* Schwebendes Hamburger-Menü */
+        .floating-nav-btn {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            z-index: 1000;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: var(--accent, #8b0000);
+            color: #ffffff;
+            border: none;
+            font-size: 0.75rem;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .floating-nav-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .floating-nav-menu {
+            position: fixed;
+            top: 68px;
+            right: 15px;
+            z-index: 999;
+            width: 260px;
+            max-height: 80vh;
+            overflow-y: auto;
+            background-color: var(--section-bg, #ffffff);
+            border: 1px solid var(--border, #e5e7eb);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            padding: 10px 0;
+            display: none;
+            flex-direction: column;
+        }
+
+        .floating-nav-menu.open {
+            display: flex;
+        }
+
+        .floating-nav-item {
+            padding: 10px 16px;
+            color: var(--text-main, #111827);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: background-color 0.15s ease;
+        }
+
+        .floating-nav-item:hover {
+            background-color: var(--bg-color, #f3f4f6);
+            color: var(--accent, #8b0000);
+        }
+
+        .floating-nav-sub {
+            padding: 7px 16px 7px 34px;
+            font-size: 0.82rem;
+            color: var(--text-muted, #4b5563);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .floating-nav-divider {
+            height: 1px;
+            background-color: var(--border, #e5e7eb);
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>💶 3-Monats-Ausblick</h1>
+        <p>Was könnte in den nächsten 3 Monaten teurer, knapper oder schwieriger werden?</p>
+        <div class="update-badge" id="update-badge">
+            Datenstand: Laden... | Nächste Aktualisierung: Laden...
+        </div>
+        <nav class="nav-pills" aria-label="Bereichsnavigation">
+            <a href="index.html" class="nav-pill">📊 Dashboard</a>
+            <a href="science.html" class="nav-pill">🔬 Wissenschaft</a>
+            <a href="actors.html" class="nav-pill">🎭 Akteure &amp; Hebel</a>
+            <a href="regions.html" class="nav-pill">🌍 Regionen-Radar</a>
+            <a href="scenarios.html" class="nav-pill">🔮 Szenarien</a>
+            <a href="outlook-3m.html" class="nav-pill active">💶 3-Monats-Ausblick</a>
+            <a href="evolution.html" class="nav-pill">📈 Entwicklung</a>
+            <a href="summary.html" class="nav-pill">📄 Text-Archiv</a>
+            <a href="workbench.html" class="nav-pill">🧰 Werkbank</a>
+            <a href="methodik.html" class="nav-pill">🎯 Methodik</a>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Bereiche, Preise, Versorgung oder Planung durchsuchen..." onkeyup="filterOutlook()">
+    </div>
+
+    <main class="content-wrapper">
+        <div class="intro-note">
+            <strong>Einordnung &amp; Orientierung:</strong> Diese Seite übersetzt aktuelle Meldungen in mögliche Wirkungsketten
+            für die nächsten 3 Monate – getrennt nach <em>Belegt</em>, <em>Plausibel</em> und <em>Offen</em>.
+            Sie ersetzt keine Finanz- oder Rechtsberatung und bildet keine gesicherten Preisprognosen ab.
+        </div>
+
+        <div id="outlook-container">
+            <div class="category-section">
+                <p class="no-data" style="text-align: center;">Lade 3-Monats-Ausblick...</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        async function loadOutlookPage() {
+            try {
+                const metaResp = await fetch('data.json?t=' + Date.now());
+                if (metaResp.ok) {
+                    const dataJson = await metaResp.json();
+                    if (dataJson.meta) {
+                        document.getElementById('update-badge').innerHTML =
+                            `Datenstand: <span>${dataJson.meta.last_updated}</span> &nbsp;|&nbsp; Nächste Aktualisierung: <span>${dataJson.meta.next_update}</span>`;
+                    }
+                }
+            } catch (e) {
+                console.log("Meta-Daten konnten nicht geladen werden:", e);
+            }
+
+            try {
+                const resp = await fetch('generated/outlook_content.html?t=' + Date.now());
+                if (!resp.ok) throw new Error("Inhalt nicht gefunden");
+                const html = await resp.text();
+                document.getElementById('outlook-container').innerHTML = html;
+                buildDynamicSectionLinks();
+            } catch (e) {
+                document.getElementById('outlook-container').innerHTML = `
+                    <div class="category-section">
+                        <p class="no-data">Der <em>3-Monats-Ausblick</em> steht noch nicht bereit oder wird beim nächsten Lauf erzeugt.</p>
+                    </div>`;
+            }
+        }
+
+        function filterOutlook() {
+            const input = document.getElementById('searchInput').value.toLowerCase().trim();
+            const sections = document.querySelectorAll('#outlook-container .category-section');
+
+            sections.forEach(section => {
+                const text = section.innerText.toLowerCase();
+                if (input === '' || text.includes(input)) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        window.onload = loadOutlookPage;
+    </script>
+
+    <!-- Floating Hamburger Navigation -->
+    <button class="floating-nav-btn" id="navToggleBtn" onclick="toggleFloatingNav()" aria-label="Menü öffnen">☰</button>
+
+    <nav class="floating-nav-menu" id="floatingNavMenu">
+        <div class="floating-nav-item" onclick="scrollToTop()">⬆️ Nach oben springen</div>
+        <div id="dynamic-sections-nav"></div>
+        <div class="floating-nav-divider"></div>
+        <a href="index.html" class="floating-nav-item">📊 Dashboard &amp; Briefing</a>
+        <a href="science.html" class="floating-nav-item">🔬 Was sagt die Wissenschaft?</a>
+        <a href="actors.html" class="floating-nav-item">🎭 Akteure &amp; Hebel</a>
+        <a href="regions.html" class="floating-nav-item">🌍 Regionen-Radar</a>
+        <a href="scenarios.html" class="floating-nav-item">🔮 Szenarien-Labor</a>
+        <a href="outlook-3m.html" class="floating-nav-item">💶 3-Monats-Ausblick</a>
+        <a href="evolution.html" class="floating-nav-item">📈 Themen-Entwicklung</a>
+        <a href="summary.html" class="floating-nav-item">📄 Text-Archiv</a>
+        <a href="workbench.html" class="floating-nav-item">🧰 Werkbank</a>
+        <a href="methodik.html" class="floating-nav-item">🎯 Methodik</a>
+    </nav>
+
+    <script>
+        function toggleFloatingNav() {
+            const menu = document.getElementById('floatingNavMenu');
+            const btn = document.getElementById('navToggleBtn');
+            menu.classList.toggle('open');
+            btn.textContent = menu.classList.contains('open') ? '✕' : '☰';
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            toggleFloatingNav();
+        }
+
+        function buildDynamicSectionLinks() {
+            const container = document.getElementById('dynamic-sections-nav');
+            const headings = document.querySelectorAll('#outlook-container .category-section h2');
+            const emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣'];
+            if (!container || headings.length === 0) return;
+
+            let html = '';
+            headings.forEach((h2, index) => {
+                if (index >= 6) return;
+                if (!h2.id) h2.id = 'outlook-jump-' + (index + 1);
+                const cleanTitle = h2.innerText.replace(/^\d+\.\s*/, '').trim();
+                html += `<div class="floating-nav-item floating-nav-sub" onclick="jumpToSection('${h2.id}')" title="${cleanTitle}">
+                            ${emojis[index]} ${cleanTitle}
+                         </div>`;
+            });
+            container.innerHTML = html;
+        }
+
+        function jumpToSection(id) {
+            const target = document.getElementById(id);
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            toggleFloatingNav();
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('floatingNavMenu');
+            const btn = document.getElementById('navToggleBtn');
+            if (menu.classList.contains('open') && !menu.contains(event.target) && !btn.contains(event.target)) {
+                toggleFloatingNav();
+            }
+        });
+    </script>
+    <script data-goatcounter="[https://miscatonic.goatcounter.com/count](https://miscatonic.goatcounter.com/count)"
+            async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
