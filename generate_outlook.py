@@ -33,7 +33,7 @@ def flatten_feed_items(feeds, max_items=140):
         for it in feed.get("items", [])[:10]:
             title = (it.get("title") or "").replace("\n", " ").strip()
             desc = (it.get("desc") or "").replace("\n", " ").strip()
-            link = (it.get("link") or "#").strip()
+            link = (it.get("link") or "").strip()
             if title:
                 items.append({
                     "category": cat,
@@ -48,8 +48,16 @@ def flatten_feed_items(feeds, max_items=140):
     return items
 
 
+def collect_valid_urls(items):
+    valid = set()
+    for it in items:
+        url = (it.get("link") or "").strip()
+        if url.startswith("https://") or url.startswith("http://"):
+            valid.add(url)
+    return valid
+
+
 def normalize_country_token(entry):
-    # Entfernt Klammerzusätze wie "(Transit/Umschlag)" oder "(Verarbeitung)"
     cleaned = re.sub(r"\([^)]*\)", "", entry).strip()
     parts = [p.strip() for p in re.split(r"[/,]", cleaned) if len(p.strip()) >= 3]
     return parts
@@ -82,8 +90,6 @@ def match_matrix_to_news(matrix, items):
             risk_hits = [r for r in risk_tokens if r in h]
             wg_hits = [w for w in wg_tokens if w in h]
 
-            # Treffer, wenn Land/Region UND ein Risiko/Warengruppen-Begriff vorkommt,
-            # oder ein direkter Warengruppen-Begriff mit Risiko/Kontext zusammenfällt
             if (country_hits and (risk_hits or wg_hits)) or (wg_hits and risk_hits):
                 score = len(country_hits) * 2 + len(risk_hits) + len(wg_hits)
                 hits.append((score, country_hits, risk_hits, it))
@@ -94,8 +100,9 @@ def match_matrix_to_news(matrix, items):
             news_snippets = []
             for _, c_hits, r_hits, it in top_hits:
                 tags = ", ".join(sorted(set(c_hits + r_hits)))
+                url_part = f" | URL: {it['link']}" if it.get("link") else ""
                 news_snippets.append(
-                    f"  * Meldung: {it['title']} | URL: {it['link']}"
+                    f"  * Meldung: {it['title']} | Quelle: {it['feed']}{url_part}"
                     + (f" | Treffer: {tags}" if tags else "")
                     + (f" | Teaser: {it['desc'][:140]}" if it.get("desc") else "")
                 )
@@ -109,7 +116,6 @@ def match_matrix_to_news(matrix, items):
                 + "\n".join(news_snippets)
             )
 
-    # Falls kaum direkte Treffer vorliegen, die wichtigsten Prio-Gruppen als Kontext mitgeben
     if not matched_entries and matrix:
         prio_high = [w for w in matrix if w.get("prioritaet") == "Sehr hoch"][:8]
         for wg in prio_high:
@@ -124,13 +130,28 @@ def match_matrix_to_news(matrix, items):
     return "\n\n".join(matched_entries[:25])
 
 
-def build_general_digest(items, max_items=40):
+def build_general_digest(items, max_items=45):
     lines = []
     for it in items[:max_items]:
+        url_part = f" | URL: {it['link']}" if it.get("link") else ""
         lines.append(
-            f"- [{it['category']}] {it['title']} | {it['desc'][:150]} | URL: {it['link']}"
+            f"- [{it['category']}] {it['title']} ({it['feed']}) | {it['desc'][:140]}{url_part}"
         )
     return "\n".join(lines)
+
+
+def sanitize_links_against_allowlist(html_text, valid_urls):
+    """Entfernt Links, die nicht exakt in den vorliegenden Feed-Items enthalten sind."""
+    def repl(match):
+        href = match.group(1).strip()
+        if href in valid_urls:
+            return match.group(0)
+        return ""
+
+    cleaned = re.sub(r'<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>.*?</a>', repl, html_text, flags=re.IGNORECASE | re.DOTALL)
+    # Leere Listenpunkte nach entfernten Links aufräumen
+    cleaned = re.sub(r"<li>\s*(?:·\s*)?</li>", "", cleaned)
+    return cleaned
 
 
 def write_fallback(last_updated, message):
@@ -164,6 +185,7 @@ def generate_outlook():
         write_fallback(last_updated, "Keine aktuellen Meldungen in data.json vorhanden.")
         return
 
+    valid_urls = collect_valid_urls(items)
     matched_block = match_matrix_to_news(matrix, items)
     general_block = build_general_digest(items)
 
@@ -172,19 +194,22 @@ Du bist ein nüchterner Analyst für Versorgungs-, Lieferketten- und Preisrisike
 Aufgabe: Leite aus aktuellen Meldungen (Datenstand: {last_updated}) und den deutschen Import-/Warengruppen-Daten
 ab, was in den **nächsten 3 Monaten** für Finanzen, Preise, Versorgung und Planung in Deutschland relevant sein kann.
 
-Wichtiges Prinzip:
+Wichtige Prinzipien:
 - Erst Herkunftsländer/Regionen und gemeldete Ereignisse betrachten, dann Laufzeit/Vorlauf und Lieferkette prüfen,
   und erst dann mögliche Folgen in Deutschland für das 3-Monats-Fenster einordnen.
 - Kennzeichne Aussagen klar mit `[Belegt]`, `[Plausibel]` oder `[Offen]`.
 - Keine Finanz- oder Anlageberatung. Erfinde keine Zahlen, Preise, Länder oder URLs – nutze ausschließlich die Daten unten.
+- **Belege unter jedem Bereich:** Füge am Ende **jeder** Sektion (direkt vor `</section>`) einen kompakten Beleg-Block ein:
+  `<div class="outlook-sources"><strong>Belege:</strong> <ul><li><a href="EXAKTE_URL" target="_blank" rel="noopener noreferrer">Kurzer Meldungstitel</a></li>...</ul></div>`
+  Nutze dafür **nur** exakt übernommene URLs aus den unten aufgeführten Meldungen (max. 3–4 passende Links pro Sektion). Wenn für einen Bereich kaum direkte Meldungen vorliegen, nenne nur die nächstliegenden belegten Quellen oder schreibe `<p class="outlook-no-direct-link">Keine direkte Einzelmeldung im aktuellen Feed-Auszug.</p>`.
 
 Strukturiere die Ausgabe in **6 Sektionen** (`<section class="category-section outlook-card">`):
-1. `<h2>🌍 Herkunftsländer &amp; aktuelle Signale</h2>` (Wo zeigen die aktuellen Meldungen Bezug zu wichtigen Import-/Lieferländern oder Risikoregionen?)
-2. `<h2>🥦 Lebensmittel, Agrar &amp; Dünger</h2>` (Was könnte im 3-Monats-Fenster teurer, knapper oder schwieriger werden; inkl. Laufzeit/Vorlauf?)
-3. `<h2>⚡ Energie, Rohstoffe &amp; Industrie-Inputs</h2>` (Energie, Metalle, Zellstoff/Papier, Chemie, Halbleiter, Häfen/Logistik?)
-4. `<h2>🏥 Gesundheit &amp; Versorgungssicherheit</h2>` (Wirkstoffe/Arzneimittel, Medizinprodukte, Klinik-/Versorgungsdruck?)
-5. `<h2>🏠 Wohnen, Versicherungen &amp; Alltagskosten</h2>` (Schäden, Versicherungen, Bau/Sanierung, Haushaltsplanung?)
-6. `<h2>🧭 3-Monats-Planung &amp; Gegenfaktoren</h2>` (Konkrete Prüfpunkte für die nächsten 3 Monate + Saison, Lagerpuffer, Wechselkurse, allgemeine Inflation – gib NUR reines HTML ohne ```html Codeblöcke zurück.)
+1. `<h2>🌍 Herkunftsländer &amp; aktuelle Signale</h2>`
+2. `<h2>🥦 Lebensmittel, Agrar &amp; Dünger</h2>`
+3. `<h2>⚡ Energie, Rohstoffe &amp; Industrie-Inputs</h2>`
+4. `<h2>🏥 Gesundheit &amp; Versorgungssicherheit</h2>`
+5. `<h2>🏠 Wohnen, Versicherungen &amp; Alltagskosten</h2>`
+6. `<h2>🧭 3-Monats-Planung &amp; Gegenfaktoren</h2>` (Gib NUR reines HTML ohne ```html Codeblöcke zurück.)
 
 ABGLEICH MIT IMPORT- & WARENGRUPPEN-MATRIX (64 Gruppen):
 {matched_block}
@@ -212,6 +237,8 @@ AKTUELLE MELDUNGEN AUS DATA.JSON:
         if not html_out:
             write_fallback(last_updated, "Die KI-Antwort für den 3-Monats-Ausblick war leer.")
             return
+
+        html_out = sanitize_links_against_allowlist(html_out, valid_urls)
 
         with open("generated/outlook_content.html", "w", encoding="utf-8") as f:
             f.write(html_out)
