@@ -1,0 +1,1251 @@
+[
+  {
+    "id": "wg_01",
+    "warengruppe": "Bananen",
+    "bereich": "Obst / Frischware",
+    "laender": [
+      "Ecuador",
+      "Kolumbien",
+      "Costa Rica"
+    ],
+    "transportweg": "Übersee-Schiff, Kühl-/Reifekette",
+    "laufzeit": "14–25 Tage Seetransport; ca. 3–5 Wochen bis deutsches Lager",
+    "vorlauf_zwischenschritte": "Ernte-/Packbetrieb, Kühlung, Hafen, Reiferei",
+    "risiken": "Dürre/Hitze; Starkregen; Krankheiten; Hafenstörungen",
+    "wirkung_deutschland": "Schneller Preis- und Sortimentsdruck; Reifereien und Einzelhandel betroffen",
+    "prioritaet": "Hoch",
+    "hinweis": "Ursprungsland häufig gut erkennbar; Lieferland kann Umschlagstaat sein",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_02",
+    "warengruppe": "Zitrusfrüchte",
+    "bereich": "Obst / Frischware",
+    "laender": [
+      "Spanien",
+      "Italien",
+      "Südafrika",
+      "Ägypten"
+    ],
+    "transportweg": "Lkw aus EU; Kühl-Schiff aus Übersee",
+    "laufzeit": "2–7 Tage EU; 2–4 Wochen Übersee",
+    "vorlauf_zwischenschritte": "Erntefenster, Kühlung, Verpackung, Hafen",
+    "risiken": "Dürre; Wasserrestriktionen; Hitze; Frost",
+    "wirkung_deutschland": "Saisonale Knappheit und höhere Frischwarenpreise",
+    "prioritaet": "Hoch",
+    "hinweis": "Südafrika ergänzt europäische Saison",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_03",
+    "warengruppe": "Avocados",
+    "bereich": "Obst / Sonderkultur",
+    "laender": [
+      "Peru",
+      "Chile",
+      "Kolumbien",
+      "Spanien",
+      "Südafrika"
+    ],
+    "transportweg": "Lkw bzw. Kühlcontainer",
+    "laufzeit": "2–7 Tage EU; 2–5 Wochen Übersee",
+    "vorlauf_zwischenschritte": "Ernte, Reifung, Kühlkette, Handelsfreigabe",
+    "risiken": "Dürre; Wasserstress; El Niño; Starkregen",
+    "wirkung_deutschland": "Preis-/Verfügbarkeitsänderung mit Verzögerung",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Wasserintensive Produktion in einzelnen Anbaugebieten",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_04",
+    "warengruppe": "Beeren (Erdbeeren/Himbeeren)",
+    "bereich": "Obst / Sonderkultur",
+    "laender": [
+      "Spanien",
+      "Marokko",
+      "Niederlande",
+      "Polen",
+      "Portugal"
+    ],
+    "transportweg": "Kühl-Lkw; Luftfracht bei Premiumware",
+    "laufzeit": "1–5 Tage Europa; 2–5 Tage Luftfracht inkl. Abwicklung",
+    "vorlauf_zwischenschritte": "Ernte täglich, Sortierung, Kühlung, Handel",
+    "risiken": "Hitze; Starkregen; Wasserknappheit; Arbeitskräfteausfall",
+    "wirkung_deutschland": "Sehr kurze Reaktionszeit, hohe Verderblichkeit",
+    "prioritaet": "Hoch",
+    "hinweis": "Ernteausfälle können binnen Tagen im Regal auffallen",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_05",
+    "warengruppe": "Tomaten",
+    "bereich": "Gemüse",
+    "laender": [
+      "Niederlande",
+      "Spanien",
+      "Belgien",
+      "Marokko"
+    ],
+    "transportweg": "Lkw, teils Fähre",
+    "laufzeit": "1–5 Tage EU; 4–8 Tage Marokko",
+    "vorlauf_zwischenschritte": "Ernte, Sortierung, Kühlung, Grenz-/Fährlogistik",
+    "risiken": "Dürre; Hitze; Wasserrestriktionen; Energiepreise im Gewächshaus",
+    "wirkung_deutschland": "Preisaufschläge und Sortimentswechsel",
+    "prioritaet": "Hoch",
+    "hinweis": "Gewächshausenergie und Bewässerung mitbeobachten",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_06",
+    "warengruppe": "Paprika",
+    "bereich": "Gemüse",
+    "laender": [
+      "Spanien",
+      "Niederlande",
+      "Marokko",
+      "Türkei"
+    ],
+    "transportweg": "Kühl-Lkw",
+    "laufzeit": "2–7 Tage",
+    "vorlauf_zwischenschritte": "Ernte, Packhaus, Kühltransport",
+    "risiken": "Hitze; Dürre; Schädlinge; Starkregen",
+    "wirkung_deutschland": "Saisonale Preissteigerungen",
+    "prioritaet": "Hoch",
+    "hinweis": "Sonderkultur mit konzentrierten Anbaugebieten",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_07",
+    "warengruppe": "Gurken",
+    "bereich": "Gemüse",
+    "laender": [
+      "Niederlande",
+      "Spanien",
+      "Belgien",
+      "Polen"
+    ],
+    "transportweg": "Lkw",
+    "laufzeit": "1–5 Tage",
+    "vorlauf_zwischenschritte": "Ernte, Verpackung, Kühlung",
+    "risiken": "Hitze; Wasserknappheit; Gewächshausenergie",
+    "wirkung_deutschland": "Kurzfristige Preisschwankungen",
+    "prioritaet": "Hoch",
+    "hinweis": "Hohe Verderblichkeit",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_08",
+    "warengruppe": "Zwiebeln",
+    "bereich": "Gemüse / Lagerware",
+    "laender": [
+      "Niederlande",
+      "Polen",
+      "Österreich",
+      "Spanien",
+      "Neuseeland"
+    ],
+    "transportweg": "Lkw; Übersee-Schiff saisonal",
+    "laufzeit": "1–5 Tage EU; 4–7 Wochen Übersee",
+    "vorlauf_zwischenschritte": "Ernte, Trocknung, Lagerhaltung",
+    "risiken": "Dürre; Starkregen bei Ernte; Lagerverluste",
+    "wirkung_deutschland": "Preiswirkung oft über Lager- und Saisonwechsel",
+    "prioritaet": "Mittel",
+    "hinweis": "Lagerware puffert kurzfristig",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_09",
+    "warengruppe": "Kartoffeln",
+    "bereich": "Agrar / Grundnahrungsmittel",
+    "laender": [
+      "Niederlande",
+      "Frankreich",
+      "Belgien",
+      "Polen"
+    ],
+    "transportweg": "Lkw / Bahn",
+    "laufzeit": "1–4 Tage",
+    "vorlauf_zwischenschritte": "Ernte, Sortierung, Lagerung, Verarbeitung",
+    "risiken": "Dürre; Hitze; Starkregen; Lagerkrankheiten",
+    "wirkung_deutschland": "Verarbeitungs- und Speisekartoffelpreise",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Saatgut und Verarbeitung separat beobachten",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_10",
+    "warengruppe": "Äpfel und Birnen",
+    "bereich": "Obst / Lagerware",
+    "laender": [
+      "Italien",
+      "Niederlande",
+      "Polen",
+      "Frankreich",
+      "Österreich"
+    ],
+    "transportweg": "Lkw",
+    "laufzeit": "1–5 Tage",
+    "vorlauf_zwischenschritte": "Ernte, Kühllager, Sortierung",
+    "risiken": "Spätfrost; Hagel; Hitze; Dürre",
+    "wirkung_deutschland": "Saisonale Preis- und Qualitätsfolgen",
+    "prioritaet": "Mittel",
+    "hinweis": "Lagerbestände können Ernteausfall zeitlich verzögern",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_11",
+    "warengruppe": "Trauben / Tafeltrauben",
+    "bereich": "Obst / Sonderkultur",
+    "laender": [
+      "Italien",
+      "Spanien",
+      "Südafrika",
+      "Chile",
+      "Peru"
+    ],
+    "transportweg": "Kühl-Lkw / Kühl-Schiff",
+    "laufzeit": "2–7 Tage EU; 2–4 Wochen Übersee",
+    "vorlauf_zwischenschritte": "Ernte, Packhaus, Kühlkette",
+    "risiken": "Hitze; Dürre; Starkregen; Krankheiten",
+    "wirkung_deutschland": "Saisonale Angebotslücken",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Saisonale Herkunftswechsel",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_12",
+    "warengruppe": "Kaffee (Rohkaffee)",
+    "bereich": "Agrarrohstoff",
+    "laender": [
+      "Brasilien",
+      "Vietnam",
+      "Kolumbien",
+      "Honduras",
+      "Uganda"
+    ],
+    "transportweg": "Schiff, Container / Bulk",
+    "laufzeit": "15–30 Tage Seetransport; ca. 4–8 Wochen bis Röster",
+    "vorlauf_zwischenschritte": "Ernte, Aufbereitung, Trocknung, Exportlager, Hafen, Röstung",
+    "risiken": "Dürre; Hitze; Starkregen; Frost in Brasilien; Krankheiten",
+    "wirkung_deutschland": "Rohkaffee- und später Verbraucherpreise steigen",
+    "prioritaet": "Hoch",
+    "hinweis": "Börsenpreise und Ernteprognosen mit Verzögerung beobachten",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_13",
+    "warengruppe": "Kakao",
+    "bereich": "Agrarrohstoff",
+    "laender": [
+      "Côte d’Ivoire",
+      "Ghana",
+      "Ecuador",
+      "Nigeria",
+      "Kamerun"
+    ],
+    "transportweg": "Schiff",
+    "laufzeit": "15–30 Tage Seetransport; 4–8 Wochen bis Verarbeitung",
+    "vorlauf_zwischenschritte": "Ernte, Fermentation, Trocknung, Lager, Export",
+    "risiken": "Dürre; Hitze; Starkregen; Pflanzenkrankheiten",
+    "wirkung_deutschland": "Schokolade und kakaohaltige Produkte werden teurer",
+    "prioritaet": "Hoch",
+    "hinweis": "Westafrika stark konzentriert",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_14",
+    "warengruppe": "Sojabohnen / Sojaschrot",
+    "bereich": "Futtermittel / Ölsaat",
+    "laender": [
+      "Brasilien",
+      "USA",
+      "Argentinien",
+      "Kanada"
+    ],
+    "transportweg": "Bulk-Schiff / Binnenschiff / Bahn",
+    "laufzeit": "2–6 Wochen Übersee; 2–5 Tage EU-Umschlag",
+    "vorlauf_zwischenschritte": "Ernte, Silos, Exportterminal, Schiff, Ölmühle",
+    "risiken": "Dürre; Hitze; Überschwemmung; Niedrigwasser",
+    "wirkung_deutschland": "Futterkosten, Fleisch-/Milchpreise mit Verzögerung",
+    "prioritaet": "Hoch",
+    "hinweis": "Futterkette und Nebenprodukt Sojaöl beachten",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_15",
+    "warengruppe": "Mais (Import / Futter)",
+    "bereich": "Getreide / Futtermittel",
+    "laender": [
+      "Ukraine",
+      "Brasilien",
+      "USA",
+      "Frankreich",
+      "Polen"
+    ],
+    "transportweg": "Schiff / Bahn / Lkw",
+    "laufzeit": "1–5 Tage EU; 2–5 Wochen Übersee",
+    "vorlauf_zwischenschritte": "Ernte, Silos, Exporthafen, Mühle/Futterwerk",
+    "risiken": "Dürre; Hitze; Krieg/Exportrestriktionen; Niedrigwasser",
+    "wirkung_deutschland": "Futter- und Lebensmittelpreise",
+    "prioritaet": "Hoch",
+    "hinweis": "Ursprung und Transitroute unterscheiden",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_16",
+    "warengruppe": "Weizen (Import)",
+    "bereich": "Getreide",
+    "laender": [
+      "Polen",
+      "Tschechien",
+      "Frankreich",
+      "Kanada",
+      "Ukraine"
+    ],
+    "transportweg": "Lkw / Bahn / Schiff",
+    "laufzeit": "1–5 Tage EU; 2–5 Wochen Übersee",
+    "vorlauf_zwischenschritte": "Ernte, Lager, Mühle, Export",
+    "risiken": "Dürre; Starkregen bei Ernte; Frost; Exportbeschränkungen",
+    "wirkung_deutschland": "Mühlen-, Back- und Futtermittelpreise",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Qualitätsweizen und Futterweizen unterscheiden",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_17",
+    "warengruppe": "Fisch / Meeresfrüchte",
+    "bereich": "Lebensmittel / Kühlware",
+    "laender": [
+      "Norwegen",
+      "China",
+      "Vietnam",
+      "Ecuador",
+      "Niederlande"
+    ],
+    "transportweg": "Kühl-Lkw / Kühl-Schiff / Luftfracht",
+    "laufzeit": "2–7 Tage Europa; 3–6 Wochen Übersee",
+    "vorlauf_zwischenschritte": "Fang/Aquakultur, Verarbeitung, Kühlung, Handel",
+    "risiken": "Meerestemperatur; Algen/Krankheiten; Quoten; Hafenstörungen",
+    "wirkung_deutschland": "Preise und Verfügbarkeit im Kühl-/Tiefkühlregal",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Aquakultur und Wildfang unterschiedlich",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis nach Warencode; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_18",
+    "warengruppe": "Erdgas Pipeline",
+    "bereich": "Energie",
+    "laender": [
+      "Norwegen",
+      "Niederlande",
+      "Belgien (Transit/Umschlag)"
+    ],
+    "transportweg": "Pipeline",
+    "laufzeit": "Laufend (Stunden–Tage)",
+    "vorlauf_zwischenschritte": "Förderung, Aufbereitung, Netztransport, Speicherung",
+    "risiken": "Förder-/Wartungsausfälle; Kältewellen; Infrastrukturstörungen",
+    "wirkung_deutschland": "Strom-, Wärme- und Industriekosten",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Speicherstände und Norwegen-Wartungen beachten",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis/BNetzA; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_19",
+    "warengruppe": "LNG",
+    "bereich": "Energie",
+    "laender": [
+      "USA",
+      "Katar",
+      "weitere globale Anbieter"
+    ],
+    "transportweg": "LNG-Tanker, Importterminals, Pipeline",
+    "laufzeit": "1–4 Wochen Seetransport plus Regasifizierung/Netz",
+    "vorlauf_zwischenschritte": "Verflüssigung, Verschiffung, Terminal, Einspeisung",
+    "risiken": "Stürme/Hurrikane; Terminalausfälle; globale Preiswettbewerbe",
+    "wirkung_deutschland": "Gas- und Strompreise, Versorgungssicherheit",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Globaler Marktpreis beeinflusst Europa",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis/BNetzA; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_20",
+    "warengruppe": "Rohöl",
+    "bereich": "Energie / Raffinerieinput",
+    "laender": [
+      "Norwegen",
+      "USA",
+      "Kasachstan",
+      "Libyen",
+      "Saudi-Arabien (markt-/jahrabhängig)"
+    ],
+    "transportweg": "Tanker / Pipeline",
+    "laufzeit": "1–6 Wochen je Route",
+    "vorlauf_zwischenschritte": "Förderung, See-/Rohrtransport, Raffinerie",
+    "risiken": "Geopolitik; Seewege; Stürme; Raffinerieausfälle",
+    "wirkung_deutschland": "Kraftstoff-, Heizöl-, Chemie- und Transportkosten",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Weltmarktpreis und Frachtraten entscheidend",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_21",
+    "warengruppe": "Steinkohle / Kokskohle",
+    "bereich": "Energie / Stahlinput",
+    "laender": [
+      "USA",
+      "Australien",
+      "Kolumbien",
+      "Südafrika"
+    ],
+    "transportweg": "Bulk-Schiff, Hafen, Bahn/Binnenschiff",
+    "laufzeit": "3–7 Wochen Übersee",
+    "vorlauf_zwischenschritte": "Bergbau, Verladung, Seetransport, Hafen/Werk",
+    "risiken": "Starkregen/Fluten in Minen/Häfen; Bahn-/Hafenstörungen",
+    "wirkung_deutschland": "Stahlherstellung und ggf. Strom-/Wärmeproduktion",
+    "prioritaet": "Hoch",
+    "hinweis": "Kokskohle für Stahl von Kraftwerkskohle trennen",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_22",
+    "warengruppe": "Kalidünger",
+    "bereich": "Düngemittel",
+    "laender": [
+      "Kanada",
+      "Israel",
+      "Deutschland/EU",
+      "Jordanien"
+    ],
+    "transportweg": "Schiff / Bahn / Lkw",
+    "laufzeit": "1–5 Wochen",
+    "vorlauf_zwischenschritte": "Abbau, Aufbereitung, Export/Transport, Mischdünger",
+    "risiken": "Transportstörungen; Geopolitik; Produktionsausfälle",
+    "wirkung_deutschland": "Düngemittelkosten in der Landwirtschaft",
+    "prioritaet": "Hoch",
+    "hinweis": "Saisonale Einkaufszyklen der Landwirtschaft beachten",
+    "datenbasis": "World Bank WITS / UN Comtrade HS 3104 (2024); Partnerländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_23",
+    "warengruppe": "Phosphatdünger / Phosphatgestein",
+    "bereich": "Düngemittel / Rohstoff",
+    "laender": [
+      "Marokko",
+      "Russland",
+      "China",
+      "Ägypten",
+      "Tunesien"
+    ],
+    "transportweg": "Schiff / Bahn / Lkw",
+    "laufzeit": "1–5 Wochen",
+    "vorlauf_zwischenschritte": "Phosphatgestein/Säure, Düngerherstellung, Transport",
+    "risiken": "Exportbeschränkungen; Wasser-/Energieknappheit; Logistik",
+    "wirkung_deutschland": "Düngemittel- und Agrarvorleistungskosten",
+    "prioritaet": "Hoch",
+    "hinweis": "Rohphosphat und fertige Dünger unterscheiden",
+    "datenbasis": "World Bank WITS / UN Comtrade HS 3105 (2024); Partnerländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_24",
+    "warengruppe": "Stickstoffdünger / Ammoniak / Harnstoff",
+    "bereich": "Düngemittel / Chemie",
+    "laender": [
+      "Niederlande",
+      "Belgien",
+      "Polen",
+      "Tschechien",
+      "Russland",
+      "Ägypten"
+    ],
+    "transportweg": "Schiff / Binnenschiff / Bahn / Lkw",
+    "laufzeit": "Tage bis 4 Wochen",
+    "vorlauf_zwischenschritte": "Gas-/Ammoniaksynthese, Dünger-/Chemieproduktion, Transport",
+    "risiken": "Gas-/Strompreise; Anlagenstillstände; Niedrigwasser/Logistik",
+    "wirkung_deutschland": "Landwirtschaftliche Kosten und AdBlue/Chemie-Ketten",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Stark energieabhängig (Erdgas/Strom)",
+    "datenbasis": "World Bank WITS / UN Comtrade HS 3102 (2024); Partnerländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_25",
+    "warengruppe": "Strom / Netzkomponenten",
+    "bereich": "Energie / Infrastruktur",
+    "laender": [
+      "Frankreich",
+      "Niederlande",
+      "Dänemark",
+      "Polen",
+      "Tschechien",
+      "Schweiz (Austausch)"
+    ],
+    "transportweg": "Stromleitungen / Lkw / Spezialtransport",
+    "laufzeit": "Echtzeit (Strom) bis Monate (Trafos/Schaltanlagen)",
+    "vorlauf_zwischenschritte": "Erzeugung/Fertigung, Netzbetrieb, Genehmigung/Montage",
+    "risiken": "Wetterextreme; Kühlwasser-/Wind-/Solar-Schwankungen; Lieferzeiten",
+    "wirkung_deutschland": "Strompreise, Netzstabilität, Ausbauzeiten",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Stromhandel ist bidirektionaler Austausch",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis/SMARD; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_26",
+    "warengruppe": "Kupfererz / Konzentrat",
+    "bereich": "Metallrohstoff",
+    "laender": [
+      "Chile",
+      "Peru",
+      "Brasilien",
+      "Indonesien",
+      "Australien"
+    ],
+    "transportweg": "Bulk-Schiff / Hafen",
+    "laufzeit": "4–7 Wochen Übersee",
+    "vorlauf_zwischenschritte": "Bergbau, Aufbereitung, Hafen, Verhüttung",
+    "risiken": "Wasserknappheit/Dürre; Erdrutsche/Fluten; Streiks; Smelter-Engpässe",
+    "wirkung_deutschland": "Vorstufe für Kupfer, Kabel, Netze, Elektronik",
+    "prioritaet": "Hoch",
+    "hinweis": "Konzentrat und raffiniertes Kupfer getrennt betrachten",
+    "datenbasis": "KfW Research (2024) / EU JRC RMIS / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_27",
+    "warengruppe": "Kupferraffinade / Halbzeug",
+    "bereich": "Metall / Vorprodukt",
+    "laender": [
+      "Chile",
+      "Peru",
+      "Polen",
+      "Belgien",
+      "Schweden",
+      "weitere EU"
+    ],
+    "transportweg": "Schiff / Bahn / Lkw",
+    "laufzeit": "1–6 Wochen",
+    "vorlauf_zwischenschritte": "Verhüttung, Raffination, Walz-/Drahtwerk",
+    "risiken": "Energiepreise; Schmelz-/Walzwerkausfälle; Logistik",
+    "wirkung_deutschland": "Kosten und Lieferzeiten für Elektro-, Bau- und Industrieprojekte",
+    "prioritaet": "Hoch",
+    "hinweis": "Recyclingkupfer ergänzt Primärkupfer",
+    "datenbasis": "KfW Research (2024) / EU JRC RMIS / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_28",
+    "warengruppe": "Lithium / Lithiumchemikalien",
+    "bereich": "Batterierohstoff",
+    "laender": [
+      "Australien",
+      "Chile",
+      "Argentinien",
+      "China (Verarbeitung)"
+    ],
+    "transportweg": "Schiff / Container",
+    "laufzeit": "4–8 Wochen",
+    "vorlauf_zwischenschritte": "Sole-/Hartgesteinsgewinnung, Konzentrat, Raffination/Batteriechemie",
+    "risiken": "Wasser-/Sole-Bilanzen; Wetter; Export-/Verarbeitungskonzentration",
+    "wirkung_deutschland": "Batterie-, Speicher- und E-Mobilitäts-Wertschöpfung",
+    "prioritaet": "Hoch",
+    "hinweis": "Verarbeitung oft in anderem Land als Rohstoffabbau",
+    "datenbasis": "KfW Research (2024) / EU JRC RMIS / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_29",
+    "warengruppe": "Kobalt",
+    "bereich": "Batterie-/Metallrohstoff",
+    "laender": [
+      "DR Kongo",
+      "Indonesien",
+      "China (Raffination)"
+    ],
+    "transportweg": "Lkw/Bahn zu Hafen, Seeschiff",
+    "laufzeit": "5–9 Wochen",
+    "vorlauf_zwischenschritte": "Bergbau, Exportlogistik, Raffination, Vorprodukte",
+    "risiken": "Logistik-/Grenzstörungen; Politik/Governance; Umwelt-/Arbeitsstandards",
+    "wirkung_deutschland": "Speziallegierungen und Batteriematerialien",
+    "prioritaet": "Hoch",
+    "hinweis": "Hohe geographische und Verarbeitungs-Konzentration",
+    "datenbasis": "EU JRC RMIS / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_30",
+    "warengruppe": "Nickel",
+    "bereich": "Batterie-/Stahlrohstoff",
+    "laender": [
+      "Indonesien",
+      "Australien",
+      "Kanada",
+      "Norwegen"
+    ],
+    "transportweg": "Schiff / Bahn / Lkw",
+    "laufzeit": "2–7 Wochen",
+    "vorlauf_zwischenschritte": "Abbau, HPAL-/Schmelzverarbeitung, Raffination",
+    "risiken": "Umwelt-/Regulierungsrisiken; Energie-/Abfallthemen; Marktpreise",
+    "wirkung_deutschland": "Edelstahl und Batteriechemie",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Nickel für Edelstahl und Batteriequalität unterscheiden",
+    "datenbasis": "EU JRC RMIS / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_31",
+    "warengruppe": "Seltene Erden / Magnete",
+    "bereich": "Kritischer Rohstoff / Vorprodukt",
+    "laender": [
+      "China",
+      "teils Australien, USA, Malaysia (Verarbeitung)"
+    ],
+    "transportweg": "Schiff / Luftfracht",
+    "laufzeit": "2–7 Wochen See; wenige Tage Luftfracht",
+    "vorlauf_zwischenschritte": "Trennung/Raffination, Metall-/Legierungsherstellung, Magnetfertigung",
+    "risiken": "Exportkontrollen; Umwelt-/Anlagenstillstände; Lieferkonzentration",
+    "wirkung_deutschland": "Windkraft, E-Antriebe, Robotik, Elektronik, Verteidigung",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Besonders kritisch bei Trennung und Permanentmagneten",
+    "datenbasis": "KfW Research (2024) / EU JRC RMIS / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_32",
+    "warengruppe": "Graphit (natürlich/synthetisch)",
+    "bereich": "Batterierohstoff",
+    "laender": [
+      "China",
+      "Mosambik",
+      "Madagaskar",
+      "Brasilien"
+    ],
+    "transportweg": "Schiff / Container",
+    "laufzeit": "4–8 Wochen",
+    "vorlauf_zwischenschritte": "Abbau/Graphitierung, Anodenmaterial-Aufbereitung",
+    "risiken": "Exportregeln; Energie-/Umweltauflagen; Hafen-/Transportrisiken",
+    "wirkung_deutschland": "Anoden für Lithium-Ionen-Batterien und Industrie",
+    "prioritaet": "Hoch",
+    "hinweis": "Anoden-Verarbeitung stark konzentriert",
+    "datenbasis": "EU JRC RMIS / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_33",
+    "warengruppe": "Magnesium",
+    "bereich": "Metallrohstoff",
+    "laender": [
+      "China",
+      "Israel",
+      "Türkei (markt-/produktabhängig)"
+    ],
+    "transportweg": "Schiff / Lkw",
+    "laufzeit": "3–7 Wochen Übersee; Tage aus Europa",
+    "vorlauf_zwischenschritte": "Reduktion (oft kohle-/energieintensiv), Guss/Legierung",
+    "risiken": "Energie-/Kohleengpässe; Export-/Umweltauflagen; Fracht",
+    "wirkung_deutschland": "Aluminiumlegierungen, Automobil-, Luftfahrt- und Gussindustrie",
+    "prioritaet": "Hoch",
+    "hinweis": "Für Aluminiumlegierungen schwer kurzfristig ersetzbar",
+    "datenbasis": "EU JRC RMIS / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_34",
+    "warengruppe": "Aluminium / Primäraluminium",
+    "bereich": "Metall / Vorprodukt",
+    "laender": [
+      "Norwegen",
+      "Island",
+      "UAE",
+      "Kanada",
+      "China"
+    ],
+    "transportweg": "Schiff / Lkw",
+    "laufzeit": "3 Tage–6 Wochen",
+    "vorlauf_zwischenschritte": "Tonerde, Elektrolyse (sehr stromintensiv), Guss/Walzen",
+    "risiken": "Strompreise; Wasser-/Wasserkraft- oder Netzengpässe; Seewege",
+    "wirkung_deutschland": "Verpackungen, Bau, Transport, Maschinenbau",
+    "prioritaet": "Hoch",
+    "hinweis": "Strompreis und Sekundäraluminium/Schrott mitdenken",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_35",
+    "warengruppe": "Eisenerz",
+    "bereich": "Stahlrohstoff",
+    "laender": [
+      "Brasilien",
+      "Schweden",
+      "Kanada",
+      "Südafrika"
+    ],
+    "transportweg": "Bulk-Schiff / Bahn",
+    "laufzeit": "3–6 Wochen Übersee; Tage aus Skandinavien",
+    "vorlauf_zwischenschritte": "Mine, Bahn/Hafen, Seetransport, Hochofen/DRI",
+    "risiken": "Starkregen/Dammbrüche/Hitze in Minen; Hafen-/Bahnstörungen",
+    "wirkung_deutschland": "Rohstahl- und Walzstahlkette",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Schrottanteil und DRI-Routen beobachten",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_36",
+    "warengruppe": "Stahl / Flachstahl",
+    "bereich": "Industrie- und Bauinput",
+    "laender": [
+      "EU",
+      "Türkei",
+      "China",
+      "Indien",
+      "Südkorea"
+    ],
+    "transportweg": "Schiff / Binnenschiff / Bahn / Lkw",
+    "laufzeit": "Tage (EU) bis 5–8 Wochen (Übersee)",
+    "vorlauf_zwischenschritte": "Stahlerzeugung, Warm-/Kaltwalzen, Verzinken, Transport",
+    "risiken": "Energie-/Kohlepreise; Wasser für Kühlung/Binnenschifffahrt; Handelspolitik",
+    "wirkung_deutschland": "Auto-, Maschinen-, Geräte- und Bauindustrie",
+    "prioritaet": "Hoch",
+    "hinweis": "Handelsmaßnahmen und Lieferzeiten wichtig",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_37",
+    "warengruppe": "Silizium / Polysilizium",
+    "bereich": "Solar-/Elektronikrohstoff",
+    "laender": [
+      "China",
+      "Norwegen",
+      "Deutschland/EU",
+      "USA"
+    ],
+    "transportweg": "Schiff / Lkw",
+    "laufzeit": "Tage bis 6 Wochen",
+    "vorlauf_zwischenschritte": "Quarz, Lichtbogenofen (stromintensiv), Wafer/Zellen/Module",
+    "risiken": "Strompreise; Dürre/Wasserkraft in Erzeugerregionen; Überkapazitäten/Handel",
+    "wirkung_deutschland": "Halbleiter-, Chemie- und Solar-Lieferketten",
+    "prioritaet": "Hoch",
+    "hinweis": "Metallurgisches Silizium, Polysilizium und Wafer trennen",
+    "datenbasis": "EU JRC RMIS / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_38",
+    "warengruppe": "Uran / Kernbrennstoffkette",
+    "bereich": "Energieinput",
+    "laender": [
+      "Kasachstan",
+      "Kanada",
+      "Australien",
+      "Niger (Uranerz, Marktbezug)"
+    ],
+    "transportweg": "Spezialtransporte / Schiff / Bahn",
+    "laufzeit": "Mehrere Wochen bis Monate (inkl. Konversion/Anreicherung)",
+    "vorlauf_zwischenschritte": "Abbau, Konversion, Anreicherung, Brennelementfertigung",
+    "risiken": "Geopolitik; Transport-/Routenrisiken; Anreicherungskapazitäten",
+    "wirkung_deutschland": "Indirekt über EU-Strommärkte und internationale Kernenergie",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Deutschland hat keine eigenen AKW mehr, EU-Strommärkte aber vernetzt",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_39",
+    "warengruppe": "Zellstoff",
+    "bereich": "Papier-/Hygieneinput",
+    "laender": [
+      "Brasilien",
+      "Schweden",
+      "Finnland",
+      "Kanada"
+    ],
+    "transportweg": "Schiff / Bahn / Lkw",
+    "laufzeit": "1–6 Wochen",
+    "vorlauf_zwischenschritte": "Holz/Forstwirtschaft, Zellstoffwerk, Trocknung, Transport",
+    "risiken": "Waldbrände; Dürre/Borkenkäfer; Starkregen; Streiks/Logistik",
+    "wirkung_deutschland": "Kosten für Papier, Karton, Hygiene- und Haushaltspapier",
+    "prioritaet": "Hoch",
+    "hinweis": "Kurzfaser- und Langfaserzellstoff unterscheiden",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_40",
+    "warengruppe": "Papier / Karton / Wellpappe",
+    "bereich": "Verpackungs- und Hygieneinput",
+    "laender": [
+      "Schweden",
+      "Finnland",
+      "Polen",
+      "Österreich",
+      "Frankreich",
+      "Niederlande"
+    ],
+    "transportweg": "Lkw / Bahn / Schiff",
+    "laufzeit": "1–10 Tage",
+    "vorlauf_zwischenschritte": "Zellstoff/Altpapier, Papiermaschine, Verarbeitung/Verpackung",
+    "risiken": "Energie-/Zellstoffpreise; Altpapierverfügbarkeit; Transportkosten",
+    "wirkung_deutschland": "Verpackungskosten im Handel und Hygieneartikelpreise",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Altpapierquote in Deutschland hoch",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_41",
+    "warengruppe": "Schnittholz / Bauholz",
+    "bereich": "Baustoff / Holz",
+    "laender": [
+      "Österreich",
+      "Polen",
+      "Schweden",
+      "Tschechien",
+      "Finnland"
+    ],
+    "transportweg": "Lkw / Bahn / Schiff",
+    "laufzeit": "1–10 Tage",
+    "vorlauf_zwischenschritte": "Einschlag, Sägewerk, Trocknung, Transport",
+    "risiken": "Stürme; Trockenheit/Borkenkäfer; Waldbrände; Baunachfrage",
+    "wirkung_deutschland": "Holzbau-, Dach- und Möbel-/Verpackungspreise",
+    "prioritaet": "Mittel",
+    "hinweis": "Kalamitätsholz kann Preise kurzfristig drücken, später drehen",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_42",
+    "warengruppe": "Naturkautschuk",
+    "bereich": "Industrie-/Chemierohstoff",
+    "laender": [
+      "Thailand",
+      "Indonesien",
+      "Vietnam",
+      "Malaysia",
+      "Côte d’Ivoire"
+    ],
+    "transportweg": "Schiff / Container",
+    "laufzeit": "4–7 Wochen",
+    "vorlauf_zwischenschritte": "Zapfen, Koagulation/Trocknung, Export, Reifen-/Gummiproduktion",
+    "risiken": "Starkregen/Fluten; Dürre/Hitze; Blattkrankheiten; Entwaldungsregeln",
+    "wirkung_deutschland": "Reifen-, Dichtungs- und Industrie-/Medizinprodukte",
+    "prioritaet": "Hoch",
+    "hinweis": "Synthesekautschuk als Teilalternative",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_43",
+    "warengruppe": "Kunststoffgranulate",
+    "bereich": "Chemie / Verpackung / Industrie",
+    "laender": [
+      "Niederlande",
+      "Belgien",
+      "Frankreich",
+      "USA",
+      "China",
+      "Saudi-Arabien"
+    ],
+    "transportweg": "Lkw / Bahn / Schiff / Binnenschiff",
+    "laufzeit": "Tage bis 6 Wochen",
+    "vorlauf_zwischenschritte": "Cracker/Petrochemie, Polymerisation, Granulierung",
+    "risiken": "Öl-/Gas-/Strompreise; Cracker-Ausfälle; Niedrigwasser/Logistik",
+    "wirkung_deutschland": "Verpackungen, Bauteile, Konsumgüter, Bau",
+    "prioritaet": "Hoch",
+    "hinweis": "Viele verschiedene Polymertypen",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_44",
+    "warengruppe": "Chemische Grundstoffe",
+    "bereich": "Chemie / Industrieinput",
+    "laender": [
+      "Niederlande",
+      "Belgien",
+      "Frankreich",
+      "USA",
+      "China",
+      "Schweiz"
+    ],
+    "transportweg": "Pipeline / Binnenschiff / Bahn / Lkw / Schiff",
+    "laufzeit": "Stunden bis 6 Wochen",
+    "vorlauf_zwischenschritte": "Grundchemikalien, Zwischenprodukte, Spezialchemie",
+    "risiken": "Energiepreise; Kühlwasser-/Niedrigwasser; Anlagenstillstände",
+    "wirkung_deutschland": "Breite Wirkung auf fast alle Industrien und Konsumgüter",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Querschnittsfaktor für Wirtschaft und Versorgung",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_45",
+    "warengruppe": "Soda / Natriumcarbonat",
+    "bereich": "Chemie / Glas / Waschmittel",
+    "laender": [
+      "Türkei",
+      "USA",
+      "Frankreich",
+      "Niederlande",
+      "Bulgarien"
+    ],
+    "transportweg": "Schiff / Bahn / Lkw",
+    "laufzeit": "1–6 Wochen",
+    "vorlauf_zwischenschritte": "Trona-Abbau oder Solvay-Prozess, Trocknung, Transport",
+    "risiken": "Energie-/Dampfpreise; Hafen-/Transportstörungen; Anlagenausfälle",
+    "wirkung_deutschland": "Glas-, Chemie- und Waschmittelherstellung",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Wichtiger Input für Glasbehälter und Flachglas",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_46",
+    "warengruppe": "Dämmstoffe / Isolierung",
+    "bereich": "Baustoff / Bauchemie",
+    "laender": [
+      "EU",
+      "Polen",
+      "Österreich",
+      "Frankreich",
+      "China"
+    ],
+    "transportweg": "Lkw / Bahn",
+    "laufzeit": "1–10 Tage EU; länger Übersee",
+    "vorlauf_zwischenschritte": "Mineralwolle/EPS/PUR/Holzfaser, Zuschnitt, Baustelle",
+    "risiken": "Energie-/Chemie-/Holzpreise; Baukonjunktur",
+    "wirkung_deutschland": "Sanierungs- und Neubaukosten",
+    "prioritaet": "Mittel",
+    "hinweis": "Stark von Baunachfrage und Energiepreisen geprägt",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_47",
+    "warengruppe": "Arzneimittel-Fertigerzeugnisse",
+    "bereich": "Gesundheit / Pharma",
+    "laender": [
+      "EU",
+      "Schweiz",
+      "USA",
+      "Irland",
+      "Italien",
+      "Niederlande"
+    ],
+    "transportweg": "Lkw / Luftfracht / Kühlkette",
+    "laufzeit": "Wenige Tage bis mehrere Wochen",
+    "vorlauf_zwischenschritte": "Wirkstoff, Formulierung, Abfüllung, Verpackung, Chargenfreigabe",
+    "risiken": "Wirkstoffengpässe; Kühlketten-/Logistikstörungen; Produktionsausfälle",
+    "wirkung_deutschland": "Lieferengpässe oder Austauschpräparate in Apotheken/Kliniken",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Fertigarzneimittel oft aus EU/Schweiz/USA, Vorstufen globaler",
+    "datenbasis": "OECD (2025/26) / BfArM / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_48",
+    "warengruppe": "Wirkstoffe (API)",
+    "bereich": "Gesundheit / Pharma-Vorprodukt",
+    "laender": [
+      "China",
+      "Indien",
+      "EU",
+      "USA"
+    ],
+    "transportweg": "Schiff / Luftfracht",
+    "laufzeit": "2–6 Wochen See; 3–10 Tage Luftfracht inkl. Abwicklung",
+    "vorlauf_zwischenschritte": "Ausgangschemikalien, Synthese, Reinigung, Qualitätsprüfung",
+    "risiken": "Wasser-/Energieknappheit; Chemieanlagen-Ausfall; Exportstopp",
+    "wirkung_deutschland": "Produktionsausfall bei Generika und Spezialpräparaten",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "OECD zeigt bei ausgewählten APIs Konzentration in China/Indien",
+    "datenbasis": "OECD, Strengthening the EU’s Medical Supply Chains (2025/26); konkrete deutsche Produktdaten separat verifizieren."
+  },
+  {
+    "id": "wg_49",
+    "warengruppe": "Antibiotika-Wirkstoffe und Zwischenprodukte",
+    "bereich": "Gesundheit / Pharma-Vorprodukt",
+    "laender": [
+      "China",
+      "Indien",
+      "EU (begrenzte Teilproduktion)"
+    ],
+    "transportweg": "Schiff / Luftfracht",
+    "laufzeit": "2–7 Wochen",
+    "vorlauf_zwischenschritte": "Fermentation/Synthese, Zwischenprodukte, Wirkstoff, Formulierung",
+    "risiken": "Anlagenausfälle; Umwelt-/Energieauflagen; Nachfragewellen (Infekte)",
+    "wirkung_deutschland": "Engpässe bei Standard- und Kinderantibiotika",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Infektionswellen und Lieferketten treffen oft zusammen",
+    "datenbasis": "OECD (2025/26) / BfArM / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_50",
+    "warengruppe": "Infusionslösungen / sterile Arzneien",
+    "bereich": "Gesundheit / Klinikbedarf",
+    "laender": [
+      "Deutschland/EU",
+      "USA",
+      "teils Asien bei Vorprodukten"
+    ],
+    "transportweg": "Lkw / Schiff / Luftfracht",
+    "laufzeit": "Tage bis mehrere Wochen",
+    "vorlauf_zwischenschritte": "Sterilproduktion, Behälter/Kunststoff/Glas, Sterilisation, Freigabe",
+    "risiken": "Werksschäden durch Wetter/Stromausfall; Behältnis-/Vorproduktengpässe",
+    "wirkung_deutschland": "Direkte Belastung von Kliniken, Notaufnahmen, Pflege",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Schwer und voluminös, daher oft regionale/EU-Produktion",
+    "datenbasis": "BfArM / UN Comtrade; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_51",
+    "warengruppe": "Medizinische Handschuhe",
+    "bereich": "Medizinprodukt / Verbrauchsmaterial",
+    "laender": [
+      "Malaysia",
+      "China",
+      "Thailand",
+      "Vietnam"
+    ],
+    "transportweg": "Container-Schiff",
+    "laufzeit": "4–7 Wochen Seetransport",
+    "vorlauf_zwischenschritte": "Nitril-/Latex-Rohstoff, Tauchproduktion, Prüfung, Verschiffung",
+    "risiken": "Hafen-/Containerengpässe; Rohstoff-/Energiepreise; Arbeits-/Umweltauflagen",
+    "wirkung_deutschland": "Verbrauchsmaterialkosten in Kliniken, Praxen, Pflege",
+    "prioritaet": "Hoch",
+    "hinweis": "Hohe Konzentration in Südostasien/China",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_52",
+    "warengruppe": "Spritzen / Kanülen",
+    "bereich": "Medizinprodukt",
+    "laender": [
+      "EU",
+      "China",
+      "USA",
+      "Japan"
+    ],
+    "transportweg": "Lkw / Schiff / Luftfracht",
+    "laufzeit": "Tage bis 6 Wochen",
+    "vorlauf_zwischenschritte": "Kunststoffspritzguss, Kanülenfertigung, Sterilisation, Verpackung",
+    "risiken": "Kunststoff-/Sterilisationsengpässe; Lieferkettenstörungen",
+    "wirkung_deutschland": "Impf-, Klinik- und Praxisversorgung",
+    "prioritaet": "Hoch",
+    "hinweis": "Standard-Massenware mit empfindlicher Sterilisation",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_53",
+    "warengruppe": "Diagnostik-Reagenzien / Tests",
+    "bereich": "Medizinprodukt / Labor",
+    "laender": [
+      "USA",
+      "EU",
+      "China",
+      "Japan",
+      "Südkorea"
+    ],
+    "transportweg": "Luftfracht / Kühlkette",
+    "laufzeit": "2–10 Tage",
+    "vorlauf_zwischenschritte": "Biochemie/Reagenzien, Abfüllung, Kühltransport, Labore",
+    "risiken": "Kühlkettenausfälle; Sonder-/Infektionslagen; Export-/Logistikstörungen",
+    "wirkung_deutschland": "Labor- und Diagnostikkapazitäten",
+    "prioritaet": "Hoch",
+    "hinweis": "Temperaturgeführte Logistik kritisch",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_54",
+    "warengruppe": "Medizintechnik / Bildgebung",
+    "bereich": "Medizintechnik / Investitionsgut",
+    "laender": [
+      "USA",
+      "Japan",
+      "China",
+      "Schweiz",
+      "EU"
+    ],
+    "transportweg": "Luftfracht / Spezial-Lkw / Schiff",
+    "laufzeit": "Wochen bis Monate (inkl. Fertigung/Installation)",
+    "vorlauf_zwischenschritte": "Elektronik/Optik/Magneten, Montage, Zulassung, Inbetriebnahme",
+    "risiken": "Halbleiter-/Bauteilengpässe; Lieferkettenverzögerungen",
+    "wirkung_deutschland": "Investitionen und Ersatzteilverfügbarkeit in Kliniken",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Ersatzteile und Serviceverträge mitbeachten",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_55",
+    "warengruppe": "Halbleiter / Chips",
+    "bereich": "Elektronik / Schlüsselkomponente",
+    "laender": [
+      "Taiwan",
+      "Südkorea",
+      "China",
+      "USA",
+      "Japan",
+      "Niederlande (Anlagen)"
+    ],
+    "transportweg": "Luftfracht / Spezialtransporte",
+    "laufzeit": "Wochen bis Monate (Wafer-/Fertigungszyklus plus Versand)",
+    "vorlauf_zwischenschritte": "Design, Wafer-Fertigung, Packaging/Testing, Integration",
+    "risiken": "Erdbeben; Wasser-/Strom-/Kühlengpässe; Geopolitik/Exportkontrollen",
+    "wirkung_deutschland": "Fahrzeuge, Maschinen, Energie-/Netztechnik, Elektronik",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Spezifische Chipklassen (Legacy vs. Hochleistung) trennen",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_56",
+    "warengruppe": "Batteriezellen",
+    "bereich": "E-Mobilität / Speicher",
+    "laender": [
+      "China",
+      "Südkorea",
+      "Polen",
+      "Ungarn",
+      "weitere EU"
+    ],
+    "transportweg": "Schiff / Bahn / Lkw",
+    "laufzeit": "Tage (EU) bis 5–8 Wochen (Asien)",
+    "vorlauf_zwischenschritte": "Kathode/Anode/Elektrolyt, Zellfertigung, Modul-/Packbau",
+    "risiken": "Rohstoff-/Energiepreise; Gefahrgut-/Transportregeln; Handelspolitik",
+    "wirkung_deutschland": "E-Autos, Heimspeicher, Industrieanwendungen",
+    "prioritaet": "Hoch",
+    "hinweis": "Zellchemie (z. B. LFP vs. NMC) relevant",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_57",
+    "warengruppe": "Photovoltaikmodule",
+    "bereich": "Energie / Solartechnik",
+    "laender": [
+      "China",
+      "Malaysia",
+      "Vietnam",
+      "Thailand",
+      "EU"
+    ],
+    "transportweg": "Container-Schiff / Lkw",
+    "laufzeit": "5–8 Wochen Übersee; Tage in EU",
+    "vorlauf_zwischenschritte": "Polysilizium, Wafer, Zellen, Modulmontage, Logistik",
+    "risiken": "Handels-/Zollmaßnahmen; Überkapazitäten/Preisverfall; Seefracht",
+    "wirkung_deutschland": "Ausbaugeschwindigkeit und Modulpreise bei Solar",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Wechselrichter, Montage und Netzanschluss oft Engpass",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_58",
+    "warengruppe": "Elektromotoren / Permanentmagnete",
+    "bereich": "Maschinenbau / Energie",
+    "laender": [
+      "China",
+      "EU",
+      "Japan",
+      "Südkorea"
+    ],
+    "transportweg": "Schiff / Bahn / Lkw / Luftfracht",
+    "laufzeit": "Wochen bis Monate",
+    "vorlauf_zwischenschritte": "Magnete/Kupfer/Bleche, Wicklung/Montage, Prüfung",
+    "risiken": "Seltene-Erden-/Kupfer-/Stahlengpässe; Exportregeln",
+    "wirkung_deutschland": "Wärmepumpen, Antriebe, Industrieanlagen, E-Mobilität",
+    "prioritaet": "Hoch",
+    "hinweis": "Seltene Erden als Teilkomponente prüfen",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_59",
+    "warengruppe": "Glas / Flachglas",
+    "bereich": "Baustoff / Industrie",
+    "laender": [
+      "Belgien",
+      "Frankreich",
+      "Polen",
+      "Österreich",
+      "Türkei"
+    ],
+    "transportweg": "Lkw / Binnenschiff / Bahn",
+    "laufzeit": "1–10 Tage",
+    "vorlauf_zwischenschritte": "Glasschmelze (24/7-Wannen), Float-/Behälterglas, Zuschnitt",
+    "risiken": "Gas-/Strom-/Sodapreise; Wannenstillstände (schwer wiederanfahrbar)",
+    "wirkung_deutschland": "Fenster, Fassaden, Solar, Verpackungen, Fahrzeuge",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Glasschmelzwannen laufen kontinuierlich und sind energieintensiv",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_60",
+    "warengruppe": "Zement / Klinker",
+    "bereich": "Baustoff",
+    "laender": [
+      "Frankreich",
+      "Belgien",
+      "Polen",
+      "Tschechien",
+      "Dänemark"
+    ],
+    "transportweg": "Lkw / Bahn / Binnenschiff / Schiff",
+    "laufzeit": "1–14 Tage",
+    "vorlauf_zwischenschritte": "Kalkstein/Rohmehl, Klinkerofen, Mahlen, Silo/Baustelle",
+    "risiken": "Energie-/Brennstoffpreise; CO2-Kosten; Baukonjunktur",
+    "wirkung_deutschland": "Beton-, Tief- und Hochbau",
+    "prioritaet": "Mittel",
+    "hinweis": "Meist regional/europäisch wegen Gewicht",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_61",
+    "warengruppe": "Baustahl / Bewehrungsstahl",
+    "bereich": "Baustoff / Metall",
+    "laender": [
+      "EU",
+      "Türkei",
+      "Polen",
+      "Italien",
+      "Spanien"
+    ],
+    "transportweg": "Lkw / Bahn / Schiff",
+    "laufzeit": "1–14 Tage EU; länger Übersee",
+    "vorlauf_zwischenschritte": "Elektro-/Hochofen, Walzen, Schneiden/Biegen, Baustelle",
+    "risiken": "Strom-/Schrottpreise; Energie-/Handelsrisiken; Baukonjunktur",
+    "wirkung_deutschland": "Bau- und Infrastrukturkosten",
+    "prioritaet": "Mittel-Hoch",
+    "hinweis": "Stark von Bauaktivität und Strompreis geprägt",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_62",
+    "warengruppe": "Versicherungs-Rückversicherung",
+    "bereich": "Finanz-/Dienstleistungsinput",
+    "laender": [
+      "Deutschland/EU",
+      "Schweiz",
+      "USA",
+      "Bermuda",
+      "Großbritannien"
+    ],
+    "transportweg": "Finanz-/Vertragsmarkt (kein physischer Gütertransport)",
+    "laufzeit": "Jährliche/terminierte Erneuerungsrunden, schrittweise Weitergabe",
+    "vorlauf_zwischenschritte": "Schadenbilanzen, Risikomodelle, Rückversicherungstarife, Policen",
+    "risiken": "Häufung von Extremwetter-/Naturschäden; Schadeninflation",
+    "wirkung_deutschland": "Prämien, Selbstbehalte und Deckung bei Gebäude/Elementar",
+    "prioritaet": "Hoch",
+    "hinweis": "Wirkt oft bei Vertragsverlängerung oder Anpassung",
+    "datenbasis": "GDV / Versicherungsmarktberichte; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_63",
+    "warengruppe": "Hafen- und Containerlogistik",
+    "bereich": "Logistik / Querschnitt",
+    "laender": [
+      "Rotterdam",
+      "Antwerpen",
+      "Hamburg",
+      "Bremerhaven",
+      "globale Reedereien"
+    ],
+    "transportweg": "Seeschiff, Terminal, Hinterland (Bahn/Binnenschiff/Lkw)",
+    "laufzeit": "Sofort bis Wochen (Staus und Umleitungen wirken verzögert)",
+    "vorlauf_zwischenschritte": "Ankunft, Entladung, Zoll/Abfertigung, Hinterlandtransport",
+    "risiken": "Stürme/Nebel; Wasserstände/Niedrigwasser; Streiks; Routenumleitungen",
+    "wirkung_deutschland": "Verzögerungen und Frachtkosten bei vielen Importgütern",
+    "prioritaet": "Sehr hoch",
+    "hinweis": "Engpässe in Nordseehäfen treffen viele Warengruppen gleichzeitig",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis/Hafenstatistiken; Lieferländer und Saisonanteile jährlich aktualisieren."
+  },
+  {
+    "id": "wg_64",
+    "warengruppe": "Industriegase (Sauerstoff/Stickstoff/CO₂)",
+    "bereich": "Industrie- und Gesundheitsinput",
+    "laender": [
+      "Deutschland/EU",
+      "regionale Produktionsstandorte"
+    ],
+    "transportweg": "Pipeline / Tank-Lkw / Druckgasflasche",
+    "laufzeit": "Stunden–3 Tage regional",
+    "vorlauf_zwischenschritte": "Luftzerlegung, Verflüssigung, Tanklager, Lieferung",
+    "risiken": "Stromausfall; Anlagenstillstand; Transportengpass",
+    "wirkung_deutschland": "Krankenhäuser, Lebensmittel, Metallurgie, Chemie",
+    "prioritaet": "Hoch",
+    "hinweis": "Regionale Produktion und kurze Puffer besonders relevant",
+    "datenbasis": "UN Comtrade/Eurostat/Destatis; Partnerländer und Warenunterposition jährlich aktualisieren."
+  }
+]
