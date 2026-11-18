@@ -25,7 +25,7 @@ def load_import_matrix(path="import_matrix.json"):
     return data if isinstance(data, list) else []
 
 
-def flatten_feed_items(feeds, max_items=140):
+def flatten_feed_items(feeds, max_items=160):
     items = []
     for feed in feeds:
         cat = (feed.get("category") or "Allgemein").strip()
@@ -59,8 +59,7 @@ def collect_valid_urls(items):
 
 def normalize_country_token(entry):
     cleaned = re.sub(r"\([^)]*\)", "", entry).strip()
-    parts = [p.strip() for p in re.split(r"[/,]", cleaned) if len(p.strip()) >= 3]
-    return parts
+    return [p.strip() for p in re.split(r"[/,]", cleaned) if len(p.strip()) >= 3]
 
 
 def match_matrix_to_news(matrix, items):
@@ -130,7 +129,7 @@ def match_matrix_to_news(matrix, items):
     return "\n\n".join(matched_entries[:25])
 
 
-def build_general_digest(items, max_items=45):
+def build_general_digest(items, max_items=50):
     lines = []
     for it in items[:max_items]:
         url_part = f" | URL: {it['link']}" if it.get("link") else ""
@@ -140,18 +139,98 @@ def build_general_digest(items, max_items=45):
     return "\n".join(lines)
 
 
-def sanitize_links_against_allowlist(html_text, valid_urls):
-    """Entfernt Links, die nicht exakt in den vorliegenden Feed-Items enthalten sind."""
-    def repl(match):
-        href = match.group(1).strip()
-        if href in valid_urls:
-            return match.group(0)
-        return ""
+SECTION_KEYWORDS = {
+    1: ["peru", "fidschi", "el niño", "el nino", "dürre", "drought", "flood", "überschwemmung", "storm", "sturm", "länder", "region", "export", "import", "germanwatch", "klima"],
+    2: ["lebensmittel", "agrar", "ernte", "food", "crop", "dünger", "fertilizer", "kaffee", "kakao", "weizen", "mais", "soja", "obst", "gemüse", "avocado", "bananen", "wasser"],
+    3: ["energie", "energy", "strom", "gas", "lng", "öl", "oil", "metall", "kupfer", "lithium", "seltene erden", "zellstoff", "papier", "chemie", "halbleiter", "chip", "hafen", "port", "fracht", "shipping", "lieferkette"],
+    4: ["gesundheit", "health", "arzneimittel", "wirkstoff", "pharma", "medizin", "klinik", "krankenhaus", "infektion", "antibiotika", "wasser"],
+    5: ["wohnen", "versicherung", "insurance", "bau", "gebäude", "hochwasser", "starkregen", "sturm", "schaden", "kosten", "inflation", "preis"],
+    6: ["planung", "saison", "lager", "vertrag", "wechselkurs", "risiko", "resilienz", "versorgung", "deutschland"],
+}
 
-    cleaned = re.sub(r'<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>.*?</a>', repl, html_text, flags=re.IGNORECASE | re.DOTALL)
-    # Leere Listenpunkte nach entfernten Links aufräumen
-    cleaned = re.sub(r"<li>\s*(?:·\s*)?</li>", "", cleaned)
-    return cleaned
+
+def pick_section_sources(sec_index, items, max_links=3):
+    """Wählt passende echte Feed-Einträge mit gültiger URL für einen Bereich aus."""
+    keywords = SECTION_KEYWORDS.get(sec_index, [])
+    scored = []
+    for it in items:
+        url = (it.get("link") or "").strip()
+        if not (url.startswith("https://") or url.startswith("http://")):
+            continue
+        h = it["haystack"]
+        score = sum(1 for kw in keywords if kw in h)
+        scored.append((score, it))
+
+    scored.sort(key=lambda x: x[0], reverse=True)
+    chosen = [it for score, it in scored if score > 0][:max_links]
+
+    # Fallback: falls keine Schlüsselwörter matchen, die ersten gültigen Links nehmen
+    if not chosen:
+        start = ((sec_index - 1) * max_links) % max(1, len([x for _, x in scored]))
+        valid_items = [x for _, x in scored]
+        for offset in range(len(valid_items)):
+            cand = valid_items[(start + offset) % len(valid_items)]
+            if cand not in chosen:
+                chosen.append(cand)
+            if len(chosen) >= min(2, len(valid_items)):
+                break
+
+    return chosen
+
+
+def ensure_section_sources(html_out, items, valid_urls):
+    """Bereinigt ungültige Links und stellt sicher, dass jede Sektion echte Links hat."""
+    def clean_link(match):
+        href = match.group(1).strip()
+        return match.group(0) if href in valid_urls else ""
+
+    cleaned = re.sub(
+        r'<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>.*?</a>',
+        clean_link,
+        html_out,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+
+    sections = re.findall(
+        r'(<section\b[^>]*>)(.*?)(</section>)',
+        cleaned,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+
+    if not sections:
+        return cleaned
+
+    rebuilt = []
+    for idx, (open_tag, body, close_tag) in enumerate(sections, start=1):
+        existing_links = re.findall(r'href=["\'](https?://[^"\']+)["\']', body, flags=re.IGNORECASE)
+        existing_links = [u for u in existing_links if u in valid_urls]
+
+        # Bestehenden Belege-Block entfernen, damit wir sauber neu aufbauen können
+        body_without_sources = re.sub(
+            r'<div\b[^>]*class=["\'][^"\']*outlook-sources[^"\']*["\'][^>]*>.*?</div>\s*$',
+            "",
+            body,
+            flags=re.IGNORECASE | re.DOTALL,
+        ).strip()
+
+        chosen_items = pick_section_sources(idx, items, max_links=3)
+        if chosen_items:
+            li_html = "\n".join(
+                f'<li><a href="{it["link"]}" target="_blank" rel="noopener noreferrer">{it["title"]}</a> <span class="outlook-source-feed">({it["feed"]})</span></li>'
+                for it in chosen_items
+            )
+            sources_block = (
+                f'\n<div class="outlook-sources">\n'
+                f'  <strong>Belege:</strong>\n'
+                f'  <ul>\n    {li_html}\n  </ul>\n'
+                f'</div>'
+            )
+        else:
+            sources_block = '\n<div class="outlook-sources"><strong>Belege:</strong> <span class="outlook-no-direct-link">Keine direkten Links im aktuellen Datenstand.</span></div>'
+
+        rebuilt.append(f"{open_tag}\n{body_without_sources}{sources_block}\n{close_tag}")
+
+    return "\n".join(rebuilt)
 
 
 def write_fallback(last_updated, message):
@@ -199,9 +278,6 @@ Wichtige Prinzipien:
   und erst dann mögliche Folgen in Deutschland für das 3-Monats-Fenster einordnen.
 - Kennzeichne Aussagen klar mit `[Belegt]`, `[Plausibel]` oder `[Offen]`.
 - Keine Finanz- oder Anlageberatung. Erfinde keine Zahlen, Preise, Länder oder URLs – nutze ausschließlich die Daten unten.
-- **Belege unter jedem Bereich:** Füge am Ende **jeder** Sektion (direkt vor `</section>`) einen kompakten Beleg-Block ein:
-  `<div class="outlook-sources"><strong>Belege:</strong> <ul><li><a href="EXAKTE_URL" target="_blank" rel="noopener noreferrer">Kurzer Meldungstitel</a></li>...</ul></div>`
-  Nutze dafür **nur** exakt übernommene URLs aus den unten aufgeführten Meldungen (max. 3–4 passende Links pro Sektion). Wenn für einen Bereich kaum direkte Meldungen vorliegen, nenne nur die nächstliegenden belegten Quellen oder schreibe `<p class="outlook-no-direct-link">Keine direkte Einzelmeldung im aktuellen Feed-Auszug.</p>`.
 
 Strukturiere die Ausgabe in **6 Sektionen** (`<section class="category-section outlook-card">`):
 1. `<h2>🌍 Herkunftsländer &amp; aktuelle Signale</h2>`
@@ -238,7 +314,7 @@ AKTUELLE MELDUNGEN AUS DATA.JSON:
             write_fallback(last_updated, "Die KI-Antwort für den 3-Monats-Ausblick war leer.")
             return
 
-        html_out = sanitize_links_against_allowlist(html_out, valid_urls)
+        html_out = ensure_section_sources(html_out, items, valid_urls)
 
         with open("generated/outlook_content.html", "w", encoding="utf-8") as f:
             f.write(html_out)
