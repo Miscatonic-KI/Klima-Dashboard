@@ -51,6 +51,10 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python generate_science.py
 
+      - name: Generate 3-Month Outlook
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python generate_outlook.py
     
       - name: Themen-Entwicklung generieren
         run: python generate_evolution.py
@@ -60,6 +64,6 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git pull origin main --rebase || true
-          git add data.json summary.html evolution.html regions.html generated/briefing.html generated/regions_content.html generated/scenarios_content.html generated/actors_content.html generated/science_content.html
+          git add data.json summary.html evolution.html regions.html generated/briefing.html generated/regions_content.html generated/scenarios_content.html generated/actors_content.html generated/science_content.html outlook-3m.html generated/outlook_content.html 
           git commit -m "Automatisches Update: Feeds, Summary, Evolution, Briefing & Regionen-Radar" || exit 0
           git push
