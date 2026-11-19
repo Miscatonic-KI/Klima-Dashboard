@@ -1,0 +1,18 @@
+
+{
+  "generated_at": null,
+  "headline": "Das erste Lagebild wird nach dem Hochladen und Starten des Workflows erstellt.",
+  "executive_summary": "Noch liegt keine automatische Auswertung vor.",
+  "situation": [],
+  "system_links": [],
+  "what_changed": [],
+  "watchlist": [],
+  "limits": [
+    "Die Auswertung startet erst, wenn der neue GitHub-Workflow ausgeführt wurde."
+  ],
+  "knowledge_update": {},
+  "source_item_count": 0,
+  "model": "gemini-3.1-flash-lite",
+  "source_limitation": "Ausgewertet werden ausschließlich Titel, Feed-Beschreibungen und Metadaten aus data.json. Verlinkte Artikel und Studien werden nicht im Volltext geprüft.",
+  "sources": []
+}
