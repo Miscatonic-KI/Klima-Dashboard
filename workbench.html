@@ -364,8 +364,8 @@
             items.forEach(item => {
                 const words = (item.title || '')
                     .toLowerCase()
-                    .replace(/[^a-zäöüß0-9\\s-]/gi, ' ')
-                    .split(/[\\s-]+/)
+                    .replace(/[^a-zäöüß0-9\s-]/gi, ' ')
+                    .split(/[\s-]+/)
                     .filter(word => word.length >= 4 && !stopWords.has(word));
 
                 words.forEach(word => {
