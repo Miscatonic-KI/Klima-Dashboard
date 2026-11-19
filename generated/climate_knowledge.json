@@ -1,10 +1,17 @@
-
 {
   "version": 1,
-  "updated_at": null,
-  "current_assessment": "Noch kein vorheriger Wissensstand vorhanden. Die erste automatische Auswertung legt einen vorsichtigen Arbeitsstand an.",
-  "established_findings": [],
-  "open_questions": [],
-  "previous_changes": [],
+  "updated_at": "2026-11-19T22:45:58+00:00",
+  "current_assessment": "Erhöhte Krisendichte durch Überlagerung von natürlichen Zyklen (El Niño) und anthropogenen Trends.",
+  "established_findings": [
+    "Extremwetterereignisse (Flut/Dürre) erzeugen signifikante ökonomische Verluste im Milliardenbereich (Quellen: Feed-Indices 55, 69).",
+    "Die globale Finanzinfrastruktur erkennt Klimawandel zunehmend als systemisches monetäres Risiko an (Quelle: Feed-Index 24)."
+  ],
+  "open_questions": [
+    "Können bestehende naturbasierte Lösungen den prognostizierten Intensitäten standhalten?",
+    "Wie beeinflusst die politische Verschiebung in den USA (Measles-Status/Klimapolitik) die globale Kooperation?"
+  ],
+  "previous_changes": [
+    "Erster Aufbau des Lagebilds am 19.11.2026."
+  ],
   "method_note": "KI-generierter Arbeitsstand aus Feed-Titeln und Kurzbeschreibungen. Kein verifizierter Forschungsstand."
 }
