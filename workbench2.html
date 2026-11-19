@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis-Tracker | Recherche-Werkbank</title>
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --section-bg: #ffffff;
+            --card-bg: #f9fafb;
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --accent: #8b0000;
+            --border: #e5e7eb;
+            --link-color: #990000;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 15px;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            text-align: center;
+            margin: 20px 0 25px 0;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 6px;
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0 0 10px 0;
+        }
+
+        .update-badge {
+            display: inline-block;
+            background-color: var(--section-bg);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+        }
+
+        .update-badge span {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .nav-pills {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .nav-pill {
+            font-size: 0.85rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            background: var(--section-bg);
+            padding: 5px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            transition: background-color 0.15s ease;
+        }
+
+        .nav-pill:hover,
+        .nav-pill.active {
+            background-color: var(--card-bg);
+            border-color: #d1d5db;
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .panel {
+            background: var(--section-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .panel h2 {
+            margin: 0 0 12px 0;
+            font-size: 1.15rem;
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 8px;
+        }
+
+        .selected-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .selected-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 12px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .selected-item a {
+            color: var(--link-color);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.92rem;
+        }
+
+        .selected-item a:hover {
+            text-decoration: underline;
+        }
+
+        .item-meta {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .remove-btn {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            border-radius: 6px;
+            padding: 4px 8px;
+            font-size: 0.78rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .remove-btn:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .mode-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+
+        .mode-btn {
+            background: var(--card-bg);
+            color: var(--text-main);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .mode-btn.active {
+            background: var(--accent);
+            color: #ffffff;
+            border-color: var(--accent);
+        }
+
+        .note-input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 0.88rem;
+            margin-bottom: 12px;
+            background: var(--card-bg);
+            color: var(--text-main);
+        }
+
+        .output-box {
+            width: 100%;
+            min-height: 240px;
+            box-sizing: border-box;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.84rem;
+            line-height: 1.45;
+            background: var(--card-bg);
+            color: var(--text-main);
+            resize: vertical;
+        }
+
+        .action-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+            align-items: center;
+        }
+
+        .primary-btn {
+            background: var(--accent);
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 9px 16px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .secondary-btn {
+            background: var(--section-bg);
+            color: var(--text-main);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 9px 14px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .status-msg {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .no-data {
+            color: var(--text-muted);
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🧰 Recherche-Werkbank (Test)</h1>
+        <p>Markierte Meldungen aus dem Text-Archiv weiterverarbeiten – komplett ohne KI-Backend</p>
+        <div class="update-badge" id="update-badge">
+            Datenstand: Laden... | Nächste Aktualisierung: Laden...
+        </div>
+        <nav class="nav-pills" aria-label="Bereichsnavigation">
+            <a href="index.html" class="nav-pill">📊 Dashboard</a>
+            <a href="science.html" class="nav-pill">🔬 Wissenschaft</a>
+            <a href="actors.html" class="nav-pill">🎭 Akteure &amp; Hebel</a>
+            <a href="regions.html" class="nav-pill">🌍 Regionen-Radar</a>
+            <a href="scenarios.html" class="nav-pill">🔮 Szenarien</a>
+            <a href="evolution.html" class="nav-pill">📈 Entwicklung</a>
+            <a href="summary.html" class="nav-pill">📄 Text-Archiv</a>
+            <a href="workbench.html" class="nav-pill active">🧰 Werkbank</a>
+            <a href="methodik.html" class="nav-pill">🎯 Methodik</a>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="panel">
+            <h2>📌 Markierte Meldungen (<span id="selected-count">0</span>)</h2>
+            <div id="selected-items-container">
+                <p class="no-data">Noch keine Meldungen markiert. Öffne das <a href="summary.html">Text-Archiv</a> und setze Häkchen bei interessanten Einträgen.</p>
+            </div>
+            <div class="action-row" id="selection-actions" style="display: none;">
+                <button class="secondary-btn" onclick="clearSelection()">🗑️ Auswahl komplett leeren</button>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>⚙️ Ausgabeformat wählen</h2>
+            <div class="mode-buttons" role="tablist">
+                <button class="mode-btn active" data-mode="links" onclick="setMode('links', this)">🔗 Einfache Linkliste</button>
+                <button class="mode-btn" data-mode="more_material" onclick="setMode('more_material', this)">🔎 Prompt: Mehr Material sammeln</button>
+                <button class="mode-btn" data-mode="google_query" onclick="setMode('google_query', this)">🌐 Suchbegriffe</button>
+                <button class="mode-btn" data-mode="ideas_prompt" onclick="setMode('ideas_prompt', this)">💡 Prompt: Was kann man daraus machen?</button>
+            </div>
+
+            <label for="user-note" class="item-meta" style="display: block; margin-bottom: 6px; font-weight: 600;">
+                Eigene Notiz / Fragestellung (optional, wird in Prompts einbezogen):
+            </label>
+            <input type="text" id="user-note" class="note-input" placeholder="z. B. Fokus auf kommunale Anpassung, Folgekosten oder Vergleich DE/EN..." oninput="renderOutput()">
+
+            <textarea id="output-box" class="output-box" readonly></textarea>
+
+            <div class="action-row">
+                <button class="primary-btn" onclick="copyOutput()">📋 In Zwischenablage kopieren</button>
+                <span class="status-msg" id="copy-status"></span>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const STORAGE_KEY = 'crisis_tracker_workbench_items_v1';
+        let currentMode = 'links';
+
+        function getSelectedItems() {
+            try {
+                return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+            } catch (e) {
+                return [];
+            }
+        }
+
+        function saveSelectedItems(items) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+        }
+
+        function removeItem(index) {
+            const items = getSelectedItems();
+            items.splice(index, 1);
+            saveSelectedItems(items);
+            renderAll();
+        }
+
+        function clearSelection() {
+            localStorage.removeItem(STORAGE_KEY);
+            renderAll();
+        }
+
+        function setMode(mode, btnEl) {
+            currentMode = mode;
+            document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+            if (btnEl) btnEl.classList.add('active');
+            renderOutput();
+        }
+
+        function extractKeywords(items) {
+            const stopWords = new Set([
+                'der', 'die', 'das', 'den', 'dem', 'des', 'ein', 'eine', 'einer', 'eines', 'einem', 'einen',
+                'und', 'oder', 'aber', 'auch', 'als', 'bei', 'beim', 'bis', 'durch', 'ein', 'für', 'gegen',
+                'hinter', 'im', 'in', 'ins', 'ist', 'am', 'an', 'auf', 'aus', 'zum', 'zur', 'über', 'unter',
+                'nach', 'neben', 'ohne', 'seit', 'sind', 'war', 'waren', 'wird', 'werden', 'vom', 'von',
+                'vor', 'zwischen', 'dass', 'dieser', 'diese', 'dieses', 'diesen', 'dabei', 'dazu', 'damit',
+                'mehr', 'neue', 'neuen', 'neuer', 'neues', 'jetzt', 'heute', 'aktuell', 'laut',
+                'the', 'and', 'for', 'with', 'from', 'that', 'this', 'these', 'those', 'are', 'was', 'were',
+                'has', 'have', 'had', 'into', 'over', 'after', 'about', 'between', 'their', 'they', 'its',
+                'new', 'report', 'study', 'says', 'say', 'how', 'why', 'what', 'when', 'where',
+                'climate', 'change', 'global'
+            ]);
+
+            const counts = new Map();
+
+            items.forEach(item => {
+                const words = (item.title || '')
+                    .toLowerCase()
+                    .replace(/[^a-zäöüß0-9\\s-]/gi, ' ')
+                    .split(/[\\s-]+/)
+                    .filter(word => word.length >= 4 && !stopWords.has(word));
+
+                words.forEach(word => {
+                    counts.set(word, (counts.get(word) || 0) + 1);
+                });
+            });
+
+            // Häufiger vorkommende Begriffe stehen vorne. Jeder Begriff erscheint nur einmal.
+            return [...counts.entries()]
+                .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'de'))
+                .slice(0, 10)
+                .map(([word]) => word);
+        }
+
+        function buildFormattedText(items, note) {
+            if (!items.length) {
+                return "Keine Meldungen markiert. Bitte im Text-Archiv (summary.html) Einträge auswählen.";
+            }
+
+            const formattedList = items.map((it, idx) => {
+                const ctx = it.context ? ` (${it.context})` : '';
+                return `${idx + 1}. ${it.title}${ctx}\\n   URL: ${it.link}`;
+            }).join('\\n');
+
+            const noteBlock = note ? `\\nEigene Notiz / Fokus des Nutzers: ${note}\\n` : '';
+
+            if (currentMode === 'links') {
+                return items.map((it, idx) => `${idx + 1}. [${it.title}](${it.link})`).join('\\n') +
+                    (note ? `\\n\\nNotiz: ${note}` : '');
+            }
+
+            if (currentMode === 'more_material') {
+                return `Du bist ein Recherche-Assistent für Klimarisiken und Systemzusammenhänge.
+Ich habe folgende Meldungen aus meinem Crisis-Tracker ausgewählt:
+
+${formattedList}
+${noteBlock}
+Aufgabe:
+1. Suche gezielt nach ergänzendem Material, Berichten, Studien oder Hintergrundinformationen zu diesen Themen.
+2. Nenne konkrete Suchbegriffe, relevante Institutionen/Quellen sowie offene Fakten oder Gegenperspektiven, die ich ergänzend prüfen sollte.
+3. Trenne sauber zwischen belegbaren Fakten und weiterführenden Recherchefragen.`;
+            }
+
+            if (currentMode === 'google_query') {
+                const keywords = extractKeywords(items);
+                return keywords.length
+                    ? keywords.join(' ')
+                    : 'Keine geeigneten Suchbegriffe in den ausgewählten Meldungstiteln gefunden.';
+            }
+
+            return `Hier ist eine Auswahl an Meldungen, die ich im Crisis-Tracker gesammelt habe:
+
+${formattedList}
+${noteBlock}
+Aufgabe:
+Mache mir konkrete, praxisnahe Vorschläge, was ich aus genau dieser Sammlung von Informationen machen könnte.
+Denke dabei z. B. an:
+- mögliche Fragestellungen oder Schwerpunkte für eine vertiefte Analyse,
+- den Aufbau eines Briefings, Artikels, Vortrags oder Dossiers,
+- Zusammenhänge, Vergleiche oder Spannungsfelder zwischen den einzelnen Meldungen,
+- sinnvolle nächste Schritte für die Weiterarbeit.`;
+        }
+
+        function renderSelectedList(items) {
+            const container = document.getElementById('selected-items-container');
+            const countEl = document.getElementById('selected-count');
+            const actionsEl = document.getElementById('selection-actions');
+
+            countEl.textContent = String(items.length);
+
+            if (!items.length) {
+                container.innerHTML = '<p class="no-data">Noch keine Meldungen markiert. Öffne das <a href="summary.html">Text-Archiv</a> und setze Häkchen bei interessanten Einträgen.</p>';
+                actionsEl.style.display = 'none';
+                return;
+            }
+
+            actionsEl.style.display = 'flex';
+            container.innerHTML = '<ul class="selected-list">' + items.map((it, idx) => `
+                <li class="selected-item">
+                    <div>
+                        <a href="${it.link}" target="_blank" rel="noopener">${it.title}</a>
+                        <div class="item-meta">${it.context || 'Text-Archiv'} · <span style="word-break: break-all;">${it.link}</span></div>
+                    </div>
+                    <button class="remove-btn" onclick="removeItem(${idx})" title="Entfernen">✕</button>
+                </li>
+            `).join('') + '</ul>';
+        }
+
+        function renderOutput() {
+            const items = getSelectedItems();
+            const note = (document.getElementById('user-note').value || '').trim();
+            document.getElementById('output-box').value = buildFormattedText(items, note);
+        }
+
+        function renderAll() {
+            const items = getSelectedItems();
+            renderSelectedList(items);
+            renderOutput();
+        }
+
+        async function copyOutput() {
+            const box = document.getElementById('output-box');
+            const status = document.getElementById('copy-status');
+            try {
+                await navigator.clipboard.writeText(box.value);
+                status.textContent = '✓ In die Zwischenablage kopiert!';
+            } catch (e) {
+                box.select();
+                document.execCommand('copy');
+                status.textContent = '✓ Markiert/kopiert!';
+            }
+            setTimeout(() => { status.textContent = ''; }, 2500);
+        }
+
+        async function loadMetaBadge() {
+            try {
+                const resp = await fetch('data.json?t=' + Date.now());
+                if (resp.ok) {
+                    const dataJson = await resp.json();
+                    if (dataJson.meta) {
+                        document.getElementById('update-badge').innerHTML =
+                            `Datenstand: <span>${dataJson.meta.last_updated}</span> &nbsp;|&nbsp; Nächste Aktualisierung: <span>${dataJson.meta.next_update}</span>`;
+                    }
+                }
+            } catch (e) {
+                console.log("Meta-Daten konnten nicht geladen werden:", e);
+            }
+        }
+
+        window.onload = () => {
+            loadMetaBadge();
+            renderAll();
+        };
+    </script>
+    <script data-goatcounter="https://miscatonic.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
