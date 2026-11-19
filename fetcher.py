@@ -218,13 +218,86 @@ def generate_summary_html(meta, feeds):
             if feed['items']:
                 html_content += "\n<ul>"
                 for item in feed['items']:
-                    html_content += f"\n  <li><a href=\"{item['link']}\" target=\"_blank\">{item['title']}</a></li>"
+                    html_content += f"\n  <li><a href=\"{item['link']}\" target=\"blank\">{item['title']}</a></li>"
                 html_content += "\n</ul>"
             else:
                 html_content += "\n<p><em>Keine aktuellen Meldungen.</em></p>"
 
     html_content += """
     </div>
+
+<script>
+(function() {{
+    const STORAGE_KEY = 'crisis_tracker_workbench_items_v1';
+
+    function getItems() {{
+        try {{
+            return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+        }} catch (e) {{
+            return [];
+        }}
+    }}
+
+    function saveItems(items) {{
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+        updateBar();
+    }}
+
+    function toggleItem(itemObj, checked) {{
+        const items = getItems();
+        const idx = items.findIndex(x => x.link === itemObj.link && x.title === itemObj.title);
+        if (checked && idx === -1) {{
+            items.push(itemObj);
+        }} else if (!checked && idx !== -1) {{
+            items.splice(idx, 1);
+        }}
+        saveItems(items);
+    }}
+
+    function updateBar() {{
+        const count = getItems().length;
+        const badge = document.getElementById('wb-count-badge');
+        if (badge) {{
+            badge.textContent = String(count);
+        }}
+    }}
+
+    // Kompakte Test-Leiste oben einfügen
+    const bar = document.createElement('div');
+    bar.style.cssText = 'position: sticky; top: 10px; z-index: 900; max-width: 860px; margin: 0 auto 16px auto; background: #ffffff; border: 1px solid #e5e7eb; border-left: 4px solid #8b0000; border-radius: 10px; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; gap: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); font-size: 0.88rem;';
+    bar.innerHTML = `
+        <div>🧰 <strong>Werkbank-Auswahl (Test):</strong> <span id="wb-count-badge">0</span> Meldung(en) markiert</div>
+        <a href="workbench.html" style="background: #8b0000; color: #ffffff; text-decoration: none; font-weight: 600; padding: 6px 12px; border-radius: 6px; font-size: 0.82rem;">Zur Werkbank →</a>
+    `;
+    document.body.insertBefore(bar, document.body.firstChild);
+
+    // Checkboxen an alle Archiv-Listenpunkte anhängen
+    const saved = getItems();
+    const listItems = document.querySelectorAll('li');
+    listItems.forEach(li => {{
+        const linkEl = li.querySelector('a[href]');
+        if (!linkEl) return;
+
+        const title = (linkEl.textContent || '').trim();
+        const link = linkEl.getAttribute('href') || '';
+        const h2 = li.closest('section, div')?.querySelector('h2')?.textContent?.trim() || 'Text-Archiv';
+
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.title = 'Für die Recherche-Werkbank markieren';
+        cb.style.cssText = 'margin-right: 8px; cursor: pointer; transform: scale(1.08); vertical-align: middle;';
+        cb.checked = saved.some(x => x.link === link && x.title === title);
+
+        cb.addEventListener('change', () => {{
+            toggleItem({{ title, link, context: h2 }}, cb.checked);
+        }});
+
+        li.insertBefore(cb, li.firstChild);
+    }});
+
+    updateBar();
+}})();
+</script>
 </body>
 </html>"""
 
