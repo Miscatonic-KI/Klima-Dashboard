@@ -1,0 +1,308 @@
+import json
+import os
+import urllib.request
+import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
+
+def fetch_all():
+    # 1. Bestehende data.json einlesen (falls vorhanden), um Historie zu bewahren
+    existing_feeds = {}
+    if os.path.exists('data.json'):
+        try:
+            with open('data.json', 'r', encoding='utf-8') as f:
+                old_data = json.load(f)
+                feeds_list = old_data.get("feeds", []) if isinstance(old_data, dict) else old_data
+                for feed in feeds_list:
+                    existing_feeds[feed.get("title")] = feed.get("items", [])
+        except Exception as e:
+            print(f"Hinweis: Konnte bestehende data.json nicht lesen ({e}). Erstelle neu.")
+
+    # 2. Feeds-Konfiguration laden
+    with open('feeds.json', 'r', encoding='utf-8') as f:
+        feeds_config = json.load(f)
+    
+    output_data = []
+    now_utc = datetime.now(timezone.utc)
+
+    for feed in feeds_config:
+        feed_title = feed.get("title")
+        feed_result = {
+            "category": feed.get("category", "Allgemein"),
+            "title": feed_title,
+            "desc": feed.get("desc", ""),
+            "url": feed.get("url"),
+            "items": []
+        }
+
+        new_items = []
+        try:
+            req = urllib.request.Request(feed["url"], headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req, timeout=10) as response:
+                xml_data = response.read()
+                root = ET.fromstring(xml_data)
+                
+                # Atom oder RSS Parser Unterstützung
+                # Wir versuchen Atom (<entry>) und Standard-RSS (<item>) abzudecken
+                ns = {'atom': 'http://www.w3.org/2005/Atom'}
+                entries = root.findall('atom:entry', ns)
+                
+                if entries:
+                    for entry in entries:
+                        entry_title = entry.find('atom:title', ns)
+                        entry_link = entry.find('atom:link', ns)
+                        entry_summary = entry.find('atom:summary', ns)
+                        if entry_summary is None:
+                            entry_summary = entry.find('atom:content', ns)
+                        
+                        if entry_title is not None and entry_title.text:
+                            t_text = entry_title.text.strip()
+                            if t_text and t_text.lower() != "null":
+                                l_href = entry_link.attrib.get('href', '#') if entry_link is not None else '#'
+                                desc_text = entry_summary.text.strip() if entry_summary is not None and entry_summary.text else ''
+                                
+                                new_items.append({
+                                    "title": t_text,
+                                    "link": l_href,
+                                    "desc": desc_text[:300], # Teaser begrenzen
+                                    "added_at": now_utc.isoformat() # Exakter Zeitstempel für Trend-Berechnung
+                                })
+                else:
+                    # Fallback für klassischen RSS-Feed (<item>)
+                    items = root.findall('.//item')
+                    for item in items:
+                        item_title = item.find('title')
+                        item_link = item.find('link')
+                        item_desc = item.find('description')
+                        
+                        if item_title is not None and item_title.text:
+                            t_text = item_title.text.strip()
+                            if t_text and t_text.lower() != "null":
+                                l_href = item_link.text.strip() if item_link is not None and item_link.text else '#'
+                                desc_text = item_desc.text.strip() if item_desc is not None and item_desc.text else ''
+                                
+                                new_items.append({
+                                    "title": t_text,
+                                    "link": l_href,
+                                    "desc": desc_text[:300],
+                                    "added_at": now_utc.isoformat()
+                                })
+        except Exception as e:
+            print(f"Fehler bei {feed_title}: {e}")
+
+        # 3. Zusammenführen & Bereinigen (Neue Meldungen zuerst, Duplikate filtern)
+        combined_items = new_items + existing_feeds.get(feed_title, [])
+        seen_links = set()
+        seen_titles = set()
+        unique_items = []
+
+        for item in combined_items:
+            link = item.get("link")
+            title = item.get("title")
+            # Wenn ältere Items keinen 'added_at'-Stempel haben, einen Dummy vergeben
+            if "added_at" not in item:
+                item["added_at"] = now_utc.isoformat()
+
+            if link not in seen_links and title not in seen_titles:
+                seen_links.add(link)
+                seen_titles.add(title)
+                unique_items.append(item)
+
+        # Maximal 60 Meldungen pro Feed speichern
+        feed_result["items"] = unique_items[:60]
+
+        # 4. Gleitendes 24-Stunden-Fenster für Trend-Prognose berechnen
+        # Letzte 24h vs. vorangegangene 24h
+        count_last_24h = 0
+        count_prev_24h = 0
+        
+        cutoff_24h = now_utc - timedelta(hours=24)
+        cutoff_48h = now_utc - timedelta(hours=48)
+
+        for item in unique_items:
+            try:
+                item_time = datetime.fromisoformat(item.get("added_at"))
+                if item_time >= cutoff_24h:
+                    count_last_24h += 1
+                elif cutoff_48h <= item_time < cutoff_24h:
+                    count_prev_24h += 1
+            except Exception:
+                pass
+
+        # Trend-Richtung bestimmen
+        if count_last_24h > count_prev_24h:
+            direction = "up"
+            symbol = "▲"
+        elif count_last_24h < count_prev_24h:
+            direction = "down"
+            symbol = "▼"
+        else:
+            direction = "same"
+            symbol = "▶"
+
+        feed_result["meta_trend"] = {
+            "last_24h": count_last_24h,
+            "prev_24h": count_prev_24h,
+            "direction": direction,
+            "symbol": symbol
+        }
+
+        output_data.append(feed_result)
+
+    # Zeitstempel (MEZ/MESZ)
+    now = datetime.now(timezone(timedelta(hours=1)))
+    next_run = now + timedelta(hours=4)
+    
+    meta_info = {
+        "last_updated": now.strftime("%d.%m.%Y, %H:%M Uhr"),
+        "next_update": next_run.strftime("%d.%m.%Y, %H:%M Uhr")
+    }
+
+    # JSON speichern
+    final_output = {
+        "meta": meta_info,
+        "feeds": output_data
+    }
+
+    with open('data.json', 'w', encoding='utf-8') as f:
+        json.dump(final_output, f, ensure_ascii=False, indent=2)
+
+    # summary.html ebenfalls aktualisieren
+    generate_summary_html(meta_info, output_data)
+
+def generate_summary_html(meta, feeds):
+    categories = {}
+    for feed in feeds:
+        cat = feed.get("category", "Allgemein")
+        if cat not in categories:
+            categories[cat] = []
+        categories[cat].append(feed)
+
+    html_content = f"""<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis-Tracker | KI-Digest & Klartext-Übersicht</title>
+    <style>
+        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f3f4f6; color: #111827; margin: 0; padding: 20px; line-height: 1.5; }}
+        .container {{ max-width: 800px; margin: 0 auto; background: #ffffff; padding: 25px; border-radius: 10px; border: 1px solid #e5e7eb; }}
+        h1 {{ color: #8b0000; font-size: 1.6rem; margin-top: 0; }}
+        .meta {{ color: #4b5563; font-size: 0.85rem; border-bottom: 2px solid #8b0000; padding-bottom: 10px; margin-bottom: 20px; }}
+        h2 {{ color: #8b0000; font-size: 1.2rem; margin-top: 25px; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; }}
+        .trend-badge {{ font-size: 0.8rem; background: #f3f4f6; padding: 2px 8px; border-radius: 4px; margin-left: 10px; font-weight: normal; color: #4b5563; }}
+        h3 {{ font-size: 1rem; margin-top: 15px; margin-bottom: 8px; color: #111827; }}
+        ul {{ padding-left: 20px; margin: 0 0 15px 0; font-size: 0.9rem; }}
+        li {{ margin-bottom: 4px; }}
+        a {{ color: #990000; text-decoration: none; }}
+        a:hover {{ text-decoration: underline; }}
+        .back-link {{ display: inline-block; margin-bottom: 15px; font-weight: bold; color: #8b0000; text-decoration: none; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Zurück zum Haupt-Dashboard</a>
+        <h1>🌍 Crisis-Tracker: Feed-Digest & Text-Archiv</h1>
+        <div class="meta">
+            Datenstand: <strong>{meta['last_updated']}</strong> | Nächste Aktualisierung: <strong>{meta['next_update']}</strong>
+        </div>
+        <p><em>Diese Seite enthält alle gesammelten Meldungen (bis zu 60 pro Kategorie) als Klartext.</em></p>
+    """
+
+    for cat_name, cat_feeds in categories.items():
+        html_content += f"\n<h2>📌 {cat_name}</h2>"
+        for feed in cat_feeds:
+            trend = feed.get("meta_trend", {"symbol": "▶", "last_24h": 0, "prev_24h": 0})
+            trend_str = f"{trend['symbol']} {trend['last_24h']} neue Meldungen (24h) | Vortag: {trend['prev_24h']}"
+            
+            html_content += f"\n<h3>{feed['title']} <span class=\"trend-badge\">{trend_str}</span></h3>"
+            if feed['items']:
+                html_content += "\n<ul>"
+                for item in feed['items']:
+                    html_content += f"\n  <li><a href=\"{item['link']}\" target=\"blank\">{item['title']}</a></li>"
+                html_content += "\n</ul>"
+            else:
+                html_content += "\n<p><em>Keine aktuellen Meldungen.</em></p>"
+
+    html_content += """
+    </div>
+
+<script>
+(function() {
+    const STORAGE_KEY = 'crisis_tracker_workbench_items_v1';
+
+    function getItems() {
+        try {
+            return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+        } catch (e) {
+            return [];
+        }
+    }
+
+    function saveItems(items) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+        updateBar();
+    }
+
+    function toggleItem(itemObj, checked) {
+        const items = getItems();
+        const idx = items.findIndex(x => x.link === itemObj.link && x.title === itemObj.title);
+        if (checked && idx === -1) {
+            items.push(itemObj);
+        } else if (!checked && idx !== -1) {
+            items.splice(idx, 1);
+        }
+        saveItems(items);
+    }
+
+    function updateBar() {
+        const count = getItems().length;
+        const badge = document.getElementById('wb-count-badge');
+        if (badge) {
+            badge.textContent = String(count);
+        }
+    }
+
+    // Kompakte Test-Leiste oben einfügen
+    const bar = document.createElement('div');
+    bar.style.cssText = 'position: sticky; top: 10px; z-index: 900; max-width: 860px; margin: 0 auto 16px auto; background: #ffffff; border: 1px solid #e5e7eb; border-left: 4px solid #8b0000; border-radius: 10px; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; gap: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); font-size: 0.88rem;';
+    bar.innerHTML = `
+        <div>🧰 <strong>Werkbank-Auswahl (Test):</strong> <span id="wb-count-badge">0</span> Meldung(en) markiert</div>
+        <a href="workbench.html" style="background: #8b0000; color: #ffffff; text-decoration: none; font-weight: 600; padding: 6px 12px; border-radius: 6px; font-size: 0.82rem;">Zur Werkbank →</a>
+    `;
+    document.body.insertBefore(bar, document.body.firstChild);
+
+    // Checkboxen an alle Archiv-Listenpunkte anhängen
+    const saved = getItems();
+    const listItems = document.querySelectorAll('li');
+    listItems.forEach(li => {
+        const linkEl = li.querySelector('a[href]');
+        if (!linkEl) return;
+
+        const title = (linkEl.textContent || '').trim();
+        const link = linkEl.getAttribute('href') || '';
+        const h2 = li.closest('section, div')?.querySelector('h2')?.textContent?.trim() || 'Text-Archiv';
+
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.title = 'Für die Recherche-Werkbank markieren';
+        cb.style.cssText = 'margin-right: 8px; cursor: pointer; transform: scale(1.08); vertical-align: middle;';
+        cb.checked = saved.some(x => x.link === link && x.title === title);
+
+        cb.addEventListener('change', () => {
+            toggleItem({ title, link, context: h2 }, cb.checked);
+        });
+
+        li.insertBefore(cb, li.firstChild);
+    });
+
+    updateBar();
+})();
+</script>
+</body>
+</html>"""
+
+    with open('summary.html', 'w', encoding='utf-8') as f:
+        f.write(html_content)
+
+if __name__ == '__main__':
+    fetch_all()
