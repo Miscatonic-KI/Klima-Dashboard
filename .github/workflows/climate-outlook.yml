@@ -1,0 +1,58 @@
+
+name: Update Climate Crisis Situation Report
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '35 */4 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: climate-outlook-update
+  cancel-in-progress: false
+
+jobs:
+  update-climate-outlook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install google-genai
+
+      - name: Generate climate situation report
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python generate_climate_outlook.py
+
+      - name: Commit only the climate report outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add generated/climate_knowledge.json
+          git add generated/climate_outlook.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update climate crisis situation report"
+
+          git pull --rebase origin main
+          git push origin HEAD:main
