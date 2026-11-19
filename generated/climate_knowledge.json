@@ -1,17 +1,18 @@
 {
   "version": 1,
-  "updated_at": "2026-11-19T22:54:24+00:00",
-  "current_assessment": "Krisendichte steigt; Überlagerung von natürlicher Variabilität (El Niño) und anthropogenem Trend führt zu einer systemischen Überforderung traditioneller Schadensbewältigungsmechanismen.",
+  "updated_at": "2026-11-19T22:57:30+00:00",
+  "current_assessment": "Krisendichte steigt; die Kopplung von El-Niño-Dynamiken mit globaler Infrastrukturfragilität führt zur systemischen Überlastung der Schadensbewältigungsmechanismen.",
   "established_findings": [
-    "Extremwetter erzeugt ökonomische Schäden in Milliardenhöhe (Quelle: Feed-Index 67).",
-    "Finanzinfrastruktur erkennt Klimawandel als systemisches Risiko an (Quelle: Feed-Index 27)."
+    "Extremwetter erzeugt ökonomische Schäden in Milliardenhöhe (Feed-Index 67).",
+    "Finanzinfrastruktur erkennt Klimawandel als systemisches Risiko an (Feed-Index 27).",
+    "Die Diskrepanz zwischen Finanzierungsbedarf (ca. 5 Mrd. pro Katastrophe für einzelne Länder wie Nepal) und bereitgestellten Fonds ist strukturell manifest (Feed-Index 62)."
   ],
   "open_questions": [
     "Wie nachhaltig sind Finanzierungsinstrumente bei der aktuell hohen Frequenz globaler Katastrophen?",
-    "Wie beeinflusst die politische Haltung in den USA die internationale Klimafinanzierungs-Architektur?"
+    "Können die ökonomischen Verluste durch KI-gestützte Frühwarnsysteme und physische Resilienzmaßnahmen zeitnah kompensiert werden?"
   ],
   "previous_changes": [
-    "2026-11-19: Erste Aufnahme der El-Niño-Dynamik und der COP31-Verhandlungen in das Lagebild."
+    "2026-11-19: Vertiefung der El-Niño-Dynamik und Integration der COP31-Finanzierungsdebatte."
   ],
   "method_note": "KI-generierter Arbeitsstand aus Feed-Titeln und Kurzbeschreibungen. Kein verifizierter Forschungsstand."
 }
