@@ -1,0 +1,552 @@
+
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#7b2638">
+<title>Klimakrise – Lagebild | Miscatonic</title>
+
+<style>
+:root {
+  --ink: #252525;
+  --muted: #686868;
+  --paper: #f3f3f3;
+  --card: #fff;
+  --accent: #7b2638;
+  --line: #e5e5e5;
+  --soft: #f8eeee;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.55 system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  padding: 22px 16px 18px;
+}
+
+.wrap {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.55rem;
+  line-height: 1.2;
+  margin: 0 0 6px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 3px 0 10px;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 0 0 5px;
+}
+
+p { margin: 6px 0; }
+
+.sub, .meta {
+  color: var(--muted);
+  font-size: .88rem;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+nav a {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 6px 11px;
+  background: #f1f1f1;
+  color: #444;
+  text-decoration: none;
+  font-size: .82rem;
+}
+
+nav a.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+main {
+  max-width: 920px;
+  margin: 18px auto;
+  padding: 0 12px 42px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 17px;
+  margin-bottom: 13px;
+  box-shadow: 0 1px 2px #00000008;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  font-size: .72rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.headline {
+  font-size: 1.12rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.summary {
+  border-left: 4px solid var(--accent);
+  background: var(--soft);
+}
+
+.entry {
+  padding: 13px 0;
+  border-top: 1px solid var(--line);
+}
+
+.entry:first-child { border-top: 0; }
+
+.entry p { font-size: .94rem; }
+
+.tag {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 3px 8px;
+  margin: 3px 4px 0 0;
+  font-size: .74rem;
+  background: #eee;
+  color: #555;
+}
+
+.tag.feed {
+  background: #f7e9ec;
+  color: #702235;
+}
+
+.tag.hyp {
+  background: #fff3d9;
+  color: #72500b;
+}
+
+.empty { color: var(--muted); }
+
+.sources {
+  font-size: .83rem;
+  margin-top: 7px;
+}
+
+a { color: #76283a; overflow-wrap: anywhere; }
+
+details { margin-top: 8px; }
+
+summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+footer {
+  color: var(--muted);
+  font-size: .8rem;
+  text-align: center;
+  padding: 10px 15px 28px;
+}
+
+@media (min-width: 700px) {
+  header { padding: 28px 22px 20px; }
+  main { padding: 0 18px 50px; }
+  .card { padding: 21px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Klimakrise – Lagebild</h1>
+    <div class="sub">
+      Entwicklungen, Risiken und systemische Zusammenhänge.
+    </div>
+
+    <nav aria-label="Dashboard">
+      <a href="index.html">Übersicht</a>
+      <a href="regions.html">Regionen</a>
+      <a href="scenarios.html">Szenarien</a>
+      <a href="science.html">Wissenschaft</a>
+      <a href="actors.html">Akteure</a>
+      <a href="klimakrise-lagebild.html" class="active">
+        Lagebild
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="card">
+    <div class="eyebrow">Aktueller Stand</div>
+    <div id="status" class="meta">Lade Lagebild …</div>
+    <p id="headline" class="headline">
+      Das Lagebild wird geladen.
+    </p>
+    <p id="summary"></p>
+  </section>
+
+  <section class="card">
+    <div class="eyebrow">Einordnung</div>
+    <h2>Was gerade wichtig ist</h2>
+    <div id="situation" class="empty">
+      Noch keine Einträge.
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="eyebrow">Systemische Perspektive</div>
+    <h2>Zusammenhänge und Wirkungsketten</h2>
+    <div id="systems" class="empty">
+      Noch keine Einträge.
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="eyebrow">Veränderung</div>
+    <h2>Was sich verändert hat</h2>
+    <div id="changes" class="empty">
+      Noch keine Einträge.
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="eyebrow">Beobachtung</div>
+    <h2>Was weiter im Blick bleiben muss</h2>
+    <div id="watchlist" class="empty">
+      Noch keine Einträge.
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="eyebrow">Quellenlage</div>
+    <h2>Grenzen dieser Auswertung</h2>
+    <div id="limits" class="empty">
+      Noch keine Angaben.
+    </div>
+
+    <p class="meta" style="margin-top:12px">
+      Die automatische Auswertung nutzt Titel und
+      Kurzbeschreibungen aus dem Dashboard-Feed.
+      Die verlinkten Artikel und Studien werden nicht
+      automatisch im Volltext geprüft.
+    </p>
+  </section>
+
+  <section class="card">
+    <details>
+      <summary>Wie ist dieses Lagebild zu lesen?</summary>
+
+      <p>
+        <strong>Feed-Hinweis:</strong>
+        Eine Information ist im gelieferten Titel oder
+        Kurztext erkennbar. Das ist noch keine Prüfung
+        der Originalquelle.
+      </p>
+
+      <p>
+        <strong>Einordnung:</strong>
+        Eine vorsichtige Interpretation eines Hinweises.
+        Sie ersetzt keine Quellenprüfung.
+      </p>
+
+      <p>
+        <strong>Offen:</strong>
+        Die vorhandenen Angaben reichen nicht für
+        eine belastbare Aussage.
+      </p>
+
+      <p>
+        Die Gewichtung richtet sich nicht danach,
+        wie oft ein Thema im Feed auftaucht.
+        Entscheidend sind Tragweite, Neuigkeit und
+        mögliche Systemrelevanz.
+      </p>
+
+      <p>
+        Frühere KI-Einschätzungen gelten als Arbeitsstand,
+        nicht als wissenschaftlicher Beleg.
+      </p>
+    </details>
+  </section>
+
+</main>
+
+<footer>
+  Miscatonic · Klimakrise – Lagebild
+</footer>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+
+  function element(tag, className, value) {
+    const node = document.createElement(tag);
+
+    if (className) node.className = className;
+    if (value !== undefined && value !== null) {
+      node.textContent = String(value);
+    }
+
+    return node;
+  }
+
+  function safeUrl(value) {
+    try {
+      const url = new URL(value);
+
+      if (
+        url.protocol === "https:" ||
+        url.protocol === "http:"
+      ) {
+        return url.href;
+      }
+    } catch (_) {}
+
+    return "";
+  }
+
+  function sourceLinks(ids, sources) {
+    const box = element("div", "sources");
+
+    if (!Array.isArray(ids)) return box;
+
+    ids.forEach(id => {
+      const source = sources[id];
+      if (!source) return;
+
+      const url = safeUrl(source.link);
+      if (!url) return;
+
+      const link = element(
+        "a",
+        "",
+        source.title || "Quelle öffnen"
+      );
+
+      link.href = url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+
+      if (box.childNodes.length) {
+        box.appendChild(
+          document.createTextNode(" · ")
+        );
+      }
+
+      box.appendChild(link);
+    });
+
+    return box;
+  }
+
+  function renderEntries(target, entries, sources) {
+    target.replaceChildren();
+
+    if (!Array.isArray(entries) || !entries.length) {
+      target.appendChild(
+        element(
+          "p",
+          "empty",
+          "Keine belastbaren Einträge in dieser Kategorie."
+        )
+      );
+      return;
+    }
+
+    entries.forEach(item => {
+      const article = element("article", "entry");
+
+      article.appendChild(
+        element(
+          "h3",
+          "",
+          item.title ||
+          item.topic ||
+          item.change ||
+          "Einordnung"
+        )
+      );
+
+      const body =
+        item.assessment ||
+        item.chain ||
+        item.change ||
+        item.reason ||
+        "";
+
+      if (body) {
+        article.appendChild(element("p", "", body));
+      }
+
+      if (item.why_it_matters) {
+        article.appendChild(
+          element(
+            "p",
+            "",
+            "Warum es wichtig ist: " + item.why_it_matters
+          )
+        );
+      }
+
+      if (item.caveat) {
+        article.appendChild(
+          element(
+            "p",
+            "meta",
+            "Einschränkung: " + item.caveat
+          )
+        );
+      }
+
+      if (item.unknown) {
+        article.appendChild(
+          element(
+            "p",
+            "meta",
+            "Noch offen: " + item.unknown
+          )
+        );
+      }
+
+      const status =
+        item.evidence_level ||
+        item.status ||
+        item.importance;
+
+      if (status) {
+        let className = "tag";
+
+        if (/Feed-Hinweis|belegt/i.test(status)) {
+          className += " feed";
+        } else if (
+          /Hypothese|plausibel|Einordnung/i.test(status)
+        ) {
+          className += " hyp";
+        }
+
+        article.appendChild(
+          element("span", className, status)
+        );
+      }
+
+      const links = sourceLinks(
+        item.source_ids,
+        sources
+      );
+
+      if (links.childNodes.length) {
+        article.appendChild(links);
+      }
+
+      target.appendChild(article);
+    });
+  }
+
+  function renderLimits(target, entries, note) {
+    target.replaceChildren();
+
+    if (Array.isArray(entries)) {
+      entries.forEach(item => {
+        target.appendChild(element("p", "", item));
+      });
+    }
+
+    if (note) {
+      target.appendChild(
+        element("p", "meta", note)
+      );
+    }
+  }
+
+  fetch(
+    "generated/climate_outlook.json?ts=" + Date.now(),
+    { cache: "no-store" }
+  )
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("HTTP " + response.status);
+      }
+      return response.json();
+    })
+    .then(data => {
+      $("status").textContent =
+        "Erstellt: " + (data.generated_at || "unbekannt") +
+        " · " + (data.source_item_count || 0) +
+        " Feed-Einträge · Modell: " +
+        (data.model || "unbekannt");
+
+      $("headline").textContent =
+        data.headline || "Keine Lageeinschätzung vorhanden.";
+
+      $("summary").textContent =
+        data.executive_summary || "";
+
+      const sources = Array.isArray(data.sources)
+        ? data.sources
+        : [];
+
+      renderEntries(
+        $("situation"), data.situation, sources
+      );
+
+      renderEntries(
+        $("systems"), data.system_links, sources
+      );
+
+      renderEntries(
+        $("changes"), data.what_changed, sources
+      );
+
+      renderEntries(
+        $("watchlist"), data.watchlist, sources
+      );
+
+      renderLimits(
+        $("limits"),
+        data.limits,
+        data.source_limitation
+      );
+    })
+    .catch(error => {
+      $("status").textContent =
+        "Das Lagebild konnte nicht geladen werden.";
+
+      $("headline").textContent =
+        "Noch keine aktuelle Auswertung verfügbar.";
+
+      $("summary").textContent =
+        "Bitte später erneut versuchen. Technischer Hinweis: " +
+        error.message;
+    });
+})();
+</script>
+
+</body>
+</html>
