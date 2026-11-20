@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "updated_at": "2026-11-20T05:36:37+00:00",
-  "current_assessment": "Die Kopplung von globalen Klimamustern (El Niño) und lokaler infrastruktureller Fragilität führt zu einer systemischen Überlastung der Schadensbewältigung, während die COP31-Finanzierungsdebatte das Ausmaß der Diskrepanz zwischen Bedarf und Realität verdeutlicht.",
+  "updated_at": "2026-11-20T08:06:26+00:00",
+  "current_assessment": "Die Kopplung von El Niño und infrastruktureller Fragilität führt zu systemischen Engpässen; Finanzierungsdiskrepanzen bei COP31 verstärken die Prekarität in gefährdeten Regionen.",
   "established_findings": [
-    "Extremwetter erzeugt ökonomische Schäden in Milliardenhöhe (Feed-Index 67).",
-    "Finanzinfrastruktur erkennt Klimawandel als systemisches Risiko an (Feed-Index 27).",
+    "Extremwetterereignisse korrelieren mit zunehmenden ökonomischen Schadenssummen (Feed-Index 67).",
+    "Internationale Finanzinstitutionen integrieren Klimarisiken zunehmend in ihre Risikomodelle (Feed-Index 27).",
     "Strukturelle Diskrepanz zwischen Finanzierungsbedarf und bereitgestellten Fonds manifest (Feed-Index 62)."
   ],
   "open_questions": [
     "Wie nachhaltig sind Finanzierungsinstrumente bei der aktuell hohen Frequenz globaler Katastrophen?",
-    "Können die ökonomischen Verluste durch KI-gestützte Frühwarnsysteme und physische Resilienzmaßnahmen zeitnah kompensiert werden?"
+    "Inwieweit können physische Resilienzmaßnahmen die ökonomischen Verluste kurzfristig dämpfen?"
   ],
   "previous_changes": [
     "2026-11-20: Intensivierung der COP31-Finanzierungsdebatte und Berichte über gehäufte Zyklone in Indien.",
