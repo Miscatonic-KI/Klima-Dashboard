@@ -1,17 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-11-21T17:20:17+00:00",
-  "current_assessment": "Die Kopplung von El Niño und infrastruktureller Fragilität führt zu systemischen Engpässen; COP31-Finanzierungsdebatten verdeutlichen die Diskrepanz zwischen Klimarisiko und politischer Handlungsfähigkeit.",
+  "updated_at": "2026-11-21T21:16:27+00:00",
+  "current_assessment": "Systemische Engpässe verschärfen sich durch das Zusammentreffen von El-Niño-Folgen und einer verhärteten COP31-Verhandlungsfront.",
   "established_findings": [
     "Fossile Brennstoffe sind der chief cause des Klimawandels (PBS, Feed-Index 62)."
   ],
   "open_questions": [
-    "Wie können vulnerable Regionen ohne adäquate Versicherungslösungen die Frequenz der Katastrophen ökonomisch abfedern?"
+    "Können ökonomische Hilfsmechanismen für vulnerable Regionen die Schadensfrequenz der nächsten 12 Monate kompensieren?"
   ],
   "previous_changes": [
-    "2026-11-21: Zyklon Akvan erreicht indische Küste, COP31 in der Verlängerung.",
-    "2026-11-20: Intensivierung der COP31-Finanzierungsdebatte und Berichte über gehäufte Zyklone in Indien.",
-    "2026-11-19: Vertiefung der El-Niño-Dynamik."
+    "2026-11-21: Zyklon Akvan wirkt sich auf indische Küste aus, COP31 in Verlängerung.",
+    "2026-11-20: Intensivierung der COP31-Finanzierungsdebatte."
   ],
   "method_note": "KI-generierter Arbeitsstand aus Feed-Titeln und Kurzbeschreibungen. Kein verifizierter Forschungsstand."
 }
