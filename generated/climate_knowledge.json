@@ -1,18 +1,19 @@
 {
   "version": 1,
-  "updated_at": "2026-11-21T01:50:19+00:00",
-  "current_assessment": "Die Kopplung von El Niño und infrastruktureller Fragilität führt zu systemischen Engpässen; Finanzierungsdiskrepanzen bei COP31 verstärken die Prekarität in gefährdeten Regionen.",
+  "updated_at": "2026-11-21T05:30:03+00:00",
+  "current_assessment": "Die Kopplung von El Niño und infrastruktureller Fragilität führt zu systemischen Engpässen; COP31-Finanzierungsdebatten verdeutlichen die Diskrepanz zwischen Klimarisiko und politischer Handlungsfähigkeit.",
   "established_findings": [
     "Extremwetter korreliert zunehmend mit ökonomischen Schadenssummen (Feed-Index 67).",
-    "Strukturelle Diskrepanz zwischen Finanzierungsbedarf und bereitgestellten Fonds ist manifest (Feed-Index 62)."
+    "Fossile Brennstoffe sind der chief cause des Klimawandels (PBS, Feed-Index 62)."
   ],
   "open_questions": [
-    "Wie nachhaltig sind Finanzierungsinstrumente bei der aktuell hohen Frequenz globaler Katastrophen?",
-    "Inwieweit können physische Resilienzmaßnahmen die ökonomischen Verluste kurzfristig dämpfen?"
+    "Wie können vulnerable Regionen ohne adäquate Versicherungslösungen die Frequenz der Katastrophen ökonomisch abfedern?",
+    "Inwieweit verhindern die aktuellen COP31-Verhandlungsmodelle notwendige fossile Ausstiegsraten?"
   ],
   "previous_changes": [
+    "2026-11-21: Verschärfung der Kritik am COP31-Entwurf; Zyklon Akvan trifft indische Küste.",
     "2026-11-20: Intensivierung der COP31-Finanzierungsdebatte und Berichte über gehäufte Zyklone in Indien.",
-    "2026-11-19: Vertiefung der El-Niño-Dynamik und Integration der COP31-Finanzierungsdebatte."
+    "2026-11-19: Vertiefung der El-Niño-Dynamik."
   ],
   "method_note": "KI-generierter Arbeitsstand aus Feed-Titeln und Kurzbeschreibungen. Kein verifizierter Forschungsstand."
 }
