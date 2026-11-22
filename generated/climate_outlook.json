@@ -1,38 +1,20 @@
 {
-  "headline": "Die COP31-Verhandlungen stagnieren unter dem Druck multipler Extremwetterereignisse, während die Diskussion über Klimafolgen, Wasserknappheit und den 'Overshoot' an Intensität gewinnt.",
-  "executive_summary": "Die COP31 in Antalya befindet sich in der Verlängerung, belastet durch tiefgreifende Konflikte über fossile Ausstiegspläne und die wissenschaftliche Einordnung des 'Klima-Overshoots'. Parallel dazu verschärfen extreme Wetterlagen – insbesondere Zyklon Akvan in Südasien, Flutereignisse in den USA und anhaltende Dürren in Südafrika sowie Indien – die systemische Instabilität. Die Kopplung von El-Niño-Folgen mit klimawandelbedingten Veränderungen belastet die globale Ernährungssicherheit und Infrastruktur zunehmend. Während technische Anpassungsstrategien vorangetrieben werden, wächst der gesellschaftliche Druck, spürbar an der Zunahme von 'Eco-Anxiety'. Die internationale Gemeinschaft ringt um eine gemeinsame Antwort auf die Frage, wie angesichts des verfehlten 1,5-Grad-Pfades notwendige Anpassungen und Klimaschutz finanziell und politisch zu koordinieren sind.",
+  "headline": "Die COP31-Klimaverhandlungen geraten in eine Sackgasse, während kaskadierende Wetterextreme weltweit ökonomische Schäden verschärfen.",
+  "executive_summary": "Die COP31 in Antalya ist in die Verlängerung gegangen, da internationale Differenzen – insbesondere über die Rolle fossiler Brennstoffe und den Umgang mit dem 'Overshoot'-Szenario – die Konsensfindung blockieren. Parallel dazu führt die Kombination aus El Niño und dem langfristigen Klimawandel zu einer Verschärfung hydrologischer Krisen (Dürren und Starkregen), die zunehmend Arbeitswelten und die ökonomische Stabilität belasten. Infrastrukturschäden in den USA, Südafrika und Asien sowie die Zunahme von 'Eco-Anxiety' verdeutlichen die soziale Dimension der Klimakrise. Die Diskrepanz zwischen wissenschaftlich notwendigen Emissionsreduktionen und der stockenden politischen Umsetzung bleibt der zentrale systemische Risikofaktor.",
   "situation": [
     {
-      "title": "Stagnation der COP31-Verhandlungen",
-      "assessment": "Die Verhandlungen in Antalya sind in die Verlängerung gegangen, da grundlegende Konsenspunkte zum fossilen Ausstieg fehlen.",
+      "title": "COP31-Verhandlungsblockade",
+      "assessment": "Die Konferenz in Antalya stockt bei der Frage nach dem Ausstieg aus fossilen Brennstoffen und der Interpretation von Overshoot-Szenarien.",
       "evidence_level": "Feed-Hinweis",
-      "why_it_matters": "Das Scheitern oder eine Verwässerung der Abschlusserklärung schwächt das globale Signal für klimapolitische Richtungsentscheidungen.",
+      "why_it_matters": "Scheitern wichtiger internationaler Einigungen erhöht das Risiko für ungebremste Erwärmungspfade.",
       "source_evidence": [],
       "source_ids": []
     },
     {
-      "title": "Systemische Instabilität durch Extremwetter",
-      "assessment": "Gleichzeitige Extremwetterereignisse (Zyklon Akvan, Überflutungen in den USA/Nepal) belasten nationale Ressourcen und Krisenreaktionskapazitäten.",
+      "title": "El Niño-Einfluss auf globale Märkte",
+      "assessment": "Der aktuelle starke El Niño beeinträchtigt landwirtschaftliche Erträge und belastet die Nahrungsmittel- sowie Energiepreise weltweit.",
       "evidence_level": "Feed-Hinweis",
-      "why_it_matters": "Die Schadensfrequenz übersteigt lokal die Anpassungskapazität der betroffenen Regionen und gefährdet die öffentliche Sicherheit.",
-      "source_evidence": [],
-      "source_ids": []
-    },
-    {
-      "title": "Ökonomische Auswirkungen von Wasserknappheit",
-      "assessment": "Besonders in Indien und Südafrika führen Dürren zu massiven Einbußen bei landwirtschaftlichen Erträgen und Trinkwasserversorgungsengpässen.",
-      "evidence_level": "Feed-Hinweis",
-      "why_it_matters": "Langfristige Wassersicherheit ist eine kritische Bedingung für die ökonomische Stabilität in diesen Regionen.",
-      "source_evidence": [],
-      "source_ids": []
-    }
-  ],
-  "system_links": [
-    {
-      "title": "El Niño als Verstärker für Instabilität",
-      "chain": "El Niño → veränderte Niederschlagsmuster/Dürre → Beeinträchtigung der globalen Nahrungsmittelproduktion → Preisdruck",
-      "status": "Plausibler Mechanismus",
-      "caveat": "Das Ausmaß der Kausalität zwischen natürlichem El Niño und anthropogenem Klimawandel ist in ihrer dynamischen Verstärkung komplex.",
+      "why_it_matters": "Kombinierte Belastungen durch Naturkatastrophen und Preisdruck könnten ökonomische Hilfsmechanismen überfordern.",
       "source_evidence": [
         {
           "source_id": 18,
@@ -44,23 +26,42 @@
       ]
     },
     {
-      "title": "Klimafolgen und psychische Gesundheit",
-      "chain": "Zunehmende Extremwetterereignisse → direkte Betroffenheit → Zunahme von Eco-Anxiety/Doomerism",
+      "title": "Soziale und psychische Belastung durch Klimafolgen",
+      "assessment": "Die psychosozialen Auswirkungen, von 'Eco-Anxiety' bis hin zu produktivitätsmindernden Arbeitsumständen, nehmen messbar zu.",
+      "evidence_level": "Einordnung",
+      "why_it_matters": "Langfristige gesellschaftliche Stabilität und Arbeitsfähigkeit sind direkt von der klimatischen Resilienz abhängig.",
+      "source_evidence": [],
+      "source_ids": []
+    }
+  ],
+  "system_links": [
+    {
+      "title": "El Niño → Hydrologische Instabilität → Ernährungsunsicherheit",
+      "chain": "El Niño → Dürre/Flut → Ernteausfälle → Preisdruck",
+      "status": "Plausibler Mechanismus",
+      "caveat": "Das Ausmaß der Übertragbarkeit auf lokale Märkte variiert regional stark.",
+      "source_evidence": [
+        {
+          "source_id": 22,
+          "quote": "JPMorgan warns the long aftereffects of El Niño will hurt crops, water supplies"
+        }
+      ],
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "title": "COP31-Stillstand → Politische Handlungsunfähigkeit → Steigende Risiken",
+      "chain": "Blockade → fehlende Regulierung → anhaltende Emissionen → Überschreiten von Belastungsgrenzen",
       "status": "Hypothese",
-      "caveat": "Die statistische Korrelation zwischen konkreten Ereignissen und psychischen Diagnosen bedarf weiterer Langzeitbeobachtung.",
+      "caveat": "Kausale Verknüpfung zwischen COP-Ergebnissen und individuellen Wetterereignissen ist zeitlich verzögert.",
       "source_evidence": [],
       "source_ids": []
     }
   ],
   "what_changed": [
     {
-      "change": "Intensivierung der COP31-Fossildebatte durch den Einbezug der 'Overshoot'-Diskussion.",
-      "importance": "hoch",
-      "source_evidence": [],
-      "source_ids": []
-    },
-    {
-      "change": "Konkrete Beeinträchtigung durch Zyklon Akvan in Südasien.",
+      "change": "COP31 in der Verlängerung bei gleichzeitiger Kontroverse um wissenschaftliche Ergebnisse ('Overshoot').",
       "importance": "hoch",
       "source_evidence": [],
       "source_ids": []
@@ -68,26 +69,25 @@
   ],
   "watchlist": [
     {
-      "topic": "COP31-Abschlussdokument",
-      "reason": "Signalwirkung für internationale Verbindlichkeit.",
-      "unknown": "Wird der fossile Ausstieg explizit erwähnt oder verwässert?"
+      "topic": "COP31-Abschlusserklärung",
+      "reason": "Indikator für die zukünftige Richtung der Klimapolitik.",
+      "unknown": "Wird der Ausstieg aus fossilen Brennstoffen explizit genannt?"
     },
     {
-      "topic": "Entwicklung der Wasserknappheit in Maharashtra",
-      "reason": "Indikator für systemische Versorgungsengpässe.",
-      "unknown": "Welche Notfallmaßnahmen greifen kurzfristig?"
+      "topic": "Wirtschaftliche Entwicklung El Niño-Folgen",
+      "reason": "Direkte Auswirkungen auf Preisstabilität und Ressourcenkonflikte.",
+      "unknown": "Dauer der Auswirkungen von El Niño auf die Erntezyklen 2027."
     }
   ],
   "limits": [
-    "Die Auswertung basiert ausschließlich auf Medientiteln und Kurzbeschreibungen.",
-    "Keine Überprüfung von Originalstudien oder Schadensdaten möglich.",
-    "Die Zuordnung zu 'Systemlinks' spiegelt logische Zusammenhänge der Feed-Texte wider, keinen Kausalitätsbeweis."
+    "Die Auswertung basiert ausschließlich auf den bereitgestellten Feed-Einträgen ohne Überprüfung der wissenschaftlichen Primärquellen.",
+    "Korrelationen zwischen globalen Klimaphänomenen und lokalen Wetterereignissen lassen keine direkte kausale Zuschreibung für Einzelereignisse zu."
   ],
   "knowledge_update": {
-    "current_assessment": "Systemische Instabilität durch kaskadierende Wetterfolgen bei gleichzeitig blockierter internationaler Klimapolitik.",
+    "current_assessment": "Zuspitzung der systemischen Instabilität durch parallele Blockade internationaler Politik und kaskadierende Wetterfolgen.",
     "established_findings": [
       "Fossile Brennstoffe sind der Haupttreiber des Klimawandels (nach PBS, Feed-Index 62).",
-      "Klimafolgen wie Extremwetter beeinflussen zunehmend die Arbeitswelt und psychische Stabilität (nach DGB-Umfrage und CORDIS)."
+      "Die Arbeitswelt und psychische Gesundheit (Eco-Anxiety) sind zunehmend durch Klimafolgen negativ betroffen (nach DGB-Umfrage und CORDIS)."
     ],
     "open_questions": [
       "Können ökonomische Hilfsmechanismen für vulnerable Regionen die Schadensfrequenz der nächsten 12 Monate kompensieren?"
@@ -97,7 +97,7 @@
       "2026-11-20: Intensivierung der Finanzierungsdebatte bei der COP31."
     ]
   },
-  "generated_at": "2026-11-22T01:48:51+00:00",
+  "generated_at": "2026-11-22T05:30:20+00:00",
   "model": "gemini-3.1-flash-lite",
   "source_item_count": 140,
   "sources": [
