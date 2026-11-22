@@ -1,16 +1,17 @@
 {
   "version": 1,
-  "updated_at": "2026-11-22T05:30:20+00:00",
+  "updated_at": "2026-11-22T09:22:09+00:00",
   "current_assessment": "Zuspitzung der systemischen Instabilität durch parallele Blockade internationaler Politik und kaskadierende Wetterfolgen.",
   "established_findings": [
-    "Fossile Brennstoffe sind der Haupttreiber des Klimawandels (nach PBS, Feed-Index 62).",
-    "Die Arbeitswelt und psychische Gesundheit (Eco-Anxiety) sind zunehmend durch Klimafolgen negativ betroffen (nach DGB-Umfrage und CORDIS)."
+    "Fossile Brennstoffe sind der Haupttreiber des Klimawandels (nach PBS, Feed-Index 62 - laut bisherigem Wissensstand).",
+    "Die Arbeitswelt und psychische Gesundheit sind zunehmend durch Klimafolgen negativ betroffen (nach DGB-Umfrage und CORDIS - laut bisherigem Wissensstand)."
   ],
   "open_questions": [
     "Können ökonomische Hilfsmechanismen für vulnerable Regionen die Schadensfrequenz der nächsten 12 Monate kompensieren?"
   ],
   "previous_changes": [
-    "2026-11-21: Verschärfung der COP31-Situation durch 'Overshoot'-Kontroverse und Zyklon-Folgen.",
+    "2026-11-22: Verschärfung der COP31-Situation durch 'Overshoot'-Kontroverse.",
+    "2026-11-21: Zunahme von Berichten über infrastrukturelle Kollapse durch Starkregenereignisse.",
     "2026-11-20: Intensivierung der Finanzierungsdebatte bei der COP31."
   ],
   "method_note": "KI-generierter Arbeitsstand aus Feed-Titeln und Kurzbeschreibungen. Kein verifizierter Forschungsstand."
