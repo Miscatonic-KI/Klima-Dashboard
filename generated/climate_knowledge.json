@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "updated_at": "2026-11-22T13:36:36+00:00",
-  "current_assessment": "Zuspitzung der systemischen Instabilität durch parallele Blockade internationaler Politik und kaskadierende Wetterfolgen unter Einfluss eines starken El Niño.",
+  "updated_at": "2026-11-22T17:21:29+00:00",
+  "current_assessment": "Eskalation der politischen Handlungsunfähigkeit bei gleichzeitiger Zunahme physischer Klimarisiken durch den starken El Niño.",
   "established_findings": [
-    "Fossile Brennstoffe sind der Haupttreiber des Klimawandels (laut PBS, bisheriger Wissensstand).",
-    "Starkregenereignisse haben in den letzten 30 Jahren signifikant zugenommen (laut ZIB Magazin Klima, 2026-11-21)."
+    "Die Überschreitung des 1,5-Grad-Ziels wird als faktisch drohendes Szenario (Overshoot) in diplomatischen Diskursen thematisiert (laut diversen COP31-Berichten, 2026-11-22).",
+    "Starkregenereignisse korrelieren laut Feed-Hinweisen zunehmend mit infrastrukturellen Versagensszenarien (laut diversen Berichten, 2026-11-22)."
   ],
   "open_questions": [
-    "Können ökonomische Hilfsmechanismen für vulnerable Regionen die Schadensfrequenz der nächsten 12 Monate kompensieren?",
-    "Reicht der aktuelle Fokus auf 'Carbon Removal' zur Kompensation der Überschreitung des 1,5-Grad-Ziels?"
+    "Welche Auswirkungen hat das COP31-Scheitern auf die nationalen Klimaschutzpläne (NDCs) für 2027?",
+    "Wie reagieren Finanzmärkte auf die ausbleibenden globalen Finanzierungszusagen für vulnerable Regionen?"
   ],
   "previous_changes": [
-    "2026-11-22: Verschärfung der COP31-Situation durch 'Overshoot'-Kontroverse.",
-    "2026-11-21: Zunahme von Berichten über infrastrukturelle Kollapse durch Starkregenereignisse.",
-    "2026-11-20: Intensivierung der Finanzierungsdebatte bei der COP31."
+    "2026-11-22: Zusammenbruch der COP31-Gespräche.",
+    "2026-11-22: Zunahme von Berichten über infrastrukturelle Kollapse durch Starkregenereignisse.",
+    "2026-11-22: Verschärfung der COP31-Situation durch 'Overshoot'-Kontroverse."
   ],
   "method_note": "KI-generierter Arbeitsstand aus Feed-Titeln und Kurzbeschreibungen. Kein verifizierter Forschungsstand."
 }
