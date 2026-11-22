@@ -1,0 +1,99 @@
+name: Update Feeds
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Abhängigkeiten installieren
+        run: pip install --upgrade google-genai
+
+      - name: Feeds & KI-Analysen mit Auto-Retry (max. 4 Versuche)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TZ: 'Europe/Berlin'
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          MAX_RETRIES=4
+          ATTEMPT=1
+
+          while [ $ATTEMPT -le $MAX_RETRIES ]; do
+            echo "=== Starte Durchlauf $ATTEMPT von $MAX_RETRIES ==="
+
+            if python fetcher.py && \
+               python generate_briefing.py && \
+               python generate_regions.py && \
+               python generate_scenarios.py && \
+               python generate_actors.py && \
+               python generate_science.py && \
+               python generate_outlook.py && \
+               python generate_evolution.py; then
+
+              NOW=$(date +"%H:%M")
+              echo "{\"status\": \"ok\", \"message\": \"Letzte erfolgreiche Aktualisierung um $NOW Uhr.\"}" > status.json
+
+              git pull origin main --rebase || true
+              git add \
+                status.json \
+                data.json \
+                import_matrix.json \
+                summary.html \
+                evolution.html \
+                regions.html \
+                outlook-3m.html \
+                generated/briefing.html \
+                generated/regions_content.html \
+                generated/scenarios_content.html \
+                generated/actors_content.html \
+                generated/science_content.html \
+                generated/outlook_content.html
+              git commit -m "Automatisches Dashboard-Update ($NOW Uhr)" || exit 0
+              git push
+              echo "Durchlauf erfolgreich abgeschlossen!"
+              exit 0
+            else
+              NOW=$(date +"%H:%M")
+              if [ $ATTEMPT -lt $MAX_RETRIES ]; then
+                NEXT=$(date -d "+10 minutes" +"%H:%M")
+                MSG="Aktualisierung um $NOW Uhr fehlgeschlagen, neuer Versuch um $NEXT Uhr. (Versuch $ATTEMPT/$MAX_RETRIES)"
+                echo "$MSG"
+                echo "{\"status\": \"retry\", \"message\": \"$MSG\"}" > status.json
+
+                git pull origin main --rebase || true
+                git add status.json
+                git commit -m "Status-Update: Retry geplant für $NEXT Uhr" || true
+                git push || true
+
+                echo "Warte 10 Minuten bis zum nächsten Versuch..."
+                sleep 600
+              else
+                MSG="Aktualisierung um $NOW Uhr nach $MAX_RETRIES Versuchen fehlgeschlagen. Nächster regulärer Lauf in 4 Stunden."
+                echo "$MSG"
+                echo "{\"status\": \"error\", \"message\": \"$MSG\"}" > status.json
+
+                git pull origin main --rebase || true
+                git add status.json
+                git commit -m "Status-Update: Alle $MAX_RETRIES Versuche fehlgeschlagen" || true
+                git push || true
+                exit 1
+              fi
+              ATTEMPT=$((ATTEMPT + 1))
+            fi
+          done
