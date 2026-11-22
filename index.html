@@ -402,6 +402,8 @@
             <button class="main-info-btn" onclick="openMainModal()" title="Über den Crisis-Tracker">ℹ️</button>
         </h1>
         <p>Automated real-time monitoring of global climate signals and impacts</p>
+        <div id="update-status-banner" style="display:none; padding: 10px 15px; margin: 12px 0; border-radius: 6px; background: #fff3cd; color: #856404; border: 1px solid #ffeeba; font-size: 0.9rem;"></div>
+
         <div class="update-badge" id="update-badge">
             Datenstand: Laden... | Nächste Aktualisierung: Laden...
         </div>
@@ -692,5 +694,18 @@
     </script>
     <script data-goatcounter="https://miscatonic.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
+<script>
+  fetch('status.json?t=' + Date.now())
+    .then(r => r.ok ? r.json() : null)
+    .then(data => {
+      if (data && data.status !== 'ok') {
+        const banner = document.getElementById('update-status-banner');
+        banner.textContent = data.message;
+        banner.style.display = 'block';
+      }
+    })
+    .catch(() => {});
+</script>
+
 </body>
 </html>
