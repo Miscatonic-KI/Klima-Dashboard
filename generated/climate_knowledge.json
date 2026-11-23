@@ -1,17 +1,17 @@
 {
   "version": 1,
-  "updated_at": "2026-11-22T21:21:44+00:00",
-  "current_assessment": "Eskalation der COP31-Situation zum 'Fehlstart' globaler Klimapolitik bei sich gleichzeitig zuspitzenden klimatischen Belastungsgrenzen durch den Super El Niño.",
+  "updated_at": "2026-11-23T01:55:52+00:00",
+  "current_assessment": "Eskalation der COP31-Situation zum 'Fehlstart' globaler Klimapolitik bei gleichzeitigem Auftreten von Extremwetter-Rekorden durch den Super El Niño.",
   "established_findings": [
-    "COP31 ist laut Berichten am 22.11.2026 ohne Einigung beendet worden (Feed-Einträge 9, 26, 32).",
-    "El Niño wird weltweit als zentraler Verstärker für Dürre und Flutereignisse identifiziert (Feed-Einträge 3, 39, 78)."
+    "Die COP31 endete am 22.11.2026 ohne Einigung (Feed 1, 2, 6).",
+    "Ein starker El Niño gilt als Treiber für die aktuellen Dürre- und Flutereignisse (Feed 36, 44, 76)."
   ],
   "open_questions": [
     "Wie sieht die neue diplomatische Roadmap nach dem COP31-Abbruch aus?",
     "Inwieweit werden nationale Alleingänge bei der Klimapolitik zunehmen?"
   ],
   "previous_changes": [
-    "2026-11-22: Zusammenbruch der COP31-Gespräche und Anstieg der Berichte über infrastrukturelle Kollapse durch Starkregen."
+    "2026-11-23: Formale Bestätigung des Abbruchs der COP31 und Verschärfung der Wetterereignisse unter El Niño-Einfluss."
   ],
   "method_note": "KI-generierter Arbeitsstand aus Feed-Titeln und Kurzbeschreibungen. Kein verifizierter Forschungsstand."
 }

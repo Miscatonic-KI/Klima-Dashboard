@@ -1,106 +1,215 @@
 {
-  "headline": "Das Scheitern der COP31 und die gleichzeitige Häufung globaler Wetterextremverläufe markieren einen neuen Tiefpunkt in der koordinierten Klimapolitik.",
-  "executive_summary": "Die COP31 in Antalya ist ohne eine gemeinsame Abschlusserklärung beendet worden, da sich die teilnehmenden Staaten nicht auf Formulierungen zu einem Ausstieg aus fossilen Brennstoffen einigen konnten. Zeitgleich verschärft ein starker El-Niño-Zyklus die ohnehin kritische physische Lage: Berichte über Dürrekatastrophen, Überschwemmungen und extreme Wetterereignisse häufen sich weltweit. Das Vertrauen in multilaterale Klimaverhandlungen ist durch das Scheitern stark beschädigt. Finanzierungsfragen für vulnerable Regionen bleiben trotz dringender Notwendigkeiten ungeklärt, während die physischen Auswirkungen des Klimawandels zunehmend ökonomische und soziale Instabilitäten befeuern. Die Situation ist durch eine doppelte Krise gekennzeichnet: physische Destabilisierung durch Extremwetter und politischer Stillstand bei der globalen Strategiebildung.",
+  "headline": "Das Scheitern der COP31 inmitten eines globalen, durch einen Super El Niño forcierten Extremwetter-Events führt zu einer diplomatischen Lähmung der internationalen Klimapolitik.",
+  "executive_summary": "Die COP31 in Antalya ist am 22.11.2026 ohne Einigung beendet worden, wobei die Uneinigkeit über den Umgang mit fossilen Brennstoffen als zentraler Bruchpunkt identifiziert wurde. Zeitgleich trifft die Welt auf die physischen Grenzen eines 'Super El Niño', der weltweit Extremwetter wie Überschwemmungen, Dürren und Rekordtemperaturen verstärkt. Dieser Zustand erzeugt eine gefährliche Divergenz: Während die diplomatische Handlungsfähigkeit kollabiert, verschärfen sich die infrastrukturellen und ökonomischen Schäden vor Ort massiv. Die globale Gemeinschaft steht vor der Herausforderung, trotz des diplomatischen Fehlstarts nationale Kapazitäten zur Katastrophenbewältigung und Anpassung zu mobilisieren, da die ökonomischen Verluste und der soziale Druck durch die Klimafolgen, insbesondere in vulnerablen Regionen, weiter ansteigen.",
   "situation": [
     {
-      "title": "Scheitern der COP31",
-      "assessment": "Die Konferenz endete ohne eine Einigung, primär wegen unüberbrückbarer Differenzen bei der Nennung von fossilen Brennstoffen.",
+      "title": "Diplomatischer Stillstand nach COP31-Abbruch",
+      "assessment": "Die Klimakonferenz in Antalya endete ohne Einigung; fossile Brennstoffe und Finanzierungsfragen erwiesen sich als unüberbrückbare Hindernisse.",
       "evidence_level": "Feed-Hinweis",
-      "why_it_matters": "Der Ausfall eines globalen Rahmenvertrags entzieht den nationalen Klimaschutzplänen (NDCs) die leitende internationale Referenz.",
+      "why_it_matters": "Ein Mangel an globalem Konsens erschwert koordinierte Maßnahmen zur Emissionsreduktion und Klimaanpassung.",
       "source_evidence": [],
       "source_ids": []
     },
     {
-      "title": "Verstärkung durch El Niño",
-      "assessment": "Der starke El Niño wirkt als Multiplikator für Wetterextreme, was die globale Resilienz überfordert.",
+      "title": "Super El Niño als Verstärker",
+      "assessment": "Das Wetterphänomen treibt weltweit Dürre- und Flutereignisse an, was die Belastungsgrenzen von Infrastruktur und Nahrungsmittelsicherheit verschiebt.",
       "evidence_level": "Feed-Hinweis",
-      "why_it_matters": "Er erhöht die Frequenz von Katastrophenereignissen massiv und überlagert politisch notwendige Anpassungsmaßnahmen.",
+      "why_it_matters": "Die Intensivierung natürlicher Klimaschwankungen durch den Klimawandel verschärft akute Krisenlagen global.",
       "source_evidence": [],
       "source_ids": []
     },
     {
-      "title": "Infrastrukturelle Auswirkungen",
-      "assessment": "Die physische Infrastruktur zeigt sich gegenüber der neuen Intensität von Starkregenereignissen zunehmend unzureichend.",
+      "title": "Infrastrukturelle Auswirkungen durch Extremwetter",
+      "assessment": "Starkregen und Überflutungen führen aktuell zu Notlagen in verschiedenen Weltregionen, etwa durch Evakuierungen oder Schäden an der Stromversorgung.",
       "evidence_level": "Feed-Hinweis",
-      "why_it_matters": "Wachsende Risiken für städtische Zentren führen zu höheren volkswirtschaftlichen Kosten und politischem Druck.",
+      "why_it_matters": "Hohe Kosten für Disaster-Recovery und akute Bedrohung der öffentlichen Sicherheit.",
+      "source_evidence": [],
+      "source_ids": []
+    },
+    {
+      "title": "Soziale und ökonomische Auswirkungen",
+      "assessment": "Dürre und Extremwetter beeinträchtigen landwirtschaftliche Erträge und führen zu Wasserknappheit, was politische Spannungen induziert.",
+      "evidence_level": "Feed-Hinweis",
+      "why_it_matters": "Ernährungsunsicherheit und Migrationsdruck steigen, was bestehende gesellschaftliche Konflikte verschärft.",
       "source_evidence": [],
       "source_ids": []
     }
   ],
   "system_links": [
     {
-      "title": "El Niño → Wetterextreme → Politische Instabilität",
-      "chain": "El Niño → Klimakrise → Hunger/Dürre → Politischer Druck",
-      "status": "Plausibler Mechanismus",
-      "caveat": "Kausale Verknüpfung in Einzelfällen plausibel, aber großflächige Destabilisierung durch die Daten nur als Korrelation abgebildet.",
+      "title": "Klima-Diplomatie vs. Realwirtschaft",
+      "chain": "COP31-Abbruch → Fehlendes Signal für Dekarbonisierung → Beschleunigung von Extremwetter",
+      "status": "Hypothese",
+      "caveat": "Ein direkter Kausalzusammenhang zwischen dem Ende der Konferenz und dem unmittelbaren Wetterverlauf ist nicht belegt.",
       "source_evidence": [],
       "source_ids": []
     },
     {
-      "title": "Klimakrise → Migrationsdruck",
-      "chain": "Degradation von Ressourcen → Migration → Gesellschaftliche Folgen",
-      "status": "Feed-Hinweis",
-      "caveat": "Ausmaß der klimatischen Migrationsfolgen ist schwer quantifizierbar.",
+      "title": "El Niño und Nahrungsmittelsicherheit",
+      "chain": "El Niño-Ereignis → Dürre/Wasserknappheit → Ernteausfälle → Futter-/Nahrungsmittelkrisen",
+      "status": "Plausibler Mechanismus",
+      "caveat": "Das Ausmaß der Kausalkette variiert je nach regionaler Resilienz.",
       "source_evidence": [],
       "source_ids": []
     }
   ],
   "what_changed": [
     {
-      "change": "Zusammenbruch der COP31-Gespräche",
+      "change": "Eskalation zur diplomatischen Sackgasse",
       "importance": "hoch",
       "source_evidence": [],
       "source_ids": []
     },
     {
-      "change": "Verschärfung der Dürreproblematik in Indien und Afrika",
-      "importance": "mittel",
+      "change": "Rekordtemperaturen trotz laufender Klimaverhandlungen",
+      "importance": "hoch",
       "source_evidence": [],
       "source_ids": []
     }
   ],
   "watchlist": [
     {
-      "topic": "Nationale Klimaschutzpläne (NDCs) 2027",
-      "reason": "Nach dem COP31-Scheitern ist offen, ob Staaten ihre ambitionierten Ziele halten.",
-      "unknown": "Reaktion einzelner Großemittenten nach dem Konferenzabbruch."
+      "topic": "Nationale Alleingänge",
+      "reason": "Nach dem Scheitern von COP31 könnten Länder vermehrt eigenmächtige Klimapolitik verfolgen.",
+      "unknown": "Umfang und ökologische Effektivität dieser Alleingänge."
     },
     {
-      "topic": "Finanzmärkte und Klimarisiken",
-      "reason": "Zunahme infrastruktureller Katastrophen schlägt auf Versicherungs- und Finanzmärkte durch.",
-      "unknown": "Reaktionen der Versicherungswirtschaft auf gehäufte Extremwetter-Ereignisse."
+      "topic": "Super El Niño Dauer",
+      "reason": "Bestimmt die Intensität von Wetterereignissen bis 2027.",
+      "unknown": "Zeitpunkt des Abklingens und Übergangs in La Niña-Phase."
+    },
+    {
+      "topic": "Finanzielle Stabilität der Anpassungsmaßnahmen",
+      "reason": "Fehlende globale Klimafinanzierung nach COP31-Abbruch.",
+      "unknown": "Fähigkeit ärmerer Länder, eigenständig in Katastrophenschutz zu investieren."
     }
   ],
   "limits": [
-    "Die Daten basieren ausschließlich auf Nachrichtenmeldungen zum Stand 22.11.2026.",
-    "Keine wissenschaftliche Verifizierung der Kausalzusammenhänge durch das Modell möglich.",
-    "Die Meldungen decken ein breites geografisches Spektrum ab, erlauben aber keine flächendeckende Schadensbilanz."
+    "Die Auswertung basiert ausschließlich auf Schlagzeilen und Kurztexten der Feeds.",
+    "Keine Überprüfung der fachwissenschaftlichen Korrektheit der zitierten Expertenmeinungen.",
+    "Der Begriff 'Super El Niño' ist ein in den Medien verwendeter Begriff, keine offizielle meteorologische Klassifizierung."
   ],
   "knowledge_update": {
-    "current_assessment": "Eskalation der COP31-Situation zum 'Fehlstart' globaler Klimapolitik bei sich gleichzeitig zuspitzenden klimatischen Belastungsgrenzen durch den Super El Niño.",
+    "current_assessment": "Eskalation der COP31-Situation zum 'Fehlstart' globaler Klimapolitik bei gleichzeitigem Auftreten von Extremwetter-Rekorden durch den Super El Niño.",
     "established_findings": [
-      "COP31 ist laut Berichten am 22.11.2026 ohne Einigung beendet worden (Feed-Einträge 9, 26, 32).",
-      "El Niño wird weltweit als zentraler Verstärker für Dürre und Flutereignisse identifiziert (Feed-Einträge 3, 39, 78)."
+      "Die COP31 endete am 22.11.2026 ohne Einigung (Feed 1, 2, 6).",
+      "Ein starker El Niño gilt als Treiber für die aktuellen Dürre- und Flutereignisse (Feed 36, 44, 76)."
     ],
     "open_questions": [
       "Wie sieht die neue diplomatische Roadmap nach dem COP31-Abbruch aus?",
       "Inwieweit werden nationale Alleingänge bei der Klimapolitik zunehmen?"
     ],
     "previous_changes": [
-      "2026-11-22: Zusammenbruch der COP31-Gespräche und Anstieg der Berichte über infrastrukturelle Kollapse durch Starkregen."
+      "2026-11-23: Formale Bestätigung des Abbruchs der COP31 und Verschärfung der Wetterereignisse unter El Niño-Einfluss."
     ]
   },
-  "generated_at": "2026-11-22T21:21:44+00:00",
+  "generated_at": "2026-11-23T01:55:52+00:00",
   "model": "gemini-3.1-flash-lite",
   "source_item_count": 140,
   "sources": [
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
       "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "Climate change talks fall apart in final hours over fossil fuels | WFSU News",
+      "description": "Climate change talks fall apart in final hours over fossil fuels. NPR ... Record river levels bring prolonged flooding to Florida &middot; A destroyed&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://news.wfsu.org/npr-news/2026-11-22/climate-change-talks-fall-apart-in-final-hours-over-fossil-fuels&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw13UzG6TqZEyHq4SaLC-Fp6",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "COP31 climate talks collapse as countries fail to reach agreement on fossil fuels - Fijivillage",
+      "description": "... climate change . The negotiations continued for more than two weeks and extended beyond the scheduled closing time, making it the longest climate&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.fijivillage.com/p/cop31-climate-talks-collapse-as-countries-fail-to-reach-agreement-on-fossil-fuels-50eff1/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2_Gy8BoBWjJ3KNow8jgYXp",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "UN climate conference ends without its signature agreement as countries clash over fossil ...",
+      "description": "... climate change should pay for it. &quot;I want to clearly state that the ... flooding ; more storms, king tides coming to Northern California. 20&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://abc7news.com/story/climate-conference-ends-signature-agreement-countries-clash-fossil-fuels-finance/20066908/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3uKLadr9LcH7XN_xa2ElVf",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "COP31 climate talks collapse after member states reject deal for not mentioning fossil fuels",
+      "description": "... climate change as the world is expected to overshoot the 1.5 C target ... flooding . But Nepal needs billions to rebuild, and the fund has set&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.cbc.ca/news/world/cop31-talks-collapse-fossil-fuel-9.7431847&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw28-iI1f2BRh5kESMAFY6gv",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "LA FLASH FLOOD DISASTER — 1,571 Emergency Calls, Now RECORD Tides Threaten ...",
+      "description": "LA FLASH FLOOD DISASTER — 1,571 Emergency Calls, Now RECORD Tides Threaten Thanksgiving. @GlobalWeather-Network 1 like 52 views 18 min ago.",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DaTb5fodsf_M&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3HoTAqIZ4qcnIDSlVIEsBd",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "The collapse of UN climate talks, over fossil fuels, was years in the making - ClickOrlando.com",
+      "description": "But the outcome on Sunday was even worse than expected — a failure to reach an overall agreement on fighting climate change at a time of frequent&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.clickorlando.com/news/world/2026/11/22/the-collapse-of-un-climate-talks-over-fossil-fuels-was-years-in-the-making/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0HYgiA94-tNHefYFNQNfRH",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "Powerful Coastal Storm Triggers Heavy Rain, Gusty Winds And Flooding Across The East Coast",
+      "description": "... severe storm , no one keeps you prepared like FOX Weather - the perfect ... Go to channel Disaster Watch Channel &middot; TORNADO HITS FLORIDA — 5&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3Dsu-KIK2Q2Zk&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3NyZk6tRnyh91A5-ewHuIG",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "Longest And Worst COP31 Breaks All Wrong Records | Mirage News",
+      "description": "Tags: Australia , EU , Europe , Nepal , flooding , UN , climate change , Oxfam , international , climate , Disasters , outcomes , climate summit ,&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.miragenews.com/longest-and-worst-cop31-breaks-all-wrong-records-1781668/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0Tj3IXDC7aQNdtZdBnOlSg",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "Der beste Schutz fürs Haus - OVB Heimatzeitungen |",
+      "description": "Wobei das Problem durch den Klimawandel und die Erwärmung drängender wird: Starkregen können Wohngebäude im Prinzip in allen&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.ovb-heimatzeitungen.de/geldmarkt/2026/11/22/der-beste-schutz-fuers-haus.ovb&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw1Qgut9-MIANsSJ8mblUFN_",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "Aktuell nach fünf vom 22.11.2026 - ORF ON",
+      "description": "Klimawandel : Zunahme von Starkregen bis 2100. ZIB Magazin Klima. 04:48 Min. ZIB &amp; Info. ZIB 1 vom 21.11.2026. ZIB 1. 19:46 Min. ZIB &amp; Info. ZIB 1 (ÖGS)&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://on.orf.at/video/14348508/aktuell-nach-fuenf-vom-22112026&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0CE1IN4HT28RPI9IRVOHHh",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "Faktencheck: Macht der Klimawandel das Wetter extremer? - Klima2Know",
+      "description": "Das Ergebnis: Viele Wetterextreme, besonders Hitzewellen und Starkregen , sind durch den Klimawandel häufiger und intensiver geworden. ... climate change &nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.bildungsserver.de/klima2know/faktencheck-macht-der-klimawandel-das-wetter-extremer-79.html&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw1kaWC1jMrDpIbVJLLt7E0b",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "South Florida Faces Severe Flooding After Five Days of Rain | Dawn News English",
+      "description": "... flooding and strong winds across parts of the state. #Florida ... FLORIDA FLOOD DISASTER WORSENS! I-95 CLOSED, Homes Underwater &amp; More&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DeGJ8CfWiHME&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0bJ-vjoiEZfaiDW674Mn5D",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
       "title": "To clean up Trump&#39;s mass deportation disaster , a single amnesty won&#39;t be good enough",
       "description": "OPINION: To clean up the disaster of mass deportation, the U.S. will need two amnesties ... Basement flooding |. 49ers-Vikings|. S.F.&#39;s richest person|.",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.sfchronicle.com/opinion/openforum/article/deportation-immigrant-amnesty-trump-22539975.php&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2BeEc6VcXZXhCSPGZNmH9r",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -108,7 +217,15 @@
       "title": "Breaking: Bantry hit by flooding again as 16mm of rain fell - The Southern Star",
       "description": "For last night I&#39;d like to thank the council staff and firebrigade crew for the great work they did preventing a bigger disaster and helping&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.southernstar.ie/news/breakingbantry-hit-by-flooding-again-4381908&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw01OgQZkVeoaIIFpyaJ1k85",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "Climate change talks fall apart in final hours over fossil fuels",
+      "description": "ANTALYA, Turkey — International climate change talks in Antalya, Turkey, broke down in overtime hours over the main cause of planetary warming&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.cfpublic.org/2026-11-22/climate-change-talks-fall-apart-in-final-hours-over-fossil-fuels&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0MYSyKbgWcGajOD2ReSdd6",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -116,7 +233,7 @@
       "title": "Tornado warning in Palm Beach County near Boca Raton | Latest Weather Clips",
       "description": "River flooding threatens parts of Florida coast while torrential storms ... Disaster recovery challenges during a Super El Niño. 06:44&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.foxweather.com/watch/fmc-wlf795fu37yesl2w&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0QcMWGOwleyu8tSqP8DOyM",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -124,7 +241,15 @@
       "title": "Soldiers conduct high-water rescue mission [Image 15 of 19] - DVIDS",
       "description": "The Soldiers responded after severe flooding inundated the area. (U.S. ... TAGS. Flooding &middot; Disaster response &middot; Florida Army National Guard.",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.dvidshub.net/image/10111258/soldiers-conduct-high-water-rescue-mission&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0l-t46-UphnaDzNhVR1mSi",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
+      "title": "Soldiers mark disabled vehicles in floodwaters [Image 13 of 14] - DVIDS",
+      "description": "... flooding in the area. (U.S. Army National Guard photo by 1st Lt ... TAGS. Flooding &middot; Disaster response &middot; Florida Army National Guard &middot; Rockledge.",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.dvidshub.net/image/10111238/soldiers-mark-disabled-vehicles-floodwaters&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2fsSSEtMad6e80BmTUWz31",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -132,7 +257,7 @@
       "title": "Hanau: Neues Online-System zeigt Starkregenrisiken für Grundstücke",
       "description": "... Starkregen -Auskunft-System&quot;, Grundlage des Systems ist das kommunale Sturzflut -Risikomanagement der Stadt. Quelle: Stadt Hanau / Moritz Göbel. Wie&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://vorsprung-online.de/hanau/hanau/hanau-neues-online-system-zeigt-starkregenrisiken-f%25C3%25BCr-grundst%25C3%25BCcke.html&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw1w33iUsxDPJMpuOMRIbExO",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -140,119 +265,63 @@
       "title": "Bay Area airports, coast under extreme flood threat, residents told to avoid travel - LA Times",
       "description": "Extreme flooding of the coast from rising seawater is possible from San ... Climate Change &middot; Water &amp; Drought &middot; Entertainment &amp; Arts &middot; Arts &middot; Books&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.latimes.com/california/story/2026-11-22/bay-area-airports-coast-under-extreme-flood-threat-residents-told-to-avoid-travel&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2wmqzF94vP3fjlCpCdCvM6",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "Bantry businesses &#39;waiting and praying&#39; after flooding - RTE",
-      "description": "... flooding in the early hours of the morning ... COP31 President and Turkey&#39;s Minister of Environment, Urbanisation and Climate Change Murat Kurum (L&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.rte.ie/news/munster/2026/1122/1600208-floods-damage-bantry/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw123fV_WI0HROSNkULfPA1l",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
+      "title": "COP31 climate talks fail to reach deal amid fossil fuel and money rows - BBC",
+      "description": "The talks fail to make a breakthrough on tackling climate change after a row about mentioning fossil fuels ... global warming . Meanwhile, many&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.bbc.com/news/articles/cqwy06zrd26lo&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0MxW8aPWGuxPgJK79DBX1w",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "Cork County Council Update On Overnight Flooding Event in Bantry",
-      "description": "... flooding at The Square, New Street, Main Street and Barrack Street ... Energy &amp; Climate Change Information &middot; Environmental Awareness &amp; Access to&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.corkcoco.ie/en/news/cork-county-council-update-on-overnight-flooding-event-in-bantry&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw38am7drPhvCCWyiBVisIqf",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
+      "title": "The American Forest That Never Came Back - World Atlas",
+      "description": "... drought -prone areas, making the region a bit of a testing ground for ... Climate change , recurring droughts, and the possibility of&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.worldatlas.com/forests/the-american-forest-that-never-came-back.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3PZCD4GwtXgoGbuvepN9-i",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "UN climate conference ends without its signature agreement as countries clash over fossil ...",
-      "description": "climate conference, without reaching a new overall agreement to address climate change . ... SoCal coastal communities brace for flooding risk&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://abc7.com/story/climate-conference-ends-signature-agreement-countries-clash-fossil-fuels-finance/20066908/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0mRqCja_pcU1EIQAR7aen_",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
+      "title": "COP31 ends without deal after climate change talks break down - ABC News",
+      "description": "The UN climate summit collapses as nations fail to agree whether to mention the fossil fuels that cause global warming in an agreement.",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.abc.net.au/news/2026-11-23/cop31-talks-break-down-in-longest-ever-un-climate-debate/107414772&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3OQaN8qaaOwL4jyciNS42e",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "Severe storms fuel historic river flooding in Florida | Latest Weather Clips",
-      "description": "Severe storms fuel historic river flooding in Florida. Executive ... Disaster recovery challenges during a Super El Niño &middot; Weather News 18&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.foxweather.com/watch/fmc-a4k5xgbr1tht19fz&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw210f9n-w5TxGB3jDxFAUfa",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
+      "title": "California&#39;s Wildfire Crisis Is Threatening Its Energy Future | OilPrice.com",
+      "description": "Mounting wildfire liabilities are forcing California utilities to ... Global Warming &middot; Oil Spills &middot; Company News &middot; Breaking News &middot; Premium Articles&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://oilprice.com/Energy/Energy-General/Californias-Wildfire-Crisis-Is-Threatening-Its-Energy-Future.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw015VRKFhV4WR7ZHc1FKsQM",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "Florida&#39;s east coast faces widespread flooding after 28 inches of rain - YouTube",
-      "description": "Florida&#39;s east coast faces widespread flooding after 28 inches of rain ... Florida Flood Disaster : Palm Bay Evacuations, St. Johns River at Record&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DyEHpeeAWWQk&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw1kyPgMU2bNufgxhctV9Xui",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
+      "title": "Klimawandel bedroht das kulturelle Gedächtnis der Schweiz - News - SRF",
+      "description": "Es ist laut Oliver Martin aber jetzt schon klar, dass der Klimawandel vom Schweizer Kulturerbe Opfer fordern wird. «Im Bereich der&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.srf.ch/news/schweiz/schweizer-museen-schwitzen-der-klimawandel-bedroht-das-kulturelle-gedaechtnis-der-schweiz&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw053xi-GEwlW7H3eJpjyQEd",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "Union Home Minister and Minister of Cooperation Shri Amit Shah inaugurates 12th Battalion ...",
-      "description": "The first line of defence against natural disasters begins with the facilities of our 12 th Battalion. This campus will serve as a centre for disaster &nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.pib.gov.in/PressReleasePage.aspx%3FPRID%3D2339981&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw1UrOWmHB6R2Pvekl-0OBLB",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
+      "title": "Severe storms to hit south-western Queensland as heatwave lingers in far north - ABC News",
+      "description": "The severe heatwave in Cape York Peninsula is finally set to ease. The state&#39;s south-east will be fine until Wednesday, when more thunderstorms could&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.abc.net.au/news/2026-11-23/storms-south-western-queensland-heatwave-far-north/107414108&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0AKhY4McWJbuANMOclOpA4",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "Melbourne church offers relief to flood victims after back-to-back flooding - ClickOrlando.com",
-      "description": "Tags: food and supplies distribution, historic flooding Melbourne, community support flood victims, disaster relief Melbourne, flood victims aid,&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.clickorlando.com/news/local/2026/11/21/melbourne-church-offers-relief-to-flood-victims-after-back-to-back-flooding/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw2lI4ylcqTiGj4RHteHabJ0",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "100 years later: This U.P. mine collapse remains Michigan&#39;s worst industrial disaster to date",
-      "description": "His half-brother, Al Tippett, who had returned to the surface just 10 minutes before disaster struck, helped pull him out of the flooding shaft.",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.mlive.com/news/2026/11/100-years-later-this-up-mine-collapse-remains-michigans-worst-industrial-disaster-to-date.html&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0Qwq_x0JAH7TDIt6t4Lc-0",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "America was built at the Thanksgiving table - Colorado Politics",
-      "description": "flooding , durango. Polis submits second Major Disaster Declaration application for floods. Joe Kennedy would always assign a subject — Israel, for&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.coloradopolitics.com/2026/11/22/america-was-built-at-the-thanksgiving-table/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw1e-2GLmjnnGon0QuGUCGvC",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "SoCal coastal communities brace for flooding risk amid potentially record-breaking king tides - ABC7",
-      "description": "Potentially record-breaking king tides are expected to create a growing risk of flooding along the Los Angeles County coast next week ... CLIMATE CHANGE .",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://abc7.com/post/southern-california-coastal-communities-brace-flooding-potentially-record-breaking-king-tides/20064488/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0aYI4TZBSxmIeWPs1sTQsI",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "FLASH FLOOD DISASTER ! DID OUR NEW BOAT SINK? - YouTube",
-      "description": "... K18F80 Music → https://artlist.io/Kri... FLASH FLOOD DISASTER ! DID OUR NEW BOAT SINK? @SailingGoodBadandUgly220 likes1.8K views25 minutes ago more.",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DH6g85nJwdMo&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3A3TTfUUnzgTGoVmpGmHX2",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "Regen bringt dem Rhein Entlastung, aber keine Entwarnung - SWR Aktuell",
-      "description": "Klimawandel und abnehmende Gletscherschmelze verändern den Fluss. ... Hochwasser nicht ausgeschlossen. Aktuell ist kein Hochwasser vorhergesagt&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.swr.de/swraktuell/rheinland-pfalz/pegel-regen-november-normal-100.html&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3CnIWaUICAkbTDXz0TooqP",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "Flagler County issues no-wake order amid ongoing flooding - Spectrum News 13",
-      "description": "Flagler County has issued no-wake restrictions during ongoing flooding to help prevent damage, erosion and dangerous conditions ... Climate Change .",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://mynews13.com/fl/orlando/news/2026/11/22/flagler-county-issues-no-wake-order-amid-ongoing-flooding&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw0EQnJr4JzCLgQBiDXFRvSy",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.1 Extremwetter & Überschwemmungen (DE/EN)",
-      "title": "Climate Change Commission Executive Director Robert Borje, representing the Philippines ...",
-      "description": "... disaster preparedness, protection of food and water supplies, and readiness for extreme heat and flooding . ... severe storm surges, rapid&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/rapplerdotcom/photos/climate-change-commission-executive-director-robert-borje-representing-the-phili/1704460355049359/&ct=ga&cd=CAIyGzQxYTJjZWRiNDY2ZTNkMDY6ZGU6ZGU6REU6TA&usg=AOvVaw3CELKndvNlzZIPS1n4Nz1_",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
+      "title": "Climate change talks fall apart in final hours over fossil fuels | Wyoming Public Media",
+      "description": "... global warming threshold. Countries agreed in 2015 to try to limit climate change to 1.5 degrees Celsius (2.7 degrees Fahrenheit), but the planet&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.wyomingpublicmedia.org/2026-11-22/climate-change-talks-fall-apart-in-final-hours-over-fossil-fuels&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0QJIRKfTB_1sikAcTzFDjK",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -260,7 +329,15 @@
       "title": "Super El Niño Fails to Spur Action as COP31 Ends in Disaster - Gizmodo",
       "description": "... over the world, there was no response from the world&#39;s representatives at the 31st session of the United Nations Climate Change Conference.",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://gizmodo.com/super-el-nino-fails-to-spur-action-as-cop31-ends-in-disaster-2000843655&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1h2m531CR9M-JslJdByFlz",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
+      "title": "As El Niño and rising seas batter California homes, experts point to a novel buyout solution",
+      "description": "... Climate Change and the Environment. Stein, who helped Allen&#39;s team develop the buy-and-rent-back proposal, said “the problem is only going to&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.latimes.com/environment/story/2026-11-22/el-nino-sea-level-rise-buyout-rentback-california&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw32sTmhE1V3vGPrSjOtOde0",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -268,7 +345,31 @@
       "title": "Dürre setzt Christbaum-Nachwuchs zu - vorarlberg.ORF.at",
       "description": "Interaktive Karte &middot; VU Lauterach Auto E-Bike. Auffahrunfall schob Auto in Radfahrer. Lauterach &middot; Alpenrausch im Klimawandel - der Ausverkauf der Alpen&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://vorarlberg.orf.at/stories/3379816/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw25Iuc9sSU_P6f2kupF5ZaJ",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
+      "title": "Faktencheck: Macht der Klimawandel das Wetter extremer? - Klima2Know",
+      "description": "... Dürre ... So können Forschende beispielsweise herausfinden, ob eine bestimmte Hitzewelle durch den Klimawandel wahrscheinlicher oder stärker geworden&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.bildungsserver.de/klima2know/faktencheck-macht-der-klimawandel-das-wetter-extremer-79.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1kaWC1jMrDpIbVJLLt7E0b",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
+      "title": "Fiji seeks standalone ocean decision after COP31 cover text rejected - Fijivillage",
+      "description": "... climate change , including the drought currently affecting the country. She says developed countries, major emitters and fossil fuel producers must&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.fijivillage.com/a/fiji-seeks-standalone-ocean-decision-after-cop31-cover-text-rejected-796f46/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3C7sIw4Kfv-3bjUvz8zT_z",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
+      "title": "&quot;Severe El Niño&quot; Prolonged Drought : What Should You Plant to Survive? | EARTH Alert | 11/22/2026",
+      "description": "______ #TNNEARTH #EARTHAlert #ElNino # HeatWave #HotWeather #Weather ... Global Warming Causes Extreme Weather Shifts: Frequent Rain Bombs&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DZ1XpZRZzqrs&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1v6EbAz_RLwmtCROGejgOo",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -276,7 +377,7 @@
       "title": "Canada&#39;s Boreal Forest Is Reshaped by Logging and Climate Change",
       "description": "Troy Woodhouse, right, during a gathering of Indigenous communities near Timmins, Ontario. When wildfire smoke returned to the skies over U.S. cities&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.nytimes.com/2026/11/22/world/canada/canada-boreal-forest-degradation-deforestation-logging.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0ZFuoP5KhZ5YQo7Uq-TUUu",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -284,7 +385,7 @@
       "title": "International climate talks end in disappointment - KUNC",
       "description": "... global warming threshold. Countries agreed in 2015 to limit climate change to 1.5 degrees Celsius (2.7 degrees Fahrenheit), but the planet has&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.kunc.org/npr-news/2026-11-22/international-climate-talks-end-in-disappointment&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1H-cMwxOr1DRPi-D4e-tA4",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -292,7 +393,7 @@
       "title": "Climate Change : COP31 Delivered Another Feast of Failure - Stanisland Magazine",
       "description": "Climate Change : COP31 Delivered Another Feast of Failure. LATEST ... If you remember the heatwave alerts during the summer, they were a wake&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://stanisland.com/cop31-climate-change-is-a-failure-opinion/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0lqPFvcpMk0OXegMaeCEh4",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -300,7 +401,7 @@
       "title": "Climate deal collapses in chaotic end to COP31 | ABS-CBN News",
       "description": "... drought Closed ... &quot;We will not endorse a cover decision... that does not even mention fossil fuels, which is the key driver of climate change &nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://news.abs-cbn.com/news/world/2026/11/23/climate-deal-collapses-in-chaotic-end-to-cop31-0052&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1Ap8HgqtqH9hYtegRmGu4G",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -308,7 +409,7 @@
       "title": "Climate impact on heritage sites worries UN chief - The Manila Times",
       "description": "&quot;Last year, we have landslides in these fantastic sites. This year we are afraid that drought , climate change has a dramatic impact everywhere but&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.manilatimes.net/2026/11/23/news/national/climate-impact-on-heritage-sites-worries-un-chief/2475730/amp&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1aI8fQSf46fhdWseCnGynZ",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -316,7 +417,7 @@
       "title": "U.N. climate talks break down over bitter disagreements on fossil fuels - LA Times",
       "description": "... global warming , in the final document. The proposed deal also drew criticism for backing carbon capture while omitting a commitment to move away&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.latimes.com/world-nation/story/2026-11-22/u-n-climate-talks-break-down-over-disagreements-on-fossil-fuels&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw04Wq1kyBTbU1oj51VS4mIx",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -324,95 +425,23 @@
       "title": "The Fight Against Climate Change Goes Small - The Atlantic",
       "description": "... global warming , as part of the problem. That happened five years ago ... The summer heat wave in Europe that killed some 50,000 more. The El&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.theatlantic.com/science/2026/11/cop31/689530/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw2G4EFR-LE9IfhoSpbFd_lk",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
-      "title": "Extreme heat is killing more people, and scientists have estimated how much warming is to blame",
-      "description": "... heatwave plan. Drought covered half the land. Extreme drought covered 51.8% of the world&#39;s land for at least a month in 2025, the second-highest&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.earth.com/climate/extreme-heat-is-killing-more-people-and-scientists-have-estimated-how-much-warming-is-to-blame/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3SKeTy_iBv703t2uRPhvdK",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "1.3 Stürme, Wirbelstürme & Tropenstürme (DE/EN)",
+      "title": "Climate change talks fall apart in final hours over fossil fuels - NPR",
+      "description": "... climate change . &quot;The reality is, over the last five years, we have had a category 4 hurricane , a tropical storm and a category 5 hurricane . So&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.npr.org/2026/11/22/nx-s1-6046195/cop31-climate-talks-close-disappointment&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw3uU2gzddvUir9t2kDW8pMR",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
-      "title": "Ausblick auf dürre Jahre - SN.at - Salzburger Nachrichten",
-      "description": "Doch bei dem Tempo, mit dem der ÖSV junge Läufer hochzieht, werden das noch dürre Jahre. ... Klimawandel &middot; Wirtschaft &middot; Österreich &middot; Welt &middot; Salzburg.",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.sn.at/sport/wintersport/ausblick-auf-duerre-jahre-art-685428&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1o7s41dTzeHCYkUtrYmS7V",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
-      "title": "How This Year&#39;s Super El Niño Will Worsen Global Hunger | WIRED",
-      "description": "... drought . But the global organizations ... TopicsEl Nino drought extreme weatherClimate Deskwarfoodmeteorology climate change climate global warming .",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.wired.com/story/how-this-years-super-el-nino-will-worsen-global-hunger/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw2khVjD_Sdh_Yk4K-9l7pRS",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
-      "title": "Klimaphänomen El Niño einfach erklärt - Watson",
-      "description": "... Dürre den nationalen Notstand aus. Residents wade through a flooded ... Verstärkt der Klimawandel El-Niño-Ereignisse? Wie stark der&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.watson.ch/videos/klima/598103987-klimaphaenomen-el-nino-einfach-erklaert&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw1bCVLQ6HTviX98hOPwf_hP",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
-      "title": "Maßnahmen zur Sicherung der Trinkwasserversorgung auf Mallorca",
-      "description": "Insgesamt zeigt diese Initiative, wie entschlossen die Region auf den Klimawandel reagiert und pragmatische Lösungen fördert. ... Von der Dürre &nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.mallorca-services.es/massnahmen-zur-sicherung-der-trinkwasserversorgung-auf-mallorca/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw08QV8xC3Ekf-5NlJFYxTbG",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
-      "title": "UN Climate Change Conference fails to agree on key final text - Yahoo",
-      "description": "Palisades wildfire conviction &middot; Last midterms mystery &middot; dpa. Follow. UN Climate Change Conference fails to agree on key final text. DPA. Sun, November&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.yahoo.com/news/science/articles/un-climate-change-conference-fails-124826624.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0VEwBo9jxo8gbVbaoonnVK",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
-      "title": "Sky-Deer included in list of TIME Magazine climate leaders - MBC Radio",
-      "description": "Sask Public Safety WildFire Info &middot; Sask Indigenous Music Awards &middot; Sask ... global warming and climate change ,” she said. “And so, what an honour&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.mbcradio.com/2026/11/sky-deer-included-in-list-of-time-magazine-climate-leaders&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw0dPFxISmPIUKaowObcGKx9",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
-      "title": "UN climate talks fell into disarray on Sunday, November 22, as COP31 presidents ... - Facebook",
-      "description": "... climate change , with the European Union and others rejecting a final draft deal. ... drought -resistant crops. But that point was not made a&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/rapplerdotcom/photos/un-climate-talks-fell-into-disarray-on-sunday-november-22-as-cop31-presidents-tu/1704397345055660/&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw213DIE9a9QqgDpgNN9JwsO",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
-      "title": "Nepal&#39;s first climate loss and damage payout falls far short of needs - RFI",
-      "description": "Fiji declares nationwide disaster as El Nino drought reaches crisis levels. CLIMATE CHANGE . Environment. A shepherd tends livestock near the Khi&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.rfi.fr/en/environment/20261122-nepal-first-climate-loss-and-damage-payout-falls-far-short-of-needs&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw3Xqqv_4CGHoZyaI93JRnvX",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
-      "title": "Papst beim Angelus: Gebet für Dürre -Betroffene, Hilfe für Arme - Vatican News",
-      "description": "Klimawandel . Papst beim Angelus: Gebet für Dürre -Betroffene, Hilfe für Arme. Papst Leo XIV. hat zu Gebeten für von Dürre betroffene Länder im&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.vaticannews.va/de/papst/news/2026-11/angelus-papst-leo-xiv-appell-papua-neuguinea-konflikte-welt-arme.html&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw37x4MRhs1m8fKFPHc3YUI3",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.2 Hitze, Dürre & Brände (DE/EN)",
-      "title": "Igeln in Italien fehlen Rettungsstationen | Weather.com",
-      "description": "Deren Bestände leiden unter Dürre ... Weil der Insektenbestand durch Klimawandel und Pestizide stark geschrumpft ist, finden viele Igel nicht mehr genug&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://weather.com/de-DE/wissen/tiere/news/2026-11-22-igel-italien-rettungszentren-fehlen-klimawandel&ct=ga&cd=CAIyGzdhZDhhYTdjMTBlZmJkMzc6ZGU6ZGU6REU6TA&usg=AOvVaw2DExJRtJZru9oHO2km0OgG",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "1.3 Stürme, Wirbelstürme & Tropenstürme (DE/EN)",
+      "title": "Climate change talks fall apart in final hours over fossil fuels",
+      "description": "&quot;The reality is, over the last five years, we have had a category 4 hurricane , a tropical storm and a category 5 hurricane . So climate change for us&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.ideastream.org/npr-news/2026-11-22/climate-change-talks-fall-apart-in-final-hours-over-fossil-fuels&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw1V5lMiG-xjzJXFO0HpQMya",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -420,7 +449,7 @@
       "title": "Cyclone strikes while COP31 is in session - The Financial Express",
       "description": "... Climate Change (UNFCCC) was in session in Antalya, Turkiye, a cyclone named Akvan made its landfall in Odisha negatively impacting south-eastern&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://thefinancialexpress.com.bd/views/opinions/cyclone-strikes-while-cop31-is-in-session&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw3yMfvSzyUhxIJaprFJo5G4",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -428,7 +457,7 @@
       "title": "Cyclone In India: लगातार 3 चक्रवात के पीछे आखिर क्या है वजह? | Bay of Bengal | Weather News",
       "description": "... cyclone alert, storm surge, coastal areas, climate change , global warming, changing weather patterns, monsoon, low pressure system, Copyright&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DRi359HdWg7I&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw17wkQ42eEGk-yonVCW9Clr",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -436,7 +465,15 @@
       "title": "Climate change talks fall apart in final hours over fossil fuels | WGCU News",
       "description": "... Hurricane Recovery &middot; Immigration &middot; Science &amp; Tech; Sports; Water Quality ... Climate change talks fall apart in final hours over fossil fuels. NPR&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.wgcu.org/2026-11-22/climate-change-talks-fall-apart-in-final-hours-over-fossil-fuels&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw3numCH61liRvZF6IxJexih",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
+      "feed": "1.3 Stürme, Wirbelstürme & Tropenstürme (DE/EN)",
+      "title": "International climate talks end in disappointment | WGCU News | PBS &amp; NPR for Southwest Florida",
+      "description": "... Hurricane Recovery &middot; Immigration &middot; Science &amp; Tech; Sports; Water ... climate change . The EU bloc then walked out of the room. Burning fossil&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.wgcu.org/2026-11-22/international-climate-talks-end-in-disappointment&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw23To9FvLNljHFkzqEe1GnW",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -444,7 +481,7 @@
       "title": "The Fight Against Climate Change Goes Small - The Atlantic",
       "description": "The negotiators also cut references to the historical responsibility of developed countries for causing climate change . ... This Is the Hurricane Season&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.theatlantic.com/science/2026/11/cop31/689530/&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw2G4EFR-LE9IfhoSpbFd_lk",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -452,7 +489,7 @@
       "title": "What&#39;s to know about the Super El Niño? Hear from The Sacramento Bee&#39;s meteorologist",
       "description": "The increased hurricane activity was not due to climate change , according to Macaday, who went on to say there&#39;s reason to believe climate change &nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.sacbee.com/news/local/article318181243.html&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw0EqomyYAMmfvmX4iGw4mIU",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -460,7 +497,7 @@
       "title": "COP31 collapse sparks fresh push for Fossil Fuel Treaty as 30 countries seek alternative path",
       "description": "The failure of the 31st United Nations Climate Change Conference (COP31) in Antalya, Türkiye, to secure an agreement on a fair and adequately&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.environewsnigeria.com/cop31-collapse-sparks-fresh-push-for-fossil-fuel-treaty-as-30-countries-seek-alternative-path/&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw14hp9oubI1kGOs4Gwie43u",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -468,7 +505,7 @@
       "title": "Pioneering test off Duck shoreline shows promise in fight against climate change",
       "description": "... climate change . So far, the data show the approach is safe and ... A stretch of hurricane -driven swells in the fall of 2025 flattened what&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.outerbanksvoice.com/2026/11/22/pioneering-test-off-duck-shoreline-shows-promise-in-fight-against-climate-change/&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw0jGLqh_66gROwgCMmMIHjo",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -476,7 +513,7 @@
       "title": "UN chief warns climate change threatens Banaue rice terraces - TV5 News",
       "description": "UN chief warns climate change threatens Banaue rice terraces. UN chief warns climate change ... Typhoon Champi nears Taiwan, causing flight&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://news.tv5.com.ph/breaking/read/un-chief-warns-climate-change-threatens-banaue-rice-terraces&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw1Sg9-GITF1QwukG0MH8-mR",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -484,7 +521,7 @@
       "title": "Tornado , USF can&#39;t stop Florida Atlantic football from victory | Miami Herald",
       "description": "Climate Change &middot; Health Care &middot; Immigration &middot; Recalls &middot; Weather. Nation &amp; World ... Three weather delays, a tornado warning - and an actual tornado &nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.miamiherald.com/sports/article318200601.html&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw2TLBf6T6zVCQbk70tU6j2m",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -492,7 +529,7 @@
       "title": "UN climate talks break down without an overarching agreement - WPLG Local 10",
       "description": "Hurricane &middot; Hurricane &middot; World &middot; Dirty Dining &middot; Animal Advocate &middot; Sponsored ... Chris Bowen, president of COP31 negotiations and minister for climate &nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.local10.com/news/world/2026/11/22/turkeys-final-draft-at-un-climate-talks-doesnt-mention-the-fossil-fuels-that-cause-global-warming/&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw37CzUQcsjmUvTzEp_76sXS",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -500,7 +537,7 @@
       "title": "UN climate talk negotiators go into second day of overtime while at odds over fossil fuels",
       "description": "... Hurricane HQ &middot; Hurricane Supply Printable Checklist &middot; Weather Picture of ... climate change minister, speaks to members of the media at the COP31&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.mypanhandle.com/ap-science/ap-climate-talks-in-overtime-as-nations-wrestle-with-response-to-worsening-global-warming/&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw3LgvLVCKOazgPlWidr9uRh",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -508,7 +545,7 @@
       "title": "The Defenders of Mexico&#39;s Scorpion Reef - Inside Climate News",
       "description": "Climate change and illegal fishing are threatening the Gulf of Mexico&#39;s largest coral reef ... tornado funneling in and around natural caverns&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://insideclimatenews.org/news/22112026/protecting-mexicos-scorpion-reef-from-climate-change-illegal-fishing/&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw2CCNVwvRyOd3dwAOFSrfqA",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -516,7 +553,7 @@
       "title": "Cyclone Akvan-triggered rain affects 5567 hectares of crops in Satkhira",
       "description": "... Cyclone Akvan-triggered rain affects 5,567 hectares of crops in ... climate change , emerging crop diseases, declining soil health and&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.tbsnews.net/agriculture/cyclone-akvan-triggered-rain-affects-5567-hectares-crops-satkhira-1610581&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw1JaFz2qMeJl4guWriuoTbN",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -524,7 +561,7 @@
       "title": "Regions across the country experience contrasting temperatures this season - Daily Tribune",
       "description": "No low-pressure area (LPA) is currently being monitored for possible tropical cyclone formation, while three weather… Hannah Cuyno· Just now. De Lima&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://tribune.net.ph/2026/11/22/regions-across-the-country-experience-contrasting-temperatures-this-season&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw3GhKHk4T7cxTNWa1p4T9uU",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -532,7 +569,7 @@
       "title": "COP31 climate deal hangs in the balance as time runs out - The Financial Express",
       "description": "... Climate Change Conference (COP31) in Antalya, Turkey, Nov 22, 2026 ... Cyclone Akvan: Signal 3 at ports, heavy rain alert &middot; Environment 3 days&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://thefinancialexpress.com.bd/environment/cop31-climate-deal-hangs-in-the-balance-as-time-runs-out&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw1wwQomuqCln5-Xp8nOPuFl",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -540,7 +577,7 @@
       "title": "Monarch butterfly tagged in N.B. survived fierce challenges before reaching Mexico | CBC News",
       "description": "After crossing the Bay of Fundy and the Gulf of Maine, and going through a nor&#39;easter and a hurricane , a monarch butterfly weighing less than a&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.cbc.ca/news/canada/new-brunswick/monarch-butterfly-tracking-from-new-brunswick-to-mexico-9.7430480&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw1DA32v_BNjJrxVs-Zhb3Cv",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
@@ -548,31 +585,23 @@
       "title": "Florida&#39;s hurricane response shows power of working together | Opinion - Yahoo",
       "description": "Florida&#39;s hurricane response shows power of working together | Opinion ... climate ‌change , raising the prospect of no deal being reached. A new&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.yahoo.com/news/weather-news/articles/floridas-hurricane-response-shows-power-100342405.html&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw0KkCB0EahPMQceUK6R6Zv9",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.3 Stürme, Wirbelstürme & Tropenstürme (DE/EN)",
-      "title": "COP31 climate talks close to final deal, says summit president",
-      "description": "... Climate Change Conference (COP31) in Antalya, Turkey, November 12, 2026. REUTERS/Umit Bektas. November 22, 2026 , 05:01 PM T TV5 News. More In&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://news.tv5.com.ph/breaking/read/cop31-climate-talks-close-to-final-deal-says-summit-president&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw3P7g1t0OskoedOVpu2rvOT",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "category": "2. Opfer, Schäden & Humanitäre Folgen",
+      "feed": "2.1 Menschliche & Soziale Folgen (DE/EN)",
+      "title": "Climate anxiety can drive some young people to take action, while others freeze",
+      "description": "With young people continually exposed to information about climate change , a new study by Portland State University has found that climate anxiety &nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://sustainabilityonline.net/research/climate-anxiety-can-drive-some-young-people-to-take-action-while-others-freeze/&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw2akqlYenZxLaNaqkbD75G_",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.3 Stürme, Wirbelstürme & Tropenstürme (DE/EN)",
-      "title": "New initiative taken to protect erosion-prone coastal forests | Others",
-      "description": "Climate change , rising sea levels, increasing cyclone intensity and changes in natural coastal processes have further complicated the situation.",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.bssnews.net/others/448723&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw2edFkbDZ0RGZf1bgpU7oGA",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "1. Extreme Wetterereignisse & Naturkatastrophen",
-      "feed": "1.3 Stürme, Wirbelstürme & Tropenstürme (DE/EN)",
-      "title": "Deputy PM, MPs raise concerns as El Niño dries up pasture - Samoa Observer",
-      "description": "Deputy PM, MPs raise concerns as El Niño dries up pasture. Samoa Climate Change , Weather &amp; Natural Disasters ... Most Commented. Samoa. Cyclone Xavier&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.samoaobserver.ws/category/samoa/123221&ct=ga&cd=CAIyG2NmMDI3NGY0ZDkzYjk4YWM6ZGU6ZGU6REU6TA&usg=AOvVaw3uRIyzkVRPvnydEzvq94fy",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "category": "2. Opfer, Schäden & Humanitäre Folgen",
+      "feed": "2.1 Menschliche & Soziale Folgen (DE/EN)",
+      "title": "Patrick Nederkoorn bringt &quot;Die orangene Gefahr&quot; nach Altenkirchen | AK-Kurier.de",
+      "description": "In seinem deutschsprachigen Programm verbindet er Comedy mit den Themen Migration und Klimawandel . Patrick Nederkoorn kommt mit seinem Programm &quot;Die&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.ak-kurier.de/akkurier/www/artikel/178625-patrick-nederkoorn-bringt--die-orangene-gefahr--nach-altenkirchen&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw3UFRKs9MTA9JfQn7klmzxj",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "2. Opfer, Schäden & Humanitäre Folgen",
@@ -580,7 +609,7 @@
       "title": "Climate anxiety affects students&#39; academic performance, study in Faisalabad finds",
       "description": "Climate anxiety refers to persistent feelings of fear, worry and distress associated with climate change and its potential consequences. It is no&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.urdupoint.com/en/miscellaneous/climate-anxiety-the-mounting-mental-health-b-2295454.html&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw2VgrjwbtnBqD23MacLNJJP",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "2. Opfer, Schäden & Humanitäre Folgen",
@@ -588,31 +617,7 @@
       "title": "Pakistan Invites All SCO Members, Including India, to Dialogue; Proposes Three-Point Formula",
       "description": "... climate change ... 4 min ago Climate anxiety affects students&#39; academic performance, study in Faisalabad finds&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.urdupoint.com/en/pakistan/pakistan-invites-sco-members-dialogue-three-point-formula-2295452.html&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw1E9eoLlpZrnUKnp_VjCti6",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "2. Opfer, Schäden & Humanitäre Folgen",
-      "feed": "2.1 Menschliche & Soziale Folgen (DE/EN)",
-      "title": "Wetterdepressionen: Wie ich mich und meine Kinder vor der Klimaangst beschütze - WELT",
-      "description": "Die erste Lektion auf dem Weg zur Bewältigung der Klimaangst lautet: Es gibt keine Eindeutigkeit. ... Klimawandel zwar einerseits Hochdruckgebiete mit&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.welt.de/kultur/plus6afaf9eff3f8db1dd9f41ae0/wetterdepressionen-wie-ich-mich-und-meine-kinder-vor-der-klimaangst-beschuetze.html&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw0yecgWB7HG45n_zm_2uBXW",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "2. Opfer, Schäden & Humanitäre Folgen",
-      "feed": "2.1 Menschliche & Soziale Folgen (DE/EN)",
-      "title": "Pflicht zur Aufnahme von Klimageflüchteten, die Schuldigen der Klimakrise , Klima-Risiko-Index 2026",
-      "description": "Klimawandel , Klimakrise &middot; Migration, Klimaflucht &middot; Umweltrecht, Recht ... So ein Nonsense, Aufnahme von &quot; Klimaflüchtlinge &quot; Ohne Worte&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://klimareporter.de/gesellschaft/pflicht-zur-aufnahme-von-klimagefluechteten-die-schuldigen-der-klimakrise-klima-risiko-index-2026&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw2lB5vLpyF7PN-kYD7xV3jy",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "2. Opfer, Schäden & Humanitäre Folgen",
-      "feed": "2.1 Menschliche & Soziale Folgen (DE/EN)",
-      "title": "Uprooted by climate change , invisible to the government | The Daily Star",
-      "description": "... Climate Change and the Urban Poor: Risk and Resilience”. Image ... After climate displacement , survival is not enough. Many residents from&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.thedailystar.net/news/bangladesh/news/uprooted-climate-change-invisible-the-government-4329146&ct=ga&cd=CAIyGzhjZTI0ZGYwNDYyYWQ3Y2Y6ZGU6ZGU6REU6TA&usg=AOvVaw3IRZCCar1k7bg_mM_AJIdC",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "2. Opfer, Schäden & Humanitäre Folgen",
@@ -620,7 +625,7 @@
       "title": "Experts say &#39;trusted messengers&#39; critical as Amish grapple with measles outbreak",
       "description": "... Climate crisis &middot; Middle East &middot; Ukraine &middot; US immigration &middot; Soccer &middot; Business ... Connecting with such people will be crucial for ending the measles&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.theguardian.com/us-news/2026/nov/22/measles-amish-outbreak&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw3DIlDzwUsmMgBAb_jY5PN9",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "2. Opfer, Schäden & Humanitäre Folgen",
@@ -628,7 +633,7 @@
       "title": "Death toll from Brazil storm rises to 5, over 250 injured | FMT",
       "description": "Tupancireta suffered much of the damage and was the only municipality to report casualties . Southern Brazil is frequently struck by tornadoes. In&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.freemalaysiatoday.com/category/world/2026/11/23/death-toll-from-brazil-storm-rises-to-5-over-250-injured&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw2TZhNcIMbGz6ED8HeW2oTN",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "2. Opfer, Schäden & Humanitäre Folgen",
@@ -636,7 +641,7 @@
       "title": "EU officials reject Cop31 deal as it &#39;doesn&#39;t speak to reality of the climate crisis &#39; – video",
       "description": "... Climate crisis &middot; Middle East &middot; Ukraine &middot; US immigration &middot; Soccer &middot; Business ... outbreak . 2h ago. Bigfoot files. US releases files on suspected Bigfoot&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.theguardian.com/environment/video/2026/nov/22/eu-officials-reject-cop31-deal-as-it-doesnt-speak-to-reality-of-the-climate-crisis-video&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw1_Ygc5YrKBrYwBEVGCGRB9",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "2. Opfer, Schäden & Humanitäre Folgen",
@@ -644,7 +649,7 @@
       "title": "Taliban Figure Says Nearly 1 Million Died in Afghanistan&#39;s 20-Year War",
       "description": "Anas Haqqani&#39;s remarks on the war&#39;s death toll &middot; Questions over the Taliban&#39;s role in civilian deaths &middot; Accountability for the war&#39;s casualties .",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://ariananews.co/en/news/haqqani-says-nearly-1-million-died-in-afghanistan-war-renewing-questions-over-talibans-role/&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw19NwLgyJybvRswVNb2-MWa",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "2. Opfer, Schäden & Humanitäre Folgen",
@@ -652,7 +657,7 @@
       "title": "TRÓCAIRE: This Christmas &#39;it has never been more dangerous to be a child&#39; - Belfast Media",
       "description": "This year, we have seen the destruction the climate crisis is having in countries like Honduras, an Ebola outbreak in DR Congo, and an escalation&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://belfastmedia.com/trocaire-this-christmas-it-has-never-been-more-dangerous-to-be-a-child&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw1nlQUPco23gj_vQXxYh70J",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "2. Opfer, Schäden & Humanitäre Folgen",
@@ -660,7 +665,7 @@
       "title": "Is it too much to want a &#39;normal life&#39; during the climate crisis ? A therapist&#39;s answer - ZME Science",
       "description": "Is it too much to want a &#39;normal life&#39; during the climate crisis ? ... RelatedPosts. RFK Jr. says Texas measles outbreak is “not unusual” — He&#39;s&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.zmescience.com/science/news-science/is-it-too-much-to-want-a-normal-life-during-the-climate-crisis-a-therapists-answer/&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw3kXs7wsUQcOqU9p3lLQ9EZ",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "2. Opfer, Schäden & Humanitäre Folgen",
@@ -668,7 +673,7 @@
       "title": "Four Countries, One Broken Pipe: Why Africa Keeps Treating Cholera Instead of Fixing Water System",
       "description": "... death toll had risen to 68, with cases reported in 27 districts across ... The World Health Organisation (WHO) has described the DRC outbreak as the&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://developmentdiaries.com/four-countries-one-broken-pipe-why-africa-keeps-treating-cholera-instead-of-fixing-water-system/&ct=ga&cd=CAIyG2UyYjRjNTU0ZTgwNmVmNzE6ZGU6ZW46REU6TA&usg=AOvVaw10-67IZmVrGyLLvUzMyFtf",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "2. Opfer, Schäden & Humanitäre Folgen",
@@ -676,7 +681,55 @@
       "title": "COP31: Africa demands climate finance as extreme weather disrupts livelihoods",
       "description": "According to the United Nations Economic Commission for Africa, the continent received about $52 billion (Sh6.76 trillion) in climate finance in 2022,&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://eastleighvoice.co.ke/climate-change/426302/cop31-africa-demands-climate-finance-as-extreme-weather-disrupts-livelihoods%3Famp%3D1&ct=ga&cd=CAIyGzZhOTMyNTBkYzkzNTNhY2Q6ZGU6ZGU6REU6TA&usg=AOvVaw3psru5SdxphVxxBk2mpM_Q",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
+      "title": "A global push to become &#39; nature positive&#39; is growing. But can we measure its progress?",
+      "description": "... climate change . But, as we argue in a new commentary published in the ... If governments, businesses and investors claim their activities are nature &nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://theconversation.com/a-global-push-to-become-nature-positive-is-growing-but-can-we-measure-its-progress-297134&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw08QOHXnFRN47G37VCwCCe-",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
+      "title": "Can climate diplomacy build on the collapse of COP31? - Reuters",
+      "description": "... Climate Change Conference (COP31) in Antalya, Turkey, November 22, 2026 ... global warming to no more than 1.5 degrees Celsius (2.7 degrees Fahrenheit).",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.reuters.com/sustainability/cop/can-climate-diplomacy-build-collapse-cop31-2026-11-22/&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw2NIXNR6M0-QZxUaKQJw4zR",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
+      "title": "Statement on the outcome of COP31 in Antalya | Environmental Defense Fund",
+      "description": "Harness nature&#39;s power &middot; Reduce flood risk &middot; Keep forests healthy &middot; Healthy ... UN Climate Change Conference. Latest press releases. Statement on the&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.edf.org/media/statement-outcome-cop31-antalya&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw01fDM1wEC-uhQ3LMHX9KSN",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
+      "title": "COP31 falls well short of meeting climate overshoot challenge - IUCN Statement",
+      "description": "Antalya, Türkiye, 22 November 2026 (IUCN) - The United Nations Climate Change ... nature -based solutions in addressing climate change . Under the ENACT&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://iucn.org/iucn-statement/202611/cop31-falls-well-short-meeting-climate-overshoot-challenge&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1mLotU1d6TubK4vEM6HYv3",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
+      "title": "Climate change talks fall apart in final hours over fossil fuels - NPR",
+      "description": "... global warming threshold. Countries agreed in 2015 to try to limit climate change to 1.5 degrees Celsius (2.7 degrees Fahrenheit), but the planet&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.npr.org/2026/11/22/nx-s1-6046195/cop31-climate-talks-close-disappointment&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw3uU2gzddvUir9t2kDW8pMR",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
+      "title": "The Worst UN Climate Conference Ever: No Deal Was Better Than a Bad Deal",
+      "description": "They destroy nature to help us, and they demand our unrequited, endless, unlimited, boundless love.” But for Panama, “ climate change is a risk to our&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://energymixweekender.substack.com/p/the-worst-un-climate-conference-ever&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw3j3S2d5jSl8vLfJhcRxI5N",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -684,7 +737,7 @@
       "title": "Climate change talks fall apart in final hours over fossil fuels",
       "description": "... global warming . On Sunday, delegates from nearly 200 countries failed ... &quot;I am an optimist by nature ,&quot; he tells NPR, &quot;but I am not an idiot.",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.ideastream.org/npr-news/2026-11-22/climate-change-talks-fall-apart-in-final-hours-over-fossil-fuels&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1V5lMiG-xjzJXFO0HpQMya",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -692,7 +745,7 @@
       "title": "COP31 climate talks end with no deal after fossil fuels row derails hopes of agreement - BBC",
       "description": "... climate change . Fossil fuels are by far the largest driver of global ... We may sit back in the days to come and say this is more about the nature of&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.bbc.com/news/live/crly5w901n20t%3Fpage%3D2&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw02r9QJfaK_0uOlVlwAoAzz",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -700,7 +753,7 @@
       "title": "Climate anxiety can drive some young people to take action, while others freeze",
       "description": "With young people continually exposed to information about climate change , a new study ... Reassessment of climate strategies needed as global warming &nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://sustainabilityonline.net/research/climate-anxiety-can-drive-some-young-people-to-take-action-while-others-freeze/&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw2akqlYenZxLaNaqkbD75G_",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -708,7 +761,7 @@
       "title": "Why the Failure to Reach a Major Deal at UN Climate Talks Matters as Extreme Weather Worsens",
       "description": "... global warming ... Bowen said the Dubai agreement&#39;s explicit call to wean away from coal, oil and natural gas that cause climate change &nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.usnews.com/news/world/articles/2026-11-21/turkeys-final-draft-at-un-climate-talks-doesnt-mention-the-fossil-fuels-that-cause-global-warming&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1KjzE_Byq13HQL-GJhAI-a",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -716,7 +769,15 @@
       "title": "COP31 climate talks fail to reach deal amid fossil fuel and money rows - BBC",
       "description": "COP31 climate talks fail to make breakthrough on tackling climate change after a row about mentioning fossil fuels ... global warming . Meanwhile&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.bbc.com/news/articles/cqwy06zrd26lo&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw0MxW8aPWGuxPgJK79DBX1w",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
+      "title": "COP 31 Ends Without Antalya Pact—Time to Rebuild Trust",
+      "description": "If all countries are to have a meaningful voice in shaping the global response to climate change ... nature , and land under the Rio Conventions?",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.iisd.org/articles/statement/cop31-ends-without-antalya-pact-time-rebuild-trust&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1b24B0aGQuqKsGcl-RWYZE",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -724,7 +785,7 @@
       "title": "UN chief voices disappointment at COP31 outcome - Xinhua",
       "description": "... Climate Change Conference (COP31) in Antalya, Türkiye. The 31st United ... In pics: migratory birds in Caohai National Nature Reserve, SW China&#39;s&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://english.news.cn/20261123/ae502d6b0bf64bafb8cf55379020fa29/c.html&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1wDqLGFxnGMH_txIRKjkat",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -732,7 +793,7 @@
       "title": "STATEMENT: COP31 delivers some progress for nature , but falls far short of what the ...",
       "description": "We must transition away from fossil fuels, we must mitigate climate change through nature and we must support the communities most affected by climate &nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.conservation.org/press/statement-cop31-delivers-some-progress-for-nature-but-falls-far-short-of-what-the-moment-demands&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw3GdQQuQGf5ZmZ_0XLqG_5Z",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -740,7 +801,7 @@
       "title": "COP31 climate talks collapse as EU and others reject deal - RTE",
       "description": "... global warming ... climate change , as wars, economic pressures and other crises compete for their attention. After more than two weeks of&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.rte.ie/news/world/2026/1122/1600166-cop31-turkey/&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw3AZOzjSyKy7DUwGb1OJ3MN",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -748,7 +809,7 @@
       "title": "International climate talks end in disappointment - KACU",
       "description": "... global warming threshold. Countries agreed in 2015 to limit climate change to 1.5 degrees Celsius (2.7 degrees Fahrenheit), but the planet has&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.kacu.org/2026-11-22/international-climate-talks-end-in-disappointment&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1hYmJnaHlxizGvlOASDwYy",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -756,7 +817,7 @@
       "title": "Exeter experts give verdict on COP31",
       "description": "... global warming . It is now even more urgent than ever that we adapt to the climate change that we&#39;ve already caused, whilst working even harder to&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/exeter-experts-give-verdict-on-cop31/&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw2UArIaVgW3YC22f1PBeRuk",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -764,7 +825,7 @@
       "title": "&#39;Disappointing&#39;: Delegates react after COP31 climate talks end without deal - Al Jazeera",
       "description": "Draft text considered too weak to deal with climate change after oil-producing countries oppose the term &#39;fossil fuels ... global warming .",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.aljazeera.com/amp/news/2026/11/22/countries-react-after-cop31-climate-talks-end-in-collapse&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw32IYLrXVR1qzsvd2faQF0U",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -772,63 +833,143 @@
       "title": "COP31 Cover Deal Collapses as EU and Others Reject Draft Over Fossil Fuel Omission",
       "description": "Where next? Related news. Browse related news topics: Biodiversity &middot; Causes of Poverty &middot; Climate Change and Global Warming &middot; Conflicts in&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.globalissues.org/amp/news/2026/11/22/44662&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw0Vf_3Hj-TkbhLXTgL3gdZa",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
-      "title": "How locally led climate actions are transforming communities in arid areas - The Star",
-      "description": "The initiatives are helping communities tackle the growing impacts of climate change by investing in nature -based solutions.",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.the-star.co.ke/news/2026-11-22-how-locally-led-climate-actions-are-transforming-communities&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw2TQFqVc3RB8VjWjahuXUsL",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "EU officials reject Cop31 deal as it &#39;doesn&#39;t speak to reality of the climate crisis&#39; – video",
+      "description": "... climate . Ireland&#39;s climate minister, Darragh O&#39;Brien ... Fossil fuels. Related stories. Related stories. Finance, fossil fuels and the &#39; overshoot &nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.theguardian.com/environment/video/2026/nov/22/eu-officials-reject-cop31-deal-as-it-doesnt-speak-to-reality-of-the-climate-crisis-video&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1_Ygc5YrKBrYwBEVGCGRB9",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
-      "title": "Pioneering test off Duck shoreline shows promise in fight against climate change",
-      "description": "... climate change . So far, the data show the approach is safe ... research paper scientists make public while other experts are still reviewing it.",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.outerbanksvoice.com/2026/11/22/pioneering-test-off-duck-shoreline-shows-promise-in-fight-against-climate-change/&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw0jGLqh_66gROwgCMmMIHjo",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "COP31 Deal Could FAIL? Climate Talks Hit Deadlock as Countries Struggle to Agree | Turkey | N18G",
+      "description": "... climate agreement. Climate policy expert Jennifer Morgan has warned ... Tipping Points &amp; Managing Overshoot . Planetary Boundaries Science. New.",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DoE4iFp8RDCs&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0bw9kLiTF4wFSEmJdCQ4mt",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
-      "title": "EU plays good COP, but can&#39;t secure deal | WWF",
-      "description": "... nature and the economy from the multiple crises fuelled by fossil fuels. COP31. © UN Climate Change /Lara Murillo. ×. COP31. © UN Climate Change /Lara&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.wwf.eu/%3F21914591/closing-PR-COP31&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw3Dayf6ncInjeXsW1fMgn3W",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "Climate Talks Collapse In Chaotic End To COP31 - Channels TV",
+      "description": "El Niño : Rising Climate Risks Deepen Economic Tensions› &middot; COP31 ... overshoot in a few years as carbon-cutting goals fall short. The summit&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.channelstv.com/2026/11/22/climate-talks-collapse-in-chaotic-end-to-cop31/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1NcjRyuFpzWEgfZbZ-QybL",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
-      "title": "Today&#39;s Climate Decisions Will Shape The World Children Inherit; Nine-year-old Indonesian Tells UN",
-      "description": "“ Climate change is not just about nature . It is also about our lives and our future,” he said. His message also carried questions gathered from&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.sarawaktribune.com/todays-climate-decisions-will-shape-the-world-children-inherit-nine-year-old-indonesian-tells-cop31/&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw1xaTVTceuKTiB-tiXgjI42",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "Super El Niño : Extreme Heat Raises Climate , Public Health Concerns Across Nigeria",
+      "description": "Concerns are mounting over the potential impact of Super El Niño , as extreme heat raises climate and public health concerns across Nigeria.",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DiV2-FwGqPmM&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2x_9VsTEPxoLxgTGRtwDJS",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
-      "title": "Climate talks break down over fossil fuel exit and funding - DW News",
-      "description": "&quot;We will not endorse a cover decision that does not even mention fossil fuels, the driver of climate change . ... Nature and Environment 11/13&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.dw.com/en/cop31-climate-talks-end-without-consensus-on-how-to-fund-vulnerable-countries-or-move-the-world-away-from-coal-oil-and-gas-use/a-80003610&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw3jRZDMhNIWQp8mdk7P0Tzs",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "The collapse of UN climate talks, over fossil fuels, was years in the making - WRAL",
+      "description": "... greenhouse gases , like solar, wind and geothermal. But there is nothing ... In the 30 years of climate negotiations, the one exception was the U.N.&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.wral.com/news/ap/f571d-the-collapse-of-un-climate-talks-over-fossil-fuels-was-years-in-the-making/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3RU4E52ONCNrulJLTKv6uN",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
-      "title": "COP31 draft sidesteps fossil fuels as climate finance divides persist - Global Times",
-      "description": "The developments came as a new study compiled by the Chinese Research ... climate change and the clean energy transition. The statement&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.globaltimes.cn/page/202611/1374797.shtml&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw3OZLJKGqfaq-0k6mVnS-3S",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "No Deal at COP31 in Antalya: Fossil Fuels, Climate Finance &amp; 1.5°C Target Stall Talks",
+      "description": "... climate agreement after two days of ... Johan Rockström - Science update at COP31: Planetary Boundaries, Tipping Points &amp; Managing Overshoot .",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DoTsFmJp-Xcg&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1043uhlaxn1v9uKbWOPsQY",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.1 Klimaforschung & Studien (DE/EN)",
-      "title": "Universities must address himalayan challenges through research and innovation: Governor",
-      "description": "... climate change , disaster management, water conservation, biodiversity ... nature . He urged the University to promote focused research on&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=http://himachalpr.gov.in/OnePressRelease.aspx%3FLanguage%3D1%26ID%3D51021&ct=ga&cd=CAIyG2IwZDRiYTY5YjljMzgyODc6ZGU6ZGU6REU6TA&usg=AOvVaw02i5Pr4LWjCWq81Sl3Y1xD",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "Earth just saw the most anomalously hot day ever on record | Scientific American",
+      "description": "... Climate Change Service (data). El Niño . Join Our Community of Science ... The window to keep that overshoot as short and shallow as possible is rapidly&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.scientificamerican.com/article/earth-just-saw-the-most-anomalously-hot-day-ever-on-record/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2K7dqc5z3r3TisQ5shMN84",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "Cop31 as it happened: EU and others reject deal as longest climate summit comes to fractious end",
+      "description": "The era of overshoot has no room for failed climate diplomacy anymore. ... El Niño and worsening long-term climate conditions, it is costing&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.theguardian.com/environment/live/2026/nov/22/cop31-climate-crisis-talks-turkey-latest-news-updates&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1yMZj9-u3fyt-kbxXGu1vf",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "Earth Just Had Its Most Abnormally Hot Day Ever as Global Climate Talks Collapsed",
+      "description": "The planet shattered a disturbing temperature record as world leaders failed to agree on climate action ... El Niño , which some scientists say could be&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.zmescience.com/ecology/climate/earth-just-had-its-most-abnormally-hot-day-ever-as-global-climate-talks-collapsed/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3w1hS0Tct8Tv2mOJM_SVpM",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "COP31 falls well short of meeting climate overshoot challenge - IUCN Statement",
+      "description": "COP31 falls well short of meeting climate overshoot challenge. Antalya ... greenhouse gases , and in helping communities adapt to climate impacts.",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://iucn.org/iucn-statement/202611/cop31-falls-well-short-meeting-climate-overshoot-challenge&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1mLotU1d6TubK4vEM6HYv3",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "The El Niño climate phenomenon simply explained - YouTube",
+      "description": "... El Niño . #elnino # klima #wetter #unwetter.",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3D3Ldm3vxx0u4&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0ChNDClZ1tgDI2Ml9bVbMO",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "Johan Rockström: Global Warming Is Accelerating — Tipping Points Are Near #cop31",
+      "description": "... overshoot , and critical climate tipping points are drawing closer. In this urgent science update delivered at COP31 in Antalya, Türkiye, on 16&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3Dncx_zxmdwOQ&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3yS_6s4WFSAAZEXc5Q3wLy",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "&quot;Implementation COP&quot; ends without overall consensus as real economy action races ahead",
+      "description": "... overshoot . Progress on climate action and the energy transition ... Climate Weeks across the world, including London Climate Action Week&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.e3g.org/news/implementation-cop-ends-without-overall-consensus-as-real-economy-action-races-ahead/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2ONP8Trgna2CM1T4Dv7H7u",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "“RIP El Niño ” As Japan Gets Dumped On - Snow-Forecast",
+      "description": "But as with all things El Niño and indeed weather in general it varies and is unpredictable, particularly with climate change in the mix. The&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.snow-forecast.com/whiteroom/rip-el-nino-as-japan-gets-dumped-on/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2WzEgYn-AiZq8mnhxEdG2v",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "The polar vortex was knocked off the North Pole in a rare November disruption. Here&#39;s what ...",
+      "description": "However, any weakening of the polar vortex in the coming months would take place at the same time as the ongoing powerful El Niño . The climate &nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.yahoo.com/news/weather-news/article/the-polar-vortex-was-knocked-off-the-north-pole-in-a-rare-november-disruption-heres-what-noaa-says-it-means-for-december-weather-194950238.html&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2jWquDoq5fPP7CXsJIN3T5",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "COP31 climate talks end with no deal after row over fossil fuels - YouTube",
+      "description": "COP31 climate talks end with no deal after row over fossil fuels ... This El Niño Could Permanently Change Our World. New Scientist and Dr&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DXv7nHghyANw&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1iS5GQPf107_5QnK-7n4Qy",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "3. Klimawissenschaft & Messwerte",
+      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
+      "title": "Heat from the Super El Niño , when combined with climate change, could set a new ... - Facebook",
+      "description": "Heat from the Super El Niño , when combined with climate change, could set a new heat record in summer 2027. The ... La Niña , the regular, natural&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/CSIS.org/posts/heat-from-the-super-el-ni%25C3%25B1o-when-combined-with-climate-change-could-set-a-new-he/1595786122593492/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0X2xNSGyD2CKC_tU9uH2E2",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -836,7 +977,7 @@
       "title": "&#39;COP31 Was a Colossal Failure&#39;: Longest UN Climate Summit Collapses Without Deal",
       "description": "... overshoot &quot; of that target absent a rapid reduction in planet-heating emissions. ... El Niño , causing severe droughts in Fiji and Bolivia, extreme&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.commondreams.org/news/cop31-2026&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2YihuYdHRDDW_hjmtokYqL",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -844,7 +985,7 @@
       "title": "COP31 fails to deliver the ambition needed to phase out fossil fuels and address climate breakdown",
       "description": "Climate pollution and El Niño are a dangerous double act this summer, supercharging the heat Australian families face. Breakdowns at ageing coal&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://newshub.medianet.com.au/2026/11/cop-out-cop31-fails-to-deliver-the-ambition-needed-to-phase-out-fossil-fuels-and-address-climate-breakdown/183238/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2nG20ikVArUgGOSCahmJP1",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "3. Klimawissenschaft & Messwerte",
@@ -852,143 +993,15 @@
       "title": "Countries React as COP31 Climate Talks Collapse - USNews.com",
       "description": "... Climate Change Conference (COP31) in Antalya, Turkey, November 22 ... overshoot , the scale of the climate crisis, or the impacts already&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.usnews.com/news/world/articles/2026-11-22/cop31-climate-deal-in-the-balance-after-fractious-talks&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw28oeXKOS5cxilGjHZDgD0a",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "EU Rejected UN Climate Deal Due to Backsliding on Fossil Fuels - Bloomberg.com",
-      "description": "Ex-Citadel Weather Head Reveals Wild Card Tied to El Niño &middot; UN Climate Talks Collapse in Acrimony as Nations Reject Deal &middot; Climate Talks Teeter After&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.bloomberg.com/news/articles/2026-11-22/eu-rejected-un-climate-deal-due-to-backsliding-on-fossil-fuels%3Fsrnd%3Dhomepage-americas&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1w3l3-xVoQMBMZWCwYxZk9",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "Cop31 as it happened: EU and others reject deal as longest climate summit comes to fractious end",
-      "description": "More on this story &middot; Finance, fossil fuels and the &#39; overshoot &#39;: six key takeaways from Cop31 &middot; Cop31 climate talks break down as key deal rejected&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.theguardian.com/environment/live/2026/nov/22/cop31-climate-crisis-talks-turkey-latest-news-updates%3Fpage%3Dwith%253Ablock-6b02e2578f08d5509ceb7174&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0ulxJwHxbj9wYR95FOWjjH",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "COP 31 Ends Without Antalya Pact—Time to Rebuild Trust",
-      "description": "Countries remained divided over how to respond to this reality in what became the longest-running UN climate conference in history. ... El Niño underway&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.iisd.org/articles/statement/cop31-ends-without-antalya-pact-time-rebuild-trust&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1b24B0aGQuqKsGcl-RWYZE",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "COP31 climate talks collapse as EU and others reject deal - Al-Monitor",
-      "description": "... climate ... This year&#39;s COP is the first since the UN&#39;s environmental body in October confirmed the rise in global temperatures was set to overshoot 1.5&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.al-monitor.com/originals/2026/11/cop31-climate-talks-collapse-eu-and-others-reject-deal&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3fHRscHjv-1rK_8jlkWwkr",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "ANTALYA: Escalation at COP31! UN Climate Conference fails! No final declaration",
-      "description": "... klima #un Abonniere unseren WELT-TV News-Channel! https ... This El Niño Could Permanently Change Our World. New Scientist and Dr&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DtlLKXli_6vI&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0O4b_ekxxCtbrqpdGxMpXW",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "COP31 climate talks in Antalya, Turkey fail to agree deal after fossil fuels row - follow live - BBC News",
-      "description": "This COP sought to &quot;confront hard truths&quot; about global warming being set to overshoot ... greenhouse gases , it&#39;s also the biggest generator of renewable&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.bbc.co.uk/news/live/crly5w901n20t%3Fpage%3D2&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2KndtlPqO372l1lca6KhqU",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "Global climate talks have collapsed. Here&#39;s what just happened. - POLITICO",
-      "description": "This summit marked the first climate conference since the U.N. announced the world was sure to overshoot the target to limit long-term global&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.politico.com/news/2026/11/22/global-climate-talks-have-collapsed-heres-what-just-happened-01179721&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1-sfRYKUhUTm0gdGL65KjY",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "COP 31 talks fail as EU, others reject any climate deal without language on a fossil fuel phase-out",
-      "description": "“Antalya will go down as the first COP held in a 1.5°C overshoot reality, and it has exposed a difficult truth: multilateral climate action cannot&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.thehindu.com/news/international/cop31-fails-to-agree-on-climate-deal-in-chaotic-finale/article71731651.ece&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2sozyOiu1ELOtcKR9IEDWV",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "EU officials reject Cop31 deal as it &#39;doesn&#39;t speak to reality of the climate crisis&#39; - YouTube",
-      "description": "... climate . Ireland&#39;s climate minister, Darragh O&#39;Brien, said the EU ... This El Niño Could Permanently Change Our World. New Scientist and Dr&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DaEjSPxEXc40&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2LEO3otWNkBUGMlmco85EF",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "UN chief voices disappointment at COP31 outcome - Xinhua",
-      "description": "... Climate Change Conference (COP31) in Antalya, Türkiye. The 31st United ... The window to keep that overshoot as short and shallow as possible is rapidly&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://english.news.cn/20261123/ae502d6b0bf64bafb8cf55379020fa29/c.html&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1wDqLGFxnGMH_txIRKjkat",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "Super El Niño Fails to Spur Action as COP31 Ends in Disaster - Gizmodo",
-      "description": "Super El Niño Fails to Spur Action as COP31 Ends in Disaster. Just because you can now feel climate change when you step outside, that doesn&#39;t mean&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://gizmodo.com/super-el-nino-fails-to-spur-action-as-cop31-ends-in-disaster-2000843655&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw1h2m531CR9M-JslJdByFlz",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "COP31 closing: Countries right to block &#39;unacceptable&#39; proposals on fossil fuels and CCS",
-      "description": "... climate overshoot looms. Governments&#39; continuing inaction, particularly by fossil fuel producers, would guarantee an escalation in climate impacts&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://climateanalytics.org/press-releases/cop31-closing-governments-right-to-block-unacceptable-proposals-on-fossil-fuels-and-ccs&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0ZAdHbJAG7EnKCcLpDVvXj",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "International climate talks end in disappointment - NPR",
-      "description": "... climate negotiations. Countries failed to ... The European climate chief, Wopke Hoekstra, said that when the world is heading for an overshoot &nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.npr.org/2026/11/22/nx-s1-6046195/cop31-climate-talks-close-disappointment&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3uU2gzddvUir9t2kDW8pMR",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "Climate deal collapses in chaotic end to COP31 - AFP.com",
-      "description": "The COP31 climate talks ended in failure Sunday as a contentious deal collapsed over fossil fuels and the summit stretched...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.afp.com/en/climate-deal-collapses-chaotic-end-cop31&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw0052zQjX8_5Pgw6FOFt1QK",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "UN climate talks break down over bitter disagreements on fossil fuels | PBS News",
-      "description": "UN climate talks break down over bitter disagreements on fossil fuels ... On top of that, a strong El Niño amplifies human-caused warming and causes&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.pbs.org/newshour/world/un-climate-talks-break-down-over-bitter-disagreements-on-fossil-fuels&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw3a34ZAvJL0Kl6D7j-e2pVD",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "Klimaphänomen El Niño einfach erklärt 2026 ist ein El-Niño -Jahr, genauer noch ein ... - Facebook",
-      "description": "Warum das Klima außer Kontrolle gerät Das El-Niño . 07 ... A super El Niño is an extreme climate event that can trigger severe global disruptions,.",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/watson.news/videos/klimaph%25C3%25A4nomen-el-ni%25C3%25B1o-einfach-erkl%25C3%25A4rt-2026-ist-ein-el-ni%25C3%25B1o-jahr-genauer-noch-ein/4149609538674110/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw07ExbE-bRzgcGEl3Yr8l7Q",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "3. Klimawissenschaft & Messwerte",
-      "feed": "3.2 Kipppunkte & Physikalische Metriken (DE/EN)",
-      "title": "Exeter experts give verdict on COP31",
-      "description": "University of Exeter experts have commented on the conclusion and outcomes of the COP31 climate summit. ... overshoot of 1.5C global warming. It&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/exeter-experts-give-verdict-on-cop31/&ct=ga&cd=CAIyGzQzMmE0ZGI2N2RlMjBjNzg6ZGU6ZGU6REU6TA&usg=AOvVaw2UArIaVgW3YC22f1PBeRuk",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "category": "4. Wasser, Ozeane & Kryosphäre",
+      "feed": "4.1 Meere, Eis & Ozeane (DE/EN)",
+      "title": "Kyrgyzstan&#39;s three biggest lakes shrinking, glacier melt taking grim toll - bne IntelliNews",
+      "description": "... climate crisis, drought and glacier melt that is wiping out feeder rivers. All three lakes are listed as wetlands of international importance&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.intellinews.com/kyrgyzstan-s-three-biggest-lakes-shrinking-glacier-melt-taking-grim-toll-487301/&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw12WEJ2Xe0XSxrv3S5GVj7Z",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -996,7 +1009,7 @@
       "title": "Kazakhstan advances proposal for International Water Organisation ahead of UN Water Conference",
       "description": "Agriculture consumes the vast majority of the region&#39;s freshwater, while climate change brings glacier melt , more frequent droughts and floods, and&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://eualive.net/kazakhstan-advances-proposal-for-international-water-organisation-ahead-of-un-water-conference/&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw1nsCbPBpXKU4alC9kYplrm",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1004,7 +1017,7 @@
       "title": "Narwhals helped solve a mystery deep in Greenland&#39;s fjords - Earth.com",
       "description": "Better ocean records can improve estimates of future glacier melt in Greenland, a point that Professor Ditlevsen connected to the larger climate &nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.earth.com/environment/narwhals-helped-solve-a-mystery-deep-in-greenlands-fjords/&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw39Zjx3tSokd0gKGAAbNUe-",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1012,7 +1025,7 @@
       "title": "COP31 Standoff at the O.K. Corral | Countercurrents",
       "description": "The world&#39;s annual climate conference, COP31 UN Climate Conference ... Ocean Acidification , Ecosocialism Canada, Climate Himalaya&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://countercurrents.org/2026/11/cop31-standoff-at-the-o-k-corral/&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw2LKnXQRrdn77NKXCT4YETP",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1020,7 +1033,15 @@
       "title": "Scanner Maps Norwegian Glaciers as Ice Thaws - Wisevoter",
       "description": "Glacier melt is linked to rising sea levels and shifting freshwater ... Readers following climate policy can watch how these field results&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://wisevoter.com/world/2026/11/21/3d-scanner-maps-norwegian-glaciers-thaw&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw24Jl-uZGQDXA8sKi-V0lIG",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "4. Wasser, Ozeane & Kryosphäre",
+      "feed": "4.1 Meere, Eis & Ozeane (DE/EN)",
+      "title": "Narwhals helped solve a mystery deep in Greenland&#39;s fjords - AOL.com",
+      "description": "Climate models use real measurements to estimate how Earth may change. Better ocean records can improve estimates of future glacier melt in Greenland,&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.aol.com/articles/narwhals-helped-solve-mystery-deep-183200000.html&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw3SkQGOpH-dk1TnXV8cXGmC",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1028,15 +1049,23 @@
       "title": "CO₂ in the air today, November 21: 429.2 ppm | ECOnews - ECOticias.com",
       "description": "Nothing is estimated or filled in by hand. ECOnews. The English edition of ECOticias.com: science, wildlife, energy and climate stories for readers&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.ecoticias.com/en/green-data/co2-in-the-air/&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw3WHL5PCcYDM3zv7W6RAtDP",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
-      "feed": "4.1 Meere, Eis & Ozeane (DE/EN)",
-      "title": "Arctic sea ice today, November 21: 9.07 million km² | ECOnews - ECOticias.com",
-      "description": "Arctic sea ice . Arctic sea ... The English edition of ECOticias.com: science, wildlife, energy and climate stories for readers around the world.",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.ecoticias.com/en/green-data/arctic-sea-ice/&ct=ga&cd=CAIyGzg4NmEwZDU5MzQ3MTU3MmI6ZGU6ZGU6REU6TA&usg=AOvVaw3otV6BnhDqUYF-YRDvBcja",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "feed": "4.2 Wasserressourcen & Konflikte (DE/EN)",
+      "title": "COP31 falls well short of meeting climate overshoot challenge - IUCN Statement",
+      "description": "Antalya, Türkiye, 22 November 2026 (IUCN) - The United Nations Climate Change Conference (COP31) concluded in Antalya, Türkiye, with significant&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://iucn.org/iucn-statement/202611/cop31-falls-well-short-meeting-climate-overshoot-challenge&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw1mLotU1d6TubK4vEM6HYv3",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "4. Wasser, Ozeane & Kryosphäre",
+      "feed": "4.2 Wasserressourcen & Konflikte (DE/EN)",
+      "title": "COP31 ends without comprehensive agreement as Malta and EU reject climate deal",
+      "description": "The 31st United Nations Climate Change ... Malta also hosted an event focusing on the links between clean energy, water security and climate resilience.",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://tvmnews.mt/en/news/cop31-ends-without-comprehensive-agreement-as-malta-and-eu-reject-climate-deal/&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw1LBrntoosJaeUMD14l5pE4",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1044,7 +1073,7 @@
       "title": "DEC issues drought watch for 15 counties as strong El Nino builds | News | thelcn.com",
       "description": "A watch is the lowest level of four drought alert advisories that also include warning, emergency and disaster. A watch doesn&#39;t trigger any&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.thelcn.com/news/dec-issues-drought-watch-for-15-counties-as-strong-el-nino-builds/article_cfc85348-794f-4734-b212-1eb5bd7247c3.html&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw07aoj1Lp6aWkG4VeRUsVde",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1052,7 +1081,7 @@
       "title": "Fodder shortage worsens cattle woes in drought -hit Nayakanahatti | Hubballi News",
       "description": "Challakere taluk has 47,822 livestock, including 10,431 cattle in Nayakanahatti hobli. Poor rainfall, water scarcity and declining fodder crop yields&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://timesofindia.indiatimes.com/city/hubballi/fodder-shortage-worsens-cattle-woes-in-drought-hit-nayakanahatti/articleshow/136079983.cms&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw2uxXOHrkDu19uecFGnycbK",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1060,7 +1089,7 @@
       "title": "COP31 in Antalya: New Climate Deal Draft Fails to Resolve Fossil Fuel and Finance Disputes",
       "description": "... climate change . Also Read... Why Water Scarcity Is Now a Risk Even for India&#39;s Data Centres and Digital Ambitions. The negotiations have continued&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://english.dainikjagranmpcg.com/top-stories/6b027fdd188d2/article-45585&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw2_NGxLEnOlihWQhvgIiW_0",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1068,7 +1097,15 @@
       "title": "Tree plantation drive scaled down amid severe drought in Maharashtra: CM Fadnavis",
       "description": "... We have a plan to plant 300 crore trees in five years. This year, we have scaled it down because of water scarcity ... drought across several districts.",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://government.economictimes.indiatimes.com/news/governance/tree-plantation-drive-scaled-down-amid-severe-drought-in-maharashtra-cm-fadnavis/136077720&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw2ZIBcSLRwfofTbJAEGSaD0",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
+    },
+    {
+      "category": "4. Wasser, Ozeane & Kryosphäre",
+      "feed": "4.2 Wasserressourcen & Konflikte (DE/EN)",
+      "title": "El Niño Phenomenon: DMH issues news on El Niño conditions | Myanmar International TV",
+      "description": "Due to the El Niño phenomenon, the upcoming winter and summer seasons may bring high temperatures and water scarcity potentially leading to low water&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.myanmaritv.com/news/el-ni%25C3%25B1o-phenomenon-dmh-issues-news-el-ni%25C3%25B1o-conditions&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw3qdloSObbJzFcFTQqfP32w",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1076,7 +1113,7 @@
       "title": "We are confident that COP31 will significantly contribute to advancing global climate action",
       "description": "... Climate Change (COP31), which will be remembered as one of the well ... Water security is a strategic national priority for Azerbaijan. 17.11&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://azertag.az/en/xeber/azerbaijani_representative_we_are_confident_that_cop31_will_significantly_contribute_to_advancing_global_climate_action-4520124&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw1OykaLCibA1BOBXBAVyQbL",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1084,7 +1121,7 @@
       "title": "Maharashtra water crisis: Anandraj Ambedkar&#39;s sarcastic Ajit Pawar remark triggers political row",
       "description": "... water scarcity . WhatsApp &middot; Twitter &middot; WhatsApp &middot; Bookmark. Play ... drought concerns, reported the PTI. Addressing a gathering in Jalna&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.mid-day.com/news/india-news/article/maharashtra-water-crisis-republican-sena-chief-anandraj-ambedkars-sarcastic-ajit-pawar-remark-triggers-political-row-23660932&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw37aNOmGTdlef4pr67KS2tf",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1092,7 +1129,7 @@
       "title": "Pope appeals for aid as &#39;Super El Niño&#39; drives severe weather conditions across Asia-Pacific",
       "description": "OCHA says as many as 190 million children face heightened risks to food and water security ... drought ,” the pontiff said Sunday after praying&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://cruxnow.com/vatican/2026/11/pope-appeals-for-aid-as-super-el-nino-drives-severe-weather-conditions-across-asia-pacific/&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw2mt2umdwS8N2Qck_hVGJmR",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1100,7 +1137,7 @@
       "title": "&#39;Should Ajit Pawar be brought back to fill the lakes?&#39;: Anandraj Ambedkar&#39;s remark sparks row",
       "description": "Water conservation policy: Republican Sena chief Anandraj Ambedkar questions drought planning in Jalna, recalling a 2013 controversy involving&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.deccanherald.com/india/maharashtra/should-ajit-pawar-be-brought-back-to-fill-the-lakes-anandraj-ambedkars-remark-sparks-row-4227498&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw2_d0gi1s3XB0-GQpNmmy6w",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1108,7 +1145,7 @@
       "title": "MP seeks action on accident-prone roads, railway overbridges in Ballari - The Hindu",
       "description": "He also called for special efforts to support farmers facing crop losses and water scarcity due to the prevailing drought situation. He was&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.thehindu.com/news/national/karnataka/mp-seeks-action-on-accident-prone-roads-railway-overbridges-in-ballari/article71720096.ece/amp/&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw3x8b4LyaiKd5gFhSkF_vGC",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1116,7 +1153,7 @@
       "title": "Climate Change Could Intensify Mediterranean Migration, Report Warns",
       "description": "Climate change , water scarcity , food insecurity and the degradation of natural resources could intensify migration pressures across the&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://en.politis.com.cy/news/environment/1072572/climate-change-could-intensify-mediterranean-migration-report-warns&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw09XTEMStsHkhhVlz1NFzWh",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1124,7 +1161,7 @@
       "title": "TASK opposes reported selection of actor Balakrishna for Telugu University award",
       "description": "Professor Ravinder Yadav said Telangana was facing drought -like conditions and water scarcity , making the proposed diversion particularly unjust.",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://telanganatoday.com/task-opposes-reported-selection-of-actor-balakrishna-for-telugu-university-award&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw2YanLuv3PF_fkE2_7nt9pt",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1132,7 +1169,7 @@
       "title": "AbibiNsroma Foundation calls for delivery, not more pledges, as COP31 ends",
       "description": "“Our communities are still facing floods, droughts, crop failure, water scarcity , and loss of livelihoods. ... Climate Change (UNFCCC). It is the&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://gna.org.gh/2026/11/abibinsroma-foundation-calls-for-delivery-not-more-pledges-as-cop31-ends/&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw24we1DtzykD7dw75lwLBNi",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1140,7 +1177,7 @@
       "title": "Tree plantation drive scaled down amid severe drought in Maharashtra: Fadnavis",
       "description": "... drought and a severe water crisis. &quot;We have a plan to plant 300 crore trees in five years. This year, we have scaled it down because of water scarcity &nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://m.economictimes.com/news/india/tree-plantation-drive-scaled-down-amid-severe-drought-in-maharashtra-fadnavis/articleshow/136067422.cms&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw3onbb9ToQHAaBtReidYiIj",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1148,23 +1185,7 @@
       "title": "Tree plantation drive scaled down amid severe drought in Maharashtra: Fadnavis - ThePrint",
       "description": "... drought across several districts. Speaking at an event alongside ... This year, we have scaled it down because of water scarcity . But&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://theprint.in/india/tree-plantation-drive-scaled-down-amid-severe-drought-in-maharashtra-fadnavis/3105478/%3Famp&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw3oCQydUG5RCc7EkXC7AGUM",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "4. Wasser, Ozeane & Kryosphäre",
-      "feed": "4.2 Wasserressourcen & Konflikte (DE/EN)",
-      "title": "Turkey&#39;s solar boom shines ahead of a UN climate summit but coal and other fossil fuels loom large",
-      "description": "Like other Mediterranean nations, Turkey faces mounting risks from heat waves, drought , water scarcity , wildfires and flooding. Last month, rains&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://theday.com/news/937002/turkeys-solar-boom-shines-ahead-of-a-un-climate-summit-but-coal-and-other-fossil-fuels-loom-large/&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw3uyzb_s2HHCEy_U7qVeyL9",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "4. Wasser, Ozeane & Kryosphäre",
-      "feed": "4.2 Wasserressourcen & Konflikte (DE/EN)",
-      "title": "Declare Cauvery Delta drought -hit: Anbumani - The Hans India",
-      "description": "... drought -affected and provide compensation of Rs 40,000 per acre to farmers whose &#39;Samba and Thaladi&#39; crops were withering due to acute water scarcity .",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.thehansindia.com/news/cities/chennai/declare-cauvery-delta-drought-hit-anbumani-1144468&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw171loQM0Rfa3nGjuYLdE57",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1172,7 +1193,7 @@
       "title": "We have scaled down tree-planting drive this year amid severe drought : Fadnavis - ThePrint",
       "description": "... drought conditions in several districts. Speaking at an event alongside ... This year, we have scaled it down because of water scarcity . But&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://theprint.in/india/we-have-scaled-down-tree-planting-drive-this-year-amid-severe-drought-fadnavis/3105399/%3Famp&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw1xsBhr4TD3kM2wp1oOX488",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "4. Wasser, Ozeane & Kryosphäre",
@@ -1180,39 +1201,31 @@
       "title": "Water Security under Climate Change in Small Island Developing States: A Hydro-Socio ... - Frontiers",
       "description": "Water security on Small Island Developing States (SIDS) is threatened by worsening and disproportionate climate change impacts including sea-level&nbsp;...",
       "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2026.1992902/full&ct=ga&cd=CAIyGzE3YzY2ZjhiMWQ4OTdkZDg6ZGU6ZGU6REU6TA&usg=AOvVaw0L2qaCp7VOq8lkMhvPqB64",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "5. Ökosysteme & Biodiversität",
       "feed": "5.1 Biodiversität & Artensterben (DE/EN)",
-      "title": "Climate anxiety can drive some young people to take action, while others freeze",
-      "description": "... climate change . &#39;Eco-paralysis&#39;. As the researchers found, distress over ... biodiversity loss . Communication strategies. The researchers also&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://sustainabilityonline.net/research/climate-anxiety-can-drive-some-young-people-to-take-action-while-others-freeze/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw2akqlYenZxLaNaqkbD75G_",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "title": "Österreichs Klimapolitik: Geld oder Leben? | DIE FURCHE",
+      "description": "DIE FURCHE auf Google als bevorzugte Quelle hinzufügen. Dürre Klimawandel Klimakrise Trockenheit - © Foto: iStock / James O&#39;Neil. © Foto: iStock&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.furche.at/meinung/diesseits-von-gut-und-boese/oesterreichs-klimapolitik-geld-oder-leben-19589888&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw0mBkqtxQ6PTZnbj9D5TlYi",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "5. Ökosysteme & Biodiversität",
       "feed": "5.1 Biodiversität & Artensterben (DE/EN)",
-      "title": "How is Gen Z changing what we eat? These writers found out by asking over ... - The Conversation",
-      "description": "In 2026, as we grapple with climate change , biodiversity loss and a reliance on fossil fuels, the future of food is important to think about. Gen&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://theconversation.com/how-is-gen-z-changing-what-we-eat-these-writers-found-out-by-asking-over-20-000-young-people-286243&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw1Tmasf6IEX3XNywcKGwOD0",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "title": "Doughnut Economics Framework Proposed for Integrated Water Management in England",
+      "description": "England&#39;s water system faces escalating challenges as compounding pressures from scarcity, flooding, pollution, biodiversity loss , and climate change &nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://bioengineer.org/doughnut-economics-framework-proposed-for-integrated-water-management-in-england/&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw0et5b7ISpc1ZT4EiC7uliN",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     },
     {
       "category": "5. Ökosysteme & Biodiversität",
       "feed": "5.1 Biodiversität & Artensterben (DE/EN)",
-      "title": "COP31 Ends Without Consensus on Antalya Climate Pact - SuaraGarut.ID",
-      "description": "The 31st Conference of the Parties to the United Nations Framework Convention on Climate Change brought together governments, negotiators, climate&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://suaragarut.id/en/cop31-antalya-climate-pact&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw0Pvdw5ML0u8qX-UhNbcbye",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
-    },
-    {
-      "category": "5. Ökosysteme & Biodiversität",
-      "feed": "5.1 Biodiversität & Artensterben (DE/EN)",
-      "title": "Israeli strike on vehicle in Gaza kills three, Gaza Health Ministry says",
-      "description": "... climate change , pollution and biodiversity loss . He became the first athlete to swim across the North Pole and completed long-distance swims in&nbsp;...",
-      "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.tbsnews.net/worldbiz/middle-east/israeli-strike-vehicle-gaza-kills-three-gaza-health-ministry-says-1610046&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw3wl4zypfs8RSWUmHdfgTmu",
-      "added_at": "2026-11-22T20:38:38.808885+00:00"
+      "title": "William Plans Royal Title Overhaul Affecting Harry and Meghan - Peradaban.id",
+      "description": "... biodiversity loss and climate change . Five winners receive 1 million British pounds each, equivalent to approximately $1.3 million, to advance&nbsp;...",
+      "link": "https://www.google.com/url?rct=j&sa=t&url=https://peradaban.id/en/william-royal-title-overhaul&ct=ga&cd=CAIyGzljMGFiNTg5NDkyNDQzOGI6ZGU6ZGU6REU6TA&usg=AOvVaw3hP2rb5dryw-1c58_6XZrP",
+      "added_at": "2026-11-23T00:53:26.580320+00:00"
     }
   ],
   "source_limitation": "Ausgewertet wurden ausschließlich Titel, Kurzbeschreibungen und Metadaten aus data.json. Die verlinkten Artikel und Studien wurden nicht im Volltext geprüft. Quellenverweise werden zusätzlich anhand wörtlicher Textstellen geprüft."
