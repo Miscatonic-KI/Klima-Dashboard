@@ -1,1 +1,1 @@
-{"status": "retry", "message": "Aktualisierung um 18:28 Uhr fehlgeschlagen, neuer Versuch um 18:38 Uhr. (Versuch 3/4)"}
+{"status": "error", "message": "Aktualisierung um 18:38 Uhr nach 4 Versuchen fehlgeschlagen. Nächster regulärer Lauf in 4 Stunden."}
