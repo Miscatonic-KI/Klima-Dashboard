@@ -1,17 +1,17 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T01:52:52+00:00",
-  "current_assessment": "Eskalation der COP31-Situation zum globalen Klimapolitik-Stillstand bei gleichzeitigem Auftreten von Extremwetter-Rekorden durch den Super El Niño.",
+  "updated_at": "2026-11-24T05:34:19+00:00",
+  "current_assessment": "Zusammenbruch der COP31 führt zu politischem Vakuum; Super El Niño verstärkt Dürre- und Flutrisiken weltweit.",
   "established_findings": [
-    "COP31 ist offiziell ohne Einigung zu fossilen Brennstoffen beendet (Feed 20, 23, 53).",
-    "Super El Niño wird als treibender Faktor für globale Dürre- und Flutereignisse identifiziert (Feed 29, 36, 75)."
+    "COP31 konnte keine Einigung zu fossilen Brennstoffen erzielen (Feed 20, 23, 53).",
+    "Super El Niño wird als treibende Kraft hinter aktuellen Extremwetter-Rekorden benannt (Feed 28, 29, 36, 75)."
   ],
   "open_questions": [
-    "Wie reagieren nationale Märkte auf das Ausbleiben globaler Klimavorgaben?",
-    "Inwieweit verschärfen andauernde Flutereignisse die finanzielle Belastung lokaler Kommunen?"
+    "Wie kompensieren nationale Akteure das Ausbleiben globaler Klimavorgaben?",
+    "Inwieweit beeinträchtigen andauernde Extremwetterereignisse die Kreditwürdigkeit betroffener Kommunen?"
   ],
   "previous_changes": [
-    "2026-11-23: Formale Bestätigung des COP31-Abbruchs und Korrelation mit Rekord-Temperaturen und Super El Niño."
+    "2026-11-23: Bestätigung des COP31-Abbruchs und Korrelation mit globalen Rekordtemperaturen durch Super El Niño."
   ],
   "method_note": "KI-generierter Arbeitsstand aus Feed-Titeln und Kurzbeschreibungen. Kein verifizierter Forschungsstand."
 }
