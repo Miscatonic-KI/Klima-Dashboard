@@ -1,17 +1,19 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T09:44:21+00:00",
-  "current_assessment": "Nach Abbruch der COP31 ist das globale politische Vertrauen erodiert; der Super El Niño agiert als unmittelbarer Risikomultiplikator für Wetterextreme.",
+  "updated_at": "2026-11-24T21:29:55+00:00",
+  "current_assessment": "Nach Abbruch der COP31 ist das globale politische Vertrauen erodiert; der Super El Niño agiert als unmittelbarer Risikomultiplikator für Wetterextreme, nun verstärkt durch dokumentierte Zunahmen von hitzebedingten Todesfällen und ökonomischen Verlusten.",
   "established_findings": [
-    "COP31 konnte keine Einigung zu fossilen Brennstoffen erzielen (Feed 20, 23, 53).",
-    "Super El Niño verstärkt globale Extremwetter-Rekorde (Feed 28, 29, 36, 75)."
+    "COP31 konnte keine Einigung zu fossilen Brennstoffen erzielen (Feed-Daten).",
+    "Super El Niño verstärkt globale Extremwetter-Rekorde (Feed-Daten).",
+    "Hitzeassoziierte Sterblichkeit erreicht in England 2026 ein Rekordniveau (Feed 31)."
   ],
   "open_questions": [
-    "Welche Auswirkungen hat das COP31-Scheitern auf die zukünftigen Finanzierungszusagen für den Globalen Süden?",
-    "Wie stark sind die lokalen fiskalischen Puffer für Katastrophenschäden im Vergleich zur zunehmenden Frequenz der Ereignisse?"
+    "Wie stark korreliert der Anstieg der hitzebedingten Mortalität mit der Verschiebung lokaler fiskalischer Prioritäten nach dem COP31-Scheitern?",
+    "Inwieweit werden die im Feed erwähnten 'Nature-based solutions' durch die aktuelle politische Desillusionierung in ihrer Finanzierung beschnitten?"
   ],
   "previous_changes": [
-    "2026-11-23: Bestätigung des COP31-Abbruchs und Korrelation mit globalen Rekordtemperaturen durch Super El Niño."
+    "2026-11-24: Dokumentation der steigenden hitzebedingten Sterblichkeit und Verschärfung der Wasser- und Dürreproblematik unter Super El Niño.",
+    "2026-11-23: Bestätigung des COP31-Abbruchs."
   ],
   "method_note": "KI-generierter Arbeitsstand aus Feed-Titeln und Kurzbeschreibungen. Kein verifizierter Forschungsstand."
 }
