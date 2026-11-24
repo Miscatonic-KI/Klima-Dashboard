@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T05:34:19+00:00",
-  "current_assessment": "Zusammenbruch der COP31 führt zu politischem Vakuum; Super El Niño verstärkt Dürre- und Flutrisiken weltweit.",
+  "updated_at": "2026-11-24T09:44:21+00:00",
+  "current_assessment": "Nach Abbruch der COP31 ist das globale politische Vertrauen erodiert; der Super El Niño agiert als unmittelbarer Risikomultiplikator für Wetterextreme.",
   "established_findings": [
     "COP31 konnte keine Einigung zu fossilen Brennstoffen erzielen (Feed 20, 23, 53).",
-    "Super El Niño wird als treibende Kraft hinter aktuellen Extremwetter-Rekorden benannt (Feed 28, 29, 36, 75)."
+    "Super El Niño verstärkt globale Extremwetter-Rekorde (Feed 28, 29, 36, 75)."
   ],
   "open_questions": [
-    "Wie kompensieren nationale Akteure das Ausbleiben globaler Klimavorgaben?",
-    "Inwieweit beeinträchtigen andauernde Extremwetterereignisse die Kreditwürdigkeit betroffener Kommunen?"
+    "Welche Auswirkungen hat das COP31-Scheitern auf die zukünftigen Finanzierungszusagen für den Globalen Süden?",
+    "Wie stark sind die lokalen fiskalischen Puffer für Katastrophenschäden im Vergleich zur zunehmenden Frequenz der Ereignisse?"
   ],
   "previous_changes": [
     "2026-11-23: Bestätigung des COP31-Abbruchs und Korrelation mit globalen Rekordtemperaturen durch Super El Niño."
