@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-11-25T09:47:59+00:00",
-  "current_assessment": "Die Kombination aus Super El Niño und dem politischen Stillstand nach COP31 erzeugt eine Eskalationsspirale aus Extremwetter und sozioökonomischer Belastung.",
+  "updated_at": "2026-11-25T13:54:22+00:00",
+  "current_assessment": "Die Kombination aus Super/Mega El Niño und dem politischen Stillstand nach COP31 erzeugt eine Eskalationsspirale aus Extremwetter und sozioökonomischer Belastung.",
   "established_findings": [
-    "COP31-Abschluss ohne Konsens zu fossilen Brennstoffen (Feed-Daten).",
-    "Rekord-Hitzemortalität in England 2026 bestätigt (Feed-Daten).",
-    "Klimaschäden in der EU überschreiten 270 Mrd. Euro (5-Jahres-Summe) (Feed-Daten)."
+    "COP31 endete ohne Konsens zu fossilen Brennstoffen (Feed-Hinweise).",
+    "Erhöhte Hitzemortalität in England 2026 bestätigt (Feed-Hinweise).",
+    "EU-weite Klimaschäden über 270 Mrd. Euro für den Zeitraum 2021-2025 (Feed-Hinweise)."
   ],
   "open_questions": [
-    "Welche fiskalischen Instrumente werden in betroffenen Regionen zur Kompensation der Klimaschäden priorisiert?"
+    "Welche fiskalischen Instrumente werden nach dem COP31-Scheitern zur Kompensation der Klimaschäden in den betroffenen Staaten priorisiert?"
   ],
   "previous_changes": [
     "2026-11-25: Eskalation der Flutnotstände und Bestätigung der EU-Schadenssummen.",

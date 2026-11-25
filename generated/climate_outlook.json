@@ -1,118 +1,97 @@
 {
-  "headline": "Die Folgen des Super El Niño und das Ausbleiben politischer Klimaschutz-Ergebnisse manifestieren sich in eskalierenden Extremwetterereignissen und rekordbrechenden ökonomischen sowie humanitären Schäden.",
-  "executive_summary": "Nach dem COP31-Abbruch verschärft sich die globale Lage durch eine Kombination aus Super El Niño und unzureichenden Klimaschutzmaßnahmen. In Florida und Kalifornien erzwingen historische Überschwemmungen und extreme Tidenstände staatliche Notfallerklärungen. Gleichzeitig bestätigen Berichte aus England einen Anstieg der hitzebedingten Mortalität auf neue Höchststände. Ökonomisch sind in der EU Schäden von über 270 Milliarden Euro in fünf Jahren dokumentiert. Während in Asien Dürren und Superzyklon-Warnungen die landwirtschaftliche Versorgung bedrohen, wächst die soziale Belastung durch Klimaanxiety. Die politische Desillusionierung droht, notwendige Investitionen in Anpassungsmaßnahmen und Klimaschutz zu untergraben, während die physikalische Realität der Klimakrise – insbesondere durch marine Hitzewellen und extreme Wetteranomalien – zunehmend systemrelevante Infrastrukturen überlastet.",
+  "headline": "Die Kopplung von Super El Niño und dem COP31-Stillstand intensiviert weltweit Extremwetterereignisse, während fiskalische Belastungen und das Fehlen globaler Klimaschutzvereinbarungen die Resilienz weiter untergraben.",
+  "executive_summary": "Die aktuelle Datenlage zeigt eine Eskalation von Wetterextremen, die durch den Super El Niño verstärkt werden. Während Florida nach historischer Überflutung einen nationalen Katastrophennotstand ausgerufen hat, verzeichnen Regionen wie Indonesien und Fidschi Dürrekrisen. Die wirtschaftlichen Folgen sind massiv: In der EU wurden in fünf Jahren über 270 Milliarden Euro Klimaschäden dokumentiert, was die Dringlichkeit der Anpassungsdebatte unterstreicht. Parallel dazu hat der gescheiterte Konsens zu fossilen Brennstoffen auf der COP31 zu einem Vertrauensverlust geführt. Die Kombination aus fehlender internationaler Klimapolitik, steigenden Mortalitätsraten durch Hitzewellen und der fiskalischen Überlastung bei der Schadensbewältigung verstärkt sozioökonomische Ungleichheiten und destabilisiert langfristig die globale Infrastruktur.",
   "situation": [
     {
-      "title": "Florida-Überflutungen",
-      "assessment": "Die offiziellen Notfallmaßnahmen reagieren auf historische Überflutungsereignisse, die erhebliche finanzielle Belastungen verursachen.",
+      "title": "Super El Niño-Eskalation",
+      "assessment": "Die physikalischen Auswirkungen des Super El Niño führen weltweit zu einer Synchronisation von Überflutungsereignissen und Dürreperioden.",
       "evidence_level": "Feed-Hinweis",
-      "why_it_matters": "Indikator für die zunehmende Verletzlichkeit der Infrastruktur durch Extremwetter.",
+      "why_it_matters": "El Niño fungiert als systemischer Multiplikator für Wetterextreme, was Anpassungsstrategien in vulnerablen Regionen überfordert.",
       "source_evidence": [],
       "source_ids": []
     },
     {
-      "title": "Hitzemortalität England",
-      "assessment": "Die offiziellen Daten belegen eine Rekordsterblichkeit während der Sommerhitzewellen.",
+      "title": "Fiskalische Klimaschäden in der EU",
+      "assessment": "Die kumulativen Kosten klimabedingter Ereignisse erreichen mit über 270 Mrd. Euro in fünf Jahren eine systemrelevante Größenordnung.",
       "evidence_level": "Feed-Hinweis",
-      "why_it_matters": "Direktes Gesundheitsrisiko durch anthropogene Klimaveränderungen.",
-      "source_evidence": [
-        {
-          "source_id": 34,
-          "quote": "The heatwave in June wrought the heaviest toll, with 2,401 fatalities"
-        }
-      ],
-      "source_ids": [
-        34
-      ]
-    },
-    {
-      "title": "Ökonomische Klimaschäden EU",
-      "assessment": "Die Schadensbilanz der letzten fünf Jahre unterstreicht die massiven ökonomischen Folgen.",
-      "evidence_level": "Feed-Hinweis",
-      "why_it_matters": "Systemische Belastung der fiskalischen Stabilität durch zunehmende Extremwetterereignisse.",
+      "why_it_matters": "Die Schadenssumme übersteigt fiskalische Puffer und zwingt Staaten zu einer Neuausrichtung ihrer Kompensationsinstrumente.",
       "source_evidence": [],
       "source_ids": []
     },
     {
-      "title": "Super El Niño & marine Hitzewellen",
-      "assessment": "Die Kopplung von El Niño und Klimawandel verstärkt marine Hitzewellen, insbesondere am Great Barrier Reef.",
-      "evidence_level": "Einordnung",
-      "why_it_matters": "Gefährdung mariner Ökosysteme und der marinen Nahrungsversorgung.",
+      "title": "Folgen des COP31-Stillstands",
+      "assessment": "Der Mangel an globalem Konsens zu fossilen Energieträgern und Klimafinanzierung verhindert eine koordinierte Prävention.",
+      "evidence_level": "Feed-Hinweis",
+      "why_it_matters": "Ohne globale Richtlinien verschärft sich die klimabedingte Ungleichheit, da betroffene Staaten allein gelassen werden.",
+      "source_evidence": [],
+      "source_ids": []
+    },
+    {
+      "title": "Hitzemortalität in England",
+      "assessment": "Die Bestätigung hoher Todeszahlen durch Hitzewellen belegt die zunehmende Vulnerabilität selbst in gemäßigten Klimazonen.",
+      "evidence_level": "Feed-Hinweis",
+      "why_it_matters": "Dies erhöht den sozialen Druck auf staatliche Gesundheitssysteme.",
       "source_evidence": [],
       "source_ids": []
     }
   ],
   "system_links": [
     {
-      "title": "Klimapolitische Lähmung und soziale Ungleichheit",
-      "chain": "COP31-Scheitern → Mangel an Konsens → Verschärfung der Ungleichheit",
-      "status": "Hypothese",
-      "caveat": "Kausalzusammenhang zwischen Verhandlungsergebnissen und kurzfristiger Ungleichheit ist komplex.",
-      "source_evidence": [
-        {
-          "source_id": 35,
-          "quote": "Experts say failed climate talks could worsen inequality, but progress not stalled"
-        }
-      ],
-      "source_ids": [
-        35
-      ]
+      "title": "Wetter-Kaskade",
+      "chain": "El Niño → Ozeanerwärmung → Extremwetterhäufung",
+      "status": "Plausibler Mechanismus",
+      "caveat": "Kausalität in Einzelfällen komplex durch regionale Faktoren überlagert.",
+      "source_evidence": [],
+      "source_ids": []
     },
     {
-      "title": "Super El Niño als Risikomultiplikator",
-      "chain": "Super El Niño → Extremwetter-Anomalien → Infrastruktur- & Ernteausfälle",
+      "title": "Infrastruktur-Belastung",
+      "chain": "Klimaschäden → Katastrophen-Notstand → Fiskalische Überlastung",
       "status": "Plausibler Mechanismus",
-      "caveat": "Quantifizierung der spezifischen El Niño-Anteile an lokalen Katastrophen ist im Einzelfall schwierig.",
+      "caveat": "Ausmaß der langfristigen fiskalischen Folgen hängt von lokalen Versicherungs- und Hilfsmodellen ab.",
       "source_evidence": [],
       "source_ids": []
     }
   ],
   "what_changed": [
     {
-      "change": "Zunahme der staatlichen Disaster-Deklarationen in den USA durch historische Überflutungen.",
+      "change": "Eskalation zu einem 'Mega El Niño' als Warnung der Wissenschaftler.",
       "importance": "hoch",
       "source_evidence": [],
       "source_ids": []
     },
     {
-      "change": "Dokumentation der hitzebedingten Mortalität als Rekordniveau in England.",
+      "change": "Systematischer Ausfall der internationalen Klimadiplomatie auf der COP31.",
       "importance": "hoch",
-      "source_evidence": [
-        {
-          "source_id": 34,
-          "quote": "Heat-related death toll hits record high during scorching English summer"
-        }
-      ],
-      "source_ids": [
-        34
-      ]
+      "source_evidence": [],
+      "source_ids": []
     }
   ],
   "watchlist": [
     {
-      "topic": "Reaktion der Finanzmärkte",
-      "reason": "Zunehmende Schadenssummen könnten die Versicherbarkeit von Immobilien in Katastrophenregionen kippen.",
-      "unknown": "Wie schnell wird sich das Kapital aus Risikoregionen zurückziehen?"
+      "topic": "Südasiatische Zyklongefahr",
+      "reason": "Hinweise auf verstärkte Wirbelsturmaktivität.",
+      "unknown": "Tatsächliche Intensität und Landfall-Risiko."
     },
     {
-      "topic": "Politische Stabilität nach COP31",
-      "reason": "Erosion des Vertrauens könnte unilaterale, nicht-koordinierte Notfallmaßnahmen fördern.",
-      "unknown": "Entstehen neue transnationale Allianzen außerhalb des UNFCCC-Rahmens?"
+      "topic": "Klimamigration und Flüchtlingsstatus",
+      "reason": "Zunehmende Sichtbarkeit klimabedingter Vertreibung in öffentlichen Debatten.",
+      "unknown": "Formale Anerkennung und rechtliche Schutzinstrumente."
     }
   ],
   "limits": [
-    "Die Auswertung basiert ausschließlich auf Feed-Titeln und Beschreibungen, keine Primärquellenprüfung möglich.",
-    "Kausalitäten zwischen COP31 und lokalen Geschehnissen sind in den Quellen nicht belegt, sondern werden korrelativ erwähnt."
+    "Die Auswertung basiert rein auf Feed-Metadaten und Titeln, nicht auf den verlinkten Studieninhalten.",
+    "Zeitliche Verzögerung in der Berichterstattung kann das Bild der Wetterereignisse verzerren."
   ],
   "knowledge_update": {
-    "current_assessment": "Die Kombination aus Super El Niño und dem politischen Stillstand nach COP31 erzeugt eine Eskalationsspirale aus Extremwetter und sozioökonomischer Belastung.",
+    "current_assessment": "Die Kombination aus Super/Mega El Niño und dem politischen Stillstand nach COP31 erzeugt eine Eskalationsspirale aus Extremwetter und sozioökonomischer Belastung.",
     "established_findings": [
-      "COP31-Abschluss ohne Konsens zu fossilen Brennstoffen (Feed-Daten).",
-      "Rekord-Hitzemortalität in England 2026 bestätigt (Feed-Daten).",
-      "Klimaschäden in der EU überschreiten 270 Mrd. Euro (5-Jahres-Summe) (Feed-Daten)."
+      "COP31 endete ohne Konsens zu fossilen Brennstoffen (Feed-Hinweise).",
+      "Erhöhte Hitzemortalität in England 2026 bestätigt (Feed-Hinweise).",
+      "EU-weite Klimaschäden über 270 Mrd. Euro für den Zeitraum 2021-2025 (Feed-Hinweise)."
     ],
     "open_questions": [
-      "Welche fiskalischen Instrumente werden in betroffenen Regionen zur Kompensation der Klimaschäden priorisiert?"
+      "Welche fiskalischen Instrumente werden nach dem COP31-Scheitern zur Kompensation der Klimaschäden in den betroffenen Staaten priorisiert?"
     ],
     "previous_changes": [
       "2026-11-25: Eskalation der Flutnotstände und Bestätigung der EU-Schadenssummen.",
@@ -120,7 +99,7 @@
       "2026-11-23: Bestätigung des COP31-Abbruchs."
     ]
   },
-  "generated_at": "2026-11-25T09:47:59+00:00",
+  "generated_at": "2026-11-25T13:54:22+00:00",
   "model": "gemini-3.1-flash-lite",
   "source_item_count": 140,
   "sources": [
