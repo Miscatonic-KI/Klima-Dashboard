@@ -1,19 +1,18 @@
 {
   "version": 1,
-  "updated_at": "2026-11-25T05:35:22+00:00",
-  "current_assessment": "Nach Abbruch der COP31 ist das globale politische Vertrauen erodiert; der Super El Niño agiert als unmittelbarer Risikomultiplikator für Wetterextreme, nun verstärkt durch dokumentierte Zunahmen von hitzebedingten Todesfällen und ökonomischen Verlusten.",
+  "updated_at": "2026-11-25T09:47:59+00:00",
+  "current_assessment": "Die Kombination aus Super El Niño und dem politischen Stillstand nach COP31 erzeugt eine Eskalationsspirale aus Extremwetter und sozioökonomischer Belastung.",
   "established_findings": [
-    "COP31 konnte keine Einigung zu fossilen Brennstoffen erzielen (Feed-Daten).",
-    "Super El Niño verstärkt globale Extremwetter-Rekorde (Feed-Daten).",
-    "Hitzeassoziierte Sterblichkeit erreicht in England 2026 ein Rekordniveau (Feed-Daten)."
+    "COP31-Abschluss ohne Konsens zu fossilen Brennstoffen (Feed-Daten).",
+    "Rekord-Hitzemortalität in England 2026 bestätigt (Feed-Daten).",
+    "Klimaschäden in der EU überschreiten 270 Mrd. Euro (5-Jahres-Summe) (Feed-Daten)."
   ],
   "open_questions": [
-    "Wie stark korreliert der Anstieg der hitzebedingten Mortalität mit der Verschiebung lokaler fiskalischer Prioritäten nach dem COP31-Scheitern?",
-    "Inwieweit werden die im Feed erwähnten 'Nature-based solutions' durch die aktuelle politische Desillusionierung in ihrer Finanzierung beschnitten?"
+    "Welche fiskalischen Instrumente werden in betroffenen Regionen zur Kompensation der Klimaschäden priorisiert?"
   ],
   "previous_changes": [
-    "2026-11-25: Dokumentation der Rekord-Hitzemortalität in England und ökonomische Schadenszahlen aus der EU.",
-    "2026-11-24: Dokumentation der steigenden hitzebedingten Sterblichkeit und Verschärfung der Wasser- und Dürreproblematik unter Super El Niño.",
+    "2026-11-25: Eskalation der Flutnotstände und Bestätigung der EU-Schadenssummen.",
+    "2026-11-24: Dokumentation der Hitzemortalität und Verschärfung der Dürre durch Super El Niño.",
     "2026-11-23: Bestätigung des COP31-Abbruchs."
   ],
   "method_note": "KI-generierter Arbeitsstand aus Feed-Titeln und Kurzbeschreibungen. Kein verifizierter Forschungsstand."
