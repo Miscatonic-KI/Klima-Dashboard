@@ -1,17 +1,18 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T21:29:55+00:00",
+  "updated_at": "2026-11-25T01:56:44+00:00",
   "current_assessment": "Nach Abbruch der COP31 ist das globale politische Vertrauen erodiert; der Super El Niño agiert als unmittelbarer Risikomultiplikator für Wetterextreme, nun verstärkt durch dokumentierte Zunahmen von hitzebedingten Todesfällen und ökonomischen Verlusten.",
   "established_findings": [
     "COP31 konnte keine Einigung zu fossilen Brennstoffen erzielen (Feed-Daten).",
     "Super El Niño verstärkt globale Extremwetter-Rekorde (Feed-Daten).",
-    "Hitzeassoziierte Sterblichkeit erreicht in England 2026 ein Rekordniveau (Feed 31)."
+    "Hitzeassoziierte Sterblichkeit erreicht in England 2026 ein Rekordniveau (Feed-Daten, 35, 39)."
   ],
   "open_questions": [
     "Wie stark korreliert der Anstieg der hitzebedingten Mortalität mit der Verschiebung lokaler fiskalischer Prioritäten nach dem COP31-Scheitern?",
     "Inwieweit werden die im Feed erwähnten 'Nature-based solutions' durch die aktuelle politische Desillusionierung in ihrer Finanzierung beschnitten?"
   ],
   "previous_changes": [
+    "2026-11-25: Dokumentation der Rekord-Hitzemortalität in England und ökonomische Schadenszahlen aus der EU.",
     "2026-11-24: Dokumentation der steigenden hitzebedingten Sterblichkeit und Verschärfung der Wasser- und Dürreproblematik unter Super El Niño.",
     "2026-11-23: Bestätigung des COP31-Abbruchs."
   ],
