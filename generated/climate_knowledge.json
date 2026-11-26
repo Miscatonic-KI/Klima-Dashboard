@@ -1,14 +1,15 @@
 {
   "version": 1,
-  "updated_at": "2026-11-26T17:29:51+00:00",
-  "current_assessment": "Eskalationsspirale durch 'Super' El Niño und politisches Vakuum nach COP31-Abbruch unter Einbeziehung neuer Katastrophenmeldungen.",
+  "updated_at": "2026-11-26T21:27:43+00:00",
+  "current_assessment": "Eskalation der hydrologischen Instabilität bei gleichzeitigem politischem Stillstand nach COP31.",
   "established_findings": [
     "COP31 endete ohne Konsens zu fossilen Brennstoffen (laut Feed-Hinweisen).",
-    "Die globale Temperatur überstieg an sechs aufeinanderfolgenden Tagen den 2-Grad-Schwellenwert (laut Feed-Hinweisen).",
-    "US-Notstand in Florida durch Flutereignisse offiziell bestätigt (laut Feed-Hinweisen)."
+    "Globale Temperaturen überschritten an sechs aufeinanderfolgenden Tagen 2-Grad-Grenze (laut Feed-Hinweisen).",
+    "Massive Zunahme an Berichten über hydrologische Extreme und Dürreschäden."
   ],
   "open_questions": [
-    "Welche fiskalischen Instrumente werden nach dem COP31-Scheitern zur Kompensation der Klimaschäden priorisiert?"
+    "Wie wird die Finanzierungslücke bei Klimaschäden ohne ein multilaterales Abkommen geschlossen?",
+    "Reichen lokale Anpassungsstrategien zur Kompensation der globalen Erwärmungstrends aus?"
   ],
   "previous_changes": [
     "2026-11-26: Dokumentation der US-Notstandserklärung und Verschärfung der El-Niño-Folgen.",
