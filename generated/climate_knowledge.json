@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "updated_at": "2026-11-27T09:43:16+00:00",
+  "updated_at": "2026-11-27T13:53:11+00:00",
   "current_assessment": "Eskalation der hydrologischen Instabilität bei gleichzeitigem politischem Stillstand und Überschreiten kritischer Temperatur-Benchmarks.",
   "established_findings": [
-    "Globale Temperaturen überschritten an sechs aufeinanderfolgenden Tagen die 2-Grad-Grenze (laut Feed-Hinweis 89).",
-    "Wissenschaftlicher Nachweis eines abrupten Rückgangs der Oberflächenwasserreserven infolge von Rekordhitze (laut Feed-Hinweis 78).",
-    "COP31-Verhandlungen scheiterten am Konsens über die Abkehr von fossilen Brennstoffen (laut Feed-Hinweis 47)."
+    "Globale Temperaturen überschritten an sieben aufeinanderfolgenden Tagen die 2-Grad-Grenze (laut Feed-Hinweis 113).",
+    "Wissenschaftlicher Nachweis eines abrupten Rückgangs der Oberflächenwasserreserven infolge von Rekordhitze (laut Feed-Hinweis 36).",
+    "COP31-Verhandlungen scheiterten am Konsens über die Abkehr von fossilen Brennstoffen (laut Feed-Hinweis 51)."
   ],
   "open_questions": [
     "Wie beeinflusst die anhaltende 2-Grad-Überhöhung die Kipppunkte der Kryosphäre?",
     "Können nationale Resilienz-Maßnahmen den Ausfall des multilateralen Finanzhilfe-Systems kurzfristig kompensieren?"
   ],
   "previous_changes": [
-    "2026-11-27: Dokumentation des 2-Grad-Durchbruchs für sechs Tage und Bestätigung des globalen Rückgangs der Oberflächenwasserreserven.",
+    "2026-11-27: Dokumentation des 2-Grad-Durchbruchs für sieben Tage und Bestätigung des globalen Rückgangs der Oberflächenwasserreserven.",
     "2026-11-26: US-Notstandserklärung für Florida nach Flutereignissen.",
     "2026-11-25: Eskalation der Flutnotstände global und COP31-Stagnation."
   ],
