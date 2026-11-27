@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "updated_at": "2026-11-27T17:31:55+00:00",
+  "updated_at": "2026-11-27T21:29:56+00:00",
   "current_assessment": "Eskalation der hydrologischen Instabilität bei gleichzeitigem politischem Stillstand und Überschreiten kritischer Temperatur-Benchmarks.",
   "established_findings": [
-    "Globale Temperaturen überschritten an sieben aufeinanderfolgenden Tagen die 2-Grad-Grenze (laut Feed-Hinweis 113).",
-    "Wissenschaftlicher Nachweis eines abrupten Rückgangs der Oberflächenwasserreserven infolge von Rekordhitze (laut Feed-Hinweis 36).",
-    "COP31-Verhandlungen scheiterten am Konsens über die Abkehr von fossilen Brennstoffen (laut Feed-Hinweis 51)."
+    "Globale Temperaturen überschritten an sieben aufeinanderfolgenden Tagen die 2-Grad-Grenze (laut Feed-Hinweis 35).",
+    "Wissenschaftlicher Nachweis eines Rückgangs von Oberflächenwasserreserven infolge von Hitzewellen (laut Feed-Hinweis 23).",
+    "Landabsenkungen in afrikanischen Megacities verschärfen das Flutrisiko bis 2050 massiv (laut Feed-Hinweis 2)."
   ],
   "open_questions": [
-    "Wie beeinflusst die anhaltende 2-Grad-Überhöhung die Kipppunkte der Kryosphäre?",
-    "Können nationale Resilienz-Maßnahmen den Ausfall des multilateralen Finanzhilfe-Systems kurzfristig kompensieren?"
+    "Welche sozioökonomischen Auswirkungen hat die Stagnation bei internationalen Finanzhilfen konkret für die Klimaanpassung in Schwellenländern?",
+    "Wie korreliert der 'Super El Niño' mit der Frequenz neuer Hitzewellen im kommenden Quartal?"
   ],
   "previous_changes": [
-    "2026-11-27: Dokumentation des 2-Grad-Durchbruchs für sieben Tage und Bestätigung des globalen Rückgangs der Oberflächenwasserreserven.",
+    "2026-11-27: Dokumentation des 2-Grad-Durchbruchs und verstärkte Hinweise auf globale Überflutungsrisiken durch Landsenkungen.",
     "2026-11-26: US-Notstandserklärung für Florida nach Flutereignissen.",
     "2026-11-25: Eskalation der Flutnotstände global und COP31-Stagnation."
   ],
