@@ -1,17 +1,18 @@
 {
   "version": 1,
-  "updated_at": "2026-11-27T01:56:43+00:00",
-  "current_assessment": "Eskalation der hydrologischen Instabilität bei gleichzeitigem politischem Stillstand nach COP31.",
+  "updated_at": "2026-11-27T05:36:43+00:00",
+  "current_assessment": "Eskalation der hydrologischen Instabilität bei gleichzeitigem politischem Stillstand und Überschreiten kritischer Temperatur-Benchmarks.",
   "established_findings": [
-    "COP31 endete ohne Konsens zu fossilen Brennstoffen (laut Feed-Hinweisen).",
-    "Globale Temperaturen überschritten an sechs aufeinanderfolgenden Tagen 2-Grad-Grenze (laut Feed-Hinweisen).",
-    "Massive Zunahme an Berichten über hydrologische Extreme und Dürreschäden."
+    "Globale Temperaturen überschritten an sechs aufeinanderfolgenden Tagen die 2-Grad-Grenze (laut Feed-Hinweis 83).",
+    "Studien zeigen einen abrupten Rückgang der Oberflächenwasserreserven infolge von Rekordhitze (laut Feed-Hinweis 78).",
+    "COP31-Verhandlungen scheiterten am Konsens über die Abkehr von fossilen Brennstoffen (laut Feed-Hinweis 47)."
   ],
   "open_questions": [
-    "Wie wird die Finanzierungslücke bei Klimaschäden ohne ein multilaterales Abkommen geschlossen?",
-    "Reichen lokale Anpassungsstrategien zur Kompensation der globalen Erwärmungstrends aus?"
+    "Welche Auswirkungen haben die 2-Grad-Überschreitungen auf die langfristige Stabilität der Kryosphäre?",
+    "Wie kompensieren betroffene Staaten den massiven Rückgang an Oberflächenwasser ohne multilaterale Finanzhilfe?"
   ],
   "previous_changes": [
+    "2026-11-27: Nachweis einer sechstägigen Überschreitung der 2-Grad-Grenze und Bestätigung des globalen Rückgangs von Oberflächenwasser.",
     "2026-11-26: Dokumentation der US-Notstandserklärung und Verschärfung der El-Niño-Folgen.",
     "2026-11-25: Eskalation der Flutnotstände und Bestätigung der EU-Schadenssummen."
   ],
