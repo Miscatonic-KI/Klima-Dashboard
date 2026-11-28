@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "updated_at": "2026-11-28T05:31:54+00:00",
-  "current_assessment": "Zuspitzung der hydrologischen Instabilität bei gleichzeitigem politischem Stillstand und Überschreiten kritischer Temperatur-Benchmarks.",
+  "updated_at": "2026-11-28T09:25:38+00:00",
+  "current_assessment": "Zuspitzung der hydrologischen Instabilität bei gleichzeitigem globalem Auftreten von Extremwetter und Überschreiten kritischer ozeanischer Temperaturbereiche.",
   "established_findings": [
-    "Globale Temperaturen überschritten an sieben aufeinanderfolgenden Tagen die 2-Grad-Grenze (laut Feed-Hinweis 42).",
-    "Wissenschaftlicher Nachweis eines Rückgangs von Oberflächenwasserreserven infolge von Hitzewellen (laut Feed-Hinweis 31).",
-    "Landabsenkungen in afrikanischen Megacities verschärfen das Flutrisiko bis 2050 massiv (laut Feed-Hinweis 12)."
+    "Globale Temperaturen überschritten an sieben aufeinanderfolgenden Tagen die 2-Grad-Grenze (Stand 28.11.2026, Quelle: interner Stand).",
+    "Landabsenkungen in afrikanischen Megacities verschärfen das Flutrisiko massiv (laut Feed 62).",
+    "Marine Hitzewellen verlassen zunehmend den historischen Korridor (laut Feed 113)."
   ],
   "open_questions": [
-    "Welche sozioökonomischen Auswirkungen hat die Stagnation bei internationalen Finanzhilfen konkret für die Klimaanpassung in Schwellenländern?",
-    "Wie korreliert der 'Super El Niño' mit der Frequenz neuer Hitzewellen im kommenden Quartal?"
+    "Welche sozioökonomischen Folgen resultieren aus der Kombination von Dürre und Preisschocks bei Grundnahrungsmitteln in den 16 identifizierten Hunger-Hotspots?",
+    "Inwieweit lässt sich der 'Super El Niño' direkt für die Zunahme der beobachteten extremen Springfluten quantifizieren?"
   ],
   "previous_changes": [
-    "2026-11-28: Bestätigung des 2-Grad-Durchbruchs für eine Woche und Ausweitung der Katastrophenerklärungen in den USA.",
-    "2026-11-27: Dokumentation des 2-Grad-Durchbruchs und verstärkte Hinweise auf globale Überflutungsrisiken durch Landsenkungen."
+    "2026-11-28: Bestätigung der Eskalation bei Überflutungsschäden (USA) und Warnung vor ozeanischen Extremwerten.",
+    "2026-11-28: Ausweitung der Katastrophenerklärungen in Florida aufgrund historischer Regenfälle."
   ],
   "method_note": "KI-generierter Arbeitsstand aus Feed-Titeln und Kurzbeschreibungen. Kein verifizierter Forschungsstand."
 }
